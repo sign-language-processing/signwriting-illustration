@@ -19,23 +19,27 @@ We use ChatGPT to generate the prompt to describe every illustration.
 
 ### Examples
 
-|              |                                 00004                                  |                                 00007                                  |                                 00015                                  |
-|:------------:|:----------------------------------------------------------------------:|:----------------------------------------------------------------------:|:----------------------------------------------------------------------:|
-| SignWriting  |     <img src="data/Vokabeltrainer/glossen/00004.png" width="50px">     |     <img src="data/Vokabeltrainer/glossen/00007.png" width="50px">     |     <img src="data/Vokabeltrainer/glossen/00015.png" width="50px">     |
-| Illustration | <img src="data/Vokabeltrainer/illustrations/00004.png" height="150px"> | <img src="data/Vokabeltrainer/illustrations/00007.png" height="150px"> | <img src="data/Vokabeltrainer/illustrations/00015.png" height="150px"> | 
-|    Prompt    |                                  TODO                                  |                                  TODO                                  |                                  TODO                                  |
+|              |                                   00004                                    |                                   00007                                    |                                   00015                                    |
+|:------------:|:--------------------------------------------------------------------------:|:--------------------------------------------------------------------------:|:--------------------------------------------------------------------------:|
+|    Video     | <video src="datasets/Vokabeltrainer/sw_examples/00004.mov" width="150px">  | <video src="datasets/Vokabeltrainer/sw_examples/00007.mov" width="150px">  | <video src="datasets/Vokabeltrainer/sw_examples/00015.mov" width="150px">  |
+| SignWriting  |   <img src="datasets/Vokabeltrainer/sw_examples/00004.png" width="50px">   |   <img src="datasets/Vokabeltrainer/sw_examples/00007.png" width="50px">   |   <img src="datasets/Vokabeltrainer/sw_examples/00015.png" width="50px">   |
+| Illustration | <img src="datasets/Vokabeltrainer/illustrations/00004.png" height="150px"> | <img src="datasets/Vokabeltrainer/illustrations/00007.png" height="150px"> | <img src="datasets/Vokabeltrainer/illustrations/00015.png" height="150px"> | 
+|    Prompt    |                                    TODO                                    |                                    TODO                                    |                                    TODO                                    |
 
 ## Training
 
 ### Prompt information
 
-The prompt should include the data source, if this is an image or an illustration, if it colored or black and white, man or woman, hair style, and watermark.
+The prompt should include the data source, if this is an image or an illustration, if it colored or black and white, man
+or woman, hair style, and watermark.
 
 ### Data Preparation
 
-1. Generate parallel images - we create parallel files with the same name in directories `data/source` and `data/target` to
+1. Generate parallel images - we create parallel files with the same name in directories `data/source` and `data/target`
+   to
    include the SignWriting (source) and illustration (target) in the same resolution.
-2. Generate prompts - we use ChatGPT to generate the prompt for every illustration. All of the prompts are then stored in `data/prompt.json`.
+2. Generate prompts - we use ChatGPT to generate the prompt for every illustration. All of the prompts are then stored
+   in `data/prompt.json`.
 
 ### Model Training
 
