@@ -1,7 +1,5 @@
 # Vokabeltrainer
 
-`lexicon.tsv` seems to be encoded using `mac_latin2`
-
 ## Information
 
 ### Illustrations

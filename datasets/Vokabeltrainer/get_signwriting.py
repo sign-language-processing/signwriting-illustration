@@ -45,7 +45,7 @@ def process_directory(directory, lexicon):
 
 
 def parse_lexicon_tsv():
-    with open('lexicon.tsv', 'r', encoding='mac_latin2') as file:
+    with open('lexicon.tsv', 'r', encoding='utf-8') as file:
         dict_reader = csv.DictReader(file, delimiter='\t')
         # Convert the reader to a list to return it
         return {row['Glosse']: row for row in dict_reader}
