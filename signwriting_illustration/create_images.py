@@ -1,68 +1,67 @@
+import hashlib
+import json
 import os
+from pathlib import Path
 
-import numpy as np
-from PIL import Image
-import cv2
+from PIL import Image, UnidentifiedImageError
 from tqdm import tqdm
+from signwriting_images import signwriting_to_image
 
-size = 512
+SIZE = 512
 
+TRAIN_DIR = Path(__file__).parent.parent / "train"
+TRAIN_A_DIR = TRAIN_DIR / "A"
+TRAIN_B_DIR = TRAIN_DIR / "B"
 
-def crop_whitespace(img):
-    gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
-    gray = 255 * (gray < 128).astype(np.uint8)  # To invert the text to white
-    coords = cv2.findNonZero(gray)  # Find all non-zero points (text)
-    x, y, w, h = cv2.boundingRect(coords)  # Find minimum spanning bounding box
-    return img[y:y + h, x:x + w]
+os.makedirs(TRAIN_DIR, exist_ok=True)
+os.makedirs(TRAIN_A_DIR, exist_ok=True)
+os.makedirs(TRAIN_B_DIR, exist_ok=True)
 
+DATASETS_DIR = Path(__file__).parent.parent / "datasets"
 
-def wrap_img(img):
-    h, w, _ = img.shape
+for dataset in DATASETS_DIR.iterdir():
+    if not dataset.is_dir():
+        continue
 
-    f_img = np.full(shape=(size, size, 3), fill_value=255)
-    y_offset = (size - h) // 2
-    x_offset = (size - w) // 2
-    f_img[y_offset:y_offset + img.shape[0], x_offset:x_offset + img.shape[1]] = img
+    print(f"Processing {dataset}...")
+    WRITING_FILE = dataset / "writing.json"
+    if not WRITING_FILE.exists():
+        continue
 
-    return f_img
+    with open(WRITING_FILE, 'r') as f:
+        writings = json.load(f)
 
+    for writing in tqdm(writings):
+        illustration_path = dataset / writing["file"]
+        if not illustration_path.exists():
+            raise Exception(f"Illustration {illustration_path} does not exist")
 
-def downscale(img):
-    old_size = img.size
+        illustration_hash = hashlib.md5(illustration_path.read_bytes()).hexdigest()
+        a_path = TRAIN_A_DIR / f"{illustration_hash}.png"
+        b_path = TRAIN_B_DIR / f"{illustration_hash}.png"
 
-    ratio = size / max(old_size)
-    new_size = tuple([int(x * ratio) for x in old_size])
+        if not a_path.exists():
+            try:
+                illustration = Image.open(illustration_path)
+                if illustration.width < SIZE or illustration.height < SIZE:
+                    continue
+            except UnidentifiedImageError:
+                print(f"\tCould not open {illustration_path}")
+                continue
 
-    return img.resize(new_size, Image.BICUBIC)
+            # resize illustration (not square) such that the larger side is SIZE
+            larger_side = max(illustration.width, illustration.height)
+            scale = SIZE / larger_side
+            illustration = illustration.resize((int(illustration.width * scale), int(illustration.height * scale)))
 
+            # then paste it on a white background SIZExSIZE RGB image
+            background = Image.new('RGB', (SIZE, SIZE), (255, 255, 255))
+            x = (SIZE - illustration.width) // 2
+            y = (SIZE - illustration.height) // 2
+            background.paste(illustration, (x, y), illustration if illustration.mode == 'RGBA' else None)
 
-os.makedirs("train_A", exist_ok=True)
-os.makedirs("train_B", exist_ok=True)
+            # save illustration with name hash of illustration_path
+            background.save(a_path)
 
-illustrations = sorted([f[:-len(".pdf")] for f in os.listdir('data/Vokabeltrainer/illustrations')])
-signwritings = sorted([f[:-len(".png")] for f in os.listdir('glossen') if f.endswith(".png")])
-
-overlap = set(illustrations).intersection(set(signwritings))
-
-print("Found", len(overlap))
-print("Illustrations not found", len(illustrations) - len(overlap))
-print("Signs not found", len(signwritings) - len(overlap))
-
-overlap = sorted(overlap)
-
-for sign_id in tqdm(overlap):
-    # SignWriting
-    img = cv2.imread('glossen/' + sign_id + '.png')
-    wrapped = wrap_img(crop_whitespace(img))[:, :, :1]
-    assert wrapped.shape == (size, size, 1)
-    cv2.imwrite('train_A/' + sign_id + '.png', wrapped)
-
-    # Illustration
-    images = convert_from_path('illustrations/' + sign_id + '.pdf')
-    assert len(images) == 1, "sign multiple images " + sign_id
-    img = images[0]
-    assert img is not None, "img is none " + sign_id
-    img = convert_from_path('illustrations/' + sign_id + '.pdf')[0]
-    wrapped = wrap_img(np.array(downscale(img)))[:, :, :1]
-    assert wrapped.shape == (size, size, 1)
-    cv2.imwrite('train_B/' + sign_id + '.png', wrapped)
+        if a_path.exists() and not b_path.exists():
+            signwriting_to_image(writing["fsw"], b_path, size=SIZE)
