@@ -1,1 +1,4678 @@
-[]
+[
+  {
+    "file": "illustrations/00042.png",
+    "fsw": "M518x525S1f543482x475S2a208495x497"
+  },
+  {
+    "file": "illustrations/02556.png",
+    "fsw": "M532x520S11532496x484S11539477x493S20500480x482S20500467x480S22f04507x502"
+  },
+  {
+    "file": "illustrations/03049.png",
+    "fsw": "M519x512S1f522481x488S22a06504x489"
+  },
+  {
+    "file": "illustrations/04283.png",
+    "fsw": "M533x539S30004482x482S1ec40495x520S26500519x510S20500476x513"
+  },
+  {
+    "file": "illustrations/05171.png",
+    "fsw": "M549x527S36d00479x474S1ec3c505x508S1ec34478x508S20500499x494S22a06534x509S22a12457x508"
+  },
+  {
+    "file": "illustrations/02246.png",
+    "fsw": "M585x531S36a00482x477S17710517x509S14c10562x494S26a06545x504"
+  },
+  {
+    "file": "illustrations/00619.png",
+    "fsw": "M519x539S10028480x488S20332504x495S20c00490x526S2e501496x460"
+  },
+  {
+    "file": "illustrations/01219.png",
+    "fsw": "M524x541S15a18479x514S15a10511x514S15a48477x459S15a40510x459S26500510x492S26510476x492"
+  },
+  {
+    "file": "illustrations/00631.png",
+    "fsw": "M527x529S15d28472x488S15d41488x486S20700492x514S22a03514x471"
+  },
+  {
+    "file": "illustrations/02002.png",
+    "fsw": "M543x529S1f500502x470S1f508482x470S23607514x499S23615457x497S2fc00494x517"
+  },
+  {
+    "file": "illustrations/03539.png",
+    "fsw": "M520x519S1ce20481x489S26507507x481"
+  },
+  {
+    "file": "illustrations/01014.png",
+    "fsw": "M530x542S14c40505x459S14c48470x458S2a314470x494S2a30c507x494S2fb00493x536"
+  },
+  {
+    "file": "illustrations/05329.png",
+    "fsw": "M539x523S30000482x488S30105482x477S1ea17518x494S2b701515x461"
+  },
+  {
+    "file": "illustrations/00271.png",
+    "fsw": "M553x529S20500495x495S33100482x482S15a10522x502S15a40522x470S26500539x494"
+  },
+  {
+    "file": "illustrations/03450.png",
+    "fsw": "M527x566S16d40475x507S16d48473x546S20500480x532S2f700484x465S22a03495x449S15321504x433S22a00477x489"
+  },
+  {
+    "file": "illustrations/02268.png",
+    "fsw": "M540x517S2ff00482x482S11500518x464S11508465x464S22124518x454S22124457x453S20500505x471S20500483x471"
+  },
+  {
+    "file": "illustrations/00524.png",
+    "fsw": "M527x522S15a37472x491S1ea10504x479S22a04497x493S20500498x511"
+  },
+  {
+    "file": "illustrations/02350.png",
+    "fsw": "M512x514S18520487x499S22104489x485"
+  },
+  {
+    "file": "illustrations/02831.png",
+    "fsw": "M546x522S10057469x492S1005f491x486S21200453x477S2f002525x497"
+  },
+  {
+    "file": "illustrations/02828.png",
+    "fsw": "M513x515S1ed10487x496S2f900493x484"
+  },
+  {
+    "file": "illustrations/01014.png",
+    "fsw": "M532x545S14c40508x456S14c48468x457S2a30a508x493S2a312471x492S2fb04494x539"
+  },
+  {
+    "file": "illustrations/05189.png",
+    "fsw": "M578x518S17600562x437S14c01515x461S2ff00482x483S26a03542x453"
+  },
+  {
+    "file": "illustrations/00064.png",
+    "fsw": "M521x533S36d00479x468S1ce52458x471S21100475x499S22a04476x518"
+  },
+  {
+    "file": "illustrations/00161.png",
+    "fsw": "M528x549S15220505x450S15228474x450S18551501x514S18559472x514S26504505x489S26514478x489S20500481x537S20500508x538"
+  },
+  {
+    "file": "illustrations/02333.png",
+    "fsw": "M521x526S20340489x492S20348479x511S20500497x511S2e734505x474"
+  },
+  {
+    "file": "illustrations/00758.png",
+    "fsw": "M547x523S10056472x491S1005e495x484S2ea08532x477S2ea40453x488S2fc00495x512"
+  },
+  {
+    "file": "illustrations/01180.png",
+    "fsw": "M533x548S36d00479x452S20500478x460S20500512x460S1ee3e508x477S1f436472x517S1ee36474x476S1f43e518x519S2b720490x503"
+  },
+  {
+    "file": "illustrations/00407.png",
+    "fsw": "M555x522S1003a473x496S10032495x484S2f012445x494S2f000534x478S2fc00494x511"
+  },
+  {
+    "file": "illustrations/02366.png",
+    "fsw": "M534x518S30001482x483S15a20517x461S15a20470x460S22124512x450S22124465x448S30007482x483S20500484x471S20500504x471"
+  },
+  {
+    "file": "illustrations/00378.png",
+    "fsw": "M548x517S30007482x482S20600496x469S10a11520x477"
+  },
+  {
+    "file": "illustrations/02505.png",
+    "fsw": "M520x519S20352490x504S27100480x481"
+  },
+  {
+    "file": "illustrations/00021.png",
+    "fsw": "M507x523S1f540492x499S26500492x477"
+  },
+  {
+    "file": "illustrations/06214.png",
+    "fsw": "M554x533S36d00479x489S16d10537x493S16d18526x468S26504539x518"
+  },
+  {
+    "file": "illustrations/04265.png",
+    "fsw": "M588x535S15020450x467S15028412x466S23004450x503S23014412x503S2fb00439x529S1ed21512x479S2880a539x465S1ed27563x476"
+  },
+  {
+    "file": "illustrations/00333.png",
+    "fsw": "M525x547S18048475x495S18040494x488S26600505x452S26614478x517"
+  },
+  {
+    "file": "illustrations/07200.png",
+    "fsw": "M548x517S33200482x482S17d00525x501S22124524x484"
+  },
+  {
+    "file": "illustrations/05396.png",
+    "fsw": "M542x539S10041521x509S1004b458x461S26501500x502S26515480x484"
+  },
+  {
+    "file": "illustrations/01007.png",
+    "fsw": "M520x542S15220479x457S18520494x518S23c04496x486S2f900509x537"
+  },
+  {
+    "file": "illustrations/02295.png",
+    "fsw": "M515x532S14c02484x468S21100497x494S22a04498x517"
+  },
+  {
+    "file": "illustrations/00083.png",
+    "fsw": "M540x526S20310525x477S2a20c509x498S1f456459x476S22112480x475"
+  },
+  {
+    "file": "illustrations/04184.png",
+    "fsw": "M544x527S2a600527x496S1ea01492x506S1ea51490x484S20500475x494S20500475x508S36d00479x474"
+  },
+  {
+    "file": "illustrations/00766.png",
+    "fsw": "M542x539S30004482x482S14c52474x515S22512457x513S22a06527x522S21100511x521"
+  },
+  {
+    "file": "illustrations/00539.png",
+    "fsw": "M526x526S15d00507x475S15d08473x475S26904505x508S26914477x508"
+  },
+  {
+    "file": "illustrations/00971.png",
+    "fsw": "M538x513S15318463x487S1ea11486x487S2ea00523x488"
+  },
+  {
+    "file": "illustrations/06503.png",
+    "fsw": "M512x515S11e00489x485"
+  },
+  {
+    "file": "illustrations/00415.png",
+    "fsw": "M539x549S10050503x472S10058476x472S23404502x516S23414460x517S26520490x451S2fc00493x538"
+  },
+  {
+    "file": "illustrations/00690.png",
+    "fsw": "M536x533S2ff00482x482S20500496x500S17700516x518S26500521x495S22100523x480"
+  },
+  {
+    "file": "illustrations/00864.png",
+    "fsw": "M517x542S15a37483x458S15a37483x505S15a51494x468S15a31494x514S20500489x482S20500490x531"
+  },
+  {
+    "file": "illustrations/02927.png",
+    "fsw": "M552x546S30004482x482S15a00494x519S20600516x517S20500542x517"
+  },
+  {
+    "file": "illustrations/00922.png",
+    "fsw": "M520x538S14c01480x511S21100489x492S23908500x461"
+  },
+  {
+    "file": "illustrations/05015.png",
+    "fsw": "M537x527S20320522x512S10001463x473S2380e491x496"
+  },
+  {
+    "file": "illustrations/05175.png",
+    "fsw": "M535x523S15a11502x488S15a19476x488S20500496x476S22a05522x508S22a13465x509"
+  },
+  {
+    "file": "illustrations/00392.png",
+    "fsw": "M564x521S33010479x482S10021525x500S26507551x485S20500515x508"
+  },
+  {
+    "file": "illustrations/00776.png",
+    "fsw": "M529x592S30a00482x482S14c30505x516S14c38470x515S27102511x552S27116473x552"
+  },
+  {
+    "file": "illustrations/00110.png",
+    "fsw": "M523x539S36d00479x461S15d18475x473S15d10504x473S22a04505x524S22a14482x524S21100481x505S21100505x505"
+  },
+  {
+    "file": "illustrations/07200.png",
+    "fsw": "M544x531S18520519x516S22124520x506S30004482x482"
+  },
+  {
+    "file": "illustrations/05425.png",
+    "fsw": "M543x534S2ff00482x482S15019462x470S15011515x471S2ea00527x507S2ea18461x505S2fb04495x528"
+  },
+  {
+    "file": "illustrations/01188.png",
+    "fsw": "M567x520S11e01468x482S14c08433x480S20307546x489S22a03537x506"
+  },
+  {
+    "file": "illustrations/02556.png",
+    "fsw": "M533x520S11532497x484S11549478x493S22f04508x502S20600466x480"
+  },
+  {
+    "file": "illustrations/01025.png",
+    "fsw": "M528x536S2a508504x502S1ce50506x464S1ce58472x463S2a510476x503"
+  },
+  {
+    "file": "illustrations/03105.png",
+    "fsw": "M523x543S15a56477x489S15a52496x474S20e00491x457S2fc00496x532S23620481x507"
+  },
+  {
+    "file": "illustrations/00158.png",
+    "fsw": "M574x524S1ee20505x481S1ee28472x481S22b06536x487S22b12433x488S22104423x477S22104562x476S36d00479x520"
+  },
+  {
+    "file": "illustrations/00905.png",
+    "fsw": "M576x521S33b00482x482S21100544x506S1f410510x506S22a06561x506S22104523x497"
+  },
+  {
+    "file": "illustrations/05192.png",
+    "fsw": "M555x529S1e140531x473S1e148445x471S24d03504x498S24d15464x501"
+  },
+  {
+    "file": "illustrations/00222.png",
+    "fsw": "M573x518S2c500533x494S2c514427x492S17750504x499S17748479x499S20600490x482"
+  },
+  {
+    "file": "illustrations/00482.png",
+    "fsw": "M527x519S15a36488x507S18551500x481S20600472x492"
+  },
+  {
+    "file": "illustrations/00307.png",
+    "fsw": "M522x510S19a50477x490S26506507x496"
+  },
+  {
+    "file": "illustrations/02338.png",
+    "fsw": "M530x518S15a56499x506S37706470x511S20600471x495S10a51497x483"
+  },
+  {
+    "file": "illustrations/00471.png",
+    "fsw": "M507x519S10010492x480S2f900494x514"
+  },
+  {
+    "file": "illustrations/00347.png",
+    "fsw": "M551x525S17d02528x502S18502527x448S26a00524x480S33b00482x482"
+  },
+  {
+    "file": "illustrations/06507.png",
+    "fsw": "M529x515S14c08471x484S11e01504x485"
+  },
+  {
+    "file": "illustrations/00629.png",
+    "fsw": "M545x517S30007482x482S20600491x468S11811520x474"
+  },
+  {
+    "file": "illustrations/00486.png",
+    "fsw": "M511x527S14c20488x473S22e04491x509"
+  },
+  {
+    "file": "illustrations/02480.png",
+    "fsw": "M512x526S14c50487x474S2e70a487x511"
+  },
+  {
+    "file": "illustrations/00643.png",
+    "fsw": "M546x529S18530521x514S21100530x495S22514524x478S30004482x482"
+  },
+  {
+    "file": "illustrations/04066.png",
+    "fsw": "M519x520S20300481x479S37700487x495S26504505x479S2f700505x500"
+  },
+  {
+    "file": "illustrations/02910.png",
+    "fsw": "M542x522S2ff00482x482S10001521x492S2e500488x485"
+  },
+  {
+    "file": "illustrations/09004.png",
+    "fsw": "M568x525S2ff00482x482S18052553x495S1805a435x495S22516535x501S22512453x501S20500471x503S20500520x503"
+  },
+  {
+    "file": "illustrations/00923.png",
+    "fsw": "M591x526S20332448x497S2033a425x496S26907459x480S26911408x477S20500442x515S10020549x485S10028529x485S20500539x473S23d04564x479S23d1c503x478"
+  },
+  {
+    "file": "illustrations/01069.png",
+    "fsw": "M544x517S30007482x482S18520516x482S22114516x469S26a04517x449"
+  },
+  {
+    "file": "illustrations/00331.png",
+    "fsw": "M518x530S11820495x503S2e507481x469"
+  },
+  {
+    "file": "illustrations/05207.png",
+    "fsw": "M512x525S14c20489x474S2e706487x510"
+  },
+  {
+    "file": "illustrations/05159.png",
+    "fsw": "M513x518S1f750486x503S2ea36488x482"
+  },
+  {
+    "file": "illustrations/00860.png",
+    "fsw": "M549x517S30007482x482S1dc10522x466S20500508x474S22114523x456"
+  },
+  {
+    "file": "illustrations/05108.png",
+    "fsw": "M517x536S20302502x477S20306483x477S20500496x465S27126493x497"
+  },
+  {
+    "file": "illustrations/09003.png",
+    "fsw": "M539x530S30002482x482S18011514x499S18019461x497S20500469x487S20500524x488S30006482x482S22120509x523S22120470x521"
+  },
+  {
+    "file": "illustrations/00164.png",
+    "fsw": "M514x522S18546486x479S2880e491x510S22102507x480"
+  },
+  {
+    "file": "illustrations/00868.png",
+    "fsw": "M550x544S15a50503x470S15a50485x469S15a30502x517S15a30487x517S20500494x456S20500495x504S2441a449x492S24402517x490"
+  },
+  {
+    "file": "illustrations/00757.png",
+    "fsw": "M521x531S15a49479x490S15a41498x508S2b702489x469"
+  },
+  {
+    "file": "illustrations/03368.png",
+    "fsw": "M560x522S22f10440x478S22f00470x477S20318443x499S20310474x499S20350540x480S22f00535x508"
+  },
+  {
+    "file": "illustrations/00008.png",
+    "fsw": "M522x524S11800507x476S11808477x476S22a04508x508S22a14486x509"
+  },
+  {
+    "file": "illustrations/05441.png",
+    "fsw": "M552x517S30007482x482S10a11523x477S20500511x475S26607530x447"
+  },
+  {
+    "file": "illustrations/00173.png",
+    "fsw": "M523x519S20349477x494S20347493x480S20600501x508"
+  },
+  {
+    "file": "illustrations/01131.png",
+    "fsw": "M506x521S15a20494x479S2f900495x516"
+  },
+  {
+    "file": "illustrations/00060.png",
+    "fsw": "M522x540S33b00482x482S10010487x510S20500512x515"
+  },
+  {
+    "file": "illustrations/00488.png",
+    "fsw": "M508x528S1f510493x471S22b04492x498"
+  },
+  {
+    "file": "illustrations/03398.png",
+    "fsw": "M527x528S14c40503x471S20340474x513S22a03493x498"
+  },
+  {
+    "file": "illustrations/05328.png",
+    "fsw": "M535x513S15d10516x486S16d18465x491S26502492x495"
+  },
+  {
+    "file": "illustrations/00161.png",
+    "fsw": "M530x546S35000482x482S1f502492x512S21100517x513S22a04516x531"
+  },
+  {
+    "file": "illustrations/00583.png",
+    "fsw": "M526x529S15310511x471S20300475x514S2880d496x507"
+  },
+  {
+    "file": "illustrations/03389.png",
+    "fsw": "M539x518S30006482x483S15a10521x489S20600517x474"
+  },
+  {
+    "file": "illustrations/02861.png",
+    "fsw": "M544x525S16d48455x478S1ea17485x497S2c505501x475"
+  },
+  {
+    "file": "illustrations/02289.png",
+    "fsw": "M525x568S2fb00493x528S20500497x471S22b24493x538S20500497x499S2881e477x510S15a51502x446S15a59475x447S20500493x431S28806503x483S2881e479x483S28806503x510"
+  },
+  {
+    "file": "illustrations/00243.png",
+    "fsw": "M510x539S26504491x499S20350491x524S15220490x461"
+  },
+  {
+    "file": "illustrations/04224.png",
+    "fsw": "M546x591S35d06482x482S20500494x521S21100533x564S22a06513x565S15d3a469x572S22a04494x536S1c530509x509S1c551482x552"
+  },
+  {
+    "file": "illustrations/01175.png",
+    "fsw": "M554x515S2c405515x486S1e13f480x490S16f38445x484"
+  },
+  {
+    "file": "illustrations/04621.png",
+    "fsw": "M531x519S15019469x481S15011503x481S2f900494x514"
+  },
+  {
+    "file": "illustrations/00607.png",
+    "fsw": "M521x522S36d00479x479S1f553482x501S20500482x490S26507505x492"
+  },
+  {
+    "file": "illustrations/02910.png",
+    "fsw": "M542x601S2ff00482x482S10001521x492S2e300507x574S2e500488x485"
+  },
+  {
+    "file": "illustrations/05109.png",
+    "fsw": "M529x531S15a37470x470S15a51473x472S20c00501x473S2a408490x495"
+  },
+  {
+    "file": "illustrations/00955.png",
+    "fsw": "M566x512S1ef20505x497S1ef28469x497S22a06540x496S22a12448x497S22104554x488S22104435x489"
+  },
+  {
+    "file": "illustrations/00366.png",
+    "fsw": "M559x515S11820509x485S11828466x484S22e06541x498S22e12442x495"
+  },
+  {
+    "file": "illustrations/02410.png",
+    "fsw": "M536x517S2ff00482x482S15318467x464S15310521x464S22a04522x499S22a14465x498"
+  },
+  {
+    "file": "illustrations/00916.png",
+    "fsw": "M531x530S36d00479x470S20500478x478S20500512x478S26524494x515S1f436469x492S1f43e516x493S22102487x493S22106506x494"
+  },
+  {
+    "file": "illustrations/00360.png",
+    "fsw": "M528x516S1ce20472x484S26606498x500"
+  },
+  {
+    "file": "illustrations/03066.png",
+    "fsw": "M580x516S17d44474x485S17d4c505x485S18544420x485S1854c554x485S20500496x505S26512450x487S26506534x486"
+  },
+  {
+    "file": "illustrations/04130.png",
+    "fsw": "M513x533S15750491x466S26504497x497S18520488x518"
+  },
+  {
+    "file": "illustrations/04628.png",
+    "fsw": "M527x535S17610498x494S26500473x494S26500492x464S26500513x471S26500499x520"
+  },
+  {
+    "file": "illustrations/00314.png",
+    "fsw": "M518x582S36a00482x477S20e00494x517S10a00493x531S22e04493x564S30a00482x477S35000482x477"
+  },
+  {
+    "file": "illustrations/02567.png",
+    "fsw": "M531x530S14c31501x481S14c39472x481S20500494x470S22e04514x512S22e14470x512"
+  },
+  {
+    "file": "illustrations/00944.png",
+    "fsw": "M557x531S36d00479x470S36d00480x520S26516474x498S1ed04447x496S26502510x499S1ed0c531x497S20500495x500S20500526x520S20500466x519"
+  },
+  {
+    "file": "illustrations/00611.png",
+    "fsw": "M530x529S36d00479x472S20600508x483S10010509x499"
+  },
+  {
+    "file": "illustrations/02654.png",
+    "fsw": "M577x530S20301516x475S20307556x475S23115520x499S23103552x498S2fb04539x524S15a37422x469S20310472x513S26501443x486S20b00457x500"
+  },
+  {
+    "file": "illustrations/02347.png",
+    "fsw": "M545x567S15d00526x498S15d08457x497S15d0a479x544S2881b480x518S28803501x518S15d02493x548S2ff00482x482"
+  },
+  {
+    "file": "illustrations/00181.png",
+    "fsw": "M553x516S15040507x485S15048470x485S26502538x497S26516446x498"
+  },
+  {
+    "file": "illustrations/03130.png",
+    "fsw": "M554x538S30004482x482S1dc19516x508S1dc11461x508S20500487x519S20500505x519S26507541x503S26511445x502"
+  },
+  {
+    "file": "illustrations/00539.png",
+    "fsw": "M526x524S15d00507x497S15d08473x497S26900505x475S26910477x475"
+  },
+  {
+    "file": "illustrations/05910.png",
+    "fsw": "M531x532S15d32493x468S15d3a472x486S26c00504x493S26c10469x513S2fc00501x521"
+  },
+  {
+    "file": "illustrations/08262.png",
+    "fsw": "M535x526S18530504x511S18538469x511S21100468x492S21100517x489S22514513x474S22514465x475"
+  },
+  {
+    "file": "illustrations/00559.png",
+    "fsw": "M537x554S10028484x461S10020505x461S10058484x505S10050505x505S24202515x494S2421a464x494S20500497x446S20500495x543"
+  },
+  {
+    "file": "illustrations/02889.png",
+    "fsw": "M528x520S11541504x484S11549484x493S20600472x480"
+  },
+  {
+    "file": "illustrations/00963.png",
+    "fsw": "M558x518S15a30457x482S1f050474x485S22b06528x484S22b06528x502S21100510x485S21100509x502S20500443x485S20500444x498"
+  },
+  {
+    "file": "illustrations/09015.png",
+    "fsw": "M515x527S1ce20493x497S29900484x472"
+  },
+  {
+    "file": "illustrations/00330.png",
+    "fsw": "M543x517S30007482x482S11800528x486S2e507512x463"
+  },
+  {
+    "file": "illustrations/00671.png",
+    "fsw": "M546x538S33200482x482S1ce10524x485S20700504x523"
+  },
+  {
+    "file": "illustrations/00279.png",
+    "fsw": "M511x524S18210488x509S22a00493x488S2f700494x476"
+  },
+  {
+    "file": "illustrations/00315.png",
+    "fsw": "M530x526S11551490x501S11559470x500S26a07509x473S20e00499x487"
+  },
+  {
+    "file": "illustrations/08200.png",
+    "fsw": "M530x526S11551490x501S11559470x500S26a07509x473S20e00499x487"
+  },
+  {
+    "file": "illustrations/06502.png",
+    "fsw": "M511x515S1dc01488x485"
+  },
+  {
+    "file": "illustrations/00685.png",
+    "fsw": "M535x519S30006482x482S19a02515x491S20500516x478"
+  },
+  {
+    "file": "illustrations/02957.png",
+    "fsw": "M527x530S1e148472x480S1e140503x480S26514479x514S26504503x515S22104481x470S22104508x470"
+  },
+  {
+    "file": "illustrations/04659.png",
+    "fsw": "M542x520S15318457x485S17620485x480S26f06507x480S22b04526x482"
+  },
+  {
+    "file": "illustrations/00028.png",
+    "fsw": "M521x527S36d00479x473S15330484x499S20500475x485S20500511x503S20500498x485S20500466x516"
+  },
+  {
+    "file": "illustrations/00705.png",
+    "fsw": "M582x558S30006482x482S20500519x487S19c11514x503S19c50554x529S22a05540x528"
+  },
+  {
+    "file": "illustrations/04618.png",
+    "fsw": "M536x534S1ce10485x487S26500464x493S26500489x466S26500506x519S26500522x481"
+  },
+  {
+    "file": "illustrations/00562.png",
+    "fsw": "M516x517S20340501x484S20348491x502S21100483x482"
+  },
+  {
+    "file": "illustrations/00333.png",
+    "fsw": "M553x520S15d48478x493S15d40501x493S20500494x480S26606523x497S26612447x497"
+  },
+  {
+    "file": "illustrations/00305.png",
+    "fsw": "M519x521S20600480x510S20350504x492S15d39481x478"
+  },
+  {
+    "file": "illustrations/00690.png",
+    "fsw": "M538x537S2ff00482x482S20500496x500S18500514x522S26500521x495S14c00515x457"
+  },
+  {
+    "file": "illustrations/02331.png",
+    "fsw": "M532x555S30004482x489S15a00492x528S20600510x525S30322482x476"
+  },
+  {
+    "file": "illustrations/01794.png",
+    "fsw": "M511x512S12810488x488"
+  },
+  {
+    "file": "illustrations/07205.png",
+    "fsw": "M515x554S11e20486x491S12927495x526S2b700488x461S21600493x446"
+  },
+  {
+    "file": "illustrations/00922.png",
+    "fsw": "M529x544S20310413x477S20318390x476S26900413x457S26910390x456S20500407x495S36d00479x460S14c04506x493S14c0c477x494S22a00510x473S22a10480x473S21100484x530S21100511x529"
+  },
+  {
+    "file": "illustrations/02978.png",
+    "fsw": "M539x514S15a48501x486S15a40527x487S22b22461x494"
+  },
+  {
+    "file": "illustrations/04219.png",
+    "fsw": "M526x520S18250504x480S18258475x480S26504509x505S26514474x504"
+  },
+  {
+    "file": "illustrations/05193.png",
+    "fsw": "M528x518S2035a500x503S37706471x509S10a51495x481S20500488x496S20500481x485"
+  },
+  {
+    "file": "illustrations/07200.png",
+    "fsw": "M548x517S33200482x482S17d20525x501S22124524x489"
+  },
+  {
+    "file": "illustrations/00528.png",
+    "fsw": "M535x517S30007482x482S20b00522x483S20301506x442S26504508x466"
+  },
+  {
+    "file": "illustrations/00128.png",
+    "fsw": "M533x522S31400482x482S26500518x476S10e00518x492"
+  },
+  {
+    "file": "illustrations/00515.png",
+    "fsw": "M533x530S14c09471x469S14c01503x469S2a204510x502S2a21c467x502"
+  },
+  {
+    "file": "illustrations/00766.png",
+    "fsw": "M542x545S30004482x482S14c52474x515S22522457x513S22a06527x520S21100511x521"
+  },
+  {
+    "file": "illustrations/00285.png",
+    "fsw": "M521x522S16d48479x490S18552506x477S20700503x507"
+  },
+  {
+    "file": "illustrations/00700.png",
+    "fsw": "M554x515S1ea47505x487S1ea4f473x486S28812446x496S2880a532x496"
+  },
+  {
+    "file": "illustrations/00098.png",
+    "fsw": "M521x552S36d00479x449S1ea52498x477S1ea3f483x501S23014479x534"
+  },
+  {
+    "file": "illustrations/00915.png",
+    "fsw": "M538x548S30005482x482S30003482x482S17d17514x508S2880e491x524S21100512x534"
+  },
+  {
+    "file": "illustrations/05171.png",
+    "fsw": "M567x527S36d00479x474S1ec3c505x508S1ec34478x508S20500499x494S22b06537x509S22b12443x507"
+  },
+  {
+    "file": "illustrations/03021.png",
+    "fsw": "M542x525S10000523x476S2ea32517x510S30000482x482"
+  },
+  {
+    "file": "illustrations/02866.png",
+    "fsw": "M548x534S2ff00482x482S10e10524x477S26b04521x516"
+  },
+  {
+    "file": "illustrations/03304.png",
+    "fsw": "M531x545S20330471x455S20330514x455S26604513x478S26604515x515S26614469x478S26614469x514"
+  },
+  {
+    "file": "illustrations/00963.png",
+    "fsw": "M532x521S15a57471x495S20500491x510S20500468x493S2880a481x478S1ed17507x488"
+  },
+  {
+    "file": "illustrations/02909.png",
+    "fsw": "M513x535S14c10488x465S24c08491x500"
+  },
+  {
+    "file": "illustrations/00959.png",
+    "fsw": "M549x536S26504528x504S20500529x525S1ce10527x472S31410482x482"
+  },
+  {
+    "file": "illustrations/00418.png",
+    "fsw": "M529x528S15d30510x502S15d38471x502S2b700502x472S2b711478x472"
+  },
+  {
+    "file": "illustrations/05193.png",
+    "fsw": "M521x521S20500479x510S10a52484x479S15a56494x509"
+  },
+  {
+    "file": "illustrations/00461.png",
+    "fsw": "M533x533S20332515x468S2033a470x469S2e510466x495S2e508510x495S2fb00494x527"
+  },
+  {
+    "file": "illustrations/09538.png",
+    "fsw": "M513x529S17d20490x471S18520487x514S26504495x491"
+  },
+  {
+    "file": "illustrations/00191.png",
+    "fsw": "M513x514S1f416486x485S22122506x485"
+  },
+  {
+    "file": "illustrations/05107.png",
+    "fsw": "M535x550S30006482x482S15a10521x488S21100521x517S22a04522x535"
+  },
+  {
+    "file": "illustrations/00042.png",
+    "fsw": "M531x530S1f522469x506S1f510516x469S28809487x480"
+  },
+  {
+    "file": "illustrations/06186.png",
+    "fsw": "M520x540S15352492x481S15336481x504S2ea32495x459S2ea1a480x525S21600484x472S21600506x517"
+  },
+  {
+    "file": "illustrations/02320.png",
+    "fsw": "M541x541S31500482x482S18210503x520S18218475x520S22a07528x507S22a11459x508S20500495x530"
+  },
+  {
+    "file": "illustrations/02688.png",
+    "fsw": "M543x517S30000482x482S1e110519x466S20600490x470"
+  },
+  {
+    "file": "illustrations/00996.png",
+    "fsw": "M550x534S10049472x481S10042482x484S2a532517x483S2a539449x509S2fc01499x511S20500477x467"
+  },
+  {
+    "file": "illustrations/04160.png",
+    "fsw": "M547x547S31a10482x482S12800524x496S25504533x525"
+  },
+  {
+    "file": "illustrations/00347.png",
+    "fsw": "M515x542S17d26493x458S18526490x517S26504486x492S26504501x492"
+  },
+  {
+    "file": "illustrations/03241.png",
+    "fsw": "M548x524S30007482x482S14c51513x460S2e501525x497S22514507x439"
+  },
+  {
+    "file": "illustrations/00697.png",
+    "fsw": "M515x521S12851485x478S2ea32490x506"
+  },
+  {
+    "file": "illustrations/08386.png",
+    "fsw": "M519x515S10020480x485S26506504x499"
+  },
+  {
+    "file": "illustrations/02002.png",
+    "fsw": "M540x541S1f500508x474S1f508481x458S23600501x507S23614460x488S2fc00496x530"
+  },
+  {
+    "file": "illustrations/00411.png",
+    "fsw": "M524x526S20350475x476S20350509x475S22a14477x500S22a04509x500S2f700511x519S2f700477x519"
+  },
+  {
+    "file": "illustrations/00351.png",
+    "fsw": "M520x519S1f523498x480S22f03481x498"
+  },
+  {
+    "file": "illustrations/00081.png",
+    "fsw": "M531x543S14c50505x458S14c58468x458S2a310469x493S2a308508x494S2fc00493x532"
+  },
+  {
+    "file": "illustrations/00113.png",
+    "fsw": "M529x529S36d00479x471S15a36488x517S18552497x486S22a04480x496S20600507x503"
+  },
+  {
+    "file": "illustrations/05015.png",
+    "fsw": "M514x571S1ea10487x516S10040494x458S2a208491x543S26500493x495S2b700488x430"
+  },
+  {
+    "file": "illustrations/08246.png",
+    "fsw": "M525x521S15a56475x479S15a10479x494S20500501x495S20500515x495"
+  },
+  {
+    "file": "illustrations/00108.png",
+    "fsw": "M521x524S36d00479x476S3770a469x477S37702469x500S20600444x488S15a32477x493"
+  },
+  {
+    "file": "illustrations/00237.png",
+    "fsw": "M507x525S10050492x495S26500492x474"
+  },
+  {
+    "file": "illustrations/08203.png",
+    "fsw": "M528x521S15a37472x487S15a51481x498S21100502x493S22a07515x480"
+  },
+  {
+    "file": "illustrations/00631.png",
+    "fsw": "M531x525S15d40489x498S15d48468x475S20710497x478"
+  },
+  {
+    "file": "illustrations/05005.png",
+    "fsw": "M510x539S10020492x462S27206491x499"
+  },
+  {
+    "file": "illustrations/02551.png",
+    "fsw": "M531x524S20330479x475S20330507x475S2e50a504x501S2e512469x500"
+  },
+  {
+    "file": "illustrations/01007.png",
+    "fsw": "M528x530S17d20472x469S18527509x503S2880b503x477"
+  },
+  {
+    "file": "illustrations/07199.png",
+    "fsw": "M542x526S15d01476x489S15d09502x489S20a00491x474S22115459x476S22113523x476S2fb00493x520"
+  },
+  {
+    "file": "illustrations/06532.png",
+    "fsw": "M526x535S14c08473x465S11e01499x464S2a204503x507S2a21c473x507"
+  },
+  {
+    "file": "illustrations/07104.png",
+    "fsw": "M544x554S2ff00482x482S15a10528x487S2e230525x522"
+  },
+  {
+    "file": "illustrations/00681.png",
+    "fsw": "M542x541S10018458x458S10010527x511S20500496x499S26515478x484S26501509x513S2fb04479x524"
+  },
+  {
+    "file": "illustrations/05159.png",
+    "fsw": "M520x516S1f750495x501S1f738480x488S21100507x483"
+  },
+  {
+    "file": "illustrations/00305.png",
+    "fsw": "M523x517S15a36476x505S20350479x484S20600501x488"
+  },
+  {
+    "file": "illustrations/02528.png",
+    "fsw": "M524x532S15d31501x488S15d48476x475S22e04502x514S20b00501x467"
+  },
+  {
+    "file": "illustrations/03702.png",
+    "fsw": "M528x539S14c50504x507S20350511x462S26500511x486S14c58471x508S26510476x485S20350475x462"
+  },
+  {
+    "file": "illustrations/01060.png",
+    "fsw": "M528x533S14c28471x467S14c20505x466S24804508x504S2481c475x505"
+  },
+  {
+    "file": "illustrations/00926.png",
+    "fsw": "M549x544S36d00479x456S14c0a465x521S14c02504x521S14c01512x462S14c09463x462S20500496x510S21100455x503S21100536x502S22b07508x493S22b11469x493"
+  },
+  {
+    "file": "illustrations/00436.png",
+    "fsw": "M569x507S21100454x493S26506554x493S18544472x492S1854c505x492S26512430x492S21100536x492"
+  },
+  {
+    "file": "illustrations/03343.png",
+    "fsw": "M522x540S33b00482x482S10010487x510S20500512x515"
+  },
+  {
+    "file": "illustrations/00361.png",
+    "fsw": "M546x540S30a00482x482S14c00523x509S14c08454x509S22510523x493S22510455x495"
+  },
+  {
+    "file": "illustrations/00347.png",
+    "fsw": "M515x542S17d56493x458S18556490x517S26504486x492S26504501x492"
+  },
+  {
+    "file": "illustrations/02649.png",
+    "fsw": "M527x536S20330487x492S20334487x472S20500474x485S26900511x464S26914511x493S2fb00490x530"
+  },
+  {
+    "file": "illustrations/05108.png",
+    "fsw": "M517x536S20332502x477S20336483x477S20500496x465S23626491x497"
+  },
+  {
+    "file": "illustrations/00431.png",
+    "fsw": "M521x534S37900478x467S3770b479x484S15a01485x487S23f09470x511S21100462x491S36d00479x467"
+  },
+  {
+    "file": "illustrations/02910.png",
+    "fsw": "M528x534S2ff00482x482S10001507x504S2ed00492x486"
+  },
+  {
+    "file": "illustrations/00105.png",
+    "fsw": "M560x540S30004482x482S1e110519x506S26a07539x496S20500485x517S20500506x517S1e118460x506S26a11445x496S2fb00494x534"
+  },
+  {
+    "file": "illustrations/00918.png",
+    "fsw": "M541x527S36d00479x474S20500485x515S20500502x516S20300461x480S20300526x480S28802505x499S2881a473x498"
+  },
+  {
+    "file": "illustrations/00683.png",
+    "fsw": "M521x522S10041500x485S10049479x492S20500484x478"
+  },
+  {
+    "file": "illustrations/00094.png",
+    "fsw": "M532x558S20e00514x513S30004482x482S2e100509x529S1f510492x519"
+  },
+  {
+    "file": "illustrations/09507.png",
+    "fsw": "M528x529S14c58473x498S14c50504x498S2b720486x470"
+  },
+  {
+    "file": "illustrations/08228.png",
+    "fsw": "M522x531S20350481x469S20350503x469S2ea00507x496S2ea18478x496S2fb00493x525"
+  },
+  {
+    "file": "illustrations/01197.png",
+    "fsw": "M548x512S15318451x487S1ea11474x488S2c401508x487"
+  },
+  {
+    "file": "illustrations/01071.png",
+    "fsw": "M536x517S33200482x482S1005e506x502"
+  },
+  {
+    "file": "illustrations/03297.png",
+    "fsw": "M533x526S16d58467x480S14740509x473S25504520x504S25504501x504"
+  },
+  {
+    "file": "illustrations/03052.png",
+    "fsw": "M567x528S1ea10521x504S30005482x482S20500510x517S2c400527x474"
+  },
+  {
+    "file": "illustrations/02432.png",
+    "fsw": "M550x531S14c08449x468S11e01475x468S1dc01527x468S2a204526x503"
+  },
+  {
+    "file": "illustrations/06112.png",
+    "fsw": "M527x519S15a56488x507S18551500x481S20600472x492"
+  },
+  {
+    "file": "illustrations/01010.png",
+    "fsw": "M531x537S22100506x462S1d450502x509S2b711473x478S1d458469x509S2b700504x478S22100475x462"
+  },
+  {
+    "file": "illustrations/00179.png",
+    "fsw": "M511x525S11820488x498S26500488x475"
+  },
+  {
+    "file": "illustrations/02773.png",
+    "fsw": "M509x521S16d40490x501S26500495x479"
+  },
+  {
+    "file": "illustrations/00192.png",
+    "fsw": "M550x535S30004482x482S14c20522x473S20320493x520S26a00523x511"
+  },
+  {
+    "file": "illustrations/00596.png",
+    "fsw": "M516x516S22a06501x483S10050483x486"
+  },
+  {
+    "file": "illustrations/02438.png",
+    "fsw": "M529x596S36e00477x523S31500481x489S30142481x476S20350512x539S27102514x556"
+  },
+  {
+    "file": "illustrations/00402.png",
+    "fsw": "M528x549S15220505x450S15228474x450S18551501x514S18559472x514S26504505x489S26514478x489S20500481x537S20500508x538"
+  },
+  {
+    "file": "illustrations/01125.png",
+    "fsw": "M523x530S15a50508x469S15a50480x469S2ea00508x505S2ea40477x505"
+  },
+  {
+    "file": "illustrations/08177.png",
+    "fsw": "M532x531S2ff00482x482S20500507x495S20500495x491S20500499x502S10a00517x505"
+  },
+  {
+    "file": "illustrations/02785.png",
+    "fsw": "M532x517S15a37467x491S18520478x502S2880a510x496S20e00499x482"
+  },
+  {
+    "file": "illustrations/00647.png",
+    "fsw": "M515x554S11e20486x491S12927495x526S2b700488x461S21600493x446"
+  },
+  {
+    "file": "illustrations/05043.png",
+    "fsw": "M519x524S1ea37499x496S22514497x476S20e00481x492"
+  },
+  {
+    "file": "illustrations/00156.png",
+    "fsw": "M514x525S15d32487x506S2b700489x475"
+  },
+  {
+    "file": "illustrations/09003.png",
+    "fsw": "M568x525S2ff00482x482S18052553x495S1805a435x495S22516535x501S22512453x501S20500471x503S20500520x503"
+  },
+  {
+    "file": "illustrations/02234.png",
+    "fsw": "M536x525S15a51503x487S15a59474x488S20500494x474S2fb04493x519S22a05523x507S22a13463x510"
+  },
+  {
+    "file": "illustrations/00736.png",
+    "fsw": "M517x511S1f510482x488S22a06502x498"
+  },
+  {
+    "file": "illustrations/05231.png",
+    "fsw": "M539x535S11851500x483S11859466x482S2e500516x508S2e518462x507S2fb00494x529S20e00493x465"
+  },
+  {
+    "file": "illustrations/00132.png",
+    "fsw": "M528x526S15a1a501x505S15a10511x474S20600485x489S37700516x501S37706472x510"
+  },
+  {
+    "file": "illustrations/02405.png",
+    "fsw": "M544x517S11e00421x487S2ff00482x482S14410519x465S14418459x465S20600522x499S20600457x498"
+  },
+  {
+    "file": "illustrations/00324.png",
+    "fsw": "M541x526S1ce40511x475S1ce48464x474S23600502x509S23614458x509"
+  },
+  {
+    "file": "illustrations/03303.png",
+    "fsw": "M534x534S20300495x519S20300494x499S37706509x506S37706466x528S2d320477x465"
+  },
+  {
+    "file": "illustrations/00642.png",
+    "fsw": "M533x532S15a37467x509S15a51487x490S20e00506x482S26507520x469"
+  },
+  {
+    "file": "illustrations/08254.png",
+    "fsw": "M543x541S14e02503x460S14e0a462x460S21100516x490S21100468x491S23600504x509S23610456x510S2fc00491x530"
+  },
+  {
+    "file": "illustrations/04231.png",
+    "fsw": "M528x545S14c01502x480S14c09468x480S36d00479x456S2ea00513x512S2ea18470x511S20e00480x464S20e00505x464S2fb00491x539"
+  },
+  {
+    "file": "illustrations/00052.png",
+    "fsw": "M511x526S1ce40489x474S22a04490x511"
+  },
+  {
+    "file": "illustrations/00935.png",
+    "fsw": "M598x516S36d00479x485S1eb10503x496S1eb18475x496S1dc18419x484S1dc10559x486S26506535x501S26512450x501S21600590x504S21600405x503"
+  },
+  {
+    "file": "illustrations/00773.png",
+    "fsw": "M521x528S36d00479x473S15a32484x499S20500496x517"
+  },
+  {
+    "file": "illustrations/07239.png",
+    "fsw": "M516x517S1f500489x502S15352484x483S20500506x500"
+  },
+  {
+    "file": "illustrations/00509.png",
+    "fsw": "M522x520S15d31499x497S15d39477x483S21100508x479"
+  },
+  {
+    "file": "illustrations/08031.png",
+    "fsw": "M531x514S18230487x492S18238469x485S22f02517x489"
+  },
+  {
+    "file": "illustrations/02197.png",
+    "fsw": "M528x529S2ea06503x506S15a50486x470S2ea1e471x506S2fb00494x523S15a50507x470"
+  },
+  {
+    "file": "illustrations/07250.png",
+    "fsw": "M543x540S1ef20502x474S1ef28469x474S1ef36479x497S1ef3e502x497S20500493x460S20500494x529S28814456x492S2880c531x492"
+  },
+  {
+    "file": "illustrations/00461.png",
+    "fsw": "M523x517S20340508x484S20348496x502S20f00476x485"
+  },
+  {
+    "file": "illustrations/00113.png",
+    "fsw": "M521x529S36d00479x471S15a36488x517S18552497x486S20500481x483S20500468x484S22a04480x496"
+  },
+  {
+    "file": "illustrations/04103.png",
+    "fsw": "M518x558S36a00482x477S1e101485x530S20500495x522"
+  },
+  {
+    "file": "illustrations/02854.png",
+    "fsw": "M527x517S17817506x483S1781f472x482S20600490x506"
+  },
+  {
+    "file": "illustrations/03309.png",
+    "fsw": "M529x521S15040503x490S21800476x479S21800502x479S15048471x490"
+  },
+  {
+    "file": "illustrations/00978.png",
+    "fsw": "M527x544S14c50472x473S2e230476x512S22b07503x455"
+  },
+  {
+    "file": "illustrations/03051.png",
+    "fsw": "M556x520S2ff00482x482S15d51522x487S22a05543x506S20500510x472S15d59457x485S22a13446x505S20500482x473"
+  },
+  {
+    "file": "illustrations/00578.png",
+    "fsw": "M538x533S2ff00482x482S20500496x500S17700516x518S26500521x495S14c00515x457"
+  },
+  {
+    "file": "illustrations/09538.png",
+    "fsw": "M513x533S15750491x466S26504497x497S18520488x518"
+  },
+  {
+    "file": "illustrations/03141.png",
+    "fsw": "M521x527S1ce10416x491S26a00413x473S36d00479x475S14c01470x500S20600479x487"
+  },
+  {
+    "file": "illustrations/05455.png",
+    "fsw": "M551x518S1ea31502x488S1ea39469x488S26906533x491S26912450x490S20500496x482S2fb00493x512"
+  },
+  {
+    "file": "illustrations/00199.png",
+    "fsw": "M509x542S10040492x458S10010494x512S26500491x496"
+  },
+  {
+    "file": "illustrations/08268.png",
+    "fsw": "M526x536S15a1c512x509S15a14476x508S2dd0e510x464S2dd1e473x463"
+  },
+  {
+    "file": "illustrations/06252.png",
+    "fsw": "M571x535S33010479x482S15310525x488S2e20f541x508"
+  },
+  {
+    "file": "illustrations/02534.png",
+    "fsw": "M569x531S1ea20467x469S1ea28432x469S2c604466x497S2c615437x497S1ea10538x485S16d18516x477S26b00542x513"
+  },
+  {
+    "file": "illustrations/06222.png",
+    "fsw": "M532x529S15a19475x506S17d11492x485S20700467x486S26527519x472"
+  },
+  {
+    "file": "illustrations/00959.png",
+    "fsw": "M550x525S31400482x482S1ed10524x489S1ed18449x489S20600519x514S20600460x514"
+  },
+  {
+    "file": "illustrations/02508.png",
+    "fsw": "M514x534S20352495x501S20348485x519S2ea06489x483S21100495x465"
+  },
+  {
+    "file": "illustrations/00094.png",
+    "fsw": "M536x561S20e00517x514S30004482x482S2e100513x532S1f501489x519"
+  },
+  {
+    "file": "illustrations/00080.png",
+    "fsw": "M541x537S15350526x512S15358458x511S28817476x505S2880f502x505S15330481x476S15338504x476S20500493x462"
+  },
+  {
+    "file": "illustrations/00549.png",
+    "fsw": "M536x517S30007482x482S11500518x461S11508467x461S22104524x452S22104464x452S30001482x482"
+  },
+  {
+    "file": "illustrations/02916.png",
+    "fsw": "M545x517S2ff00482x482S1d410516x467S2f900528x501"
+  },
+  {
+    "file": "illustrations/05019.png",
+    "fsw": "M577x518S17600561x437S14c01515x461S2ff00482x483S22a03547x454"
+  },
+  {
+    "file": "illustrations/05107.png",
+    "fsw": "M536x550S30006482x482S15a10521x488S21100523x517S22a04523x535"
+  },
+  {
+    "file": "illustrations/00114.png",
+    "fsw": "M521x534S36d00479x467S15a52484x482S20f00484x501S22f04485x520"
+  },
+  {
+    "file": "illustrations/04184.png",
+    "fsw": "M543x517S1ea01485x496S36d00479x483S2c304516x493S20600468x493"
+  },
+  {
+    "file": "illustrations/00810.png",
+    "fsw": "M527x541S15d41504x492S15a49486x518S20e00487x505S2a404473x459"
+  },
+  {
+    "file": "illustrations/05007.png",
+    "fsw": "M526x534S10041494x493S10049473x485S22a05513x520S20e00485x466"
+  },
+  {
+    "file": "illustrations/00864.png",
+    "fsw": "M526x537S15a37473x500S15d11497x511S2a400501x463S20600481x526"
+  },
+  {
+    "file": "illustrations/00497.png",
+    "fsw": "M547x530S18220500x470S18228470x470S20500492x493S20500494x513S26606517x492S26606517x514S26612452x494S26612452x514"
+  },
+  {
+    "file": "illustrations/05139.png",
+    "fsw": "M517x532S16d48499x512S16d40499x489S20500482x501S22a00503x468"
+  },
+  {
+    "file": "illustrations/02654.png",
+    "fsw": "M570x525S20301509x475S20307549x475S23115513x499S23103545x498S2fb00530x517S15a37430x477S2031c465x510S22a01450x495S20b00439x509"
+  },
+  {
+    "file": "illustrations/02647.png",
+    "fsw": "M545x536S14c50512x465S14c58462x465S27100505x502S27114454x504S2fc00491x525"
+  },
+  {
+    "file": "illustrations/02733.png",
+    "fsw": "M628x551S2ff00482x482S15a11518x482S20500509x471S14e39572x480S1e141603x513S2fb03585x531S2f900574x511S2f900612x546"
+  },
+  {
+    "file": "illustrations/02497.png",
+    "fsw": "M513x538S15d20490x461S22e04496x492S18051487x518"
+  },
+  {
+    "file": "illustrations/04625.png",
+    "fsw": "M531x536S1cf10482x485S26500468x478S26500495x464S26500517x482S26500498x521"
+  },
+  {
+    "file": "illustrations/00926.png",
+    "fsw": "M538x550S36d00479x450S14c06476x506S14c0e500x509S14c07465x450S14c0f511x450S20500501x496S21100481x533S21100518x536S22b07511x483S22b11471x482"
+  },
+  {
+    "file": "illustrations/00149.png",
+    "fsw": "M525x518S1ce20475x482S28806503x486S28806502x506"
+  },
+  {
+    "file": "illustrations/00098.png",
+    "fsw": "M508x527S10e10492x472S22e04491x509"
+  },
+  {
+    "file": "illustrations/02027.png",
+    "fsw": "M520x519S1ce20481x489S26507507x481"
+  },
+  {
+    "file": "illustrations/00028.png",
+    "fsw": "M537x537S36d00479x463S15301511x481S15309469x490S20500472x477S20500504x516S20500527x472S20500476x526S20500494x481"
+  },
+  {
+    "file": "illustrations/00017.png",
+    "fsw": "M541x535S30004482x482S19a00487x515S20600519x510"
+  },
+  {
+    "file": "illustrations/02704.png",
+    "fsw": "M556x535S36d00479x466S15a3a519x475S3770a468x466S37702521x467S15a32453x474S21100528x496S21100463x496S23604517x517S23614449x518S2fb00491x508"
+  },
+  {
+    "file": "illustrations/00278.png",
+    "fsw": "M532x528S15a37469x494S15a51478x505S26507514x486S20e00499x501S2f700520x471"
+  },
+  {
+    "file": "illustrations/00928.png",
+    "fsw": "M550x547S36d00479x453S20e00478x481S20e00512x481S14c0c456x484S14c04524x484S2c700527x518S2c710461x518"
+  },
+  {
+    "file": "illustrations/05910.png",
+    "fsw": "M534x537S15d31497x464S15d39469x493S26c00507x491S26c10465x522S2fc00502x515"
+  },
+  {
+    "file": "illustrations/07052.png",
+    "fsw": "M542x517S30000482x482S1ec10502x461S1ec18475x461S26506527x480S26512461x482"
+  },
+  {
+    "file": "illustrations/06222.png",
+    "fsw": "M532x529S15a19475x506S17d11492x485S20700467x486S26527519x472"
+  },
+  {
+    "file": "illustrations/05175.png",
+    "fsw": "M548x532S15a11501x479S15a19475x479S20500495x467S22b05524x501S22b13452x501S2fb04491x526"
+  },
+  {
+    "file": "illustrations/08307.png",
+    "fsw": "M511x530S11840488x469S2a200488x502"
+  },
+  {
+    "file": "illustrations/00144.png",
+    "fsw": "M524x535S15a10512x466S15a36475x476S21100497x494S27102476x495"
+  },
+  {
+    "file": "illustrations/00770.png",
+    "fsw": "M545x541S15a32493x481S15a36485x467S37706455x471S37706520x487S20500514x459S23626493x502"
+  },
+  {
+    "file": "illustrations/00616.png",
+    "fsw": "M510x525S1ed26491x475S22a04492x510"
+  },
+  {
+    "file": "illustrations/02006.png",
+    "fsw": "M549x549S11500492x519S30004482x482S22114523x508S20e00513x515"
+  },
+  {
+    "file": "illustrations/00522.png",
+    "fsw": "M561x514S10002505x499S1000a467x499S28812440x487S2880a539x486"
+  },
+  {
+    "file": "illustrations/00805.png",
+    "fsw": "M510x530S10000491x470S2f004490x509"
+  },
+  {
+    "file": "illustrations/00614.png",
+    "fsw": "M512x527S10000491x497S2e70a487x472"
+  },
+  {
+    "file": "illustrations/02811.png",
+    "fsw": "M509x523S10004491x476S22a04496x497S2f700497x516"
+  },
+  {
+    "file": "illustrations/07219.png",
+    "fsw": "M587x517S30002482x482S30006482x482S15031524x484S15039448x485S20e00557x495S20e00429x494S26a06573x489S26a12412x489"
+  },
+  {
+    "file": "illustrations/00474.png",
+    "fsw": "M510x533S10010492x467S2a20a489x504"
+  },
+  {
+    "file": "illustrations/00675.png",
+    "fsw": "M537x522S15d3a463x480S18557475x495S21100497x485S27e0b515x478"
+  },
+  {
+    "file": "illustrations/00370.png",
+    "fsw": "M514x532S1dc20486x467S2df08493x511"
+  },
+  {
+    "file": "illustrations/00321.png",
+    "fsw": "M537x530S14c31505x470S14c39463x470S22f04512x507S22f14462x507S2fb00492x524"
+  },
+  {
+    "file": "illustrations/02911.png",
+    "fsw": "M519x521S16d20502x480S23003482x496"
+  },
+  {
+    "file": "illustrations/00557.png",
+    "fsw": "M532x522S1ea39467x477S1ea31504x477S23024489x504"
+  },
+  {
+    "file": "illustrations/02398.png",
+    "fsw": "M508x524S17630492x508S26500493x488S21b00496x475"
+  },
+  {
+    "file": "illustrations/00877.png",
+    "fsw": "M551x517S30007482x482S10a11523x477S20500511x475S26507530x458"
+  },
+  {
+    "file": "illustrations/00252.png",
+    "fsw": "M541x526S20301505x490S20307473x490S23107520x476S23111459x473S2fc00492x515"
+  },
+  {
+    "file": "illustrations/08532.png",
+    "fsw": "M536x521S30006482x482S20600514x510S10110519x478"
+  },
+  {
+    "file": "illustrations/09000.png",
+    "fsw": "M518x562S30004482x482S20500494x521S1f420482x547S22124488x536"
+  },
+  {
+    "file": "illustrations/03304.png",
+    "fsw": "M530x520S1f730510x479S1f738469x479S26504512x505S26514475x505"
+  },
+  {
+    "file": "illustrations/00528.png",
+    "fsw": "M535x517S30007482x482S20b00522x483S20301506x442S26c00505x464"
+  },
+  {
+    "file": "illustrations/00583.png",
+    "fsw": "M525x521S20320510x478S20340475x505S2880d495x501"
+  },
+  {
+    "file": "illustrations/00068.png",
+    "fsw": "M507x536S1f540492x465S27106492x496"
+  },
+  {
+    "file": "illustrations/06163.png",
+    "fsw": "M517x536S16f51496x478S20a00490x464S16f39487x494S2e726483x521"
+  },
+  {
+    "file": "illustrations/00903.png",
+    "fsw": "M547x540S20500501x492S2ff00482x482S10a08512x497S26a04520x526"
+  },
+  {
+    "file": "illustrations/02922.png",
+    "fsw": "M527x526S20110512x511S20118475x511S26500513x488S26510474x488S2f700515x474S2f700476x474"
+  },
+  {
+    "file": "illustrations/02923.png",
+    "fsw": "M525x560S30005482x482S1f542506x515S20f00476x523S2ea02500x545"
+  },
+  {
+    "file": "illustrations/05504.png",
+    "fsw": "M518x582S35c04482x482S14c58488x533S22514489x520S26504494x567"
+  },
+  {
+    "file": "illustrations/02725.png",
+    "fsw": "M507x522S1f502492x498S22a00493x478"
+  },
+  {
+    "file": "illustrations/05049.png",
+    "fsw": "M525x541S20500493x491S20500493x459S2df06500x471S1ce28476x499S2df1e475x470S2fb00492x535S1ce20503x500"
+  },
+  {
+    "file": "illustrations/03641.png",
+    "fsw": "M603x529S26500526x473S14c01573x469S2a208580x501S10e00524x489S31400482x482"
+  },
+  {
+    "file": "illustrations/00688.png",
+    "fsw": "M514x530S15a36485x518S15a52487x490S20500492x506S22a00500x470"
+  },
+  {
+    "file": "illustrations/00158.png",
+    "fsw": "M551x517S1ee20505x495S1ee28472x495S22a06536x503S22a12450x503S22104449x491S22104539x492S20500496x482"
+  },
+  {
+    "file": "illustrations/04180.png",
+    "fsw": "M581x525S10000566x477S10008418x476S22e02543x490S22e06440x488S10002501x489S1000a467x489S20500493x475S2f700490x518S2fb04491x509"
+  },
+  {
+    "file": "illustrations/05411.png",
+    "fsw": "M555x517S2ff00482x482S20500496x500S20310540x482S26503522x498"
+  },
+  {
+    "file": "illustrations/03379.png",
+    "fsw": "M524x523S1ea11496x478S23303476x501"
+  },
+  {
+    "file": "illustrations/00940.png",
+    "fsw": "M530x538S20310419x463S20318389x463S22a04517x523S2c605422x491S36d00479x464S14c01502x471S14c09472x472S21100473x503S21100516x502S22a14474x523S2c614382x490"
+  },
+  {
+    "file": "illustrations/00574.png",
+    "fsw": "M550x518S30007482x483S1dc40526x433S1f410516x489S26500528x469"
+  },
+  {
+    "file": "illustrations/01063.png",
+    "fsw": "M537x545S30004482x482S1dc01487x515S20600515x513"
+  },
+  {
+    "file": "illustrations/04184.png",
+    "fsw": "M547x520S20500477x509S36d00479x480S1ea02491x495S20500477x493S2d201521x489"
+  },
+  {
+    "file": "illustrations/00781.png",
+    "fsw": "M528x597S30a00482x482S14c30504x518S14c38469x518S27102510x556S27116473x557"
+  },
+  {
+    "file": "illustrations/01010.png",
+    "fsw": "M525x536S22100508x464S1a858474x508S2b711475x480S1a850501x508S2b700506x480S22100477x464"
+  },
+  {
+    "file": "illustrations/00578.png",
+    "fsw": "M549x521S26500535x486S20500520x508S17600533x505S30005482x482S21b00539x472"
+  },
+  {
+    "file": "illustrations/00017.png",
+    "fsw": "M518x572S30004482x482S1f700492x538S20500489x522S20500501x522S26a04489x558"
+  },
+  {
+    "file": "illustrations/00532.png",
+    "fsw": "M544x523S36d00479x476S36d00479x519S20332460x493S20332514x494S20500478x495S26506491x492S20500534x497"
+  },
+  {
+    "file": "illustrations/00526.png",
+    "fsw": "M521x523S10011500x493S1001a479x496S20600484x477S20500509x477"
+  },
+  {
+    "file": "illustrations/03276.png",
+    "fsw": "M532x539S16f38472x519S16f30501x519S28800520x499S28818469x497S20500489x464S20340503x462S20348491x480"
+  },
+  {
+    "file": "illustrations/00822.png",
+    "fsw": "M528x557S33100482x482S20500495x493S10010492x504S21100515x512S23604481x540"
+  },
+  {
+    "file": "illustrations/00251.png",
+    "fsw": "M511x529S1f510491x471S2e300488x502"
+  },
+  {
+    "file": "illustrations/00310.png",
+    "fsw": "M535x564S34400482x482S11808507x506S2e500512x537"
+  },
+  {
+    "file": "illustrations/03000.png",
+    "fsw": "M525x540S20357494x503S3770b476x518S11851494x459S20b00475x504S28803480x475"
+  },
+  {
+    "file": "illustrations/00619.png",
+    "fsw": "M526x534S10018474x504S20332511x497S20b00482x497S2e501489x466"
+  },
+  {
+    "file": "illustrations/00252.png",
+    "fsw": "M529x530S20331508x471S20337470x471S26c07502x496S2fc00493x519S26c11476x495"
+  },
+  {
+    "file": "illustrations/02958.png",
+    "fsw": "M537x524S18541483x505S23001462x479S22111478x496S26607515x476"
+  },
+  {
+    "file": "illustrations/02824.png",
+    "fsw": "M550x523S2ff00482x482S18210502x469S18218473x469S20500494x456S23f02522x485S23f1a450x486S20500519x511S20500473x512"
+  },
+  {
+    "file": "illustrations/01203.png",
+    "fsw": "M543x536S10058477x465S10050508x465S23604504x500S23610457x502S2fc00493x525"
+  },
+  {
+    "file": "illustrations/00473.png",
+    "fsw": "M540x526S10001504x495S10009477x496S20500495x483S2d210460x473S2d201514x474"
+  },
+  {
+    "file": "illustrations/02567.png",
+    "fsw": "M553x525S14c31515x486S14c39460x486S20500496x494S22517480x475S22511503x475S22a05540x511S22a13448x511"
+  },
+  {
+    "file": "illustrations/06309.png",
+    "fsw": "M535x519S30006482x482S19a02515x491S20500516x478"
+  },
+  {
+    "file": "illustrations/07104.png",
+    "fsw": "M512x533S2e230489x501S15d00493x467"
+  },
+  {
+    "file": "illustrations/05381.png",
+    "fsw": "M543x587S30004482x482S10011507x518S10019471x517S27100503x554S27110457x554S2fc00493x576"
+  },
+  {
+    "file": "illustrations/00204.png",
+    "fsw": "M549x507S2033a451x492S20332534x492S22a16473x493S22a02511x493S20b00493x493"
+  },
+  {
+    "file": "illustrations/00104.png",
+    "fsw": "M520x519S1ce20479x489S26507507x481"
+  },
+  {
+    "file": "illustrations/00565.png",
+    "fsw": "M561x538S30004482x482S2c400521x501S16d0e490x521"
+  },
+  {
+    "file": "illustrations/05257.png",
+    "fsw": "M539x521S1ce10517x491S33b00482x482S26500519x470S20500499x502"
+  },
+  {
+    "file": "illustrations/03172.png",
+    "fsw": "M521x523S15a56479x511S10003481x476S21100486x495S26506506x494"
+  },
+  {
+    "file": "illustrations/00081.png",
+    "fsw": "M531x536S14c50505x464S14c58468x464S2a310469x499S2a308508x500"
+  },
+  {
+    "file": "illustrations/00940.png",
+    "fsw": "M530x538S20310419x463S20318389x463S2a612390x487S2a603414x486S36d00479x464S14c01502x471S14c09472x472S21100473x503S21100516x502S22a14474x523S22a04517x523"
+  },
+  {
+    "file": "illustrations/03931.png",
+    "fsw": "M509x524S1ea37490x496S21100491x476"
+  },
+  {
+    "file": "illustrations/08236.png",
+    "fsw": "M547x527S10001503x497S10009477x497S20500495x484S2d300508x473S2d311453x473"
+  },
+  {
+    "file": "illustrations/03066.png",
+    "fsw": "M576x514S17d10504x498S17d18475x498S18510551x498S18518424x499S20500493x485S26512452x498S26506528x498"
+  },
+  {
+    "file": "illustrations/02005.png",
+    "fsw": "M529x532S1ce10496x502S1ce48470x487S20800479x522S27121501x468"
+  },
+  {
+    "file": "illustrations/05247.png",
+    "fsw": "M525x518S20600503x483S15d09475x486S15d01488x495"
+  },
+  {
+    "file": "illustrations/08125.png",
+    "fsw": "M513x522S1ea02487x478S2ea36488x507"
+  },
+  {
+    "file": "illustrations/03149.png",
+    "fsw": "M530x526S20301509x474S20301469x473S22a04513x501S22a14474x500S2f900494x521"
+  },
+  {
+    "file": "illustrations/01005.png",
+    "fsw": "M513x517S14a20491x502S2e70a488x482"
+  },
+  {
+    "file": "illustrations/00442.png",
+    "fsw": "M546x512S1fb56455x495S1fb5e481x497S2c401506x487"
+  },
+  {
+    "file": "illustrations/07188.png",
+    "fsw": "M531x538S36d00479x463S20f00505x509S14e03504x477S22f00506x524"
+  },
+  {
+    "file": "illustrations/02820.png",
+    "fsw": "M524x519S10652498x481S1064a475x504S20800505x503"
+  },
+  {
+    "file": "illustrations/00380.png",
+    "fsw": "M537x539S2ea40463x510S10018464x471S10010519x462S2ea00522x500S2fc00493x528S2ff00482x482"
+  },
+  {
+    "file": "illustrations/00583.png",
+    "fsw": "M532x540S15a40519x460S15a48468x461S15a10520x513S15a18469x513S26500467x492S26500518x492"
+  },
+  {
+    "file": "illustrations/00545.png",
+    "fsw": "M526x530S15301503x471S2f900510x525S26504508x501S26514477x501S2f900478x525S15309474x472"
+  },
+  {
+    "file": "illustrations/05062.png",
+    "fsw": "M530x533S1f540510x467S1f548473x467S26d00503x496S26d10469x495S2fc00491x522S21100492x475"
+  },
+  {
+    "file": "illustrations/00864.png",
+    "fsw": "M528x531S15a37472x470S15a51475x472S2a408492x495S20600506x475"
+  },
+  {
+    "file": "illustrations/00305.png",
+    "fsw": "M524x518S15a36477x506S1f750476x482S20600502x489"
+  },
+  {
+    "file": "illustrations/03034.png",
+    "fsw": "M512x537S14c00489x482S22a04495x522S22514490x463"
+  },
+  {
+    "file": "illustrations/00942.png",
+    "fsw": "M524x551S36d00479x450S1ed3e504x463S1ed36477x463S21100475x496S21100511x498S22b14474x520S22b04508x521"
+  },
+  {
+    "file": "illustrations/00258.png",
+    "fsw": "M532x534S10010509x465S10018472x465S26d00505x503S26d10467x502S2fd04488x528"
+  },
+  {
+    "file": "illustrations/00693.png",
+    "fsw": "M513x528S18720491x471S2ea06488x513"
+  },
+  {
+    "file": "illustrations/05175.png",
+    "fsw": "M548x529S15a11501x483S15a19475x483S20500495x471S22b05524x505S22b13452x505"
+  },
+  {
+    "file": "illustrations/00110.png",
+    "fsw": "M523x547S36d00479x454S15d18475x465S15d10504x466S22b04505x517S22b14479x516S21100481x498S21100505x498"
+  },
+  {
+    "file": "illustrations/06222.png",
+    "fsw": "M530x527S15a49470x504S18531492x482S20800498x501S26527517x472"
+  },
+  {
+    "file": "illustrations/02517.png",
+    "fsw": "M535x566S30005482x482S10020520x502S21100522x535S22a04521x551"
+  },
+  {
+    "file": "illustrations/05223.png",
+    "fsw": "M523x525S20320508x510S20320478x510S26510479x487S26500508x487S2f900480x475S2f900509x474"
+  },
+  {
+    "file": "illustrations/05142.png",
+    "fsw": "M529x535S14c30505x465S14c38470x465S26a02508x501S26a16476x501S2fc00491x524"
+  },
+  {
+    "file": "illustrations/04625.png",
+    "fsw": "M534x554S1f410505x501S1f418467x501S22104509x490S22104478x489S26500495x446S26507512x455S26506516x471S26512465x521S26513475x534S26514491x539S20500495x507"
+  },
+  {
+    "file": "illustrations/09174.png",
+    "fsw": "M520x519S15d39479x486S15d31490x496S20500510x481"
+  },
+  {
+    "file": "illustrations/02571.png",
+    "fsw": "M532x556S14c00508x455S14c08469x454S36d00479x444S14c48478x516S14c40508x516S28811473x493S28809510x493S2f900500x551"
+  },
+  {
+    "file": "illustrations/00276.png",
+    "fsw": "M514x544S15d5a487x525S15051486x455S20500495x510S22a00495x491"
+  },
+  {
+    "file": "illustrations/05007.png",
+    "fsw": "M529x529S10011497x489S1001a481x494S21100471x470S22a05516x515"
+  },
+  {
+    "file": "illustrations/01016.png",
+    "fsw": "M528x528S14c50503x471S14c58474x471S22f14472x513S22f04503x514"
+  },
+  {
+    "file": "illustrations/05027.png",
+    "fsw": "M549x521S26500535x479S20500520x508S17600533x505S15200528x441S30005482x482"
+  },
+  {
+    "file": "illustrations/00331.png",
+    "fsw": "M513x525S11850488x475S2ea06488x510"
+  },
+  {
+    "file": "illustrations/05030.png",
+    "fsw": "M512x517S12810489x482S2f900497x512"
+  },
+  {
+    "file": "illustrations/00773.png",
+    "fsw": "M522x532S36d00479x468S36d00480x528S15d02488x492S20600492x514"
+  },
+  {
+    "file": "illustrations/00515.png",
+    "fsw": "M543x528S10051513x471S10037457x507S20500476x496S22b03489x477"
+  },
+  {
+    "file": "illustrations/00955.png",
+    "fsw": "M521x526S36d00479x475S15331483x503S20500483x490"
+  },
+  {
+    "file": "illustrations/00697.png",
+    "fsw": "M515x526S14e51487x475S2ea06486x511"
+  },
+  {
+    "file": "illustrations/00289.png",
+    "fsw": "M520x525S10e20480x475S10e56481x510S20500510x494S20500498x493"
+  },
+  {
+    "file": "illustrations/06518.png",
+    "fsw": "M529x535S14c08473x465S11e01500x465S2e508506x506S2e510470x508"
+  },
+  {
+    "file": "illustrations/02163.png",
+    "fsw": "M513x513S14c01487x486"
+  },
+  {
+    "file": "illustrations/04271.png",
+    "fsw": "M528x518S15d59472x482S15d51497x495S21100515x488"
+  },
+  {
+    "file": "illustrations/09007.png",
+    "fsw": "M587x518S30001482x483S30007482x483S17618461x480S2c612436x461S20500512x473S20500481x473S2c607545x464S17610525x480S20320572x446S20320424x443"
+  },
+  {
+    "file": "illustrations/00311.png",
+    "fsw": "M515x523S15d3a485x504S1f522491x476S20500505x498"
+  },
+  {
+    "file": "illustrations/03443.png",
+    "fsw": "M543x535S23600504x518S10010469x465S10018516x465S23614456x518S21100517x500S21100469x500"
+  },
+  {
+    "file": "illustrations/05044.png",
+    "fsw": "M550x517S31400482x482S1ed10524x483S1ed18449x483S21800520x469"
+  },
+  {
+    "file": "illustrations/00532.png",
+    "fsw": "M544x523S36d00479x476S36d00479x519S20332460x493S20332514x492S20500478x495S26506491x492S20500534x494S20340424x486S20348412x504S20600394x488"
+  },
+  {
+    "file": "illustrations/00017.png",
+    "fsw": "M531x535S30004482x482S19a00487x515S20500521x509"
+  },
+  {
+    "file": "illustrations/02108.png",
+    "fsw": "M558x533S23704519x504S14c40451x467S14c18525x467S23714442x504S2fc00491x522"
+  },
+  {
+    "file": "illustrations/02459.png",
+    "fsw": "M555x541S30003482x482S30005482x482S18217511x516S1821f473x515S20e00518x506S20e00470x506S2e501532x487S2e519442x486"
+  },
+  {
+    "file": "illustrations/02238.png",
+    "fsw": "M540x532S30004482x482S15a52472x520S20e00506x520S26506525x518"
+  },
+  {
+    "file": "illustrations/02410.png",
+    "fsw": "M615x542S2ff00415x484S16d48397x476S16d40453x477S22a04455x501S22a14398x500S30002548x480S1f040586x494S1f048516x494S22a04582x527S21100582x509S22a14536x525S21100536x508S30006548x480"
+  },
+  {
+    "file": "illustrations/00840.png",
+    "fsw": "M606x517S33200482x482S1005e576x499S22b02539x496S20e00522x499"
+  },
+  {
+    "file": "illustrations/03105.png",
+    "fsw": "M565x525S18210502x503S18218480x510S20e00497x486S23600526x489S23610436x503S2fd00491x475"
+  },
+  {
+    "file": "illustrations/00184.png",
+    "fsw": "M528x514S11851472x494S2880a506x487"
+  },
+  {
+    "file": "illustrations/00080.png",
+    "fsw": "M556x529S17654444x513S14c39472x471S14c31501x471S17654540x513S2880f514x501S28817464x501"
+  },
+  {
+    "file": "illustrations/04659.png",
+    "fsw": "M541x520S15318459x485S17620487x480S26f06509x480S22a04528x482"
+  },
+  {
+    "file": "illustrations/02000.png",
+    "fsw": "M521x560S33100482x482S20500502x495S10010493x507S27100481x545"
+  },
+  {
+    "file": "illustrations/01180.png",
+    "fsw": "M568x560S36d00479x516S20500484x548S20500507x549S1f409466x441S1f401502x440S1f401508x524S1f409463x524S2b711461x491S1dc01545x484S1dc09432x486S2b700521x494S26500521x467S26510466x468"
+  },
+  {
+    "file": "illustrations/05192.png",
+    "fsw": "M537x529S1ed40511x470S1ed48462x471S24d03507x498S24d15469x501"
+  },
+  {
+    "file": "illustrations/07045.png",
+    "fsw": "M534x540S2ff00482x482S15a10521x494S20500503x495S22a04521x525"
+  },
+  {
+    "file": "illustrations/02911.png",
+    "fsw": "M517x520S16d20500x481S22f03484x499"
+  },
+  {
+    "file": "illustrations/05832.png",
+    "fsw": "M519x544S15a48480x483S14c18495x455S17610499x528S20e00500x492S22f04494x508"
+  },
+  {
+    "file": "illustrations/08456.png",
+    "fsw": "M532x536S15040506x463S26514476x499S20342509x521S15048469x464S26504511x500S2034a475x521"
+  },
+  {
+    "file": "illustrations/01016.png",
+    "fsw": "M531x534S14c50507x466S14c58469x466S2e501506x507S2e519470x507"
+  },
+  {
+    "file": "illustrations/00600.png",
+    "fsw": "M541x538S17631515x521S14c31503x475S23400504x504S14c39474x474S17637472x522S23410461x504S36d00479x463"
+  },
+  {
+    "file": "illustrations/00681.png",
+    "fsw": "M514x525S10018487x475S10010499x495S20500486x510"
+  },
+  {
+    "file": "illustrations/01710.png",
+    "fsw": "M526x512S11502473x491S22f06512x487"
+  },
+  {
+    "file": "illustrations/02398.png",
+    "fsw": "M522x543S16d48478x494S15200478x457S21300501x503S1853e488x518S22a00505x482"
+  },
+  {
+    "file": "illustrations/00591.png",
+    "fsw": "M566x514S1ee20505x491S1ee28472x491S22b06536x497S22b12435x498S22104434x487S22104553x485"
+  },
+  {
+    "file": "illustrations/02398.png",
+    "fsw": "M523x551S16d0a479x487S20300481x511S22a00508x475S20700505x494S14c00477x449S37700488x526"
+  },
+  {
+    "file": "illustrations/00763.png",
+    "fsw": "M538x525S18550505x510S18558471x510S25500504x474S25500525x475S25510480x474S25510462x474"
+  },
+  {
+    "file": "illustrations/02730.png",
+    "fsw": "M538x526S30000482x482S1570f508x460S20500497x470S22a04525x482S18536523x501"
+  },
+  {
+    "file": "illustrations/00374.png",
+    "fsw": "M553x516S15040507x485S15048470x485S26502538x497S26516446x498"
+  },
+  {
+    "file": "illustrations/00515.png",
+    "fsw": "M541x530S10051511x469S10039459x500S20500483x489S22a03497x475"
+  },
+  {
+    "file": "illustrations/02125.png",
+    "fsw": "M527x534S18210504x519S18218474x519S29400510x466"
+  },
+  {
+    "file": "illustrations/00118.png",
+    "fsw": "M549x533S33010479x482S10001520x503S20600527x496"
+  },
+  {
+    "file": "illustrations/05192.png",
+    "fsw": "M526x589S32c00482x482S15d48477x521S15d40507x522S21100495x552S28804506x567S2881c486x567"
+  },
+  {
+    "file": "illustrations/00496.png",
+    "fsw": "M517x532S16d48499x512S16d40499x489S20500482x501S22a00503x468"
+  },
+  {
+    "file": "illustrations/02894.png",
+    "fsw": "M533x524S17d38466x498S1ea41486x475S24302506x495"
+  },
+  {
+    "file": "illustrations/02231.png",
+    "fsw": "M523x533S20310505x468S20318479x468S27116478x492S27102508x493"
+  },
+  {
+    "file": "illustrations/02295.png",
+    "fsw": "M513x534S14c01486x465S22a04500x519S21100499x497"
+  },
+  {
+    "file": "illustrations/00971.png",
+    "fsw": "M540x512S15318461x487S1ea11484x487S2f000519x489"
+  },
+  {
+    "file": "illustrations/08527.png",
+    "fsw": "M568x550S36d00479x450S1ed0c542x468S21100519x469S22b04483x465S22b06478x466S1ed0e481x524S21100483x504"
+  },
+  {
+    "file": "illustrations/03677.png",
+    "fsw": "M568x518S1d420504x482S20500497x507S29a06533x493S29a1e432x492S1d428471x482"
+  },
+  {
+    "file": "illustrations/05256.png",
+    "fsw": "M543x534S1f502504x467S1f502480x467S23604504x498S23610457x500S2fc00493x523"
+  },
+  {
+    "file": "illustrations/00593.png",
+    "fsw": "M550x517S20500501x497S31410482x482S14210521x482"
+  },
+  {
+    "file": "illustrations/02882.png",
+    "fsw": "M550x521S10011529x482S10019500x491S20500508x483S1f510449x480"
+  },
+  {
+    "file": "illustrations/00698.png",
+    "fsw": "M518x532S10001497x502S15a20481x492S20500500x489S26520492x468"
+  },
+  {
+    "file": "illustrations/07051.png",
+    "fsw": "M581x508S17e30502x493S17e38473x493S18538420x493S18530556x493S26506533x493S26512449x493"
+  },
+  {
+    "file": "illustrations/02733.png",
+    "fsw": "M636x566S2ff00482x482S15a11521x482S20500509x475S14e39580x496S1e141611x529S2f700583x527S2f700619x559S2fb03593x547"
+  },
+  {
+    "file": "illustrations/00688.png",
+    "fsw": "M515x541S15a36485x529S15a51492x496S20500492x517S22b00491x458"
+  },
+  {
+    "file": "illustrations/00587.png",
+    "fsw": "M578x547S16d48422x490S15200422x453S21300445x499S1853e432x514S22a00449x478S1ce10556x458S1ce18486x480S22104524x532S22104533x513S28803532x484S28803547x493S2881b500x514S2881b513x505S22104549x521S22104506x540"
+  },
+  {
+    "file": "illustrations/00442.png",
+    "fsw": "M548x513S1ea50481x492S1ea38453x492S2c401508x488"
+  },
+  {
+    "file": "illustrations/07051.png",
+    "fsw": "M597x508S26506533x494S26512428x493S1853c502x492S18534472x492S1f730577x493S1f738402x492S21100450x493S21100555x494"
+  },
+  {
+    "file": "illustrations/02108.png",
+    "fsw": "M559x536S36d00479x465S14c40452x470S14c18526x470S23714443x507S2fc00492x525S23704520x507"
+  },
+  {
+    "file": "illustrations/00935.png",
+    "fsw": "M554x541S36a00482x477S1f410502x515S1f418469x515S22a12445x514S22a06539x514S20500495x530S22104542x501S22104446x501"
+  },
+  {
+    "file": "illustrations/05156.png",
+    "fsw": "M656x537S36d00479x464S20331491x475S22f04490x501S21100497x523S18240606x464S18248577x464S27404637x469S2741c554x469S15a40644x491S15a48556x492"
+  },
+  {
+    "file": "illustrations/05402.png",
+    "fsw": "M541x513S14c51459x487S20310526x493S28802495x493"
+  },
+  {
+    "file": "illustrations/00972.png",
+    "fsw": "M583x528S17b10500x473S17b18477x472S18510558x482S18518417x481S20500493x503S26a06532x477S26a12451x476S20500493x517"
+  },
+  {
+    "file": "illustrations/03229.png",
+    "fsw": "M536x527S15336465x474S2fb00495x521S2e50b509x497S2e513464x497S1533e508x474"
+  },
+  {
+    "file": "illustrations/02964.png",
+    "fsw": "M532x540S16d40488x487S16d48468x506S23607503x461S2f700469x533"
+  },
+  {
+    "file": "illustrations/05108.png",
+    "fsw": "M525x525S20351476x488S20307504x489S3770b487x503S37703491x503S21100491x476"
+  },
+  {
+    "file": "illustrations/00107.png",
+    "fsw": "M517x515S1f510502x500S1f518482x500S20600489x485"
+  },
+  {
+    "file": "illustrations/00453.png",
+    "fsw": "M511x526S1ce40489x474S22a04490x511"
+  },
+  {
+    "file": "illustrations/00595.png",
+    "fsw": "M542x546S30004482x482S2c600517x520S20300493x524S20352527x499"
+  },
+  {
+    "file": "illustrations/00907.png",
+    "fsw": "M550x534S2ff00482x482S10a0f519x478S10a07447x480S2ea00535x505S2ea18451x506S2fb00495x528"
+  },
+  {
+    "file": "illustrations/00943.png",
+    "fsw": "M535x520S2ff00482x482S20310520x484S20318465x485S22a04522x504S22a14465x505"
+  },
+  {
+    "file": "illustrations/02904.png",
+    "fsw": "M513x527S1e132487x472S2c604492x501"
+  },
+  {
+    "file": "illustrations/02534.png",
+    "fsw": "M569x531S1ea20467x469S1ea28432x469S2c604466x497S2c615437x497S1ea10538x485S16d18516x477S26b04542x513"
+  },
+  {
+    "file": "illustrations/02846.png",
+    "fsw": "M533x516S18520503x501S18528468x501S26a00506x484S26a10467x484"
+  },
+  {
+    "file": "illustrations/00855.png",
+    "fsw": "M540x527S20331504x490S20337472x490S26c07520x476S26c11460x473S2fc00490x516"
+  },
+  {
+    "file": "illustrations/01180.png",
+    "fsw": "M553x557S36d00479x513S20500484x545S20500507x546S1f409454x443S1f401510x442S1f401508x521S1f409463x521S26520490x460S1dc01530x477S1dc09447x480S2b720486x481"
+  },
+  {
+    "file": "illustrations/02978.png",
+    "fsw": "M530x515S15a48493x486S15a40518x488S22a22470x498"
+  },
+  {
+    "file": "illustrations/02051.png",
+    "fsw": "M528x524S15a36471x511S18052484x476S20500507x513S20500518x513"
+  },
+  {
+    "file": "illustrations/00580.png",
+    "fsw": "M527x546S36d00479x454S15331504x468S15339473x468S22a04507x498S22a14479x498S21100511x521S21100477x520S2fb00492x540"
+  },
+  {
+    "file": "illustrations/00716.png",
+    "fsw": "M534x517S2ff00482x482S15a10522x484S2b900503x443"
+  },
+  {
+    "file": "illustrations/00304.png",
+    "fsw": "M520x529S15a06479x517S15a0e493x498S2b700490x470"
+  },
+  {
+    "file": "illustrations/02204.png",
+    "fsw": "M527x531S15a50484x488S15a56473x468S2390b509x503S37706499x509"
+  },
+  {
+    "file": "illustrations/00778.png",
+    "fsw": "M520x517S10a37494x484S26903481x498"
+  },
+  {
+    "file": "illustrations/09019.png",
+    "fsw": "M530x541S14e10505x474S14e18471x475S20600489x460S2e501507x513S2e519470x514"
+  },
+  {
+    "file": "illustrations/00542.png",
+    "fsw": "M533x521S15009466x494S15001505x494S20600470x479S20600503x479"
+  },
+  {
+    "file": "illustrations/05046.png",
+    "fsw": "M524x538S10020509x462S24903476x496S2f700481x531"
+  },
+  {
+    "file": "illustrations/08270.png",
+    "fsw": "M547x517S15040521x486S15048453x483S26502501x502S26516479x502"
+  },
+  {
+    "file": "illustrations/00063.png",
+    "fsw": "M525x560S30004482x482S1ce01481x515S26500494x545S20500515x515"
+  },
+  {
+    "file": "illustrations/02996.png",
+    "fsw": "M532x533S1f500493x518S30004482x482S20600510x517"
+  },
+  {
+    "file": "illustrations/02253.png",
+    "fsw": "M520x528S11520492x472S23704481x507"
+  },
+  {
+    "file": "illustrations/02881.png",
+    "fsw": "M515x525S14c10486x494S21f34485x475"
+  },
+  {
+    "file": "illustrations/08337.png",
+    "fsw": "M518x557S34400482x482S11800473x504S2e500489x530"
+  },
+  {
+    "file": "illustrations/05294.png",
+    "fsw": "M520x524S10a10505x475S23003481x499"
+  },
+  {
+    "file": "illustrations/00234.png",
+    "fsw": "M512x538S26504493x499S20350493x523S14c50488x461"
+  },
+  {
+    "file": "illustrations/01795.png",
+    "fsw": "M511x515S14c20488x484"
+  },
+  {
+    "file": "illustrations/03379.png",
+    "fsw": "M512x525S1fb11490x475S23303488x503"
+  },
+  {
+    "file": "illustrations/00158.png",
+    "fsw": "M551x513S1ee20505x491S1ee28472x491S22a06536x499S22a12450x499S22104449x487S22104539x488"
+  },
+  {
+    "file": "illustrations/00874.png",
+    "fsw": "M531x515S1ea31503x496S1ea39469x496S20500487x485S20500502x485"
+  },
+  {
+    "file": "illustrations/00145.png",
+    "fsw": "M543x529S30005482x482S15310523x504S20600521x489"
+  },
+  {
+    "file": "illustrations/02828.png",
+    "fsw": "M546x518S15340505x493S15348482x492S28812454x482S2880a524x483"
+  },
+  {
+    "file": "illustrations/00204.png",
+    "fsw": "M524x529S20331476x508S14c11498x471S22a03496x496"
+  },
+  {
+    "file": "illustrations/00140.png",
+    "fsw": "M548x517S30007482x482S18510523x485S28108510x452"
+  },
+  {
+    "file": "illustrations/00394.png",
+    "fsw": "M528x524S1ea40496x477S26b00501x506S1ea48472x486"
+  },
+  {
+    "file": "illustrations/00414.png",
+    "fsw": "M530x536S14c50505x465S14c58471x464S22f04505x502S22f14470x503S2f800482x525"
+  },
+  {
+    "file": "illustrations/00873.png",
+    "fsw": "M513x543S15a07487x457S15a21489x458S15a27489x503S15a01490x504S20500495x484S20500498x532"
+  },
+  {
+    "file": "illustrations/00905.png",
+    "fsw": "M606x519S33b00482x482S1ef10507x503S1f410577x504S22a06559x505S21100541x504"
+  },
+  {
+    "file": "illustrations/00977.png",
+    "fsw": "M511x557S1ce20489x483S2a530490x524S22b00491x443"
+  },
+  {
+    "file": "illustrations/04206.png",
+    "fsw": "M519x520S1ce20482x490S22a07506x480"
+  },
+  {
+    "file": "illustrations/00872.png",
+    "fsw": "M514x534S20340495x501S20348485x519S2ea06489x483S21100495x465"
+  },
+  {
+    "file": "illustrations/00946.png",
+    "fsw": "M521x543S36d00479x457S15a07494x477S20500507x463S15a4f472x498S26903462x512S20500451x532"
+  },
+  {
+    "file": "illustrations/03000.png",
+    "fsw": "M536x527S16f5a466x501S15052463x472S21100504x478S26a06522x473"
+  },
+  {
+    "file": "illustrations/02138.png",
+    "fsw": "M540x526S36d00479x522S10010525x490S22a00526x474"
+  },
+  {
+    "file": "illustrations/00158.png",
+    "fsw": "M587x518S1dc21499x495S1dc29464x495S1f420558x498S1f428413x497S20500491x481S26512440x500S26506542x503"
+  },
+  {
+    "file": "illustrations/03276.png",
+    "fsw": "M531x542S14c30502x511S14c38473x510S28800519x487S28818470x485S17632494x477S17636483x458S20500505x460"
+  },
+  {
+    "file": "illustrations/02550.png",
+    "fsw": "M571x535S36d00479x488S12930500x513S11e50530x468S20500494x501S26600538x503S22a04558x476S2f900558x466"
+  },
+  {
+    "file": "illustrations/00904.png",
+    "fsw": "M548x524S2ff00482x482S21100518x484S2880a526x469S10011510x494"
+  },
+  {
+    "file": "illustrations/03239.png",
+    "fsw": "M521x525S1f552479x501S2a208498x474"
+  },
+  {
+    "file": "illustrations/03232.png",
+    "fsw": "M532x549S30006482x482S15a10520x486S22a04519x534S21100519x516"
+  },
+  {
+    "file": "illustrations/00959.png",
+    "fsw": "M544x519S31410482x482S20500525x508S1ce10522x472"
+  },
+  {
+    "file": "illustrations/05257.png",
+    "fsw": "M536x532S1ce32506x510S33b00482x482S26500522x491S20500499x502"
+  },
+  {
+    "file": "illustrations/00834.png",
+    "fsw": "M526x527S1920d500x474S19205473x482S22a04499x512S20e00498x497"
+  },
+  {
+    "file": "illustrations/02253.png",
+    "fsw": "M520x529S11504495x499S23704481x472"
+  },
+  {
+    "file": "illustrations/00552.png",
+    "fsw": "M535x521S15a36471x509S10e04480x478S22a00507x482S22a04522x483S20500465x495"
+  },
+  {
+    "file": "illustrations/00587.png",
+    "fsw": "M579x553S16d48421x484S15200421x447S21300444x493S1853e431x508S22a00448x472S1d410550x452S22104505x534S22104523x526S22104532x507S28803531x478S28803546x487S2881b499x508S2881b512x499S22104548x515S1d418488x473S2fc00529x542"
+  },
+  {
+    "file": "illustrations/01699.png",
+    "fsw": "M599x545S30105482x477S15a10524x496S20500518x482S16d48560x508S18552584x491S20700576x530"
+  },
+  {
+    "file": "illustrations/02405.png",
+    "fsw": "M540x517S11e00400x468S2ff00482x482S14410509x449S14418469x449S20600518x483S20600459x483"
+  },
+  {
+    "file": "illustrations/05188.png",
+    "fsw": "M514x521S1f540491x497S26a00487x479"
+  },
+  {
+    "file": "illustrations/00239.png",
+    "fsw": "M540x518S30007482x483S15d50519x427S18520514x480S26504526x458"
+  },
+  {
+    "file": "illustrations/04229.png",
+    "fsw": "M526x534S37900479x465S3770b479x482S14e03473x506S22a07513x483S21100499x495"
+  },
+  {
+    "file": "illustrations/03365.png",
+    "fsw": "M580x541S22f10420x497S22f00450x496S20318423x518S20310454x518S15a50544x470S15a58529x470S20500537x458S28803505x488S2880b560x487S15a48506x514S15a40568x514"
+  },
+  {
+    "file": "illustrations/00587.png",
+    "fsw": "M580x553S16d48420x484S15200420x447S21300443x493S1853e430x508S22a00447x472S1d110551x454S22104504x534S22104522x526S22104531x507S28803530x478S28803545x487S2881b498x508S2881b511x499S22104547x515S1d118485x473S2fc00528x542"
+  },
+  {
+    "file": "illustrations/05504.png",
+    "fsw": "M518x586S35c04482x482S14c58488x536S22510489x520S26504493x571"
+  },
+  {
+    "file": "illustrations/03149.png",
+    "fsw": "M530x527S20301509x473S20301469x472S22a04513x500S22a14474x499S2f700495x520"
+  },
+  {
+    "file": "illustrations/02617.png",
+    "fsw": "M514x528S1f540499x504S1f548486x488S20500486x515S26520497x472"
+  },
+  {
+    "file": "illustrations/00184.png",
+    "fsw": "M549x514S11850484x487S11858451x487S28a0a513x485"
+  },
+  {
+    "file": "illustrations/00112.png",
+    "fsw": "M521x568S1ea10494x521S33b00482x482S2df00500x547"
+  },
+  {
+    "file": "illustrations/02204.png",
+    "fsw": "M533x533S15a57466x467S15a51510x510S2c700481x484"
+  },
+  {
+    "file": "illustrations/02892.png",
+    "fsw": "M524x529S20331476x508S14c11498x471S22a03496x496"
+  },
+  {
+    "file": "illustrations/05043.png",
+    "fsw": "M510x524S1ea17489x496S21100490x476"
+  },
+  {
+    "file": "illustrations/00834.png",
+    "fsw": "M520x533S1924c499x467S19234479x494S22b04500x503S20e00501x488"
+  },
+  {
+    "file": "illustrations/07239.png",
+    "fsw": "M512x532S10008496x502S15352487x468S20500493x487"
+  },
+  {
+    "file": "illustrations/00930.png",
+    "fsw": "M527x523S1ea50504x477S2d224482x499S1ea58473x477"
+  },
+  {
+    "file": "illustrations/02108.png",
+    "fsw": "M559x536S36d00479x465S14c40452x470S14c18526x470S20500479x483S20500513x483S23704520x507S23714443x507S2fc00492x525"
+  },
+  {
+    "file": "illustrations/00728.png",
+    "fsw": "M512x525S1f720490x475S2e501489x498"
+  },
+  {
+    "file": "illustrations/02829.png",
+    "fsw": "M554x534S15d50504x466S15d58478x466S15d40535x507S15d48446x507S23b04529x480S23b1c452x482"
+  },
+  {
+    "file": "illustrations/00074.png",
+    "fsw": "M513x533S22a20492x467S1f500489x518S20500492x505S15a56486x489"
+  },
+  {
+    "file": "illustrations/02822.png",
+    "fsw": "M629x544S2d608592x506S22a04616x487S20500510x515S22a04600x482S1f540582x519S30004482x482S1f540494x520S22a04583x490"
+  },
+  {
+    "file": "illustrations/00779.png",
+    "fsw": "M567x582S30a00482x482S14c30513x516S26c06518x555S10010547x491S26900551x471"
+  },
+  {
+    "file": "illustrations/02882.png",
+    "fsw": "M541x519S10011520x483S10019497x489S20500505x481S1f500458x481"
+  },
+  {
+    "file": "illustrations/00184.png",
+    "fsw": "M542x513S11850488x486S11858458x486S2880a520x497"
+  },
+  {
+    "file": "illustrations/00242.png",
+    "fsw": "M544x522S36d00479x479S37609509x482S20310497x491S22a06529x496"
+  },
+  {
+    "file": "illustrations/03315.png",
+    "fsw": "M544x512S1e132455x488S1ea31516x492S26506491x497"
+  },
+  {
+    "file": "illustrations/02056.png",
+    "fsw": "M555x517S34500482x482S26a00528x482S17720527x501S15220530x445"
+  },
+  {
+    "file": "illustrations/02957.png",
+    "fsw": "M529x548S1e148471x453S1e140505x453S1ea48476x519S1ea40505x519S2c604508x484S2c615482x484S20500498x537"
+  },
+  {
+    "file": "illustrations/07002.png",
+    "fsw": "M527x523S15d01504x500S2b702474x478"
+  },
+  {
+    "file": "illustrations/07230.png",
+    "fsw": "M548x513S15d50453x486S29a06488x495S2880a526x491"
+  },
+  {
+    "file": "illustrations/00727.png",
+    "fsw": "M528x533S14c28471x467S14c20505x466S24804508x504S2481c475x505"
+  },
+  {
+    "file": "illustrations/09174.png",
+    "fsw": "M530x524S15a37470x479S15a31507x501S20b00490x492S2b702500x476"
+  },
+  {
+    "file": "illustrations/05381.png",
+    "fsw": "M546x572S30004482x482S10011511x516S10019468x517S27204506x553S27214454x552"
+  },
+  {
+    "file": "illustrations/00964.png",
+    "fsw": "M590x542S20310467x479S20318415x478S22f00463x458S22f10409x457S15a50552x484S1e152548x458S2c605572x487S1e132550x518"
+  },
+  {
+    "file": "illustrations/02552.png",
+    "fsw": "M531x530S11838469x470S11830503x470S2e50a504x507S2e512469x506"
+  },
+  {
+    "file": "illustrations/02892.png",
+    "fsw": "M532x518S20331468x497S14c10509x481S22a02491x498"
+  },
+  {
+    "file": "illustrations/01928.png",
+    "fsw": "M527x530S14c20504x469S14c28474x470S2df04504x509S2df1c472x508"
+  },
+  {
+    "file": "illustrations/09530.png",
+    "fsw": "M520x549S15a50484x501S15a50508x484S2ea34505x450S2ea18479x467S2fc00497x538"
+  },
+  {
+    "file": "illustrations/00977.png",
+    "fsw": "M511x545S1ce20489x477S22a00490x455S2e230489x513"
+  },
+  {
+    "file": "illustrations/03379.png",
+    "fsw": "M524x523S1ea21496x477S23303476x501"
+  },
+  {
+    "file": "illustrations/05098.png",
+    "fsw": "M514x553S15d39491x530S1f720485x446S1f750487x488S22a04493x469S20b00494x511"
+  },
+  {
+    "file": "illustrations/05206.png",
+    "fsw": "M528x597S30a00482x482S14c30504x520S14c38473x520S27102509x557"
+  },
+  {
+    "file": "illustrations/00107.png",
+    "fsw": "M517x519S1f540502x495S1f548482x495S20600489x480"
+  },
+  {
+    "file": "illustrations/04098.png",
+    "fsw": "M530x539S15050504x462S15058470x462S2ea34509x500S2ea18473x501S2fc00493x528"
+  },
+  {
+    "file": "illustrations/00994.png",
+    "fsw": "M567x516S36d00479x486S15d18524x484S2ea00552x491S20600497x501"
+  },
+  {
+    "file": "illustrations/08227.png",
+    "fsw": "M529x527S15a37484x504S1f540474x482S2c500489x472S20500471x508"
+  },
+  {
+    "file": "illustrations/02233.png",
+    "fsw": "M523x533S20310505x468S20318479x468S27116478x492S27102508x493"
+  },
+  {
+    "file": "illustrations/00915.png",
+    "fsw": "M540x548S30005482x482S30003482x482S15317517x506S2880e491x524S21100512x534"
+  },
+  {
+    "file": "illustrations/08253.png",
+    "fsw": "M516x523S15a50484x477S15a50504x477S22a04503x508S22a14484x508"
+  },
+  {
+    "file": "illustrations/00727.png",
+    "fsw": "M550x535S30004482x482S14c20522x473S20320493x520S26a00523x511"
+  },
+  {
+    "file": "illustrations/00538.png",
+    "fsw": "M522x524S1ea37497x496S22524490x476S20e00479x492"
+  },
+  {
+    "file": "illustrations/00584.png",
+    "fsw": "M554x527S2ff00482x482S15002485x502S21600546x510S26506520x508"
+  },
+  {
+    "file": "illustrations/07188.png",
+    "fsw": "M546x538S36d00479x462S14e03515x474S22f00520x508S20f00520x526"
+  },
+  {
+    "file": "illustrations/08270.png",
+    "fsw": "M514x515S1f426486x486S22112507x487"
+  },
+  {
+    "file": "illustrations/04180.png",
+    "fsw": "M534x518S10002504x503S1000a466x503S26502502x481S26516480x481"
+  },
+  {
+    "file": "illustrations/08319.png",
+    "fsw": "M518x525S17600482x488S21b00486x475S22a04505x476S22a04505x493S22a04505x510"
+  },
+  {
+    "file": "illustrations/04618.png",
+    "fsw": "M522x530S1ce10478x500S26500504x470S26500482x479S26500508x494"
+  },
+  {
+    "file": "illustrations/02866.png",
+    "fsw": "M539x517S2ff00482x482S10e11514x467S22113520x453"
+  },
+  {
+    "file": "illustrations/00904.png",
+    "fsw": "M550x528S2ff00482x482S1f410521x495S2880a496x487S21100533x514"
+  },
+  {
+    "file": "illustrations/03368.png",
+    "fsw": "M560x522S22f10440x478S22f00470x477S20318443x499S20310474x499S20350540x480S22f00535x508"
+  },
+  {
+    "file": "illustrations/03289.png",
+    "fsw": "M541x523S1ce10485x477S1ce18458x477S20500478x479S29a05508x497"
+  },
+  {
+    "file": "illustrations/00429.png",
+    "fsw": "M528x526S1ce40506x474S1ce48472x474S22a04507x511S22a14480x510"
+  },
+  {
+    "file": "illustrations/03450.png",
+    "fsw": "M530x570S16d40472x511S16d48470x550S20500477x536S26500476x487S15051502x429S22a03493x454S2f900488x473"
+  },
+  {
+    "file": "illustrations/00935.png",
+    "fsw": "M602x541S36a00482x477S1f410502x515S1f418469x515S1ee10576x509S1ee18409x509S20500495x530S22b06541x514S22b12434x514S22104572x498S22104423x496"
+  },
+  {
+    "file": "illustrations/00676.png",
+    "fsw": "M543x517S30007482x482S15a11520x482S20500507x471"
+  },
+  {
+    "file": "illustrations/00641.png",
+    "fsw": "M542x515S1ce40502x484S1ce48475x485S20500494x485S22a12457x500S22a06527x500"
+  },
+  {
+    "file": "illustrations/02830.png",
+    "fsw": "M563x539S1ce50496x491S1ce58466x492S24d07515x460S24d07535x479S24d11437x463S2fd00481x533"
+  },
+  {
+    "file": "illustrations/09006.png",
+    "fsw": "M562x533S30006482x483S30002482x483S1d410515x484S1d418455x484S26a06548x493S26a12439x493S20f00534x519S20f00441x519S2fb00495x527"
+  },
+  {
+    "file": "illustrations/02018.png",
+    "fsw": "M509x528S20310492x472S22e04492x498S2f700493x521"
+  },
+  {
+    "file": "illustrations/01216.png",
+    "fsw": "M522x516S15a56483x504S15a52495x484S20500478x488"
+  },
+  {
+    "file": "illustrations/03229.png",
+    "fsw": "M539x533S15031504x469S15039467x467S2e50c516x503S2e514461x503S2fb00492x527"
+  },
+  {
+    "file": "illustrations/02830.png",
+    "fsw": "M540x517S17650484x483S17650460x483S20500474x506S29a06505x482"
+  },
+  {
+    "file": "illustrations/02002.png",
+    "fsw": "M542x535S1f510513x481S1f518472x465S23600503x514S23614458x491S2fd03478x516"
+  },
+  {
+    "file": "illustrations/05007.png",
+    "fsw": "M534x533S10011491x485S1001a475x490S21100465x466S22b05510x509"
+  },
+  {
+    "file": "illustrations/00284.png",
+    "fsw": "M544x519S33010479x482S17110527x494S20500518x508"
+  },
+  {
+    "file": "illustrations/08576.png",
+    "fsw": "M546x527S14c30511x474S14c38463x474S23600507x510S23614455x510"
+  },
+  {
+    "file": "illustrations/00952.png",
+    "fsw": "M520x558S36a00482x477S10001484x528S28806489x521S21100507x538"
+  },
+  {
+    "file": "illustrations/00395.png",
+    "fsw": "M526x524S20318480x509S10e40489x476S26900510x486S20500474x494"
+  },
+  {
+    "file": "illustrations/04276.png",
+    "fsw": "M540x526S14c51461x475S20300525x489S26506506x512S2ef04494x488"
+  },
+  {
+    "file": "illustrations/08428.png",
+    "fsw": "M510x530S10000491x470S2f004490x509"
+  },
+  {
+    "file": "illustrations/00515.png",
+    "fsw": "M549x538S10051519x462S10039450x508S20500491x482S22a03505x468S22a17476x492"
+  },
+  {
+    "file": "illustrations/02186.png",
+    "fsw": "M519x526S20340501x473S20348491x491S20500484x476S27120480x511"
+  },
+  {
+    "file": "illustrations/05145.png",
+    "fsw": "M528x528S15d30509x502S15d38471x501S2b700501x472S2b711477x472"
+  },
+  {
+    "file": "illustrations/02020.png",
+    "fsw": "M521x526S36d00479x505S1ea31453x507S1ea47497x473S28809466x483"
+  },
+  {
+    "file": "illustrations/05374.png",
+    "fsw": "M561x514S10002505x499S1000a467x499S28812440x487S2880a539x486"
+  },
+  {
+    "file": "illustrations/02497.png",
+    "fsw": "M509x523S10004491x476S22a04496x497S2f700497x516"
+  },
+  {
+    "file": "illustrations/00314.png",
+    "fsw": "M533x538S22f14467x524S14c00509x479S14c08468x479S22510510x463S22510469x462S22f04508x523"
+  },
+  {
+    "file": "illustrations/00411.png",
+    "fsw": "M538x541S30007482x482S10010522x482S20500511x468S26904522x523"
+  },
+  {
+    "file": "illustrations/00204.png",
+    "fsw": "M564x508S20348435x492S20340549x493S22b16457x492S22b02511x492S20b00492x494"
+  },
+  {
+    "file": "illustrations/02480.png",
+    "fsw": "M512x527S14c50487x474S2ea06487x512"
+  },
+  {
+    "file": "illustrations/00589.png",
+    "fsw": "M531x528S10e10507x471S10e18475x471S26b00504x510S26b10469x510"
+  },
+  {
+    "file": "illustrations/02617.png",
+    "fsw": "M514x527S1f510499x505S1f518486x489S20500486x516S26520497x473"
+  },
+  {
+    "file": "illustrations/07014.png",
+    "fsw": "M510x535S1ec56490x464S1ec26491x512S26500491x492"
+  },
+  {
+    "file": "illustrations/08203.png",
+    "fsw": "M538x546S30004482x482S15a00494x519S20600516x517"
+  },
+  {
+    "file": "illustrations/03254.png",
+    "fsw": "M541x520S2ff00482x483S10011520x490S20500502x488S10050526x435S1000a489x428S20500520x422S26500525x473"
+  },
+  {
+    "file": "illustrations/05276.png",
+    "fsw": "M544x519S33010479x482S17110527x494S20500518x508"
+  },
+  {
+    "file": "illustrations/01131.png",
+    "fsw": "M507x520S15a20494x481S2f700495x513"
+  },
+  {
+    "file": "illustrations/00711.png",
+    "fsw": "M526x526S2035a508x511S37706479x516S10021473x476S20500494x502S22e06508x474"
+  },
+  {
+    "file": "illustrations/02056.png",
+    "fsw": "M551x521S34400482x482S17620527x505S26a00524x485S22110522x468"
+  },
+  {
+    "file": "illustrations/00481.png",
+    "fsw": "M545x529S30007482x482S18510515x479S22104515x468S2e000524x500"
+  },
+  {
+    "file": "illustrations/00759.png",
+    "fsw": "M549x530S30004482x482S11502519x507S20500508x519S28108528x471"
+  },
+  {
+    "file": "illustrations/08227.png",
+    "fsw": "M530x523S15a36479x511S1f742484x485S20500469x498S2a308507x478"
+  },
+  {
+    "file": "illustrations/03309.png",
+    "fsw": "M522x519S15310507x494S15318482x494S21800504x480S21800478x480"
+  },
+  {
+    "file": "illustrations/00922.png",
+    "fsw": "M529x543S20300413x476S20308393x475S26907423x457S26911377x457S20500407x494S36d00479x459S14c04506x492S14c0c477x493S22a00510x472S22a10480x472S21100484x529S21100511x528"
+  },
+  {
+    "file": "illustrations/01010.png",
+    "fsw": "M531x532S22100489x467S1d450502x504S2b820483x479S1d458469x504"
+  },
+  {
+    "file": "illustrations/02571.png",
+    "fsw": "M538x533S14c51506x468S14c59469x468S2a204515x505S2a21c462x504"
+  },
+  {
+    "file": "illustrations/00676.png",
+    "fsw": "M543x517S30007482x482S15d11520x484S20500507x471"
+  },
+  {
+    "file": "illustrations/01122.png",
+    "fsw": "M543x524S15d0a463x475S15d02506x475S27204503x505S27214456x503"
+  },
+  {
+    "file": "illustrations/00817.png",
+    "fsw": "M532x530S14c0a468x489S14c02501x489S20700491x515S2e752487x469"
+  },
+  {
+    "file": "illustrations/07230.png",
+    "fsw": "M547x508S18240523x493S18250453x492S2920a485x491"
+  },
+  {
+    "file": "illustrations/00341.png",
+    "fsw": "M529x527S14c30470x473S14c38505x474S22a04510x512S22a14475x511"
+  },
+  {
+    "file": "illustrations/08537.png",
+    "fsw": "M545x530S33100482x482S10001503x500S20500521x498S20500535x498"
+  },
+  {
+    "file": "illustrations/00646.png",
+    "fsw": "M533x524S30105482x477S15a10521x497S20500517x484"
+  },
+  {
+    "file": "illustrations/03443.png",
+    "fsw": "M544x536S23600505x519S10010468x465S10018516x465S23614456x517S21100517x501S21100468x500"
+  },
+  {
+    "file": "illustrations/04621.png",
+    "fsw": "M526x514S15319473x485S15311503x485S2f900494x509"
+  },
+  {
+    "file": "illustrations/00831.png",
+    "fsw": "M550x523S14c08450x491S1f510480x499S10010528x493S2ea06525x476"
+  },
+  {
+    "file": "illustrations/00915.png",
+    "fsw": "M542x555S2ff00482x482S20500505x497S1531c520x496S21100505x541S2880d522x531S15356491x520"
+  },
+  {
+    "file": "illustrations/00598.png",
+    "fsw": "M546x530S30005482x482S20500507x519S1f522516x505S2c300520x477"
+  },
+  {
+    "file": "illustrations/00744.png",
+    "fsw": "M545x567S15d00526x498S15d08457x497S15d0a479x544S2881b480x518S28803501x518S15d02493x548S2ff00482x482"
+  },
+  {
+    "file": "illustrations/00949.png",
+    "fsw": "M531x537S36d00479x463S14c01505x472S14c09471x471S22f14474x523S22f04505x523S20e00478x507S20e00512x508"
+  },
+  {
+    "file": "illustrations/00086.png",
+    "fsw": "M510x539S10020492x462S27206491x499"
+  },
+  {
+    "file": "illustrations/04180.png",
+    "fsw": "M581x517S10000566x485S10008418x484S22e02543x498S22e06440x496S10002501x497S1000a467x497S20500493x483S2f900492x512"
+  },
+  {
+    "file": "illustrations/08384.png",
+    "fsw": "M667x527S30000482x482S10011519x485S20500506x471S20310629x493S20318621x512S26512601x512S26506648x494S2f700655x480S2f700601x501"
+  },
+  {
+    "file": "illustrations/05261.png",
+    "fsw": "M517x530S20500494x469S22f04487x516S18252502x486S1825a482x486"
+  },
+  {
+    "file": "illustrations/04109.png",
+    "fsw": "M521x539S2df06501x474S2df1e478x474S10e20502x509S10e28482x509S20500495x494S20500495x462"
+  },
+  {
+    "file": "illustrations/02724.png",
+    "fsw": "M525x519S14c02494x496S20500508x480S22512476x497"
+  },
+  {
+    "file": "illustrations/00654.png",
+    "fsw": "M536x548S30004482x482S18507495x521S20600514x514"
+  },
+  {
+    "file": "illustrations/08125.png",
+    "fsw": "M512x525S1ea03488x475S2ea36487x510"
+  },
+  {
+    "file": "illustrations/02182.png",
+    "fsw": "M512x543S1de20488x457S1eb27492x516S26500498x495"
+  },
+  {
+    "file": "illustrations/02855.png",
+    "fsw": "M556x556S17817505x445S1781f471x444S20500495x459S20500495x472S14c30502x525S14c38474x525S28807532x523S2881f448x522S14c10533x488S14c18444x486"
+  },
+  {
+    "file": "illustrations/00743.png",
+    "fsw": "M540x570S2ff00482x482S15a52476x542S15a56494x558S15a55461x497S15a53517x496S28815466x521S2880d511x521"
+  },
+  {
+    "file": "illustrations/08250.png",
+    "fsw": "M521x568S1ea10494x521S33b00482x482S2df00500x547"
+  },
+  {
+    "file": "illustrations/06171.png",
+    "fsw": "M542x522S15d39458x490S2a208519x479S20e00475x510S15d42485x485"
+  },
+  {
+    "file": "illustrations/02861.png",
+    "fsw": "M509x538S16d40491x495S16d48491x518S20500495x481S26500494x462"
+  },
+  {
+    "file": "illustrations/00019.png",
+    "fsw": "M508x532S10010491x467S22e04491x502S2f700494x525"
+  },
+  {
+    "file": "illustrations/00309.png",
+    "fsw": "M556x527S15a0a476x503S15a02506x503S20500499x516S15a48444x475S15a40544x473S2d608508x487S2d610462x487"
+  },
+  {
+    "file": "illustrations/00584.png",
+    "fsw": "M536x537S26506496x520S30004482x482S14c01461x510S20300521x520"
+  },
+  {
+    "file": "illustrations/00173.png",
+    "fsw": "M524x517S20348499x502S20340509x483S20600476x482"
+  },
+  {
+    "file": "illustrations/02511.png",
+    "fsw": "M523x533S20310505x468S20318479x468S27116478x492S27102508x493"
+  },
+  {
+    "file": "illustrations/03343.png",
+    "fsw": "M521x535S21100493x500S10010478x466S10018503x466S23624482x518"
+  },
+  {
+    "file": "illustrations/08616.png",
+    "fsw": "M585x517S17d34472x485S17d3c503x485S18534415x484S1853c560x484S20500493x506S26512449x486S26506535x487"
+  },
+  {
+    "file": "illustrations/02530.png",
+    "fsw": "M523x524S1f523501x476S22a03488x497S2f700477x517"
+  },
+  {
+    "file": "illustrations/05189.png",
+    "fsw": "M549x518S17600532x453S26a03515x467S2ff00482x483S21d00531x442"
+  },
+  {
+    "file": "illustrations/01018.png",
+    "fsw": "M528x521S14c40504x490S14c48472x490S2f900510x478S2f900478x479"
+  },
+  {
+    "file": "illustrations/00607.png",
+    "fsw": "M521x523S36d00479x477S19a51483x496S20500482x488S26507505x490"
+  },
+  {
+    "file": "illustrations/04136.png",
+    "fsw": "M549x526S30004482x482S10002519x511S2f000522x487"
+  },
+  {
+    "file": "illustrations/02730.png",
+    "fsw": "M554x534S30007482x482S18516539x509S20500511x474S2880b533x483S17d10523x463"
+  },
+  {
+    "file": "illustrations/00112.png",
+    "fsw": "M520x578S1ea10496x520S2ff00482x482S20500495x502S2e000499x549"
+  },
+  {
+    "file": "illustrations/05418.png",
+    "fsw": "M513x514S1f416486x485S22122506x485"
+  },
+  {
+    "file": "illustrations/01010.png",
+    "fsw": "M535x538S22100510x500S1d451510x513S22104521x500S1d459464x510S2b820484x462S22100465x498S22104477x498"
+  },
+  {
+    "file": "illustrations/00634.png",
+    "fsw": "M553x527S15a40505x472S15a48482x472S15a50541x500S15a50446x500S28805509x503S2881d468x503"
+  },
+  {
+    "file": "illustrations/02005.png",
+    "fsw": "M525x535S1ce10503x488S1ce48475x488S20700490x520S26c20485x464"
+  },
+  {
+    "file": "illustrations/02985.png",
+    "fsw": "M520x528S1ce50492x471S23704481x507"
+  },
+  {
+    "file": "illustrations/04283.png",
+    "fsw": "M538x544S30004482x482S1e110494x518S26500524x525"
+  },
+  {
+    "file": "illustrations/00697.png",
+    "fsw": "M514x523S15351487x477S2ea06489x508"
+  },
+  {
+    "file": "illustrations/00998.png",
+    "fsw": "M534x550S16f50504x470S16f58473x469S16f38473x515S16f30503x515S28814465x490S20500497x449S20500498x539S2880c522x491"
+  },
+  {
+    "file": "illustrations/00915.png",
+    "fsw": "M535x553S2ff00482x482S20500505x497S1531c520x496S21100496x539S2880d514x528S1535e488x520"
+  },
+  {
+    "file": "illustrations/00223.png",
+    "fsw": "M522x539S15352480x484S15336494x504S2ea32478x462S2ea16497x524"
+  },
+  {
+    "file": "illustrations/00799.png",
+    "fsw": "M521x584S30100484x477S36d00479x531S14c01488x543S20500499x573"
+  },
+  {
+    "file": "illustrations/00937.png",
+    "fsw": "M526x545S36d00479x456S14c09471x479S14c01500x480S20500478x466S20500512x467S20500479x509S20500511x509S25924492x522"
+  },
+  {
+    "file": "illustrations/03000.png",
+    "fsw": "M533x522S15a56467x510S15051470x477S21100503x494S22f06519x488"
+  },
+  {
+    "file": "illustrations/00671.png",
+    "fsw": "M546x523S33200482x482S1ce10524x485S20800514x513"
+  },
+  {
+    "file": "illustrations/00905.png",
+    "fsw": "M573x521S33b00482x482S21b00526x495S1f410510x506S22a06544x507S21600565x510"
+  },
+  {
+    "file": "illustrations/01182.png",
+    "fsw": "M528x530S1dc00504x469S20332472x515S22a03490x498"
+  },
+  {
+    "file": "illustrations/02331.png",
+    "fsw": "M538x546S30004482x482S15a00494x519S20600516x517"
+  },
+  {
+    "file": "illustrations/03074.png",
+    "fsw": "M602x541S15d31504x484S2fb00493x535S36d00479x460S2ea00512x510S2ea18473x510S20e00478x468S20e00510x468S15d39474x484S15d32574x492S15d3a557x507S26500580x475S20500592x514"
+  },
+  {
+    "file": "illustrations/00872.png",
+    "fsw": "M575x532S15d14425x505S15d1c468x504S2d200461x467S2d211426x467S18217558x487S1821f525x488"
+  },
+  {
+    "file": "illustrations/05425.png",
+    "fsw": "M541x534S2ff00482x482S15019460x470S15011513x471S2ea00525x507S2ea18459x505S2fb00493x528"
+  },
+  {
+    "file": "illustrations/00676.png",
+    "fsw": "M543x517S30007482x482S18210520x486S20500507x471"
+  },
+  {
+    "file": "illustrations/07200.png",
+    "fsw": "M548x518S33200482x482S22124524x489S18520523x503"
+  },
+  {
+    "file": "illustrations/00633.png",
+    "fsw": "M538x588S2ff00482x482S20500494x499S10010493x504S20500497x577S26512462x550S26506523x550S15a50504x545S15a50486x545"
+  },
+  {
+    "file": "illustrations/02458.png",
+    "fsw": "M540x546S15051498x476S15039474x496S2ea32515x454S2ea06461x531S2fc00505x523"
+  },
+  {
+    "file": "illustrations/00994.png",
+    "fsw": "M544x531S36d00479x471S15d10524x469S20f00517x501S22f00519x517"
+  },
+  {
+    "file": "illustrations/08357.png",
+    "fsw": "M544x533S1ea11509x496S1ea19469x495S27200504x467S27210456x468S2fc00496x522"
+  },
+  {
+    "file": "illustrations/00596.png",
+    "fsw": "M525x508S22a06510x494S10002474x493"
+  },
+  {
+    "file": "illustrations/02320.png",
+    "fsw": "M584x532S30004482x482S18211501x514S18219472x515S28911448x489S28909527x489S18210561x491S18218422x489"
+  },
+  {
+    "file": "illustrations/00927.png",
+    "fsw": "M544x521S15310505x494S15318477x494S21800501x479S22f16456x494S22f02530x496S21800474x479"
+  },
+  {
+    "file": "illustrations/00816.png",
+    "fsw": "M538x557S30004482x482S1dc01487x517S20500516x513S2e100515x528"
+  },
+  {
+    "file": "illustrations/02108.png",
+    "fsw": "M558x531S23704519x502S15d48449x469S15d10530x469S23714442x502S2fc00491x520"
+  },
+  {
+    "file": "illustrations/02831.png",
+    "fsw": "M534x525S10057482x495S1005f504x489S21200466x480S26a07513x475"
+  },
+  {
+    "file": "illustrations/02453.png",
+    "fsw": "M581x534S36d00478x473S36d00479x512S17d5a530x511S18536566x466S28809535x484"
+  },
+  {
+    "file": "illustrations/08177.png",
+    "fsw": "M542x523S2ff00482x482S20500507x495S20500495x491S20500499x502S10a08527x497"
+  },
+  {
+    "file": "illustrations/06504.png",
+    "fsw": "M511x516S14400489x485"
+  },
+  {
+    "file": "illustrations/03650.png",
+    "fsw": "M521x520S20350478x505S20350506x505S26510478x479S26500506x480"
+  },
+  {
+    "file": "illustrations/00096.png",
+    "fsw": "M552x521S36d00479x501S20600530x498S20600448x498S18211527x479S18219451x478S2fb00492x515"
+  },
+  {
+    "file": "illustrations/00242.png",
+    "fsw": "M531x530S1575a504x510S20320478x470S23004476x491S20500490x519S37806469x516"
+  },
+  {
+    "file": "illustrations/00863.png",
+    "fsw": "M567x518S20307505x496S20301475x497S20320552x482S20320432x482S2df10448x493S2df08531x492"
+  },
+  {
+    "file": "illustrations/05142.png",
+    "fsw": "M529x535S14c00506x465S14c08471x465S26a02509x501S26a16477x501S2fc00492x524"
+  },
+  {
+    "file": "illustrations/05009.png",
+    "fsw": "M521x518S36d00479x482S1530e475x503S20600475x489"
+  },
+  {
+    "file": "illustrations/03057.png",
+    "fsw": "M535x526S14c31509x499S14c39466x499S26900513x473S26910472x473"
+  },
+  {
+    "file": "illustrations/00236.png",
+    "fsw": "M512x528S1ea10489x471S22e04495x499S2f700499x521"
+  },
+  {
+    "file": "illustrations/00946.png",
+    "fsw": "M521x543S36d00479x457S15a07494x477S20500507x463S15a41472x498S26903462x512S20500451x532"
+  },
+  {
+    "file": "illustrations/02800.png",
+    "fsw": "M511x534S14c20488x503S26500493x480S21600496x467"
+  },
+  {
+    "file": "illustrations/06171.png",
+    "fsw": "M548x529S15d39453x497S2d608495x482S20e00470x517S15d40529x471S15d42480x495"
+  },
+  {
+    "file": "illustrations/00540.png",
+    "fsw": "M542x517S30007482x482S1f410513x480S20500502x468S22104518x469"
+  },
+  {
+    "file": "illustrations/03376.png",
+    "fsw": "M578x517S2ff00482x482S26506563x502S20500496x494S21100547x502S1005e511x499"
+  },
+  {
+    "file": "illustrations/02005.png",
+    "fsw": "M525x534S1ce10503x485S1ce48475x485S20700491x519S26c20487x466"
+  },
+  {
+    "file": "illustrations/00897.png",
+    "fsw": "M564x540S36d00479x461S36d00479x500S14e14459x509S14e1c519x509S28812442x497S2880a542x497"
+  },
+  {
+    "file": "illustrations/00922.png",
+    "fsw": "M529x543S20332413x476S2033a391x476S26907423x457S26911377x457S20500407x494S36d00479x459S14c04506x492S14c0c477x493S22a00510x472S22a10480x472S21100484x529S21100511x528"
+  },
+  {
+    "file": "illustrations/08492.png",
+    "fsw": "M516x525S1ed26487x475S22a04503x510S22a04485x510"
+  },
+  {
+    "file": "illustrations/02421.png",
+    "fsw": "M525x535S2035a510x520S37706481x525S10021475x485S20500496x511S2ea36490x464"
+  },
+  {
+    "file": "illustrations/05223.png",
+    "fsw": "M523x527S20320508x512S20320478x512S26510479x486S26500508x486S2f900510x473S2f900481x474"
+  },
+  {
+    "file": "illustrations/05089.png",
+    "fsw": "M520x523S10003480x477S26b00493x505"
+  },
+  {
+    "file": "illustrations/07051.png",
+    "fsw": "M510x519S19200489x480S22a04496x504"
+  },
+  {
+    "file": "illustrations/00342.png",
+    "fsw": "M521x535S20350504x466S20350478x475S2ea00506x486S2ea4c478x496S2fc00498x524"
+  },
+  {
+    "file": "illustrations/03286.png",
+    "fsw": "M526x519S14711498x493S14719474x493S20500492x508S22a07513x482"
+  },
+  {
+    "file": "illustrations/09538.png",
+    "fsw": "M511x523S17d20488x488S22104495x477S26504493x508"
+  },
+  {
+    "file": "illustrations/04669.png",
+    "fsw": "M530x527S1ce50508x473S1ce58470x472S22f04502x513S22f14472x513"
+  },
+  {
+    "file": "illustrations/00584.png",
+    "fsw": "M557x527S2ff00482x482S15002485x502S16600541x506S26506520x508"
+  },
+  {
+    "file": "illustrations/00578.png",
+    "fsw": "M537x521S30006482x482S20500518x483S18502522x497S2b700516x456S21b00522x442"
+  },
+  {
+    "file": "illustrations/00210.png",
+    "fsw": "M524x533S15d21501x484S15a37483x510S20e00484x497S2a20c477x467"
+  },
+  {
+    "file": "illustrations/08341.png",
+    "fsw": "M509x528S18536491x471S2480c493x500"
+  },
+  {
+    "file": "illustrations/00241.png",
+    "fsw": "M555x521S18232503x498S1823a483x498S20500498x479S22b06525x495S22b12444x494"
+  },
+  {
+    "file": "illustrations/08507.png",
+    "fsw": "M533x547S15328467x520S15320518x522S22a00518x500S22a10468x499S21600521x486S21600470x486S22a10468x465S22a00518x465S21600521x452S21600470x452"
+  },
+  {
+    "file": "illustrations/03303.png",
+    "fsw": "M528x536S20332495x464S20336476x475S26b00501x489S26b10472x502S2fb00494x530"
+  },
+  {
+    "file": "illustrations/00181.png",
+    "fsw": "M547x517S15040521x486S15048453x483S26502501x502S26516479x502"
+  },
+  {
+    "file": "illustrations/02131.png",
+    "fsw": "M559x519S15a10498x492S15a18480x492S28306516x497S28312441x497S20500490x480"
+  },
+  {
+    "file": "illustrations/08265.png",
+    "fsw": "M531x528S15a57486x485S15a41508x505S20500515x489S2c602468x472"
+  },
+  {
+    "file": "illustrations/00051.png",
+    "fsw": "M528x534S14c30504x467S14c38472x467S22a04510x505S22a14478x504S2f700511x527S2f700477x527"
+  },
+  {
+    "file": "illustrations/03389.png",
+    "fsw": "M539x518S30006482x483S15a10521x489S20500515x474S20500529x472"
+  },
+  {
+    "file": "illustrations/00074.png",
+    "fsw": "M515x544S14c5a484x487S1f510485x529S20500487x513S22b20485x456"
+  },
+  {
+    "file": "illustrations/00067.png",
+    "fsw": "M549x545S30004482x482S1f540493x521S2c305522x510"
+  },
+  {
+    "file": "illustrations/08263.png",
+    "fsw": "M522x525S10e20478x474S20356478x510S20600500x493"
+  },
+  {
+    "file": "illustrations/01060.png",
+    "fsw": "M528x533S14c28471x467S14c20505x466S24804474x505S2481c508x505"
+  },
+  {
+    "file": "illustrations/02579.png",
+    "fsw": "M533x530S14c09471x469S14c01503x469S2a204510x502S2a21c467x502"
+  },
+  {
+    "file": "illustrations/00190.png",
+    "fsw": "M512x518S18220489x503S22a00494x482"
+  },
+  {
+    "file": "illustrations/00770.png",
+    "fsw": "M538x531S15a32472x485S15a36499x469S37706469x473S37706500x489S20500528x473S26622486x502S26626501x515S20500462x477"
+  },
+  {
+    "file": "illustrations/02567.png",
+    "fsw": "M531x534S14c31501x485S14c39472x485S20500496x511S22e04514x516S22e14470x516S22510501x467S22510471x467"
+  },
+  {
+    "file": "illustrations/00864.png",
+    "fsw": "M529x537S15a37471x464S15a51491x485S2c500489x513S20500474x490S20500501x469"
+  },
+  {
+    "file": "illustrations/04108.png",
+    "fsw": "M525x540S20500502x460S2a21c475x512S20500487x460S2a204502x512S10e20502x476S10e28483x475"
+  },
+  {
+    "file": "illustrations/02505.png",
+    "fsw": "M522x517S20352482x502S37706497x510S26a00477x482"
+  },
+  {
+    "file": "illustrations/00582.png",
+    "fsw": "M540x546S15a51501x467S15a59475x467S20500495x455S2fb04491x514S23804521x488S2381c460x488S15a40528x519S15a48462x518"
+  },
+  {
+    "file": "illustrations/09000.png",
+    "fsw": "M556x530S30004482x482S20500494x519S1ef20527x494S22124528x478"
+  },
+  {
+    "file": "illustrations/01732.png",
+    "fsw": "M510x529S1ed36491x503S26500492x479S2f900493x470"
+  },
+  {
+    "file": "illustrations/02146.png",
+    "fsw": "M536x517S30000482x482S10010521x463S26501478x451S2d600482x466S26507507x452S26500493x445"
+  },
+  {
+    "file": "illustrations/03239.png",
+    "fsw": "M527x531S1f552472x507S1f510512x469S28809486x482"
+  },
+  {
+    "file": "illustrations/00977.png",
+    "fsw": "M538x539S1ce20490x480S2a537462x514S22b07514x460"
+  },
+  {
+    "file": "illustrations/01007.png",
+    "fsw": "M523x540S15220477x459S18527504x513S2880b498x487"
+  },
+  {
+    "file": "illustrations/04276.png",
+    "fsw": "M537x515S14c51463x485S20317516x494S2d608488x485"
+  },
+  {
+    "file": "illustrations/03304.png",
+    "fsw": "M529x530S20330473x471S20330514x471S26504515x494S26504515x515S26514471x494S26514471x515"
+  },
+  {
+    "file": "illustrations/02884.png",
+    "fsw": "M587x531S15d00568x469S15d08495x468S15d0a522x509S2881b519x484S28803544x484S15d02537x512S1f518412x491S1f510432x491S20500415x517S20500434x519"
+  },
+  {
+    "file": "illustrations/02738.png",
+    "fsw": "M519x533S15d39480x467S15a11496x486S21100491x504S26505505x520"
+  },
+  {
+    "file": "illustrations/04249.png",
+    "fsw": "M509x538S15320493x513S2ed08491x481S26500495x461"
+  },
+  {
+    "file": "illustrations/09011.png",
+    "fsw": "M538x517S2ff00482x482S15a20521x478S15a20467x478S22124516x468S22124462x466"
+  },
+  {
+    "file": "illustrations/05231.png",
+    "fsw": "M539x539S11851500x480S11859466x479S2e500516x505S2e518462x504S2fb04494x533S20e00493x462"
+  },
+  {
+    "file": "illustrations/08610.png",
+    "fsw": "M538x530S26500522x481S2f700465x470S20337462x503S26510464x481S2f700522x471S2fb00494x524S20331517x503"
+  },
+  {
+    "file": "illustrations/00955.png",
+    "fsw": "M521x521S36d00479x479S15331498x498S20500483x494"
+  },
+  {
+    "file": "illustrations/04160.png",
+    "fsw": "M548x569S31a10482x482S12800524x496S22a04534x526S12830525x545"
+  },
+  {
+    "file": "illustrations/05504.png",
+    "fsw": "M518x582S35c04482x482S14c00488x533S22514489x520S26504491x567"
+  },
+  {
+    "file": "illustrations/00737.png",
+    "fsw": "M554x517S2ff00482x482S20500471x486S20500519x487S14c1f527x466S14c17451x462S2c600529x434S2c611454x433"
+  },
+  {
+    "file": "illustrations/08031.png",
+    "fsw": "M529x530S2c702483x470S15d59471x490S15d51498x507S21100516x489"
+  },
+  {
+    "file": "illustrations/00173.png",
+    "fsw": "M526x517S20349473x496S20347489x482S20500501x506S20500516x504"
+  },
+  {
+    "file": "illustrations/05832.png",
+    "fsw": "M519x544S15a48480x483S15210495x456S17610499x528S20e00500x492S22f04494x508"
+  },
+  {
+    "file": "illustrations/00787.png",
+    "fsw": "M520x528S11504493x498S23704481x472"
+  },
+  {
+    "file": "illustrations/02920.png",
+    "fsw": "M539x517S33100482x482S20500495x494S16d10521x489S2b700520x459S20340522x436"
+  },
+  {
+    "file": "illustrations/02556.png",
+    "fsw": "M528x520S11541504x484S11549484x493S20600472x480"
+  },
+  {
+    "file": "illustrations/01018.png",
+    "fsw": "M528x532S14c40504x501S14c48472x501S22a10478x480S22a00508x479S2f900510x469S2f900478x468"
+  },
+  {
+    "file": "illustrations/05207.png",
+    "fsw": "M528x513S15d50472x486S2d608499x487"
+  },
+  {
+    "file": "illustrations/00921.png",
+    "fsw": "M551x540S36d00479x460S1ec34476x510S1ec34475x474S1ec3c503x473S1ec3c506x510S20500497x495S20500499x529S22a12454x509S22a06532x475S22a06536x510S22a12452x474"
+  },
+  {
+    "file": "illustrations/01945.png",
+    "fsw": "M545x531S14c08455x469S11e01481x469S14400519x468S2a204522x503"
+  },
+  {
+    "file": "illustrations/01208.png",
+    "fsw": "M528x521S15a16492x479S15a51505x498S2c600472x481"
+  },
+  {
+    "file": "illustrations/00927.png",
+    "fsw": "M544x521S15310505x494S15318477x494S21800501x479S21d00474x479S22f02530x496S22f16456x494"
+  },
+  {
+    "file": "illustrations/00977.png",
+    "fsw": "M511x545S1ce10489x477S22a00490x455S2e230489x513"
+  },
+  {
+    "file": "illustrations/02900.png",
+    "fsw": "M548x516S14c50506x484S14c58472x484S22a06533x503S22a12452x502"
+  },
+  {
+    "file": "illustrations/09007.png",
+    "fsw": "M585x518S30001482x483S30007482x483S17618461x480S2c612436x461S20500512x473S20500481x473S2c607545x464S17610525x480S17620569x446S17620418x446"
+  },
+  {
+    "file": "illustrations/02881.png",
+    "fsw": "M520x528S14c00490x497S21f32481x471"
+  },
+  {
+    "file": "illustrations/02973.png",
+    "fsw": "M550x517S33100482x482S20500495x494S26500533x473S1f410521x496S22104535x459"
+  },
+  {
+    "file": "illustrations/00833.png",
+    "fsw": "M527x536S1ec17503x464S1ec1f474x464S26a02504x498S26a16485x497S20600488x525"
+  },
+  {
+    "file": "illustrations/05019.png",
+    "fsw": "M549x518S17600532x453S21d00531x442S2ff00482x483S26503517x469"
+  },
+  {
+    "file": "illustrations/01125.png",
+    "fsw": "M527x535S15a50507x486S15a50479x486S22f04502x521S22f14472x521S26500506x465S26510477x465"
+  },
+  {
+    "file": "illustrations/00407.png",
+    "fsw": "M526x533S1003a474x480S10032496x468S2ea34508x489S2ea18487x498S2fc00505x522"
+  },
+  {
+    "file": "illustrations/05133.png",
+    "fsw": "M559x523S15330544x477S15338441x478S2e50c505x478S2e514464x478S21600513x514S21600545x514S21600471x515S21600441x514"
+  },
+  {
+    "file": "illustrations/00478.png",
+    "fsw": "M538x536S30004482x482S20340492x521S20600516x515"
+  },
+  {
+    "file": "illustrations/02497.png",
+    "fsw": "M508x538S10004493x463S22b04492x496S2f700493x531"
+  },
+  {
+    "file": "illustrations/04184.png",
+    "fsw": "M537x538S37606476x470S1ea01485x488S1ea51483x463S20500462x473S20500462x495S2a600520x475"
+  },
+  {
+    "file": "illustrations/06229.png",
+    "fsw": "M529x521S15a37471x487S15a51480x498S21100501x493S26507516x479"
+  },
+  {
+    "file": "illustrations/02797.png",
+    "fsw": "M565x541S30004482x482S16d40499x521S2c405526x503"
+  },
+  {
+    "file": "illustrations/08616.png",
+    "fsw": "M569x507S21100454x493S26506554x493S18544472x492S1854c505x492S26512430x492S21100536x492"
+  },
+  {
+    "file": "illustrations/01732.png",
+    "fsw": "M510x530S1ed56491x504S26500493x480S2f700491x469"
+  },
+  {
+    "file": "illustrations/02955.png",
+    "fsw": "M584x516S1ef20502x501S1ef28466x501S22c06542x500S22c12416x498S22104571x487S22104416x484"
+  },
+  {
+    "file": "illustrations/00212.png",
+    "fsw": "M512x525S1f552488x476S2a20c489x497"
+  },
+  {
+    "file": "illustrations/05397.png",
+    "fsw": "M546x517S33010479x482S15a10534x484S20500522x493"
+  },
+  {
+    "file": "illustrations/03178.png",
+    "fsw": "M596x518S10652423x481S1061a404x503S20800435x506S26526452x500S1ed40545x482S1ed48513x482S23b1c488x491S23b04577x492S20500537x504"
+  },
+  {
+    "file": "illustrations/00920.png",
+    "fsw": "M594x539S1dc0b469x493S1dc03505x493S21100542x499S21100448x499S1f401564x494S1f409411x493S2fb00495x521S36d00478x461S36d00479x535"
+  },
+  {
+    "file": "illustrations/08384.png",
+    "fsw": "M667x527S30000482x482S10011519x485S20500506x471S20352629x493S2035a621x512S26512601x512S26506648x494S2f700655x480S2f700601x501"
+  },
+  {
+    "file": "illustrations/07226.png",
+    "fsw": "M543x540S33100482x482S10620520x492S22e04526x522S20500495x494"
+  },
+  {
+    "file": "illustrations/06501.png",
+    "fsw": "M507x507S1f510492x492"
+  },
+  {
+    "file": "illustrations/00811.png",
+    "fsw": "M527x519S20310486x481S15d3a472x500S20600505x497"
+  },
+  {
+    "file": "illustrations/04091.png",
+    "fsw": "M546x529S15020512x472S15028459x471S23600507x512S23614453x510"
+  },
+  {
+    "file": "illustrations/02800.png",
+    "fsw": "M511x539S14c20488x508S20320493x462S26500493x485"
+  },
+  {
+    "file": "illustrations/00462.png",
+    "fsw": "M521x539S17636504x508S21d00502x495S26500505x473S21d00479x495S17632480x508S26510479x473S36d00479x461S20500507x528S20500482x528"
+  },
+  {
+    "file": "illustrations/00269.png",
+    "fsw": "M561x545S10028438x457S10000513x457S10020546x455S10008476x457S28816457x495S28816457x533S2880e527x493S2880e529x529S2881e455x513S28806530x511"
+  },
+  {
+    "file": "illustrations/03057.png",
+    "fsw": "M536x529S14c31507x502S14c39464x502S2d200510x470S2d211464x470"
+  },
+  {
+    "file": "illustrations/00159.png",
+    "fsw": "M543x541S14e02503x460S14e0a462x460S21100516x490S21100468x491S23600504x509S23610456x510S2fc00491x530"
+  },
+  {
+    "file": "illustrations/05318.png",
+    "fsw": "M563x515S20320548x499S20320438x499S20300479x500S20300504x500S2d600518x484S2d618454x484"
+  },
+  {
+    "file": "illustrations/00309.png",
+    "fsw": "M528x531S15a4a471x507S15a42501x507S20500494x520S2a210473x469S2a208504x469"
+  },
+  {
+    "file": "illustrations/00982.png",
+    "fsw": "M521x549S36d00479x451S1ea5a478x474S1ea37496x498S23004495x531"
+  },
+  {
+    "file": "illustrations/00583.png",
+    "fsw": "M523x528S15310508x472S21600477x517S2880d493x508"
+  },
+  {
+    "file": "illustrations/02855.png",
+    "fsw": "M556x552S17817503x448S1781f473x448S14c10533x484S14c18444x482S14c30502x521S14c38474x521S28807532x519S2881f448x518S20600489x471"
+  },
+  {
+    "file": "illustrations/08290.png",
+    "fsw": "M507x526S15a20495x499S26500493x473"
+  },
+  {
+    "file": "illustrations/01017.png",
+    "fsw": "M533x533S15a57466x467S15a51510x510S2c700481x484"
+  },
+  {
+    "file": "illustrations/00675.png",
+    "fsw": "M529x523S15a37470x497S18520481x508S20e00499x489S26a07508x476"
+  },
+  {
+    "file": "illustrations/03138.png",
+    "fsw": "M584x520S31600482x482S20310523x487S21100526x506S2d300545x490"
+  },
+  {
+    "file": "illustrations/07008.png",
+    "fsw": "M530x527S15a37470x504S18531492x482S20800498x501S26527517x472"
+  },
+  {
+    "file": "illustrations/00928.png",
+    "fsw": "M568x541S36d00479x459S36d00479x487S14c5d449x495S14c55524x496S20e00463x480S20e00527x480S25505549x522S25513432x521"
+  },
+  {
+    "file": "illustrations/02497.png",
+    "fsw": "M509x518S10004491x482S22a04496x503"
+  },
+  {
+    "file": "illustrations/01104.png",
+    "fsw": "M557x529S30103482x471S36a00482x482S20327514x508S22b07533x487"
+  },
+  {
+    "file": "illustrations/00522.png",
+    "fsw": "M566x513S10002501x498S1000a466x498S20500494x502S2d610435x486S2d608537x487"
+  },
+  {
+    "file": "illustrations/06284.png",
+    "fsw": "M531x533S20337475x467S20331507x467S2e50a504x493S2e512469x492S2fb00494x527"
+  },
+  {
+    "file": "illustrations/00867.png",
+    "fsw": "M554x546S30004482x482S11500504x516S27107527x488S20500519x507"
+  },
+  {
+    "file": "illustrations/05340.png",
+    "fsw": "M512x538S27102493x498S14c30488x463"
+  },
+  {
+    "file": "illustrations/00293.png",
+    "fsw": "M541x543S30004482x482S1e10a486x519S20600519x509"
+  },
+  {
+    "file": "illustrations/02904.png",
+    "fsw": "M521x527S1ed3e502x472S2c604499x501S15d58479x484"
+  },
+  {
+    "file": "illustrations/00365.png",
+    "fsw": "M521x524S20356506x509S10020497x475S37706478x517S21100482x497"
+  },
+  {
+    "file": "illustrations/07239.png",
+    "fsw": "M512x540S10008495x510S15352487x459S20500492x495S22a04491x477"
+  },
+  {
+    "file": "illustrations/00736.png",
+    "fsw": "M528x511S1f510472x489S22b06498x495"
+  },
+  {
+    "file": "illustrations/00831.png",
+    "fsw": "M550x523S14c08450x491S1f510480x499S10000528x493S2ea06525x476"
+  },
+  {
+    "file": "illustrations/05133.png",
+    "fsw": "M517x524S15a30485x496S15a30505x497S26500503x477S26510483x477"
+  },
+  {
+    "file": "illustrations/00305.png",
+    "fsw": "M527x517S15a36473x505S20350476x484S20500501x485S20500517x485"
+  },
+  {
+    "file": "illustrations/03398.png",
+    "fsw": "M538x538S14c40514x462S20340462x523S22c03485x488"
+  },
+  {
+    "file": "illustrations/02530.png",
+    "fsw": "M520x523S1f523498x476S22a03483x498S2f900480x518"
+  },
+  {
+    "file": "illustrations/00868.png",
+    "fsw": "M540x544S15a50502x470S15a50484x469S15a30501x517S15a30486x517S20500493x456S20500494x504S2421a460x494S24202518x495"
+  },
+  {
+    "file": "illustrations/00575.png",
+    "fsw": "M545x550S15d40507x477S15d48472x477S15d32484x450S15d3a487x514S2d606523x459S2d612454x506S2fb00492x544"
+  },
+  {
+    "file": "illustrations/02861.png",
+    "fsw": "M515x541S16d40496x498S16d48496x521S20500485x516S26600499x459"
+  },
+  {
+    "file": "illustrations/09000.png",
+    "fsw": "M518x542S33100482x482S20500495x495S1f421473x521S22125465x521"
+  },
+  {
+    "file": "illustrations/02574.png",
+    "fsw": "M556x535S14c01505x465S14c09475x465S28804509x497S28804544x498S28808527x497S2881c443x497S2881c479x496S28810460x497S2fc00493x524"
+  },
+  {
+    "file": "illustrations/06338.png",
+    "fsw": "M508x523S20300493x476S26504494x495S2f900495x518"
+  },
+  {
+    "file": "illustrations/00383.png",
+    "fsw": "M531x519S15a40470x481S22b06498x503S20500491x490S20500507x490S20500521x490"
+  },
+  {
+    "file": "illustrations/06510.png",
+    "fsw": "M526x515S14c00503x484S14c08474x484"
+  },
+  {
+    "file": "illustrations/00278.png",
+    "fsw": "M533x527S15a37466x492S15a51476x504S21100496x496S26607511x472"
+  },
+  {
+    "file": "illustrations/05062.png",
+    "fsw": "M561x535S1f510504x481S1f518483x481S20500497x507S2c500521x465S2c511439x467S2fc00494x524"
+  },
+  {
+    "file": "illustrations/05019.png",
+    "fsw": "M577x518S17600561x437S14c01515x461S2ff00482x483S26503543x455"
+  },
+  {
+    "file": "illustrations/00591.png",
+    "fsw": "M574x514S1ee20508x491S1ee28475x491S22b06539x497S22b12436x498S22104426x487S22104562x485"
+  },
+  {
+    "file": "illustrations/00758.png",
+    "fsw": "M547x524S10056472x491S1005e495x484S2ea08532x477S2ea40453x488S2fd04490x518"
+  },
+  {
+    "file": "illustrations/01631.png",
+    "fsw": "M547x524S1ce20525x481S2880e497x506S28801482x477S29a03453x491"
+  },
+  {
+    "file": "illustrations/01017.png",
+    "fsw": "M529x530S2c702483x470S15d59471x490S15d51498x507S21100516x489"
+  },
+  {
+    "file": "illustrations/00239.png",
+    "fsw": "M531x538S36d00479x462S14c09470x474S14c01505x474S20e00513x526S22a04513x508S22a14473x507S20e00473x526"
+  },
+  {
+    "file": "illustrations/04143.png",
+    "fsw": "M507x525S10040492x495S26500492x474"
+  },
+  {
+    "file": "illustrations/05110.png",
+    "fsw": "M517x540S1ce20495x459S1d152483x511S22a00496x493"
+  },
+  {
+    "file": "illustrations/00365.png",
+    "fsw": "M530x529S1fa56501x514S37706471x519S10a51497x493S2ea36488x470"
+  },
+  {
+    "file": "illustrations/00127.png",
+    "fsw": "M529x586S2ff00482x482S15d01503x521S15d09475x521S2ea00514x549S2ea40475x550S2fc00496x575"
+  },
+  {
+    "file": "illustrations/04616.png",
+    "fsw": "M533x539S1ef18468x473S1ef10503x473S20500496x489S2fb00493x528S26f06517x499S26f12473x497S22114468x461S22114507x462"
+  },
+  {
+    "file": "illustrations/02579.png",
+    "fsw": "M533x530S14c09468x469S14c01503x469S2a20c510x502S2a214467x502"
+  },
+  {
+    "file": "illustrations/02937.png",
+    "fsw": "M535x581S10028413x488S10020434x488S10058413x532S10050434x532S24202444x521S2421a393x521S20500426x473S20500424x570S30305482x477S15a10523x492S20500516x481"
+  },
+  {
+    "file": "illustrations/00241.png",
+    "fsw": "M540x521S18232503x498S1823a483x498S20500498x479S22a06525x495S22a12460x494"
+  },
+  {
+    "file": "illustrations/00546.png",
+    "fsw": "M509x523S20500495x512S21d00491x477S17630492x491"
+  },
+  {
+    "file": "illustrations/00496.png",
+    "fsw": "M518x550S16d48499x530S16d40499x507S20500482x519S22b00502x471S20340503x449"
+  },
+  {
+    "file": "illustrations/00571.png",
+    "fsw": "M576x520S10021495x497S10029472x498S20500492x479S1002f424x490S10027555x487S26506531x501S26512450x501"
+  },
+  {
+    "file": "illustrations/03419.png",
+    "fsw": "M523x523S18217506x477S1821f476x477S26502501x509S26516479x508"
+  },
+  {
+    "file": "illustrations/05163.png",
+    "fsw": "M586x548S30004482x482S20310492x521S20600516x515S14c20563x489S22e04565x530"
+  },
+  {
+    "file": "illustrations/00903.png",
+    "fsw": "M546x531S31400482x482S10001510x501S20600524x492"
+  },
+  {
+    "file": "illustrations/00453.png",
+    "fsw": "M511x540S1ce10489x510S25600489x477S2f700491x460"
+  },
+  {
+    "file": "illustrations/00411.png",
+    "fsw": "M559x517S30007482x482S20500508x473S10010521x462S10040522x428S26500545x445"
+  },
+  {
+    "file": "illustrations/03187.png",
+    "fsw": "M545x517S16d50505x497S16d58480x497S20500498x483S22a06530x503S22a12455x501"
+  },
+  {
+    "file": "illustrations/01732.png",
+    "fsw": "M510x530S1ed36491x504S26500493x480S2f700491x469"
+  },
+  {
+    "file": "illustrations/05089.png",
+    "fsw": "M515x542S10003485x521S10050497x458S26500496x498"
+  },
+  {
+    "file": "illustrations/00797.png",
+    "fsw": "M552x514S36d00479x486S19a10524x494S20600498x496"
+  },
+  {
+    "file": "illustrations/05005.png",
+    "fsw": "M519x515S10020480x485S26506504x499"
+  },
+  {
+    "file": "illustrations/02932.png",
+    "fsw": "M546x521S1ea18455x500S2ff00482x482S1ea10523x499S26900526x477S26910460x477"
+  },
+  {
+    "file": "illustrations/08456.png",
+    "fsw": "M537x533S15040511x467S26514471x501S2f700468x524S15048464x466S26504515x504S2f700512x526"
+  },
+  {
+    "file": "illustrations/00562.png",
+    "fsw": "M514x534S20340495x501S20348485x519S2ea06489x483S21100495x465"
+  },
+  {
+    "file": "illustrations/00931.png",
+    "fsw": "M546x546S1d450501x454S1d458465x454S1d441521x520S1d449453x521S2c605518x489S2c614458x488"
+  },
+  {
+    "file": "illustrations/08319.png",
+    "fsw": "M518x534S17600481x479S21b00485x466S22a04504x479S22a04504x499S22a04505x519"
+  },
+  {
+    "file": "illustrations/08147.png",
+    "fsw": "M512x516S15352487x483S22a04496x501"
+  },
+  {
+    "file": "illustrations/00132.png",
+    "fsw": "M522x522S15a56495x479S15a10505x495S20600478x496"
+  },
+  {
+    "file": "illustrations/02846.png",
+    "fsw": "M536x522S18520505x507S18528470x507S25500505x479S25500523x479S25510481x478S25510464x478"
+  },
+  {
+    "file": "illustrations/00840.png",
+    "fsw": "M554x534S33200482x482S1005e523x502S22a02539x521S20e00522x521"
+  },
+  {
+    "file": "illustrations/05050.png",
+    "fsw": "M573x518S2c500533x494S2c514427x492S1ea50503x497S1ea18476x497S20600490x482"
+  },
+  {
+    "file": "illustrations/05062.png",
+    "fsw": "M561x535S1f510504x481S1f518483x481S20500497x507S2c500521x465S2c511439x467S2fc00494x524"
+  },
+  {
+    "file": "illustrations/02458.png",
+    "fsw": "M522x539S15352480x484S15336494x504S2ea32478x462S2ea16497x524"
+  },
+  {
+    "file": "illustrations/08630.png",
+    "fsw": "M507x523S17d56492x476S22a04494x508"
+  },
+  {
+    "file": "illustrations/03456.png",
+    "fsw": "M527x525S10041506x495S26501488x490S2f700474x475"
+  },
+  {
+    "file": "illustrations/00829.png",
+    "fsw": "M543x524S1ce20511x494S1ce28461x492S26f00503x477S26f10457x476"
+  },
+  {
+    "file": "illustrations/00954.png",
+    "fsw": "M533x537S17139476x499S14c21495x477S22511483x464S20f00466x519S2e500510x510"
+  },
+  {
+    "file": "illustrations/03450.png",
+    "fsw": "M528x566S16d40473x520S16d48474x546S20500480x506S2f700485x465S22a03496x449S15351505x433S22a00478x489"
+  },
+  {
+    "file": "illustrations/00144.png",
+    "fsw": "M524x535S15a10512x466S15a56475x476S21100497x494S27102476x495"
+  },
+  {
+    "file": "illustrations/05062.png",
+    "fsw": "M530x533S1f510510x467S1f518473x467S26d00503x496S26d10469x495S2fc00491x522S21100492x475"
+  },
+  {
+    "file": "illustrations/05219.png",
+    "fsw": "M528x529S11850505x470S11858472x470S2b704511x504S2b715474x505"
+  },
+  {
+    "file": "illustrations/02629.png",
+    "fsw": "M518x546S15d39482x507S14c30486x454S17630490x530S20500508x520S26a00487x489"
+  },
+  {
+    "file": "illustrations/05455.png",
+    "fsw": "M551x513S1ea31503x494S1ea39468x493S26906533x496S26912449x495S20500495x487"
+  },
+  {
+    "file": "illustrations/05163.png",
+    "fsw": "M595x541S30004482x482S20340492x521S15a20580x490S26904579x523S20600516x515"
+  },
+  {
+    "file": "illustrations/02530.png",
+    "fsw": "M529x533S1f523507x466S22b03479x496S2f700472x526"
+  },
+  {
+    "file": "illustrations/06186.png",
+    "fsw": "M518x530S15352493x492S21600482x485S2ea32493x470S20330498x515"
+  },
+  {
+    "file": "illustrations/00094.png",
+    "fsw": "M520x565S15a18482x435S15a10504x507S1f710500x440S1f718480x513S22a04502x475S22a14485x550S21100502x458S21100486x532"
+  },
+  {
+    "file": "illustrations/00289.png",
+    "fsw": "M521x523S10e20481x477S15a56478x511S20500511x496S20500499x495"
+  },
+  {
+    "file": "illustrations/02450.png",
+    "fsw": "M523x522S1ce20478x492S22114477x478S26506508x504"
+  },
+  {
+    "file": "illustrations/08386.png",
+    "fsw": "M548x572S30322482x476S27206529x532S10020530x495"
+  },
+  {
+    "file": "illustrations/00073.png",
+    "fsw": "M518x559S36a00482x477S22e04482x541S10a00462x517"
+  },
+  {
+    "file": "illustrations/00935.png",
+    "fsw": "M547x524S1ce20525x481S2880e497x506S28801482x477S29a03453x491"
+  },
+  {
+    "file": "illustrations/05083.png",
+    "fsw": "M508x532S24804492x504S11508493x469"
+  },
+  {
+    "file": "illustrations/00533.png",
+    "fsw": "M530x535S15a56472x465S1853e481x510S15702470x485S20500499x478S22f04505x507"
+  },
+  {
+    "file": "illustrations/08287.png",
+    "fsw": "M515x525S20310500x476S2a20c484x497"
+  },
+  {
+    "file": "illustrations/00545.png",
+    "fsw": "M530x532S15001502x468S15009470x469S26504509x504S26514478x503S2f900479x527S2f900511x527"
+  },
+  {
+    "file": "illustrations/00171.png",
+    "fsw": "M527x515S15a56473x502S15a52479x485S2ea00512x490"
+  },
+  {
+    "file": "illustrations/02125.png",
+    "fsw": "M527x527S18210504x512S18218474x512S29200509x473"
+  },
+  {
+    "file": "illustrations/04068.png",
+    "fsw": "M543x517S30000482x482S10010457x464S20500477x470S20500493x470S20500512x470S22a06528x480"
+  },
+  {
+    "file": "illustrations/05122.png",
+    "fsw": "M531x528S12850504x471S12858473x471S2a204508x500S2a21c468x500"
+  },
+  {
+    "file": "illustrations/00431.png",
+    "fsw": "M528x526S37703497x504S37800497x473S20600471x490S15d02501x483"
+  },
+  {
+    "file": "illustrations/05216.png",
+    "fsw": "M527x527S1155f497x500S11557472x493S21200474x474S26a07506x486"
+  },
+  {
+    "file": "illustrations/08286.png",
+    "fsw": "M515x525S20310500x476S2a20c484x497"
+  },
+  {
+    "file": "illustrations/04629.png",
+    "fsw": "M551x518S15318448x493S15310467x493S22b06490x498S18510526x499S20500463x481"
+  },
+  {
+    "file": "illustrations/00780.png",
+    "fsw": "M530x597S31a00482x482S14c30506x521S14c38473x520S27102511x556S27116476x557"
+  },
+  {
+    "file": "illustrations/07238.png",
+    "fsw": "M514x521S1cf10487x480S2f900494x516"
+  },
+  {
+    "file": "illustrations/03144.png",
+    "fsw": "M526x542S17620506x458S14c50502x511S25604506x479S17620478x458S25604478x479S14c58474x511"
+  },
+  {
+    "file": "illustrations/01041.png",
+    "fsw": "M544x521S1e540521x485S1e548456x487S26a02502x494S26a16484x493S20600486x479"
+  },
+  {
+    "file": "illustrations/00506.png",
+    "fsw": "M529x518S18536481x493S1853e506x493S21100471x482S21100516x482"
+  },
+  {
+    "file": "illustrations/00667.png",
+    "fsw": "M594x518S36d00479x489S37709473x489S37701520x489S37703450x490S3770b527x491S15a56548x487S15a52425x487S26a06580x483S26a12404x482S2fb00492x512"
+  },
+  {
+    "file": "illustrations/05239.png",
+    "fsw": "M519x524S1ea17491x496S23600480x475"
+  },
+  {
+    "file": "illustrations/00469.png",
+    "fsw": "M517x532S10020502x467S2a20c482x504"
+  },
+  {
+    "file": "illustrations/02366.png",
+    "fsw": "M538x517S2ff00482x482S15a20521x478S15a20467x478S22124516x468S22124462x466"
+  },
+  {
+    "file": "illustrations/08336.png",
+    "fsw": "M530x532S15d09489x509S27107503x468S20341487x485S21100470x503"
+  },
+  {
+    "file": "illustrations/08490.png",
+    "fsw": "M539x517S30007482x482S10a00523x483S2e507512x459"
+  },
+  {
+    "file": "illustrations/08262.png",
+    "fsw": "M529x518S18536481x493S1853e506x493S21100471x482S21100516x482"
+  },
+  {
+    "file": "illustrations/05446.png",
+    "fsw": "M548x518S22a03516x474S14c01522x449S2ff00482x483S22515508x436"
+  },
+  {
+    "file": "illustrations/00632.png",
+    "fsw": "M557x533S2ff00482x482S10008520x466S10000465x466S2d60a534x497S2d612443x498S10020520x503S10028464x503"
+  },
+  {
+    "file": "illustrations/00436.png",
+    "fsw": "M542x515S18536480x490S1853e506x490S22a05529x497S21100517x484S21100472x485S22a13458x497"
+  },
+  {
+    "file": "illustrations/00588.png",
+    "fsw": "M537x541S36d00479x460S14c01505x469S14c09473x469S21100475x500S21100517x498S2d201511x517S2d210470x518"
+  },
+  {
+    "file": "illustrations/08228.png",
+    "fsw": "M522x539S20357477x477S20351501x476S2fb00494x533S2ea28491x500S20500492x461"
+  },
+  {
+    "file": "illustrations/02579.png",
+    "fsw": "M552x522S14c00503x479S14c08472x478S22e06534x494S22e12448x491S2fb00491x516"
+  },
+  {
+    "file": "illustrations/08619.png",
+    "fsw": "M540x529S14c31510x471S14c39466x474S23004515x511S23014460x510"
+  },
+  {
+    "file": "illustrations/03863.png",
+    "fsw": "M530x532S15d14470x505S15d1c511x505S2d200502x467S2d211471x467"
+  },
+  {
+    "file": "illustrations/00974.png",
+    "fsw": "M533x524S1ea31505x476S23024487x506S1ea39467x476"
+  },
+  {
+    "file": "illustrations/00436.png",
+    "fsw": "M531x523S26512470x509S26506510x508S18534469x478S1853c506x478S20500495x509S22100508x497S22100477x497"
+  },
+  {
+    "file": "illustrations/04029.png",
+    "fsw": "M562x543S11821531x513S11807437x518S11811497x469S11819466x468S20500488x456S22a17455x500S22a01528x496"
+  },
+  {
+    "file": "illustrations/05382.png",
+    "fsw": "M523x509S1ec20477x490S22a06508x496"
+  },
+  {
+    "file": "illustrations/00090.png",
+    "fsw": "M519x522S14c51480x478S20348481x507S21100506x506"
+  },
+  {
+    "file": "illustrations/00092.png",
+    "fsw": "M544x533S1ea11509x496S1ea19469x495S27200504x467S27210456x468S2fc00496x522"
+  },
+  {
+    "file": "illustrations/00589.png",
+    "fsw": "M529x529S10e10507x471S10e18475x471S23004504x511S23014470x511"
+  },
+  {
+    "file": "illustrations/00121.png",
+    "fsw": "M532x525S1de20467x495S1f420503x475S26507495x493"
+  },
+  {
+    "file": "illustrations/00008.png",
+    "fsw": "M528x526S11800513x474S11808473x474S22a04514x511S22a14484x511"
+  },
+  {
+    "file": "illustrations/02909.png",
+    "fsw": "M512x534S14c10488x467S2e100489x505"
+  },
+  {
+    "file": "illustrations/03343.png",
+    "fsw": "M521x542S21100493x492S10010478x458S10018503x458S23624482x510S2fc00493x531"
+  },
+  {
+    "file": "illustrations/02370.png",
+    "fsw": "M509x522S10010494x492S22a00492x477"
+  },
+  {
+    "file": "illustrations/04276.png",
+    "fsw": "M526x529S14c51474x471S20300503x514S2ef04506x489"
+  },
+  {
+    "file": "illustrations/01180.png",
+    "fsw": "M548x538S36d00479x518S20500478x527S20500513x526S1dc05452x502S1f401517x462S1dc0d525x504S1f409454x461S26500529x484S26510456x484"
+  },
+  {
+    "file": "illustrations/00561.png",
+    "fsw": "M576x532S15730477x483S15738503x483S1f740556x506S1f748424x506S28805527x502S2881d450x503S2f800481x521S20500492x468"
+  },
+  {
+    "file": "illustrations/00928.png",
+    "fsw": "M550x548S36d00479x452S20e00481x484S20e00511x485S14c0c456x482S14c04527x483S2c700527x519S2c710456x517"
+  },
+  {
+    "file": "illustrations/07090.png",
+    "fsw": "M615x568S10028562x475S10020583x475S10058562x519S10050583x519S24202593x508S2421a542x508S20500575x460S20500573x557S2ff00482x482S14c01491x493S2e501491x520"
+  },
+  {
+    "file": "illustrations/04068.png",
+    "fsw": "M558x517S30000482x482S10010457x464S20500477x471S20500493x470S20500512x470S22b06528x480"
+  },
+  {
+    "file": "illustrations/00521.png",
+    "fsw": "M512x524S10000493x475S2ea32487x509"
+  },
+  {
+    "file": "illustrations/00113.png",
+    "fsw": "M521x538S20600499x497S14c0a479x515S18512487x462S22a04482x494"
+  },
+  {
+    "file": "illustrations/03228.png",
+    "fsw": "M543x537S1c501505x483S20e00508x470S2d311458x514S36d00479x463S1c509469x484S2d300504x514S20e00479x470"
+  },
+  {
+    "file": "illustrations/07010.png",
+    "fsw": "M546x539S17620456x465S14c50453x508S23004453x487S10e20505x461S10e28530x461S2df06526x498S2df1e503x498"
+  },
+  {
+    "file": "illustrations/00923.png",
+    "fsw": "M583x526S20310440x497S20318417x496S26900440x477S26910417x476S20500434x515S10020541x485S10028521x485S20500531x473S23d04556x479S23d1c495x478"
+  },
+  {
+    "file": "illustrations/05015.png",
+    "fsw": "M513x550S1ea10487x495S2b700488x451S2a208490x522S22100488x484"
+  },
+  {
+    "file": "illustrations/00920.png",
+    "fsw": "M547x526S20310413x496S20318390x495S26900413x476S26910390x475S20500407x514S36d00479x479S1ec34476x507S1ec3c504x507S22a06532x508S22a12457x506S20500496x494"
+  },
+  {
+    "file": "illustrations/03315.png",
+    "fsw": "M525x516S1e132474x492S26506510x501S22104477x483"
+  },
+  {
+    "file": "illustrations/05216.png",
+    "fsw": "M530x526S11551490x501S11559470x500S26a07509x473S20e00499x487"
+  },
+  {
+    "file": "illustrations/07008.png",
+    "fsw": "M518x530S1f540503x506S1f548482x506S20600489x493S26520494x470"
+  },
+  {
+    "file": "illustrations/00314.png",
+    "fsw": "M534x537S22f14466x523S14c00507x479S14c08467x479S22510508x463S22510468x462S22f04509x523"
+  },
+  {
+    "file": "illustrations/01122.png",
+    "fsw": "M580x513S15d0a471x486S15d02503x487S27204540x494S27214420x493"
+  },
+  {
+    "file": "illustrations/00907.png",
+    "fsw": "M580x534S2ff00482x482S10a0f519x478S10a07447x480S2ea00565x477S2ea18426x480S2fb04495x528"
+  },
+  {
+    "file": "illustrations/00190.png",
+    "fsw": "M512x528S18220489x513S22b00494x472"
+  },
+  {
+    "file": "illustrations/00963.png",
+    "fsw": "M532x529S15a57471x503S20500491x518S20500468x501S2880a481x486S1ed17507x496S2880a481x471"
+  },
+  {
+    "file": "illustrations/08610.png",
+    "fsw": "M554x545S36d00479x480S20337476x517S20337446x488S28811473x491S28809504x491S20331504x517S20331533x488S26500538x466S26510450x465S2f700538x456S2f700450x455S2fb00493x539"
+  },
+  {
+    "file": "illustrations/00994.png",
+    "fsw": "M567x520S36d00479x482S15d18524x480S20500508x509S20500509x496S2ea00552x487"
+  },
+  {
+    "file": "illustrations/00861.png",
+    "fsw": "M550x540S36d00479x536S14410516x477S14418488x464S20500511x460S26504519x510S20500540x480"
+  },
+  {
+    "file": "illustrations/00261.png",
+    "fsw": "M547x541S33300482x482S15000522x489S22a04528x526"
+  },
+  {
+    "file": "illustrations/00138.png",
+    "fsw": "M547x513S1f556476x486S1f552504x486S26506532x486S26512453x487S20500497x502"
+  },
+  {
+    "file": "illustrations/00410.png",
+    "fsw": "M538x546S30004482x482S15a00494x519S20600516x517"
+  },
+  {
+    "file": "illustrations/01006.png",
+    "fsw": "M527x517S20320473x482S28a06491x500"
+  },
+  {
+    "file": "illustrations/01123.png",
+    "fsw": "M524x546S15a36476x534S20320495x453S20350492x514S20500476x516S2c600486x477S2c600505x476"
+  },
+  {
+    "file": "illustrations/08513.png",
+    "fsw": "M519x543S10000500x494S20e00484x510S20348489x528S2b800480x477S2e230500x456"
+  },
+  {
+    "file": "illustrations/00523.png",
+    "fsw": "M542x523S30007482x482S2ea34526x498S1ea10519x469"
+  },
+  {
+    "file": "illustrations/00462.png",
+    "fsw": "M532x542S17636478x510S14c39468x459S14c31506x460S20500481x530S17636503x509S26510479x488S26500504x488S20500506x531"
+  },
+  {
+    "file": "illustrations/08162.png",
+    "fsw": "M527x537S15a36473x480S15a30480x510S22120477x501S21100510x497S2c600508x463"
+  },
+  {
+    "file": "illustrations/00315.png",
+    "fsw": "M527x527S1155f497x500S11557472x493S21200474x474S26a07506x486"
+  },
+  {
+    "file": "illustrations/08200.png",
+    "fsw": "M527x527S1155f497x500S11557472x493S21200474x474S26a07506x486"
+  },
+  {
+    "file": "illustrations/05133.png",
+    "fsw": "M558x519S15340543x481S15348442x482S2e50b506x482S2e513465x482S21600501x511S21600488x511"
+  },
+  {
+    "file": "illustrations/03315.png",
+    "fsw": "M541x513S1e138459x487S1ea30518x492S26506493x497"
+  },
+  {
+    "file": "illustrations/00978.png",
+    "fsw": "M519x539S14c50480x468S2e230484x507S22a07506x460"
+  },
+  {
+    "file": "illustrations/02958.png",
+    "fsw": "M524x517S1ea30477x496S21100487x482S26506509x498"
+  },
+  {
+    "file": "illustrations/06540.png",
+    "fsw": "M532x536S22510469x463S14c00509x480S14c08468x480S22510510x464S22a04515x521S22a14472x520"
+  },
+  {
+    "file": "illustrations/00585.png",
+    "fsw": "M512x525S10004494x474S22f04487x511"
+  },
+  {
+    "file": "illustrations/04150.png",
+    "fsw": "M542x517S33100482x482S20500495x494S16d10523x493S2d000518x459S20340523x436"
+  },
+  {
+    "file": "illustrations/03517.png",
+    "fsw": "M540x546S15051498x476S15039474x496S2ea32515x454S2ea06461x531"
+  },
+  {
+    "file": "illustrations/00687.png",
+    "fsw": "M544x549S10e11519x495S33100482x482S22e04524x531S20500502x495"
+  },
+  {
+    "file": "illustrations/02567.png",
+    "fsw": "M531x534S14c31501x485S14c39472x485S20500496x511S22e04514x516S22e14470x516S22514501x467S22514471x467"
+  },
+  {
+    "file": "illustrations/00949.png",
+    "fsw": "M511x539S10020489x462S29b04493x500"
+  },
+  {
+    "file": "illustrations/05059.png",
+    "fsw": "M528x507S20350513x492S29a0e472x492"
+  },
+  {
+    "file": "illustrations/02733.png",
+    "fsw": "M628x552S2ff00482x482S15a11518x482S20500509x471S14e39572x480S1e141603x513S2fb00579x534S2f700613x545S2f700575x510"
+  },
+  {
+    "file": "illustrations/00942.png",
+    "fsw": "M524x543S36d00479x457S1ed3e504x470S1ed36477x470S21100475x504S21100511x505S22a14474x527S22a04508x528"
+  },
+  {
+    "file": "illustrations/00642.png",
+    "fsw": "M528x520S15a37472x486S15a51481x497S21100502x492S22a07515x479"
+  },
+  {
+    "file": "illustrations/05205.png",
+    "fsw": "M532x527S15d02505x472S15d0a471x472S2a208507x499S2a210468x498"
+  },
+  {
+    "file": "illustrations/00580.png",
+    "fsw": "M531x543S36d00479x457S15039471x468S2fb00496x537S22a04514x501S22a14475x501S21100514x520S21100477x520S15031503x470"
+  },
+  {
+    "file": "illustrations/01165.png",
+    "fsw": "M531x532S20332513x501S2033a475x501S2d200505x468S2d211469x469S2fb00495x526"
+  },
+  {
+    "file": "illustrations/05056.png",
+    "fsw": "M544x530S30005482x482S10a10519x504S20600522x490"
+  },
+  {
+    "file": "illustrations/02703.png",
+    "fsw": "M532x536S20f00506x500S15a56471x524S17d51472x491S18551467x464S22f00506x480"
+  },
+  {
+    "file": "illustrations/00181.png",
+    "fsw": "M538x520S15340523x495S15348461x495S26502500x501S26516479x501S20a00490x480"
+  },
+  {
+    "file": "illustrations/00930.png",
+    "fsw": "M529x527S1ea20506x473S1ea28471x473S2c604505x501S2c615476x501"
+  },
+  {
+    "file": "illustrations/00996.png",
+    "fsw": "M567x527S10049480x486S10042490x490S2c415432x494S20500485x472S2fc00500x516S2c400527x482"
+  },
+  {
+    "file": "illustrations/02421.png",
+    "fsw": "M528x534S15a56501x522S37706471x526S10040479x466S2ea36472x503S21100505x501"
+  },
+  {
+    "file": "illustrations/02421.png",
+    "fsw": "M528x534S15a56501x522S37706471x526S10040479x466S2ea36472x503S21100505x501"
+  },
+  {
+    "file": "illustrations/00494.png",
+    "fsw": "M542x517S30007482x482S14721521x484S20500507x468S20500520x468"
+  },
+  {
+    "file": "illustrations/02725.png",
+    "fsw": "M512x518S1f500488x503S22a00489x483"
+  },
+  {
+    "file": "illustrations/03066.png",
+    "fsw": "M583x518S26512451x489S26506534x489S20500499x507S18510558x488S18518416x489S17c10513x482S17c18478x482"
+  },
+  {
+    "file": "illustrations/02237.png",
+    "fsw": "M540x532S30004482x482S15a52472x520S20e00506x520S26506525x518"
+  },
+  {
+    "file": "illustrations/09507.png",
+    "fsw": "M528x526S14c58473x495S14c50504x495S26500508x474S26510478x474"
+  },
+  {
+    "file": "illustrations/05229.png",
+    "fsw": "M521x536S36d00479x481S2330a478x492S3780a464x482S37703466x514S1f552452x464S21100452x491"
+  },
+  {
+    "file": "illustrations/00631.png",
+    "fsw": "M525x520S1604f474x486S15a11500x497S20600503x480"
+  },
+  {
+    "file": "illustrations/00482.png",
+    "fsw": "M527x519S15a56488x507S18551500x481S20600472x492"
+  },
+  {
+    "file": "illustrations/01006.png",
+    "fsw": "M524x514S1f720477x486S28806502x502"
+  },
+  {
+    "file": "illustrations/00392.png",
+    "fsw": "M556x521S33010479x482S10021525x500S26500542x480S20500515x508"
+  },
+  {
+    "file": "illustrations/02508.png",
+    "fsw": "M516x517S20352501x484S20348491x502S21100483x482"
+  },
+  {
+    "file": "illustrations/00181.png",
+    "fsw": "M543x513S15340528x488S15348457x487S26502502x494S26516477x495"
+  },
+  {
+    "file": "illustrations/02910.png",
+    "fsw": "M518x517S31400482x482S33e00482x482"
+  },
+  {
+    "file": "illustrations/05047.png",
+    "fsw": "M540x533S16d18477x483S16d10499x466S27100500x495S27114459x511S2fc00508x522"
+  },
+  {
+    "file": "illustrations/00050.png",
+    "fsw": "M548x517S30007482x482S20600496x469S10a11520x477"
+  },
+  {
+    "file": "illustrations/00635.png",
+    "fsw": "M513x530S15030487x499S22a00492x477S2f900493x469"
+  },
+  {
+    "file": "illustrations/00431.png",
+    "fsw": "M521x535S37900478x466S37703479x506S36d00479x466S21100459x490S16d51471x479S2390b463x507"
+  },
+  {
+    "file": "illustrations/00222.png",
+    "fsw": "M573x525S2c500533x487S2c514427x485S18548473x492S18550503x492S20600490x475S2fc00491x514"
+  },
+  {
+    "file": "illustrations/00223.png",
+    "fsw": "M540x546S15051498x476S15039474x496S2ea32515x454S2ea06461x531S2fc00505x523"
+  },
+  {
+    "file": "illustrations/04224.png",
+    "fsw": "M526x540S15d39473x517S1c551484x488S20e00500x474S26507513x460"
+  },
+  {
+    "file": "illustrations/00248.png",
+    "fsw": "M525x523S36d00479x477S20600503x512S20300506x489"
+  },
+  {
+    "file": "illustrations/01223.png",
+    "fsw": "M532x541S33b00482x482S10000488x511S20600510x518"
+  },
+  {
+    "file": "illustrations/03066.png",
+    "fsw": "M549x521S26512451x492S26506534x492S20500499x510S17c18478x485S17c10513x485S22104520x479S22104477x479"
+  },
+  {
+    "file": "illustrations/00721.png",
+    "fsw": "M580x543S30004482x482S15d09476x520S15d01503x520S28911448x489S28909527x489S15d00561x483S15d08425x484"
+  },
+  {
+    "file": "illustrations/00251.png",
+    "fsw": "M528x530S15a56501x518S37706471x522S1f500476x469S2ea36472x499S21100505x497"
+  },
+  {
+    "file": "illustrations/00895.png",
+    "fsw": "M556x517S33100482x482S14c51529x455S26503516x474S22511515x443"
+  },
+  {
+    "file": "illustrations/02017.png",
+    "fsw": "M526x531S15d39474x469S10051496x483S20e00485x492S23303482x509"
+  },
+  {
+    "file": "illustrations/00376.png",
+    "fsw": "M528x545S15d31503x481S2fb00491x539S36d00479x456S2ea00513x512S2ea18470x511S20e00480x464S20e00505x464S15d39470x480"
+  },
+  {
+    "file": "illustrations/04659.png",
+    "fsw": "M544x525S15318456x489S17620484x484S37700491x500S22a04531x491S26506507x475S26506507x492S26506507x509"
+  },
+  {
+    "file": "illustrations/00033.png",
+    "fsw": "M511x530S29b0c488x491S20320496x469"
+  },
+  {
+    "file": "illustrations/00180.png",
+    "fsw": "M515x518S18520485x503S26a00488x482"
+  },
+  {
+    "file": "illustrations/04153.png",
+    "fsw": "M532x523S15357495x477S1533f468x478S20500488x502S26b00505x505"
+  },
+  {
+    "file": "illustrations/05318.png",
+    "fsw": "M557x521S20320542x479S20320444x480S20300481x480S20300506x480S2880e520x501S28816460x502S2fb00491x515"
+  },
+  {
+    "file": "illustrations/00855.png",
+    "fsw": "M568x517S30007482x482S18500522x485S26506553x487S20500510x474S22104529x473"
+  },
+  {
+    "file": "illustrations/02985.png",
+    "fsw": "M523x523S15a18477x484S11552493x488S22114494x477S20f00492x511"
+  },
+  {
+    "file": "illustrations/00239.png",
+    "fsw": "M531x530S15d0a469x470S22a14474x513S22a04513x515S15d02504x471S21100513x496S21100474x495"
+  },
+  {
+    "file": "illustrations/02957.png",
+    "fsw": "M528x548S1e148473x452S1e140504x452S1ea48471x512S1ea40500x513S26504504x487S26514480x486S20500496x537"
+  },
+  {
+    "file": "illustrations/08388.png",
+    "fsw": "M523x517S20340508x483S20348499x502S20600478x485"
+  },
+  {
+    "file": "illustrations/00333.png",
+    "fsw": "M548x520S15a40502x493S15a48486x493S20500494x480S26606518x503S26612451x503"
+  },
+  {
+    "file": "illustrations/02421.png",
+    "fsw": "M528x527S15a56501x515S37706471x519S10051471x472S2ea36472x496S21100505x494"
+  },
+  {
+    "file": "illustrations/05109.png",
+    "fsw": "M533x524S15a37467x477S15a51470x479S2c500493x500S20c00498x480"
+  },
+  {
+    "file": "illustrations/00955.png",
+    "fsw": "M583x513S1ef20502x498S1ef28468x498S22a06537x497S22a12449x498S1f420554x498S1f428417x498S20500496x486"
+  },
+  {
+    "file": "illustrations/03421.png",
+    "fsw": "M537x522S15d49463x498S1ea51487x503S21100491x485S2c300511x477"
+  },
+  {
+    "file": "illustrations/00411.png",
+    "fsw": "M559x517S30007482x482S20500508x473S10010522x479S10040522x442S26500545x468"
+  },
+  {
+    "file": "illustrations/00512.png",
+    "fsw": "M513x518S18536487x493S22114487x481"
+  },
+  {
+    "file": "illustrations/00931.png",
+    "fsw": "M536x548S1d450501x520S1d458466x520S2c614464x488S2c605518x489S1d128464x452S1d120499x453"
+  },
+  {
+    "file": "illustrations/05396.png",
+    "fsw": "M534x518S10002504x503S1000a466x503S26502502x481S26516480x481"
+  },
+  {
+    "file": "illustrations/00289.png",
+    "fsw": "M522x525S10e20478x475S10e56479x510S20600500x494"
+  },
+  {
+    "file": "illustrations/01953.png",
+    "fsw": "M529x524S10119511x477S10111471x476S3770b490x502S37703486x501"
+  },
+  {
+    "file": "illustrations/00007.png",
+    "fsw": "M528x526S1ce40506x474S1ce48472x474S22a04507x511S22a14480x510"
+  },
+  {
+    "file": "illustrations/00430.png",
+    "fsw": "M528x526S1ce40506x474S1ce48472x474S22a04507x511S22a14480x510"
+  },
+  {
+    "file": "illustrations/00210.png",
+    "fsw": "M524x533S15d21501x484S15a57483x510S20e00484x497S2a20c477x467"
+  },
+  {
+    "file": "illustrations/03144.png",
+    "fsw": "M526x542S17620506x458S14c50502x511S25604506x479S17620478x458S25604478x479S14c58474x511"
+  },
+  {
+    "file": "illustrations/00737.png",
+    "fsw": "M552x517S2ff00482x482S20500471x486S20500519x487S14c59446x465S14c51525x467S2c600529x434S2c611454x433"
+  },
+  {
+    "file": "illustrations/00643.png",
+    "fsw": "M541x529S18530516x514S21100527x495S30004482x482"
+  },
+  {
+    "file": "illustrations/01932.png",
+    "fsw": "M553x532S14c08447x467S11e01474x467S11e01525x467S2a204530x504"
+  },
+  {
+    "file": "illustrations/00326.png",
+    "fsw": "M546x524S30004482x482S18520520x509S22124524x494"
+  },
+  {
+    "file": "illustrations/00118.png",
+    "fsw": "M549x533S33010479x482S10011520x503S20600527x496"
+  },
+  {
+    "file": "illustrations/08132.png",
+    "fsw": "M531x552S1ce20508x450S1ce28468x449S1ce58469x508S1ce50509x508S22a14477x485S22a04509x485S2f900479x546S2f900511x547"
+  },
+  {
+    "file": "illustrations/00496.png",
+    "fsw": "M517x543S16d48499x523S16d40499x500S20500482x512S22a00503x479S20340502x458"
+  },
+  {
+    "file": "illustrations/00132.png",
+    "fsw": "M522x522S15a56495x479S15a10505x495S20500490x496S20500478x495"
+  },
+  {
+    "file": "illustrations/00864.png",
+    "fsw": "M533x523S15a37467x476S15a51470x478S2c500493x499S20600504x481"
+  },
+  {
+    "file": "illustrations/00636.png",
+    "fsw": "M531x535S15020506x467S15028468x466S23004506x503S23014468x503S2fb00495x529"
+  },
+  {
+    "file": "illustrations/00436.png",
+    "fsw": "M572x523S26512471x509S26506557x479S18544470x478S1854c507x478S26512428x478S21100540x478S21100450x478"
+  },
+  {
+    "file": "illustrations/05231.png",
+    "fsw": "M532x534S11819468x483S11811507x484S21800510x465S21800477x465S22b24494x504"
+  },
+  {
+    "file": "illustrations/05231.png",
+    "fsw": "M530x536S10e11505x478S10e19470x478S21800507x463S21800474x463S22b24493x506"
+  },
+  {
+    "file": "illustrations/04029.png",
+    "fsw": "M562x544S11821531x513S11807437x518S11811497x469S11819466x468S20500488x456S22a17455x500S22a01528x496S2fc00495x533"
+  },
+  {
+    "file": "illustrations/00463.png",
+    "fsw": "M512x524S10000493x475S2ea32487x509"
+  },
+  {
+    "file": "illustrations/00042.png",
+    "fsw": "M522x527S1f552478x503S2a208499x474"
+  },
+  {
+    "file": "illustrations/02458.png",
+    "fsw": "M522x539S15352480x484S15336494x504S2ea32478x462S2ea16497x524"
+  },
+  {
+    "file": "illustrations/03517.png",
+    "fsw": "M522x539S15352480x484S15336494x504S2ea32478x462S2ea16497x524"
+  },
+  {
+    "file": "illustrations/00505.png",
+    "fsw": "M536x530S36d00479x470S15a1f487x479S22a05507x501S21100523x516"
+  },
+  {
+    "file": "illustrations/00080.png",
+    "fsw": "M541x531S14e50515x469S14e58458x468S2a20c503x503S2a214472x503"
+  },
+  {
+    "file": "illustrations/05193.png",
+    "fsw": "M529x518S2035a501x503S37706472x509S10a51496x481S20600470x491"
+  },
+  {
+    "file": "illustrations/02833.png",
+    "fsw": "M511x533S1ed56492x507S27f09489x466"
+  },
+  {
+    "file": "illustrations/00335.png",
+    "fsw": "M542x552S14c50505x467S14c58474x467S22514507x449S22514474x449S23600503x513S23614458x513S2fc00491x541"
+  },
+  {
+    "file": "illustrations/02086.png",
+    "fsw": "M547x556S36a00482x477S20500496x519S1ce32481x534S26c00520x529"
+  },
+  {
+    "file": "illustrations/02271.png",
+    "fsw": "M547x517S33100482x482S20500495x494S14c10524x486S22510525x469"
+  },
+  {
+    "file": "illustrations/00455.png",
+    "fsw": "M550x545S30004482x482S18207500x520S20f00520x511S26a00523x492"
+  },
+  {
+    "file": "illustrations/00954.png",
+    "fsw": "M533x536S17139476x498S15021495x478S22511480x465S20f00466x518S2e500510x509"
+  },
+  {
+    "file": "illustrations/03641.png",
+    "fsw": "M603x530S26500526x473S14c01573x469S2a200580x502S10e00524x489S31400482x482"
+  },
+  {
+    "file": "illustrations/00252.png",
+    "fsw": "M530x530S20301509x471S20307470x471S23107504x499S23111476x496S2fc00494x519"
+  },
+  {
+    "file": "illustrations/03297.png",
+    "fsw": "M531x521S16d58468x485S14740510x478S22f04506x507"
+  },
+  {
+    "file": "illustrations/00643.png",
+    "fsw": "M557x526S18530530x511S21100535x492S22524525x476S30004482x482"
+  },
+  {
+    "file": "illustrations/09004.png",
+    "fsw": "M539x530S30002482x482S18011514x499S18019461x497S20500469x487S20500524x488S30006482x482S22120509x523S22120470x521"
+  },
+  {
+    "file": "illustrations/02367.png",
+    "fsw": "M536x517S2ff00482x482S11520521x474S11528465x471S22124464x462S22124513x464"
+  },
+  {
+    "file": "illustrations/00286.png",
+    "fsw": "M516x530S15a0a489x518S15a02483x469S22a04491x487S20500493x505"
+  },
+  {
+    "file": "illustrations/00802.png",
+    "fsw": "M541x594S30004482x482S21000521x506S17d3e490x518S1853e491x569S22a04491x549"
+  },
+  {
+    "file": "illustrations/05156.png",
+    "fsw": "M685x540S36d00479x460S20331487x476S22f04485x503S21100493x526S18230628x472S18238599x472S27504661x477S2751c568x477S15a40672x506S15a48570x505"
+  },
+  {
+    "file": "illustrations/05085.png",
+    "fsw": "M521x528S15d39478x497S15d51487x505S2ea32486x472S21100508x492"
+  },
+  {
+    "file": "illustrations/04184.png",
+    "fsw": "M521x531S2a601448x494S1ea3e471x508S1ea52472x482S20500496x493S20500496x515S36d00479x470"
+  },
+  {
+    "file": "illustrations/00834.png",
+    "fsw": "M521x525S1924c500x475S19234480x483S22a04508x510S20e00508x494"
+  },
+  {
+    "file": "illustrations/00895.png",
+    "fsw": "M518x550S33200482x482S10000488x520"
+  },
+  {
+    "file": "illustrations/00276.png",
+    "fsw": "M516x538S15d5a484x519S15351493x461S20500492x504S22a00492x485"
+  },
+  {
+    "file": "illustrations/02703.png",
+    "fsw": "M520x544S20f00490x532S15a56491x512S22f00495x456S18551490x481S22115479x477"
+  },
+  {
+    "file": "illustrations/00161.png",
+    "fsw": "M518x583S2ff00482x482S20500495x502S1f702491x524S22a04492x568S21100493x550"
+  },
+  {
+    "file": "illustrations/03105.png",
+    "fsw": "M561x532S15a56475x501S15a52494x486S20e00495x467S23600522x470S23610439x482S2fc00493x521"
+  },
+  {
+    "file": "illustrations/00905.png",
+    "fsw": "M533x537S33b00482x482S26506518x522S1f410464x522S21100500x522S22104467x512"
+  },
+  {
+    "file": "illustrations/02289.png",
+    "fsw": "M547x543S15a11503x471S15a19475x470S20500496x457S15a50535x497S15a50453x497S28805502x499S28805502x523S2881d474x523S2881d472x500"
+  },
+  {
+    "file": "illustrations/05402.png",
+    "fsw": "M530x526S14c51469x500S20310515x474S28803491x480"
+  },
+  {
+    "file": "illustrations/02912.png",
+    "fsw": "M525x516S15a1a474x483S10602486x501S20600503x493"
+  },
+  {
+    "file": "illustrations/00927.png",
+    "fsw": "M587x537S1e151504x497S1e159468x497S20500496x483S26506540x499S1ea5f414x507S1ea57568x509S26512448x498S20500560x497S20500434x498S36d00479x464S36d00479x524"
+  },
+  {
+    "file": "illustrations/05402.png",
+    "fsw": "M512x542S17620492x457S14c50488x511S25604492x477"
+  },
+  {
+    "file": "illustrations/05147.png",
+    "fsw": "M557x517S30005482x482S14c10520x481S20500547x493S22514520x466"
+  },
+  {
+    "file": "illustrations/05314.png",
+    "fsw": "M518x536S11850482x488S26500486x464S23404481x522"
+  },
+  {
+    "file": "illustrations/00916.png",
+    "fsw": "M548x538S36d00479x518S20500478x527S20500513x526S1dc05452x502S1f401517x462S1dc0d525x504S1f409454x461S26500529x484S26510456x484"
+  },
+  {
+    "file": "illustrations/00815.png",
+    "fsw": "M518x534S1e127483x466S29a0b492x501"
+  },
+  {
+    "file": "illustrations/00920.png",
+    "fsw": "M547x525S20332413x495S2033a390x495S26907424x477S26911375x475S20500407x513S36d00479x478S1ec34476x506S1ec3c504x506S22a06532x507S22a12457x505S20500496x493"
+  },
+  {
+    "file": "illustrations/00305.png",
+    "fsw": "M529x518S15d39471x487S1f720487x503S20c00501x482"
+  },
+  {
+    "file": "illustrations/04283.png",
+    "fsw": "M533x539S30004482x482S1ec10495x520S26500519x510S20500476x513"
+  },
+  {
+    "file": "illustrations/03229.png",
+    "fsw": "M539x533S15031504x469S15039467x467S2e504516x503S2e51c461x503S2fb04492x527"
+  },
+  {
+    "file": "illustrations/02617.png",
+    "fsw": "M514x531S1f510499x509S1f518486x493S20500486x520S26620496x469"
+  },
+  {
+    "file": "illustrations/00530.png",
+    "fsw": "M519x534S1f702491x467S21100493x495S23600480x517"
+  },
+  {
+    "file": "illustrations/00386.png",
+    "fsw": "M507x541S15a40493x459S15a10494x514S26500493x492"
+  },
+  {
+    "file": "illustrations/00994.png",
+    "fsw": "M543x529S36d00479x474S15d10524x472S2ea00524x504S20600497x489"
+  },
+  {
+    "file": "illustrations/00877.png",
+    "fsw": "M539x517S30007482x482S10010523x476S20500511x475S26500525x463"
+  },
+  {
+    "file": "illustrations/00252.png",
+    "fsw": "M530x524S20301509x476S20307470x476S23107504x504S23111476x501"
+  },
+  {
+    "file": "illustrations/02433.png",
+    "fsw": "M541x525S15a52492x481S15a56481x498S2ea34526x475S2ea18459x500"
+  },
+  {
+    "file": "illustrations/03245.png",
+    "fsw": "M544x522S36d00479x480S10033514x478S23c0c483x495S20500513x504"
+  },
+  {
+    "file": "illustrations/01007.png",
+    "fsw": "M525x540S2f900514x535S18520498x516S23c04498x484S14c20475x460"
+  },
+  {
+    "file": "illustrations/05125.png",
+    "fsw": "M527x540S2fc00498x529S2ea18475x512S15058472x471S2ea34504x497S15050501x459"
+  },
+  {
+    "file": "illustrations/02853.png",
+    "fsw": "M542x519S2ff00482x482S14c40518x466S22e04522x501"
+  },
+  {
+    "file": "illustrations/00080.png",
+    "fsw": "M557x541S15350542x516S15358443x514S28a17465x505S28a0f502x505S15330481x476S15338504x476S20500496x458"
+  },
+  {
+    "file": "illustrations/00074.png",
+    "fsw": "M515x536S14c5a484x482S1f510484x521S20500487x508S22a20487x463"
+  },
+  {
+    "file": "illustrations/00162.png",
+    "fsw": "M546x548S30006482x482S18002523x490S21100532x516S22a04533x533"
+  },
+  {
+    "file": "illustrations/00422.png",
+    "fsw": "M529x527S20310507x472S20318479x472S2c605511x501S2c614470x501"
+  },
+  {
+    "file": "illustrations/04136.png",
+    "fsw": "M546x555S30004482x482S10002516x511S2ea00531x530"
+  },
+  {
+    "file": "illustrations/00963.png",
+    "fsw": "M550x517S15a50464x483S1f050481x486S22a06535x485S22a06535x503S21100517x486S21100517x503S20500450x486S20500450x499"
+  }
+]
