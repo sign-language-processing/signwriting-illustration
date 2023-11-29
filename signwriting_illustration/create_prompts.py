@@ -34,6 +34,7 @@ def encode_image_to_base64(image_path):
         return base64.b64encode(image_file.read()).decode('utf-8')
 
 
+
 # Load already processed images if prompt.json exists
 processed_images = set()
 if PROMPT_FILE.exists():
@@ -75,3 +76,4 @@ for image_name in tqdm(os.listdir(ILLUSTRATIONS_DIR)):
     with open(PROMPT_FILE, 'a') as file:
         json.dump({"source": f"B/{image_name}", "target": f"A/{image_name}", "prompt": prompt}, file)
         file.write('\n')
+

@@ -4,6 +4,8 @@ from xml.etree import ElementTree
 import re
 import csv
 
+from PIL import Image, UnidentifiedImageError
+
 
 def ascii_gloss(gloss: str):
     return gloss.replace('ä', '').replace('ö', '').replace('ü', '')
@@ -28,6 +30,7 @@ def parse_lexicon_tsv(name: str):
             res[ascii_gloss(gloss)] = int(nr)
 
     return res
+
 
 def parse_gloss_map():
     res = {}
@@ -86,8 +89,9 @@ def get_gloss_ids(gloss: str):
         yield lexicon[ascii_gloss(new_gloss)]
 
 
-
 def process_directory(directory):
+    done_files = set()
+
     results = []
     for dir_name, _, _ in os.walk(directory):
         layout_path = os.path.join(dir_name, 'layout.txt')
@@ -98,11 +102,12 @@ def process_directory(directory):
                 name = os.path.basename(dir_name)
                 gloss_ids = list(get_gloss_ids(name))
                 if len(gloss_ids) == 0:
-                    print(f"Missing {name}")
+                    # print(f"Missing {name}")
                     continue
 
                 for _id in gloss_ids:
                     file_path = f"illustrations/{str(_id).zfill(5)}.png"
+                    done_files.add(file_path)
                     if os.path.isfile(file_path):
                         results.append({
                             "file": file_path,
@@ -111,6 +116,28 @@ def process_directory(directory):
                         })
 
     print('Found', len(results))
+
+    illustration_files = set([file[:-len('.png')] for file in os.listdir('illustrations') if file.endswith('.png')])
+    signwriting_files = set([file[:-len('.png')] for file in os.listdir('glossen') if file.endswith('.png')])
+
+    intersection = illustration_files.intersection(signwriting_files)
+    print('Intersection', len(intersection))
+    for file in intersection:
+        illustration_path = f"illustrations/{file}.png"
+        if illustration_path not in done_files:
+            fsw_path = f"glossen/{file}.png"
+            try:
+                Image.open(fsw_path)
+            except UnidentifiedImageError:
+                continue
+
+            results.append({
+                "file": illustration_path,
+                "fsw_file": fsw_path
+            })
+
+    print('Total', len(results))
+
     with open('writing.json', 'w') as json_file:
         json.dump(results, json_file, indent=2)
 

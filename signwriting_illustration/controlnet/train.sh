@@ -67,6 +67,11 @@ python train.py --train-path="../../../train" --resume-path="$STABLE_CONTROLNET_
 # cd /home/amoryo/sign-language/signwriting-illustration/signwriting_illustration/controlnet
 
 # srun --pty -n 1 -c 2 --time=01:00:00 --gres=gpu:1 --mem=32G bash -l
+# srun --pty -n 1 -c 2 --time=01:00:00 --gres=gpu:1 --constraint=GPUMEM80GB --mem=32G bash -l
 # cd /home/amoryo/sign-language/signwriting-illustration/signwriting_illustration/controlnet/ControlNet
 # conda activate controlnet
 # python predict.py --data-path="../../../train" --checkpoint-path="/home/amoryo/sign-language/signwriting-illustration/signwriting_illustration/controlnet/ControlNet/lightning_logs/version_6635784/checkpoints/epoch=499-step=88999.ckpt"
+# python predict.py --data-path="../../../train" --checkpoint-path="/home/amoryo/sign-language/signwriting-illustration/signwriting_illustration/controlnet/ControlNet/lightning_logs/version_6645717/checkpoints/epoch=999-step=198999.ckpt"
+
+# Download lora:
+# wget https://civitai.com/api/download/models/{modelVersionId} --content-disposition

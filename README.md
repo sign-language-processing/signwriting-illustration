@@ -25,6 +25,14 @@ We use ChatGPT to generate the prompt to describe every illustration.
 | Illustration | <img src="datasets/Vokabeltrainer/illustrations/00004.png" height="150px"> | <img src="datasets/Vokabeltrainer/illustrations/00007.png" height="150px"> | <img src="datasets/Vokabeltrainer/illustrations/00015.png" height="150px"> | 
 |    Prompt    |      An illustration of a person with short hair, with black arrows.       |       An illustration of a woman with short hair, with black arrows.       |      An illustration of a man with short hair. The arrows are black.       |
 
+All images are then created at 512x512, for example: 
+`An illustration of a woman with short hair, with orange arrows. The background is white and there is a watermark text '@signecriture.org `
+
+| control                                            | illustration                                       |
+|----------------------------------------------------|----------------------------------------------------|
+| ![B](train/B/2d023720375547d590f1a2e1e0830091.png) | ![A](train/A/2d023720375547d590f1a2e1e0830091.png) |
+
+
 ## Training
 
 ### Prompt information
@@ -57,6 +65,4 @@ This also removes any watermarks from the data, since watermarked illustrations 
 
 # TODO
 
-3. Align the Vokabeltrainer SignWriting to the illustrations
-5. Generate prompts for all illustrations and images
 6. Train a model to generate the illustrations from the prompts

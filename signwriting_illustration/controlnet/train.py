@@ -11,7 +11,7 @@ from cldm.model import create_model, load_state_dict
 
 def main(train_path: Path, resume_path: Path):
     # Configs
-    batch_size = 4
+    batch_size = 32
     logger_freq = 300
     learning_rate = 1e-5
     sd_locked = False
