@@ -32,15 +32,15 @@ STABLE_DIFFUSION_PATH="$MODELS_DIR/v2-1_512-ema-pruned.ckpt"
 [ ! -f "$STABLE_DIFFUSION_PATH" ] && \
 wget -O "$STABLE_DIFFUSION_PATH" https://huggingface.co/stabilityai/stable-diffusion-2-1-base/resolve/main/v2-1_512-ema-pruned.ckpt
 
+
+# TODO add illustration LORA model
+
 # Download ControlNet repository if not exists
 [ ! -d "ControlNet" ] && \
 git clone https://github.com/lllyasviel/ControlNet.git
 
 conda env update --name controlnet --file ControlNet/environment.yaml
 
-# Remove old training files
-rm -f ControlNet/dataset.py
-rm -f ControlNet/train.py
 
 # Copy training files
 cp dataset.py ControlNet/dataset.py
@@ -67,6 +67,7 @@ python train.py --train-path="../../../train" --resume-path="$STABLE_CONTROLNET_
 # cd /home/amoryo/sign-language/signwriting-illustration/signwriting_illustration/controlnet
 
 # srun --pty -n 1 -c 2 --time=01:00:00 --gres=gpu:1 --mem=32G bash -l
+# srun --pty -n 1 -c 2 --time=01:00:00 --mem=64G bash -l
 # srun --pty -n 1 -c 2 --time=01:00:00 --gres=gpu:1 --constraint=GPUMEM80GB --mem=32G bash -l
 # cd /home/amoryo/sign-language/signwriting-illustration/signwriting_illustration/controlnet/ControlNet
 # conda activate controlnet

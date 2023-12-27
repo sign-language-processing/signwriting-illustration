@@ -29,10 +29,9 @@ client = OpenAI()
 
 
 # Function to encode image to base64
-def encode_image_to_base64(image_path):
+def encode_image_to_base64(image_path: Path):
     with open(image_path, 'rb') as image_file:
         return base64.b64encode(image_file.read()).decode('utf-8')
-
 
 
 # Load already processed images if prompt.json exists
@@ -50,8 +49,7 @@ for image_name in tqdm(os.listdir(ILLUSTRATIONS_DIR)):
 
     print("Processing", image_name)
 
-    image_path = ILLUSTRATIONS_DIR / image_name
-    base64_image = encode_image_to_base64(image_path)
+    base64_image = encode_image_to_base64(ILLUSTRATIONS_DIR / image_name)
 
     # Call OpenAI GPT-4 for image caption
     response = client.chat.completions.create(
@@ -73,7 +71,6 @@ for image_name in tqdm(os.listdir(ILLUSTRATIONS_DIR)):
     prompt = json.loads(response_text)["caption"]
 
     # Save output in prompt.json
-    with open(PROMPT_FILE, 'a') as file:
+    with open(PROMPT_FILE, 'a', encoding='utf-8') as file:
         json.dump({"source": f"B/{image_name}", "target": f"A/{image_name}", "prompt": prompt}, file)
         file.write('\n')
-

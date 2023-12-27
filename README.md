@@ -25,13 +25,12 @@ We use ChatGPT to generate the prompt to describe every illustration.
 | Illustration | <img src="datasets/Vokabeltrainer/illustrations/00004.png" height="150px"> | <img src="datasets/Vokabeltrainer/illustrations/00007.png" height="150px"> | <img src="datasets/Vokabeltrainer/illustrations/00015.png" height="150px"> | 
 |    Prompt    |      An illustration of a person with short hair, with black arrows.       |       An illustration of a woman with short hair, with black arrows.       |      An illustration of a man with short hair. The arrows are black.       |
 
-All images are then created at 512x512, for example: 
+All images are then created at 512x512, for example:
 `An illustration of a woman with short hair, with orange arrows. The background is white and there is a watermark text '@signecriture.org `
 
 | control                                            | illustration                                       |
 |----------------------------------------------------|----------------------------------------------------|
 | ![B](train/B/2d023720375547d590f1a2e1e0830091.png) | ![A](train/A/2d023720375547d590f1a2e1e0830091.png) |
-
 
 ## Training
 
@@ -54,15 +53,22 @@ or woman, hair style, and watermark. (see [train/prompt.json](train/prompt.json)
 We train a ControlNet model to control Stable Diffusion given the prompt and SignWriting image, generate the relevant
 illustration. This process benefits from the pretrained generative image diffusion model.
 
-
 ## Inference
 
 In inference time, we still give the control image of the new SignWriting image, but can control for the prompt.
 For example, we can always say "An illustration of a man with short hair." for consistency of character.
 This also removes any watermarks from the data, since watermarked illustrations are prompted with the watermark.
 
+As diffusion models struggle to generate illustrations, we use the image-to-image pipeline with an initial white image.
+Unfortunately, while the model generates illustrations, they do not follow the SignWriting.
 
+Here is a comparison of the results:
 
-# TODO
+### ControlNet Pipeline
 
-6. Train a model to generate the illustrations from the prompts
+![ControlNet Pipeline](assets/controlnet_pipeline.png)
+
+### ControlNet Image-to-Image Pipeline
+
+![ControlNet Pipeline](assets/controlnet_image_to_image_pipeline.png)
+

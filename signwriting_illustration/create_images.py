@@ -29,9 +29,11 @@ def signwriting_file_to_image(fsw_file: Path, output: Union[str, Path], size=512
 
     # then paste it on a white background SIZExSIZE RGB image
     background = Image.new('RGB', (size, size), (255, 255, 255))
-    x = (size - signwriting.width) // 2
-    y = (size - signwriting.height) // 2
-    background.paste(signwriting, (x, y), signwriting if signwriting.mode == 'RGBA' else None)
+    x_offset = (size - signwriting.width) // 2
+    y_offset = (size - signwriting.height) // 2
+    offset = (x_offset, y_offset)
+    mask = signwriting if signwriting.mode == 'RGBA' else None
+    background.paste(signwriting, offset, mask)
 
     background.save(output)
 

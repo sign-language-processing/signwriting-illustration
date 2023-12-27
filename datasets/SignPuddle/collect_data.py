@@ -72,6 +72,9 @@ existing_images = set(os.listdir(dir_path))
 data_to_save = []
 for datum in ssr_data:
     example_id = decode_bytes(datum["id"])
+    if int(example_id) in [2, 4, 9, 48, 230, 286]:
+        continue
+
     file_name = f"{example_id}.png"
 
     if file_name in existing_images:
