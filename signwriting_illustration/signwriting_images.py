@@ -1,35 +1,12 @@
-import os
-import subprocess
-import tempfile
 from pathlib import Path
 from typing import Union
 
 from PIL import Image
-
-TMPDIR = os.getenv('TMPDIR', '/tmp')
-REPO_URL = 'https://github.com/sutton-signwriting/font-db.git'
-REPO_DIR = os.path.join(TMPDIR, 'font-db')
+from signwriting.visualizer.visualize import signwriting_to_image
 
 
-def clone_repo_if_needed():
-    if not os.path.exists(REPO_DIR):
-        print(f"Cloning repository into {REPO_DIR}...")
-        subprocess.run(["git", "clone", REPO_URL, REPO_DIR], check=True)
-
-    # check if node_modules exists
-    if not os.path.exists(os.path.join(REPO_DIR, 'node_modules')):
-        print("Installing dependencies...")
-        subprocess.run(["npm", "install"], cwd=REPO_DIR, check=True)
-
-
-def signwriting_to_image(fsw: str, output: Union[str, Path], size=512):
-    clone_repo_if_needed()
-
-    temp_output = tempfile.NamedTemporaryFile(suffix='.png').name
-    cmd = f'node {REPO_DIR}/fsw/fsw-sign-png "{fsw}" {temp_output}'
-    subprocess.run(cmd, shell=True, check=True)
-
-    output_im = Image.open(temp_output)  # this is RGBA
+def signwriting_to_sized_image(fsw: str, output: Union[str, Path], size=512):
+    output_im = signwriting_to_image(fsw)
 
     # Create a 512x512 RGB image with a white background
     im = Image.new('RGB', (size, size), (255, 255, 255))
@@ -50,4 +27,4 @@ if __name__ == "__main__":
     FSW = 'AS10020S10028S22b04S22b00S22b04S22b10S22b14S22b10S2fb00' + \
           'M561x534S10028472x500S10020516x469S22b00530x502S22b04515x504' + \
           'S22b04545x504S22b14456x467S22b10472x467S22b10440x467S2fb00493x480'
-    signwriting_to_image(FSW, 'test.png')
+    signwriting_to_sized_image(FSW, 'test.png')
