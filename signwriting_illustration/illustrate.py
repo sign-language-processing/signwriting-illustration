@@ -42,7 +42,7 @@ if __name__ == "__main__":
         pipeline = get_pipeline(StableDiffusionControlNetPipeline)
 
     signwriting_images = [
-        Image.new('RGB', (512, 512), 'white'),
+        Image.new('RGB', (256, 256), 'white'),
         Image.open("controlnet_huggingface/validation/0a4b3c71265bb3a726457837428dda78.png"),
         Image.open("controlnet_huggingface/validation/0a5922fe2c638e6776bd62f623145004.png"),
         Image.open("controlnet_huggingface/validation/1c9f1a53106f64c682cf5d009ee7156f.png"),
@@ -65,7 +65,7 @@ if __name__ == "__main__":
     guidance_scale = 7.5
 
     if PIPELINE == "img2img":
-        img2img_init = Image.new('RGB', (512, 512), 'white')
+        img2img_init = Image.new('RGB', (256, 256), 'white')
 
         output = pipeline(
             prompt=batch_prompts,

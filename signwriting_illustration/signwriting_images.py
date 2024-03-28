@@ -5,7 +5,7 @@ from PIL import Image
 from signwriting.visualizer.visualize import signwriting_to_image
 
 
-def signwriting_to_sized_image(fsw: str, output: Union[str, Path], size=512):
+def signwriting_to_sized_image(fsw: str, output: Union[str, Path], size=256):
     output_im = signwriting_to_image(fsw)
 
     # Create a 512x512 RGB image with a white background

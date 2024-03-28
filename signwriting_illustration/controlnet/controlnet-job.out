@@ -1,0 +1,153 @@
++ module load gpu
++ '[' -z '' ']'
++ case "$-" in
++ __lmod_sh_dbg=x
++ '[' -n x ']'
++ set +x
+Shell debugging temporarily silenced: export LMOD_SH_DBG_ON=1 for Lmod's output
+Shell debugging restarted
++ unset __lmod_sh_dbg
++ return 0
++ module load cuda
++ '[' -z '' ']'
++ case "$-" in
++ __lmod_sh_dbg=x
++ '[' -n x ']'
++ set +x
+Shell debugging temporarily silenced: export LMOD_SH_DBG_ON=1 for Lmod's output
+Shell debugging restarted
++ unset __lmod_sh_dbg
++ return 0
++ module load anaconda3
++ '[' -z '' ']'
++ case "$-" in
++ __lmod_sh_dbg=x
++ '[' -n x ']'
++ set +x
+Shell debugging temporarily silenced: export LMOD_SH_DBG_ON=1 for Lmod's output
+Shell debugging restarted
++ unset __lmod_sh_dbg
++ return 0
++ source activate controlnet
+++ _CONDA_ROOT=/apps/opt/spack/linux-ubuntu20.04-x86_64/gcc-9.3.0/anaconda3-2023.09-0-uvmks3yqtoayhfpi54ldw7zqthaygdzb
+++ . /apps/opt/spack/linux-ubuntu20.04-x86_64/gcc-9.3.0/anaconda3-2023.09-0-uvmks3yqtoayhfpi54ldw7zqthaygdzb/etc/profile.d/conda.sh
++++ export CONDA_EXE=/apps/opt/spack/linux-ubuntu20.04-x86_64/gcc-9.3.0/anaconda3-2023.09-0-uvmks3yqtoayhfpi54ldw7zqthaygdzb/bin/conda
++++ CONDA_EXE=/apps/opt/spack/linux-ubuntu20.04-x86_64/gcc-9.3.0/anaconda3-2023.09-0-uvmks3yqtoayhfpi54ldw7zqthaygdzb/bin/conda
++++ export _CE_M=
++++ _CE_M=
++++ export _CE_CONDA=
++++ _CE_CONDA=
++++ export CONDA_PYTHON_EXE=/apps/opt/spack/linux-ubuntu20.04-x86_64/gcc-9.3.0/anaconda3-2023.09-0-uvmks3yqtoayhfpi54ldw7zqthaygdzb/bin/python
++++ CONDA_PYTHON_EXE=/apps/opt/spack/linux-ubuntu20.04-x86_64/gcc-9.3.0/anaconda3-2023.09-0-uvmks3yqtoayhfpi54ldw7zqthaygdzb/bin/python
++++ '[' -z x ']'
+++ conda activate controlnet
+++ local cmd=activate
+++ case "$cmd" in
+++ __conda_activate activate controlnet
+++ '[' -n '' ']'
+++ local ask_conda
++++ PS1=
++++ __conda_exe shell.posix activate controlnet
++++ /apps/opt/spack/linux-ubuntu20.04-x86_64/gcc-9.3.0/anaconda3-2023.09-0-uvmks3yqtoayhfpi54ldw7zqthaygdzb/bin/conda shell.posix activate controlnet
+++ ask_conda='PS1='\''(controlnet) '\''
+export PATH='\''/home/stariq/data/conda/envs/controlnet/bin:/apps/opt/spack/linux-ubuntu20.04-x86_64/gcc-9.3.0/anaconda3-2023.09-0-uvmks3yqtoayhfpi54ldw7zqthaygdzb/condabin:/apps/opt/spack/linux-ubuntu20.04-x86_64/gcc-9.3.0/anaconda3-2023.09-0-uvmks3yqtoayhfpi54ldw7zqthaygdzb/bin:/apps/opt/spack/linux-ubuntu20.04-x86_64/gcc-9.3.0/cuda-12.3.0-joyhv4gzfk2wzxggsdmrb5mnqtwshzsw/bin:/apps/opt/spack/linux-ubuntu20.04-x86_64/gcc-9.3.0/libxml2-2.10.3-6amdkxm3legs327xg7ne4mbjcmput6zw/bin:/apps/opt/spack/linux-ubuntu20.04-x86_64/gcc-9.3.0/xz-5.4.1-3ez5jlzpw2d6qws3fixkrodybg3hgari/bin:/apps/opt/spack/linux-ubuntu20.04-x86_64/gcc-9.3.0/libiconv-1.17-nsd52w4usz3lx6nzhvmh6wrjgnlygsxu/bin:/home/stariq/data/conda/envs/controlnet/bin:/home/stariq/.local/bin:/cluster/23-11-2-1/slurm-23-11-2-1/bin:/cluster/23-11-2-1/slurm-23-11-2-1/sbin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/var/cfengine/bin:/usr/local/go/bin'\''
+export CONDA_PREFIX='\''/home/stariq/data/conda/envs/controlnet'\''
+export CONDA_SHLVL='\''1'\''
+export CONDA_DEFAULT_ENV='\''controlnet'\''
+export CONDA_PROMPT_MODIFIER='\''(controlnet) '\''
+export CONDA_EXE='\''/apps/opt/spack/linux-ubuntu20.04-x86_64/gcc-9.3.0/anaconda3-2023.09-0-uvmks3yqtoayhfpi54ldw7zqthaygdzb/bin/conda'\''
+export _CE_M='\'''\''
+export _CE_CONDA='\'''\''
+export CONDA_PYTHON_EXE='\''/apps/opt/spack/linux-ubuntu20.04-x86_64/gcc-9.3.0/anaconda3-2023.09-0-uvmks3yqtoayhfpi54ldw7zqthaygdzb/bin/python'\''
+. "/home/stariq/data/conda/envs/controlnet/etc/conda/activate.d/libglib_activate.sh"
+. "/home/stariq/data/conda/envs/controlnet/etc/conda/activate.d/libxml2_activate.sh"
+. "/home/stariq/data/conda/envs/controlnet/etc/conda/activate.d/ocl-icd_activate.sh"'
+++ eval 'PS1='\''(controlnet) '\''
+export PATH='\''/home/stariq/data/conda/envs/controlnet/bin:/apps/opt/spack/linux-ubuntu20.04-x86_64/gcc-9.3.0/anaconda3-2023.09-0-uvmks3yqtoayhfpi54ldw7zqthaygdzb/condabin:/apps/opt/spack/linux-ubuntu20.04-x86_64/gcc-9.3.0/anaconda3-2023.09-0-uvmks3yqtoayhfpi54ldw7zqthaygdzb/bin:/apps/opt/spack/linux-ubuntu20.04-x86_64/gcc-9.3.0/cuda-12.3.0-joyhv4gzfk2wzxggsdmrb5mnqtwshzsw/bin:/apps/opt/spack/linux-ubuntu20.04-x86_64/gcc-9.3.0/libxml2-2.10.3-6amdkxm3legs327xg7ne4mbjcmput6zw/bin:/apps/opt/spack/linux-ubuntu20.04-x86_64/gcc-9.3.0/xz-5.4.1-3ez5jlzpw2d6qws3fixkrodybg3hgari/bin:/apps/opt/spack/linux-ubuntu20.04-x86_64/gcc-9.3.0/libiconv-1.17-nsd52w4usz3lx6nzhvmh6wrjgnlygsxu/bin:/home/stariq/data/conda/envs/controlnet/bin:/home/stariq/.local/bin:/cluster/23-11-2-1/slurm-23-11-2-1/bin:/cluster/23-11-2-1/slurm-23-11-2-1/sbin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/var/cfengine/bin:/usr/local/go/bin'\''
+export CONDA_PREFIX='\''/home/stariq/data/conda/envs/controlnet'\''
+export CONDA_SHLVL='\''1'\''
+export CONDA_DEFAULT_ENV='\''controlnet'\''
+export CONDA_PROMPT_MODIFIER='\''(controlnet) '\''
+export CONDA_EXE='\''/apps/opt/spack/linux-ubuntu20.04-x86_64/gcc-9.3.0/anaconda3-2023.09-0-uvmks3yqtoayhfpi54ldw7zqthaygdzb/bin/conda'\''
+export _CE_M='\'''\''
+export _CE_CONDA='\'''\''
+export CONDA_PYTHON_EXE='\''/apps/opt/spack/linux-ubuntu20.04-x86_64/gcc-9.3.0/anaconda3-2023.09-0-uvmks3yqtoayhfpi54ldw7zqthaygdzb/bin/python'\''
+. "/home/stariq/data/conda/envs/controlnet/etc/conda/activate.d/libglib_activate.sh"
+. "/home/stariq/data/conda/envs/controlnet/etc/conda/activate.d/libxml2_activate.sh"
+. "/home/stariq/data/conda/envs/controlnet/etc/conda/activate.d/ocl-icd_activate.sh"'
++++ PS1='(controlnet) '
++++ export PATH=/home/stariq/data/conda/envs/controlnet/bin:/apps/opt/spack/linux-ubuntu20.04-x86_64/gcc-9.3.0/anaconda3-2023.09-0-uvmks3yqtoayhfpi54ldw7zqthaygdzb/condabin:/apps/opt/spack/linux-ubuntu20.04-x86_64/gcc-9.3.0/anaconda3-2023.09-0-uvmks3yqtoayhfpi54ldw7zqthaygdzb/bin:/apps/opt/spack/linux-ubuntu20.04-x86_64/gcc-9.3.0/cuda-12.3.0-joyhv4gzfk2wzxggsdmrb5mnqtwshzsw/bin:/apps/opt/spack/linux-ubuntu20.04-x86_64/gcc-9.3.0/libxml2-2.10.3-6amdkxm3legs327xg7ne4mbjcmput6zw/bin:/apps/opt/spack/linux-ubuntu20.04-x86_64/gcc-9.3.0/xz-5.4.1-3ez5jlzpw2d6qws3fixkrodybg3hgari/bin:/apps/opt/spack/linux-ubuntu20.04-x86_64/gcc-9.3.0/libiconv-1.17-nsd52w4usz3lx6nzhvmh6wrjgnlygsxu/bin:/home/stariq/data/conda/envs/controlnet/bin:/home/stariq/.local/bin:/cluster/23-11-2-1/slurm-23-11-2-1/bin:/cluster/23-11-2-1/slurm-23-11-2-1/sbin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/var/cfengine/bin:/usr/local/go/bin
++++ PATH=/home/stariq/data/conda/envs/controlnet/bin:/apps/opt/spack/linux-ubuntu20.04-x86_64/gcc-9.3.0/anaconda3-2023.09-0-uvmks3yqtoayhfpi54ldw7zqthaygdzb/condabin:/apps/opt/spack/linux-ubuntu20.04-x86_64/gcc-9.3.0/anaconda3-2023.09-0-uvmks3yqtoayhfpi54ldw7zqthaygdzb/bin:/apps/opt/spack/linux-ubuntu20.04-x86_64/gcc-9.3.0/cuda-12.3.0-joyhv4gzfk2wzxggsdmrb5mnqtwshzsw/bin:/apps/opt/spack/linux-ubuntu20.04-x86_64/gcc-9.3.0/libxml2-2.10.3-6amdkxm3legs327xg7ne4mbjcmput6zw/bin:/apps/opt/spack/linux-ubuntu20.04-x86_64/gcc-9.3.0/xz-5.4.1-3ez5jlzpw2d6qws3fixkrodybg3hgari/bin:/apps/opt/spack/linux-ubuntu20.04-x86_64/gcc-9.3.0/libiconv-1.17-nsd52w4usz3lx6nzhvmh6wrjgnlygsxu/bin:/home/stariq/data/conda/envs/controlnet/bin:/home/stariq/.local/bin:/cluster/23-11-2-1/slurm-23-11-2-1/bin:/cluster/23-11-2-1/slurm-23-11-2-1/sbin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/var/cfengine/bin:/usr/local/go/bin
++++ export CONDA_PREFIX=/home/stariq/data/conda/envs/controlnet
++++ CONDA_PREFIX=/home/stariq/data/conda/envs/controlnet
++++ export CONDA_SHLVL=1
++++ CONDA_SHLVL=1
++++ export CONDA_DEFAULT_ENV=controlnet
++++ CONDA_DEFAULT_ENV=controlnet
++++ export 'CONDA_PROMPT_MODIFIER=(controlnet) '
++++ CONDA_PROMPT_MODIFIER='(controlnet) '
++++ export CONDA_EXE=/apps/opt/spack/linux-ubuntu20.04-x86_64/gcc-9.3.0/anaconda3-2023.09-0-uvmks3yqtoayhfpi54ldw7zqthaygdzb/bin/conda
++++ CONDA_EXE=/apps/opt/spack/linux-ubuntu20.04-x86_64/gcc-9.3.0/anaconda3-2023.09-0-uvmks3yqtoayhfpi54ldw7zqthaygdzb/bin/conda
++++ export _CE_M=
++++ _CE_M=
++++ export _CE_CONDA=
++++ _CE_CONDA=
++++ export CONDA_PYTHON_EXE=/apps/opt/spack/linux-ubuntu20.04-x86_64/gcc-9.3.0/anaconda3-2023.09-0-uvmks3yqtoayhfpi54ldw7zqthaygdzb/bin/python
++++ CONDA_PYTHON_EXE=/apps/opt/spack/linux-ubuntu20.04-x86_64/gcc-9.3.0/anaconda3-2023.09-0-uvmks3yqtoayhfpi54ldw7zqthaygdzb/bin/python
++++ . /home/stariq/data/conda/envs/controlnet/etc/conda/activate.d/libglib_activate.sh
+++++ export GSETTINGS_SCHEMA_DIR_CONDA_BACKUP=/home/stariq/data/conda/envs/controlnet/share/glib-2.0/schemas
+++++ GSETTINGS_SCHEMA_DIR_CONDA_BACKUP=/home/stariq/data/conda/envs/controlnet/share/glib-2.0/schemas
+++++ export GSETTINGS_SCHEMA_DIR=/home/stariq/data/conda/envs/controlnet/share/glib-2.0/schemas
+++++ GSETTINGS_SCHEMA_DIR=/home/stariq/data/conda/envs/controlnet/share/glib-2.0/schemas
++++ . /home/stariq/data/conda/envs/controlnet/etc/conda/activate.d/libxml2_activate.sh
+++++ test -n 'file:///home/stariq/data/conda/envs/controlnet/etc/xml/catalog file:///etc/xml/catalog'
+++++ xml_catalog_files_libxml2='file:///home/stariq/data/conda/envs/controlnet/etc/xml/catalog file:///etc/xml/catalog'
+++++ XML_CATALOG_FILES='file:///home/stariq/data/conda/envs/controlnet/etc/xml/catalog file:///etc/xml/catalog '
+++++ conda_catalog_files=
+++++ ifs_libxml2=' 	
+'
+++++ IFS=' '
+++++ rem=/home/stariq/data/conda/envs/controlnet
+++++ for pre in ${rem}
+++++ test '' = /home/stariq/data/conda/envs/controlnet
+++++ conda_catalog_files=/home/stariq/data/conda/envs/controlnet
+++++ rem=
+++++ IFS=' 	
+'
+++++ conda_catalog_files='file:///home/stariq/data/conda/envs/controlnet/etc/xml/catalog file:///etc/xml/catalog'
+++++ export 'XML_CATALOG_FILES=file:///home/stariq/data/conda/envs/controlnet/etc/xml/catalog file:///etc/xml/catalog file:///home/stariq/data/conda/envs/controlnet/etc/xml/catalog file:///etc/xml/catalog'
+++++ XML_CATALOG_FILES='file:///home/stariq/data/conda/envs/controlnet/etc/xml/catalog file:///etc/xml/catalog file:///home/stariq/data/conda/envs/controlnet/etc/xml/catalog file:///etc/xml/catalog'
+++++ unset conda_catalog_files ifs_libxml2 rem
++++ . /home/stariq/data/conda/envs/controlnet/etc/conda/activate.d/ocl-icd_activate.sh
+++++ conda_ocl_icd_activate
++++++ ls /home/stariq/data/conda/envs/controlnet/etc/OpenCL/vendors/
+++++ [[ -z '' ]]
+++++ echo 'WARNING: No ICDs were found. Either,'
+WARNING: No ICDs were found. Either,
+++++ echo '- Install a conda package providing a OpenCL implementation (pocl, oclgrind, intel-compute-runtime, beignet) or '
+- Install a conda package providing a OpenCL implementation (pocl, oclgrind, intel-compute-runtime, beignet) or 
+++++ [[ ! -f /etc/OpenCL/vendors/*.icd ]]
+++++ echo -n '- Make '
+- Make ++++ echo 'your system-wide implementation visible by installing ocl-icd-system conda package. '
+your system-wide implementation visible by installing ocl-icd-system conda package. 
+++ __conda_hashr
+++ '[' -n '' ']'
+++ '[' -n '' ']'
+++ hash -r
+++ pwd
++ CURRENT_DIR=/home/stariq/data/stariq/signwriting_illustration/controlnet
++ python3 -c 'import torch; print(torch.cuda.is_available())'
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "/data/stariq/conda/envs/controlnet/lib/jvm/graalvm-189e927686-java17-22.3.0/languages/python/lib/python3.8/site-packages/torch/__init__.py", line 219, in <module>
+    raise ImportError(textwrap.dedent('''
+ImportError: Failed to load PyTorch C extensions:
+    It appears that PyTorch has loaded the `torch/_C` folder
+    of the PyTorch repository rather than the C extensions which
+    are expected in the `torch._C` namespace. This can occur when
+    using the `install` workflow. e.g.
+        $ python setup.py install && python -c "import torch"
+
+    This error can generally be solved using the `develop` workflow
+        $ python setup.py develop && python -c "import torch"  # This should succeed
+    or by running Python from a different directory.

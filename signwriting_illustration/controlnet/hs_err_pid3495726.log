@@ -1,0 +1,1669 @@
+#
+# There is insufficient memory for the Java Runtime Environment to continue.
+# Native memory allocation (mmap) failed to map 8388608 bytes for Failed to reserve memory for metaspace
+# Possible reasons:
+#   The system is out of physical RAM or swap space
+#   The process is running with CompressedOops enabled, and the Java Heap may be blocking the growth of the native heap
+# Possible solutions:
+#   Reduce memory load on the system
+#   Increase physical memory or swap space
+#   Check if swap backing store is full
+#   Decrease Java heap size (-Xmx/-Xms)
+#   Decrease number of Java threads
+#   Decrease Java thread stack sizes (-Xss)
+#   Set larger code cache with -XX:ReservedCodeCacheSize=
+#   JVM is running with Unscaled Compressed Oops mode in which the Java heap is
+#     placed in the first 4GB address space. The Java Heap base address is the
+#     maximum limit for the native heap growth. Please use -XX:HeapBaseMinAddress
+#     to set the Java Heap base and to place the Java Heap above 4GB virtual address.
+# This output file may be truncated or incomplete.
+#
+#  Out of Memory Error (virtualSpaceNode.cpp:249), pid=3495726, tid=3495726
+#
+# JRE version: OpenJDK Runtime Environment GraalVM 22.3.0 (17.0.5+8) (build 17.0.5+8-jvmci-22.3-b08)
+# Java VM: OpenJDK 64-Bit Server VM GraalVM 22.3.0 (17.0.5+8-jvmci-22.3-b08, mixed mode, sharing, tiered, jvmci, jvmci compiler, compressed oops, compressed class ptrs, serial gc, linux-amd64)
+# Core dump will be written. Default location: Core dumps may be processed with "/usr/share/apport/apport -p%p -s%s -c%c -d%d -P%P -u%u -g%g -- %E" (or dumping to /data/stariq/stariq/signwriting_illustration/controlnet/core.3495726)
+#
+
+---------------  S U M M A R Y ------------
+
+Command Line: -XX:ThreadPriorityPolicy=1 -XX:+UnlockExperimentalVMOptions -XX:+EnableJVMCIProduct -XX:JVMCIThreadsPerNativeLibraryRuntime=1 -XX:-UnlockExperimentalVMOptions -Dorg.graalvm.launcher.class=com.oracle.graal.python.shell.GraalPythonMain -Dorg.graalvm.launcher.executablename=/home/stariq/data/conda/envs/controlnet/bin/python 
+
+Host: AMD EPYC 7702 64-Core Processor, 16 cores, 6G, Ubuntu 20.04.6 LTS
+Time: Mon Mar 18 10:28:15 2024 CET elapsed time: 4.649533 seconds (0d 0h 0m 4s)
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x000055d4cdd74ab0):  JavaThread "main" [_thread_in_vm, id=3495726, stack(0x00007ffeea37d000,0x00007ffeea47d000)]
+
+Stack: [0x00007ffeea37d000,0x00007ffeea47d000],  sp=0x00007ffeea473190,  free space=984k
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+V  [libjvm.so+0xdff711]  VMError::report_and_die(int, char const*, char const*, __va_list_tag*, Thread*, unsigned char*, void*, void*, char const*, int, unsigned long)+0x1a1
+V  [libjvm.so+0xe0033d]  VMError::report_and_die(Thread*, char const*, int, unsigned long, VMErrorType, char const*, __va_list_tag*)+0x2d
+V  [libjvm.so+0x5dbae3]  report_vm_out_of_memory(char const*, int, unsigned long, VMErrorType, char const*, ...)+0xc3
+V  [libjvm.so+0xdf73fa]  metaspace::VirtualSpaceNode::create_node(unsigned long, metaspace::CommitLimiter*, metaspace::AbstractCounter<unsigned long>*, metaspace::AbstractCounter<unsigned long>*)+0x22a
+V  [libjvm.so+0xdf65f7]  metaspace::VirtualSpaceList::allocate_root_chunk()+0x47
+V  [libjvm.so+0x517dcd]  metaspace::ChunkManager::get_chunk(signed char, signed char, unsigned long)+0x2bd
+V  [libjvm.so+0xb588eb]  metaspace::MetaspaceArena::allocate(unsigned long)+0x26b
+V  [libjvm.so+0xb57b34]  Metaspace::allocate(ClassLoaderData*, unsigned long, MetaspaceObj::Type, JavaThread*)+0x44
+V  [libjvm.so+0x545d0e]  ClassFileParser::copy_method_annotations(ConstMethod*, unsigned char const*, int, unsigned char const*, int, unsigned char const*, int, unsigned char const*, int, unsigned char const*, int, unsigned char const*, int, unsigned char const*, int, JavaThread*)+0x5e
+V  [libjvm.so+0x5523ab]  ClassFileParser::parse_method(ClassFileStream const*, bool, ConstantPool const*, AccessFlags*, JavaThread*)+0x188b
+V  [libjvm.so+0x552d9f]  ClassFileParser::parse_methods(ClassFileStream const*, bool, AccessFlags*, bool*, bool*, JavaThread*)+0x1df
+V  [libjvm.so+0x5555e1]  ClassFileParser::parse_stream(ClassFileStream const*, JavaThread*) [clone .part.0]+0x6c1
+V  [libjvm.so+0x5563ee]  ClassFileParser::ClassFileParser(ClassFileStream*, Symbol*, ClassLoaderData*, ClassLoadInfo const*, ClassFileParser::Publicity, JavaThread*)+0x24e
+V  [libjvm.so+0xa19970]  KlassFactory::create_from_stream(ClassFileStream*, Symbol*, ClassLoaderData*, ClassLoadInfo const&, JavaThread*)+0x290
+V  [libjvm.so+0xd386e0]  SystemDictionary::resolve_class_from_stream(ClassFileStream*, Symbol*, Handle, ClassLoadInfo const&, JavaThread*)+0x150
+V  [libjvm.so+0x8d355e]  jvm_define_class_common(char const*, _jobject*, signed char const*, int, _jobject*, char const*, JavaThread*)+0x22e
+V  [libjvm.so+0x8d3864]  JVM_DefineClassWithSource+0xa4
+C  [libjava.so+0xde12]  Java_java_lang_ClassLoader_defineClass1+0x182
+J 1912  java.lang.ClassLoader.defineClass1(Ljava/lang/ClassLoader;Ljava/lang/String;[BIILjava/security/ProtectionDomain;Ljava/lang/String;)Ljava/lang/Class; java.base@17.0.5 (0 bytes) @ 0x00007fdfc5e5a555 [0x00007fdfc5e5a420+0x0000000000000135]
+J 1902 c1 java.lang.ClassLoader.defineClass(Ljava/lang/String;[BIILjava/security/ProtectionDomain;)Ljava/lang/Class; java.base@17.0.5 (43 bytes) @ 0x00007fdfbec431ac [0x00007fdfbec42d00+0x00000000000004ac]
+J 1978 c1 java.security.SecureClassLoader.defineClass(Ljava/lang/String;[BIILjava/security/CodeSource;)Ljava/lang/Class; java.base@17.0.5 (16 bytes) @ 0x00007fdfbec7140c [0x00007fdfbec71340+0x00000000000000cc]
+J 1989 c1 java.net.URLClassLoader.defineClass(Ljava/lang/String;Ljdk/internal/loader/Resource;)Ljava/lang/Class; java.base@17.0.5 (224 bytes) @ 0x00007fdfbec7800c [0x00007fdfbec75920+0x00000000000026ec]
+J 1988 c1 java.net.URLClassLoader$1.run()Ljava/lang/Class; java.base@17.0.5 (81 bytes) @ 0x00007fdfbec74074 [0x00007fdfbec73340+0x0000000000000d34]
+J 1987 c1 java.net.URLClassLoader$1.run()Ljava/lang/Object; java.base@17.0.5 (5 bytes) @ 0x00007fdfbec72e34 [0x00007fdfbec72dc0+0x0000000000000074]
+J 1959 c1 java.security.AccessController.doPrivileged(Ljava/security/PrivilegedExceptionAction;Ljava/security/AccessControlContext;)Ljava/lang/Object; java.base@17.0.5 (26 bytes) @ 0x00007fdfbec61ffc [0x00007fdfbec61cc0+0x000000000000033c]
+J 1972 c1 java.net.URLClassLoader.findClass(Ljava/lang/String;)Ljava/lang/Class; java.base@17.0.5 (47 bytes) @ 0x00007fdfbec6bef4 [0x00007fdfbec6bd80+0x0000000000000174]
+J 1931 c1 java.lang.ClassLoader.loadClass(Ljava/lang/String;Z)Ljava/lang/Class; java.base@17.0.5 (121 bytes) @ 0x00007fdfbec513f4 [0x00007fdfbec50a40+0x00000000000009b4]
+J 2805 jvmci java.lang.ClassLoader.loadClass(Ljava/lang/String;)Ljava/lang/Class; java.base@17.0.5 (7 bytes) @ 0x00007fdfc5e9ee53 [0x00007fdfc5e9ee00+0x0000000000000053]
+v  ~StubRoutines::call_stub
+V  [libjvm.so+0x7f8bf5]  JavaCalls::call_helper(JavaValue*, methodHandle const&, JavaCallArguments*, JavaThread*)+0x315
+V  [libjvm.so+0x7fa603]  JavaCalls::call_virtual(JavaValue*, Handle, Klass*, Symbol*, Symbol*, Handle, JavaThread*)+0x1e3
+V  [libjvm.so+0xd3a0d2]  SystemDictionary::load_instance_class_impl(Symbol*, Handle, JavaThread*)+0x192
+V  [libjvm.so+0xd387d8]  SystemDictionary::load_instance_class(unsigned int, Symbol*, Handle, JavaThread*)+0x28
+V  [libjvm.so+0xd39368]  SystemDictionary::resolve_instance_class_or_null(Symbol*, Handle, Handle, JavaThread*)+0xa68
+V  [libjvm.so+0xd3a9f6]  SystemDictionary::resolve_or_fail(Symbol*, Handle, Handle, bool, JavaThread*)+0x66
+V  [libjvm.so+0xdd56dc]  VerificationType::resolve_and_check_assignability(InstanceKlass*, Symbol*, Symbol*, bool, bool, bool, JavaThread*)+0x16c
+V  [libjvm.so+0xdd5f38]  VerificationType::is_reference_assignable_from(VerificationType const&, ClassVerifier*, bool, JavaThread*) const+0xf8
+V  [libjvm.so+0xddbe07]  ClassVerifier::verify_return_value(VerificationType, VerificationType, unsigned short, StackMapFrame*, JavaThread*)+0x3a7
+V  [libjvm.so+0xde52b6]  ClassVerifier::verify_method(methodHandle const&, JavaThread*)+0x1606
+V  [libjvm.so+0xde9130]  ClassVerifier::verify_class(JavaThread*)+0x110
+V  [libjvm.so+0xde951f]  Verifier::verify(InstanceKlass*, bool, JavaThread*)+0x30f
+V  [libjvm.so+0x7d621b]  InstanceKlass::link_class_impl(JavaThread*)+0x48b
+V  [libjvm.so+0x7d7003]  InstanceKlass::initialize_impl(JavaThread*)+0x163
+V  [libjvm.so+0xa52e6a]  LinkResolver::resolve_static_call(CallInfo&, LinkInfo const&, bool, JavaThread*)+0x15a
+V  [libjvm.so+0xa5382b]  LinkResolver::resolve_invoke(CallInfo&, Handle, constantPoolHandle const&, int, Bytecodes::Code, JavaThread*)+0x2bb
+V  [libjvm.so+0x7f37ff]  InterpreterRuntime::resolve_invoke(JavaThread*, Bytecodes::Code)+0x15f
+V  [libjvm.so+0x7f3d27]  InterpreterRuntime::resolve_from_cache(JavaThread*, Bytecodes::Code)+0x37
+j  com.oracle.graal.python.builtins.modules.cext.PythonCextDictBuiltinsFactory.getFactories()Ljava/util/List;+44
+j  com.oracle.graal.python.builtins.modules.cext.PythonCextDictBuiltins.getNodeFactories()Ljava/util/List;+0
+j  com.oracle.graal.python.builtins.PythonBuiltins.initializeEachFactoryWith(Lcom/oracle/graal/python/util/BiConsumer;)V+1
+j  com.oracle.graal.python.builtins.PythonBuiltins.initialize(Lcom/oracle/graal/python/builtins/Python3Core;)V+21
+j  com.oracle.graal.python.builtins.modules.cext.PythonCextDictBuiltins.initialize(Lcom/oracle/graal/python/builtins/Python3Core;)V+2
+j  com.oracle.graal.python.builtins.Python3Core.populateBuiltins()V+23
+j  com.oracle.graal.python.builtins.Python3Core.initializeJavaCore()V+5
+j  com.oracle.graal.python.builtins.Python3Core.initialize(Lcom/oracle/graal/python/runtime/PythonContext;)V+20
+j  com.oracle.graal.python.runtime.PythonContext.initialize()V+37
+j  com.oracle.graal.python.PythonLanguage.initializeContext(Lcom/oracle/graal/python/runtime/PythonContext;)V+1
+j  com.oracle.graal.python.PythonLanguage.initializeContext(Ljava/lang/Object;)V+5
+j  com.oracle.truffle.api.TruffleLanguage$Env.postInit()V+8 org.graalvm.truffle
+j  com.oracle.truffle.api.LanguageAccessor$LanguageImpl.postInitEnv(Lcom/oracle/truffle/api/TruffleLanguage$Env;)V+1 org.graalvm.truffle
+j  com.oracle.truffle.polyglot.PolyglotLanguageContext.ensureInitialized(Lcom/oracle/truffle/polyglot/PolyglotLanguage;)Z+104 org.graalvm.truffle
+j  com.oracle.truffle.polyglot.PolyglotContextImpl.eval(Ljava/lang/String;Lorg/graalvm/polyglot/Source;)Lorg/graalvm/polyglot/Value;+50 org.graalvm.truffle
+j  com.oracle.truffle.polyglot.PolyglotContextDispatch.eval(Ljava/lang/Object;Ljava/lang/String;Lorg/graalvm/polyglot/Source;)Lorg/graalvm/polyglot/Value;+6 org.graalvm.truffle
+j  org.graalvm.polyglot.Context.eval(Lorg/graalvm/polyglot/Source;)Lorg/graalvm/polyglot/Value;+13 org.graalvm.sdk
+j  com.oracle.graal.python.shell.GraalPythonMain.evalNonInteractive(Lorg/graalvm/polyglot/Context;Lcom/oracle/graal/python/shell/ConsoleHandler;)V+55
+j  com.oracle.graal.python.shell.GraalPythonMain.launch(Lorg/graalvm/polyglot/Context$Builder;)V+1009
+j  org.graalvm.launcher.AbstractLanguageLauncher.launch(Ljava/util/List;Ljava/util/Map;Z)V+212
+j  org.graalvm.launcher.AbstractLanguageLauncher.launch([Ljava/lang/String;)V+14
+j  org.graalvm.launcher.AbstractLanguageLauncher.runLauncher([[BIJZ)V+123
+v  ~StubRoutines::call_stub
+V  [libjvm.so+0x7f8bf5]  JavaCalls::call_helper(JavaValue*, methodHandle const&, JavaCallArguments*, JavaThread*)+0x315
+V  [libjvm.so+0x89380d]  jni_invoke_static(JNIEnv_*, JavaValue*, _jobject*, JNICallType, _jmethodID*, JNI_ArgumentPusher*, JavaThread*) [clone .constprop.1]+0x38d
+V  [libjvm.so+0x896806]  jni_CallStaticVoidMethodV+0xe6
+C  [python+0x5b29]  JNIEnv_::CallStaticVoidMethod(_jclass*, _jmethodID*, ...)+0xb9
+C  [python+0x51ee]  jvm_main_thread(int, char**, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, char*, bool, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >)+0x65c
+C  [python+0x4ad7]  main+0x1db
+
+Java frames: (J=compiled Java code, j=interpreted, Vv=VM code)
+J 1912  java.lang.ClassLoader.defineClass1(Ljava/lang/ClassLoader;Ljava/lang/String;[BIILjava/security/ProtectionDomain;Ljava/lang/String;)Ljava/lang/Class; java.base@17.0.5 (0 bytes) @ 0x00007fdfc5e5a4d8 [0x00007fdfc5e5a420+0x00000000000000b8]
+J 1902 c1 java.lang.ClassLoader.defineClass(Ljava/lang/String;[BIILjava/security/ProtectionDomain;)Ljava/lang/Class; java.base@17.0.5 (43 bytes) @ 0x00007fdfbec431ac [0x00007fdfbec42d00+0x00000000000004ac]
+J 1978 c1 java.security.SecureClassLoader.defineClass(Ljava/lang/String;[BIILjava/security/CodeSource;)Ljava/lang/Class; java.base@17.0.5 (16 bytes) @ 0x00007fdfbec7140c [0x00007fdfbec71340+0x00000000000000cc]
+J 1989 c1 java.net.URLClassLoader.defineClass(Ljava/lang/String;Ljdk/internal/loader/Resource;)Ljava/lang/Class; java.base@17.0.5 (224 bytes) @ 0x00007fdfbec7800c [0x00007fdfbec75920+0x00000000000026ec]
+J 1988 c1 java.net.URLClassLoader$1.run()Ljava/lang/Class; java.base@17.0.5 (81 bytes) @ 0x00007fdfbec74074 [0x00007fdfbec73340+0x0000000000000d34]
+J 1987 c1 java.net.URLClassLoader$1.run()Ljava/lang/Object; java.base@17.0.5 (5 bytes) @ 0x00007fdfbec72e34 [0x00007fdfbec72dc0+0x0000000000000074]
+J 1959 c1 java.security.AccessController.doPrivileged(Ljava/security/PrivilegedExceptionAction;Ljava/security/AccessControlContext;)Ljava/lang/Object; java.base@17.0.5 (26 bytes) @ 0x00007fdfbec61ffc [0x00007fdfbec61cc0+0x000000000000033c]
+J 1972 c1 java.net.URLClassLoader.findClass(Ljava/lang/String;)Ljava/lang/Class; java.base@17.0.5 (47 bytes) @ 0x00007fdfbec6bef4 [0x00007fdfbec6bd80+0x0000000000000174]
+J 1931 c1 java.lang.ClassLoader.loadClass(Ljava/lang/String;Z)Ljava/lang/Class; java.base@17.0.5 (121 bytes) @ 0x00007fdfbec513f4 [0x00007fdfbec50a40+0x00000000000009b4]
+J 2805 jvmci java.lang.ClassLoader.loadClass(Ljava/lang/String;)Ljava/lang/Class; java.base@17.0.5 (7 bytes) @ 0x00007fdfc5e9ee53 [0x00007fdfc5e9ee00+0x0000000000000053]
+v  ~StubRoutines::call_stub
+j  com.oracle.graal.python.builtins.modules.cext.PythonCextDictBuiltinsFactory.getFactories()Ljava/util/List;+44
+j  com.oracle.graal.python.builtins.modules.cext.PythonCextDictBuiltins.getNodeFactories()Ljava/util/List;+0
+j  com.oracle.graal.python.builtins.PythonBuiltins.initializeEachFactoryWith(Lcom/oracle/graal/python/util/BiConsumer;)V+1
+j  com.oracle.graal.python.builtins.PythonBuiltins.initialize(Lcom/oracle/graal/python/builtins/Python3Core;)V+21
+j  com.oracle.graal.python.builtins.modules.cext.PythonCextDictBuiltins.initialize(Lcom/oracle/graal/python/builtins/Python3Core;)V+2
+j  com.oracle.graal.python.builtins.Python3Core.populateBuiltins()V+23
+j  com.oracle.graal.python.builtins.Python3Core.initializeJavaCore()V+5
+j  com.oracle.graal.python.builtins.Python3Core.initialize(Lcom/oracle/graal/python/runtime/PythonContext;)V+20
+j  com.oracle.graal.python.runtime.PythonContext.initialize()V+37
+j  com.oracle.graal.python.PythonLanguage.initializeContext(Lcom/oracle/graal/python/runtime/PythonContext;)V+1
+j  com.oracle.graal.python.PythonLanguage.initializeContext(Ljava/lang/Object;)V+5
+j  com.oracle.truffle.api.TruffleLanguage$Env.postInit()V+8 org.graalvm.truffle
+j  com.oracle.truffle.api.LanguageAccessor$LanguageImpl.postInitEnv(Lcom/oracle/truffle/api/TruffleLanguage$Env;)V+1 org.graalvm.truffle
+j  com.oracle.truffle.polyglot.PolyglotLanguageContext.ensureInitialized(Lcom/oracle/truffle/polyglot/PolyglotLanguage;)Z+104 org.graalvm.truffle
+j  com.oracle.truffle.polyglot.PolyglotContextImpl.eval(Ljava/lang/String;Lorg/graalvm/polyglot/Source;)Lorg/graalvm/polyglot/Value;+50 org.graalvm.truffle
+j  com.oracle.truffle.polyglot.PolyglotContextDispatch.eval(Ljava/lang/Object;Ljava/lang/String;Lorg/graalvm/polyglot/Source;)Lorg/graalvm/polyglot/Value;+6 org.graalvm.truffle
+j  org.graalvm.polyglot.Context.eval(Lorg/graalvm/polyglot/Source;)Lorg/graalvm/polyglot/Value;+13 org.graalvm.sdk
+j  com.oracle.graal.python.shell.GraalPythonMain.evalNonInteractive(Lorg/graalvm/polyglot/Context;Lcom/oracle/graal/python/shell/ConsoleHandler;)V+55
+j  com.oracle.graal.python.shell.GraalPythonMain.launch(Lorg/graalvm/polyglot/Context$Builder;)V+1009
+j  org.graalvm.launcher.AbstractLanguageLauncher.launch(Ljava/util/List;Ljava/util/Map;Z)V+212
+j  org.graalvm.launcher.AbstractLanguageLauncher.launch([Ljava/lang/String;)V+14
+j  org.graalvm.launcher.AbstractLanguageLauncher.runLauncher([[BIJZ)V+123
+v  ~StubRoutines::call_stub
+
+Compiled method (n/a) 1912     n 0       java.lang.ClassLoader::defineClass1 (native)
+ total in heap  [0x00007fdfc5e5a290,0x00007fdfc5e5a698] = 1032
+ relocation     [0x00007fdfc5e5a3f0,0x00007fdfc5e5a420] = 48
+ main code      [0x00007fdfc5e5a420,0x00007fdfc5e5a698] = 632
+
+[Disassembly]
+--------------------------------------------------------------------------------
+[Constant Pool (empty)]
+
+--------------------------------------------------------------------------------
+
+[Entry Point]
+  # {method} {0x00000008000112b8} 'defineClass1' '(Ljava/lang/ClassLoader;Ljava/lang/String;[BIILjava/security/ProtectionDomain;Ljava/lang/String;)Ljava/lang/Class;' in 'java/lang/ClassLoader'
+  # parm0:    rsi:rsi   = 'java/lang/ClassLoader'
+  # parm1:    rdx:rdx   = 'java/lang/String'
+  # parm2:    rcx:rcx   = '[B'
+  # parm3:    r8        = int
+  # parm4:    r9        = int
+  # parm5:    rdi:rdi   = 'java/security/ProtectionDomain'
+  # parm6:    [sp+0x70]   = 'java/lang/String'  (sp of caller)
+  0x00007fdfc5e5a420:   mov    r10d,DWORD PTR [rsi+0x8]
+  0x00007fdfc5e5a424:   movabs r11,0x800000000
+  0x00007fdfc5e5a42e:   add    r10,r11
+  0x00007fdfc5e5a431:   cmp    rax,r10
+  0x00007fdfc5e5a434:   je     0x00007fdfc5e5a440
+  0x00007fdfc5e5a43a:   jmp    0x00007fdfbe363480           ;   {runtime_call ic_miss_stub}
+  0x00007fdfc5e5a43f:   nop
+[Verified Entry Point]
+  0x00007fdfc5e5a440:   mov    DWORD PTR [rsp-0x14000],eax
+  0x00007fdfc5e5a447:   push   rbp
+  0x00007fdfc5e5a448:   mov    rbp,rsp
+  0x00007fdfc5e5a44b:   sub    rsp,0x60
+  0x00007fdfc5e5a44f:   cmp    QWORD PTR [rbp+0x10],0x0
+  0x00007fdfc5e5a457:   lea    rax,[rbp+0x10]
+  0x00007fdfc5e5a45b:   cmove  rax,QWORD PTR [rbp+0x10]
+  0x00007fdfc5e5a460:   mov    QWORD PTR [rsp+0x10],rax
+  0x00007fdfc5e5a465:   mov    QWORD PTR [rsp+0x40],rdi
+  0x00007fdfc5e5a46a:   cmp    rdi,0x0
+  0x00007fdfc5e5a46e:   lea    rax,[rsp+0x40]
+  0x00007fdfc5e5a473:   cmove  rax,QWORD PTR [rsp+0x40]
+  0x00007fdfc5e5a479:   mov    QWORD PTR [rsp+0x8],rax
+  0x00007fdfc5e5a47e:   mov    QWORD PTR [rsp],r9
+  0x00007fdfc5e5a482:   mov    r9,r8
+  0x00007fdfc5e5a485:   mov    QWORD PTR [rsp+0x28],rcx
+  0x00007fdfc5e5a48a:   cmp    rcx,0x0
+  0x00007fdfc5e5a48e:   lea    r8,[rsp+0x28]
+  0x00007fdfc5e5a493:   cmove  r8,QWORD PTR [rsp+0x28]
+  0x00007fdfc5e5a499:   mov    QWORD PTR [rsp+0x20],rdx
+  0x00007fdfc5e5a49e:   cmp    rdx,0x0
+  0x00007fdfc5e5a4a2:   lea    rcx,[rsp+0x20]
+  0x00007fdfc5e5a4a7:   cmove  rcx,QWORD PTR [rsp+0x20]
+  0x00007fdfc5e5a4ad:   mov    QWORD PTR [rsp+0x18],rsi
+  0x00007fdfc5e5a4b2:   cmp    rsi,0x0
+  0x00007fdfc5e5a4b6:   lea    rdx,[rsp+0x18]
+  0x00007fdfc5e5a4bb:   cmove  rdx,QWORD PTR [rsp+0x18]
+  0x00007fdfc5e5a4c1:   movabs r14,0xc0907010               ;   {oop(a 'java/lang/Class'{0x00000000c0907010} = 'java/lang/ClassLoader')}
+  0x00007fdfc5e5a4cb:   mov    QWORD PTR [rsp+0x48],r14
+  0x00007fdfc5e5a4d0:   lea    r14,[rsp+0x48]
+  0x00007fdfc5e5a4d5:   mov    rsi,r14
+  0x00007fdfc5e5a4d8:   vzeroupper 
+  0x00007fdfc5e5a4db:   movabs r10,0x7fdfc5e5a4d8           ;   {internal_word}
+  0x00007fdfc5e5a4e5:   mov    QWORD PTR [r15+0x290],r10
+  0x00007fdfc5e5a4ec:   mov    QWORD PTR [r15+0x288],rsp
+  0x00007fdfc5e5a4f3:   cmp    BYTE PTR [rip+0x12ac5733],0x0        # 0x00007fdfd891fc2d
+                                                            ;   {external_word}
+  0x00007fdfc5e5a4fa:   je     0x00007fdfc5e5a53e
+  0x00007fdfc5e5a500:   push   rsi
+  0x00007fdfc5e5a501:   push   rdx
+  0x00007fdfc5e5a502:   push   rcx
+  0x00007fdfc5e5a503:   push   r8
+  0x00007fdfc5e5a505:   push   r9
+  0x00007fdfc5e5a507:   movabs rsi,0x8000112b8              ;   {metadata({method} {0x00000008000112b8} 'defineClass1' '(Ljava/lang/ClassLoader;Ljava/lang/String;[BIILjava/security/ProtectionDomain;Ljava/lang/String;)Ljava/lang/Class;' in 'java/lang/ClassLoader')}
+  0x00007fdfc5e5a511:   mov    rdi,r15
+  0x00007fdfc5e5a514:   test   esp,0xf
+  0x00007fdfc5e5a51a:   je     0x00007fdfc5e5a532
+  0x00007fdfc5e5a520:   sub    rsp,0x8
+  0x00007fdfc5e5a524:   call   0x00007fdfd839cca0           ;   {runtime_call SharedRuntime::dtrace_method_entry(JavaThread*, Method*)}
+  0x00007fdfc5e5a529:   add    rsp,0x8
+  0x00007fdfc5e5a52d:   jmp    0x00007fdfc5e5a537
+  0x00007fdfc5e5a532:   call   0x00007fdfd839cca0           ;   {runtime_call SharedRuntime::dtrace_method_entry(JavaThread*, Method*)}
+  0x00007fdfc5e5a537:   pop    r9
+  0x00007fdfc5e5a539:   pop    r8
+  0x00007fdfc5e5a53b:   pop    rcx
+  0x00007fdfc5e5a53c:   pop    rdx
+  0x00007fdfc5e5a53d:   pop    rsi
+  0x00007fdfc5e5a53e:   lea    rdi,[r15+0x2a8]
+  0x00007fdfc5e5a545:   mov    DWORD PTR [r15+0x338],0x4
+  0x00007fdfc5e5a550:   call   0x00007fdfcd324c90           ;   {runtime_call Java_java_lang_ClassLoader_defineClass1}
+  0x00007fdfc5e5a555:   vzeroupper 
+  0x00007fdfc5e5a558:   mov    DWORD PTR [r15+0x338],0x5
+  0x00007fdfc5e5a563:   lock add DWORD PTR [rsp-0x40],0x0
+  0x00007fdfc5e5a569:   cmp    rbp,QWORD PTR [r15+0x340]
+  0x00007fdfc5e5a570:   ja     0x00007fdfc5e5a587
+  0x00007fdfc5e5a576:   cmp    DWORD PTR [r15+0x328],0x0
+  0x00007fdfc5e5a581:   je     0x00007fdfc5e5a5ab
+  0x00007fdfc5e5a587:   vzeroupper 
+  0x00007fdfc5e5a58a:   mov    QWORD PTR [rbp-0x8],rax
+  0x00007fdfc5e5a58e:   mov    rdi,r15
+  0x00007fdfc5e5a591:   mov    r12,rsp
+  0x00007fdfc5e5a594:   sub    rsp,0x0
+  0x00007fdfc5e5a598:   and    rsp,0xfffffffffffffff0
+  0x00007fdfc5e5a59c:   call   0x00007fdfd84950f0           ;   {runtime_call JavaThread::check_special_condition_for_native_trans(JavaThread*)}
+  0x00007fdfc5e5a5a1:   mov    rsp,r12
+  0x00007fdfc5e5a5a4:   xor    r12,r12
+  0x00007fdfc5e5a5a7:   mov    rax,QWORD PTR [rbp-0x8]
+  0x00007fdfc5e5a5ab:   mov    DWORD PTR [r15+0x338],0x8
+  0x00007fdfc5e5a5b6:   cmp    DWORD PTR [r15+0x3b0],0x2
+  0x00007fdfc5e5a5c1:   je     0x00007fdfc5e5a66d
+  0x00007fdfc5e5a5c7:   cmp    BYTE PTR [rip+0x12ac565f],0x0        # 0x00007fdfd891fc2d
+                                                            ;   {external_word}
+  0x00007fdfc5e5a5ce:   je     0x00007fdfc5e5a60c
+  0x00007fdfc5e5a5d4:   mov    QWORD PTR [rbp-0x8],rax
+  0x00007fdfc5e5a5d8:   movabs rsi,0x8000112b8              ;   {metadata({method} {0x00000008000112b8} 'defineClass1' '(Ljava/lang/ClassLoader;Ljava/lang/String;[BIILjava/security/ProtectionDomain;Ljava/lang/String;)Ljava/lang/Class;' in 'java/lang/ClassLoader')}
+  0x00007fdfc5e5a5e2:   mov    rdi,r15
+  0x00007fdfc5e5a5e5:   test   esp,0xf
+  0x00007fdfc5e5a5eb:   je     0x00007fdfc5e5a603
+  0x00007fdfc5e5a5f1:   sub    rsp,0x8
+  0x00007fdfc5e5a5f5:   call   0x00007fdfd839ccb0           ;   {runtime_call SharedRuntime::dtrace_method_exit(JavaThread*, Method*)}
+  0x00007fdfc5e5a5fa:   add    rsp,0x8
+  0x00007fdfc5e5a5fe:   jmp    0x00007fdfc5e5a608
+  0x00007fdfc5e5a603:   call   0x00007fdfd839ccb0           ;   {runtime_call SharedRuntime::dtrace_method_exit(JavaThread*, Method*)}
+  0x00007fdfc5e5a608:   mov    rax,QWORD PTR [rbp-0x8]
+  0x00007fdfc5e5a60c:   mov    QWORD PTR [r15+0x288],0x0
+  0x00007fdfc5e5a617:   mov    QWORD PTR [r15+0x290],0x0
+  0x00007fdfc5e5a622:   vzeroupper 
+  0x00007fdfc5e5a625:   test   rax,rax
+  0x00007fdfc5e5a628:   je     0x00007fdfc5e5a647
+  0x00007fdfc5e5a62e:   test   rax,0x1
+  0x00007fdfc5e5a635:   je     0x00007fdfc5e5a644
+  0x00007fdfc5e5a63b:   mov    rax,QWORD PTR [rax-0x1]
+  0x00007fdfc5e5a63f:   jmp    0x00007fdfc5e5a647
+  0x00007fdfc5e5a644:   mov    rax,QWORD PTR [rax]
+  0x00007fdfc5e5a647:   mov    rcx,QWORD PTR [r15+0xd8]
+  0x00007fdfc5e5a64e:   mov    DWORD PTR [rcx+0x100],0x0
+  0x00007fdfc5e5a658:   leave  
+  0x00007fdfc5e5a659:   cmp    QWORD PTR [r15+0x8],0x0
+  0x00007fdfc5e5a661:   jne    0x00007fdfc5e5a668
+  0x00007fdfc5e5a667:   ret    
+  0x00007fdfc5e5a668:   jmp    Stub::forward exception      ;   {runtime_call StubRoutines (1)}
+  0x00007fdfc5e5a66d:   vzeroupper 
+  0x00007fdfc5e5a670:   mov    QWORD PTR [rbp-0x8],rax
+  0x00007fdfc5e5a674:   mov    r12,rsp
+  0x00007fdfc5e5a677:   sub    rsp,0x0
+  0x00007fdfc5e5a67b:   and    rsp,0xfffffffffffffff0
+  0x00007fdfc5e5a67f:   call   0x00007fdfd839da30           ;   {runtime_call SharedRuntime::reguard_yellow_pages()}
+  0x00007fdfc5e5a684:   mov    rsp,r12
+  0x00007fdfc5e5a687:   xor    r12,r12
+  0x00007fdfc5e5a68a:   mov    rax,QWORD PTR [rbp-0x8]
+  0x00007fdfc5e5a68e:   jmp    0x00007fdfc5e5a5c7
+  0x00007fdfc5e5a693:   hlt    
+  0x00007fdfc5e5a694:   hlt    
+  0x00007fdfc5e5a695:   hlt    
+  0x00007fdfc5e5a696:   hlt    
+  0x00007fdfc5e5a697:   hlt    
+--------------------------------------------------------------------------------
+[/Disassembly]
+
+
+Compiled method (c1) 1902       3       java.lang.ClassLoader::defineClass (43 bytes)
+ total in heap  [0x00007fdfbec42b10,0x00007fdfbec43580] = 2672
+ relocation     [0x00007fdfbec42c70,0x00007fdfbec42d00] = 144
+ main code      [0x00007fdfbec42d00,0x00007fdfbec432e0] = 1504
+ stub code      [0x00007fdfbec432e0,0x00007fdfbec43350] = 112
+ metadata       [0x00007fdfbec43350,0x00007fdfbec43380] = 48
+ scopes data    [0x00007fdfbec43380,0x00007fdfbec43470] = 240
+ scopes pcs     [0x00007fdfbec43470,0x00007fdfbec43550] = 224
+ dependencies   [0x00007fdfbec43550,0x00007fdfbec43558] = 8
+ nul chk table  [0x00007fdfbec43558,0x00007fdfbec43580] = 40
+
+[Disassembly]
+--------------------------------------------------------------------------------
+[Constant Pool (empty)]
+
+--------------------------------------------------------------------------------
+
+[Entry Point]
+  # {method} {0x0000000800010ff8} 'defineClass' '(Ljava/lang/String;[BIILjava/security/ProtectionDomain;)Ljava/lang/Class;' in 'java/lang/ClassLoader'
+  # this:     rsi:rsi   = 'java/lang/ClassLoader'
+  # parm0:    rdx:rdx   = 'java/lang/String'
+  # parm1:    rcx:rcx   = '[B'
+  # parm2:    r8        = int
+  # parm3:    r9        = int
+  # parm4:    rdi:rdi   = 'java/security/ProtectionDomain'
+  #           [sp+0xc0]  (sp of caller)
+  0x00007fdfbec42d00:   mov    r10d,DWORD PTR [rsi+0x8]
+  0x00007fdfbec42d04:   movabs r11,0x800000000
+  0x00007fdfbec42d0e:   add    r10,r11
+  0x00007fdfbec42d11:   cmp    r10,rax
+  0x00007fdfbec42d14:   jne    0x00007fdfbe363480           ;   {runtime_call ic_miss_stub}
+  0x00007fdfbec42d1a:   nop    WORD PTR [rax+rax*1+0x0]
+[Verified Entry Point]
+  0x00007fdfbec42d20:   mov    DWORD PTR [rsp-0x14000],eax
+  0x00007fdfbec42d27:   push   rbp
+  0x00007fdfbec42d28:   sub    rsp,0xb0
+  0x00007fdfbec42d2f:   mov    QWORD PTR [rsp+0x78],rsi
+  0x00007fdfbec42d34:   movabs rbx,0x7fdf84a84310           ;   {metadata(method data for {method} {0x0000000800010ff8} 'defineClass' '(Ljava/lang/String;[BIILjava/security/ProtectionDomain;)Ljava/lang/Class;' in 'java/lang/ClassLoader')}
+  0x00007fdfbec42d3e:   mov    eax,DWORD PTR [rbx+0xf4]
+  0x00007fdfbec42d44:   add    eax,0x2
+  0x00007fdfbec42d47:   mov    DWORD PTR [rbx+0xf4],eax
+  0x00007fdfbec42d4d:   and    eax,0x7fe
+  0x00007fdfbec42d53:   cmp    eax,0x0
+  0x00007fdfbec42d56:   je     0x00007fdfbec43202
+  0x00007fdfbec42d5c:   mov    DWORD PTR [rsp+0x94],r9d
+  0x00007fdfbec42d64:   mov    DWORD PTR [rsp+0x90],r8d
+  0x00007fdfbec42d6c:   mov    QWORD PTR [rsp+0x88],rcx
+  0x00007fdfbec42d74:   mov    rbx,rsi
+  0x00007fdfbec42d77:   movabs rax,0x7fdf84a84310           ;   {metadata(method data for {method} {0x0000000800010ff8} 'defineClass' '(Ljava/lang/String;[BIILjava/security/ProtectionDomain;)Ljava/lang/Class;' in 'java/lang/ClassLoader')}
+  0x00007fdfbec42d81:   add    QWORD PTR [rax+0x138],0x1
+  0x00007fdfbec42d89:   mov    rbx,rdx
+  0x00007fdfbec42d8c:   mov    rdx,rbx
+  0x00007fdfbec42d8f:   mov    rcx,rdi
+  0x00007fdfbec42d92:   mov    rdi,rsi
+  0x00007fdfbec42d95:   mov    rsi,rdi
+  0x00007fdfbec42d98:   mov    QWORD PTR [rsp+0x80],rbx
+  0x00007fdfbec42da0:   nop    DWORD PTR [rax+0x0]
+  0x00007fdfbec42da7:   call   0x00007fdfbe9d01a0           ; ImmutableOopMap {[120]=Oop [136]=Oop [128]=Oop }
+                                                            ;*invokevirtual preDefineClass {reexecute=0 rethrow=0 return_oop=0}
+                                                            ; - java.lang.ClassLoader::defineClass@4 (line 1010)
+                                                            ;   {optimized virtual_call}
+  0x00007fdfbec42dac:   mov    QWORD PTR [rsp+0x98],rax
+  0x00007fdfbec42db4:   mov    rsi,QWORD PTR [rsp+0x78]
+  0x00007fdfbec42db9:   movabs rdx,0x7fdf84a84310           ;   {metadata(method data for {method} {0x0000000800010ff8} 'defineClass' '(Ljava/lang/String;[BIILjava/security/ProtectionDomain;)Ljava/lang/Class;' in 'java/lang/ClassLoader')}
+  0x00007fdfbec42dc3:   add    QWORD PTR [rdx+0x1d0],0x1
+  0x00007fdfbec42dcb:   movabs rdx,0x7fdfbd2f7848           ;   {metadata(method data for {method} {0x0000000800011260} 'defineClassSourceLocation' '(Ljava/security/ProtectionDomain;)Ljava/lang/String;' in 'java/lang/ClassLoader')}
+  0x00007fdfbec42dd5:   mov    esi,DWORD PTR [rdx+0xf4]
+  0x00007fdfbec42ddb:   add    esi,0x2
+  0x00007fdfbec42dde:   mov    DWORD PTR [rdx+0xf4],esi
+  0x00007fdfbec42de4:   and    esi,0x1ffffe
+  0x00007fdfbec42dea:   cmp    esi,0x0
+  0x00007fdfbec42ded:   je     0x00007fdfbec43223
+  0x00007fdfbec42df3:   cmp    rax,QWORD PTR [rax]          ; implicit exception: dispatches to 0x00007fdfbec43244
+  0x00007fdfbec42df6:   mov    rdx,rax
+  0x00007fdfbec42df9:   movabs rsi,0x7fdfbd2f7848           ;   {metadata(method data for {method} {0x0000000800011260} 'defineClassSourceLocation' '(Ljava/security/ProtectionDomain;)Ljava/lang/String;' in 'java/lang/ClassLoader')}
+  0x00007fdfbec42e03:   add    QWORD PTR [rsi+0x138],0x1
+  0x00007fdfbec42e0b:   mov    edx,DWORD PTR [rax+0x10]
+  0x00007fdfbec42e0e:   cmp    rdx,0x0
+  0x00007fdfbec42e12:   movabs rsi,0x7fdfbd2f7848           ;   {metadata(method data for {method} {0x0000000800011260} 'defineClassSourceLocation' '(Ljava/security/ProtectionDomain;)Ljava/lang/String;' in 'java/lang/ClassLoader')}
+  0x00007fdfbec42e1c:   movabs rdi,0x1e0
+  0x00007fdfbec42e26:   jne    0x00007fdfbec42e36
+  0x00007fdfbec42e2c:   movabs rdi,0x1d0
+  0x00007fdfbec42e36:   mov    rbx,QWORD PTR [rsi+rdi*1]
+  0x00007fdfbec42e3a:   lea    rbx,[rbx+0x1]
+  0x00007fdfbec42e3e:   mov    QWORD PTR [rsi+rdi*1],rbx
+  0x00007fdfbec42e42:   jne    0x00007fdfbec42e57
+  0x00007fdfbec42e48:   movabs rbx,0x0                      ;   {oop(NULL)}
+  0x00007fdfbec42e52:   jmp    0x00007fdfbec43157
+  0x00007fdfbec42e57:   cmp    rax,QWORD PTR [rdx]          ; implicit exception: dispatches to 0x00007fdfbec43249
+  0x00007fdfbec42e5a:   mov    rsi,rdx
+  0x00007fdfbec42e5d:   movabs rdi,0x7fdfbd2f7848           ;   {metadata(method data for {method} {0x0000000800011260} 'defineClassSourceLocation' '(Ljava/security/ProtectionDomain;)Ljava/lang/String;' in 'java/lang/ClassLoader')}
+  0x00007fdfbec42e67:   add    QWORD PTR [rdi+0x1f0],0x1
+  0x00007fdfbec42e6f:   mov    esi,DWORD PTR [rdx+0xc]
+  0x00007fdfbec42e72:   cmp    rsi,0x0
+  0x00007fdfbec42e76:   movabs rdi,0x7fdfbd2f7848           ;   {metadata(method data for {method} {0x0000000800011260} 'defineClassSourceLocation' '(Ljava/security/ProtectionDomain;)Ljava/lang/String;' in 'java/lang/ClassLoader')}
+  0x00007fdfbec42e80:   movabs rbx,0x298
+  0x00007fdfbec42e8a:   jne    0x00007fdfbec42e9a
+  0x00007fdfbec42e90:   movabs rbx,0x288
+  0x00007fdfbec42e9a:   mov    rcx,QWORD PTR [rdi+rbx*1]
+  0x00007fdfbec42e9e:   lea    rcx,[rcx+0x1]
+  0x00007fdfbec42ea2:   mov    QWORD PTR [rdi+rbx*1],rcx
+  0x00007fdfbec42ea6:   jne    0x00007fdfbec42ebb
+  0x00007fdfbec42eac:   movabs rbx,0x0                      ;   {oop(NULL)}
+  0x00007fdfbec42eb6:   jmp    0x00007fdfbec43157
+  0x00007fdfbec42ebb:   movabs rdi,0x7fdfbd2f7848           ;   {metadata(method data for {method} {0x0000000800011260} 'defineClassSourceLocation' '(Ljava/security/ProtectionDomain;)Ljava/lang/String;' in 'java/lang/ClassLoader')}
+  0x00007fdfbec42ec5:   add    QWORD PTR [rdi+0x2a8],0x1
+  0x00007fdfbec42ecd:   cmp    rax,QWORD PTR [rsi]          ; implicit exception: dispatches to 0x00007fdfbec4324e
+  0x00007fdfbec42ed0:   mov    rdx,rsi
+  0x00007fdfbec42ed3:   movabs rdi,0x7fdfbd2f7848           ;   {metadata(method data for {method} {0x0000000800011260} 'defineClassSourceLocation' '(Ljava/security/ProtectionDomain;)Ljava/lang/String;' in 'java/lang/ClassLoader')}
+  0x00007fdfbec42edd:   add    QWORD PTR [rdi+0x340],0x1
+  0x00007fdfbec42ee5:   movabs rdx,0x7fdfbd25aeb8           ;   {metadata(method data for {method} {0x0000000800072050} 'toString' '()Ljava/lang/String;' in 'java/net/URL')}
+  0x00007fdfbec42eef:   mov    edi,DWORD PTR [rdx+0xf4]
+  0x00007fdfbec42ef5:   add    edi,0x2
+  0x00007fdfbec42ef8:   mov    DWORD PTR [rdx+0xf4],edi
+  0x00007fdfbec42efe:   and    edi,0x1ffffe
+  0x00007fdfbec42f04:   cmp    edi,0x0
+  0x00007fdfbec42f07:   je     0x00007fdfbec43253
+  0x00007fdfbec42f0d:   mov    rdx,rsi
+  0x00007fdfbec42f10:   movabs rdi,0x7fdfbd25aeb8           ;   {metadata(method data for {method} {0x0000000800072050} 'toString' '()Ljava/lang/String;' in 'java/net/URL')}
+  0x00007fdfbec42f1a:   add    QWORD PTR [rdi+0x138],0x1
+  0x00007fdfbec42f22:   movabs rdx,0x7fdfbd25b0a8           ;   {metadata(method data for {method} {0x00000008000728e8} 'toExternalForm' '()Ljava/lang/String;' in 'java/net/URL')}
+  0x00007fdfbec42f2c:   mov    edi,DWORD PTR [rdx+0xf4]
+  0x00007fdfbec42f32:   add    edi,0x2
+  0x00007fdfbec42f35:   mov    DWORD PTR [rdx+0xf4],edi
+  0x00007fdfbec42f3b:   and    edi,0x1ffffe
+  0x00007fdfbec42f41:   cmp    edi,0x0
+  0x00007fdfbec42f44:   je     0x00007fdfbec43274
+  0x00007fdfbec42f4a:   mov    edi,DWORD PTR [rsi+0x38]
+  0x00007fdfbec42f4d:   cmp    rax,QWORD PTR [rdi]          ; implicit exception: dispatches to 0x00007fdfbec43295
+  0x00007fdfbec42f50:   mov    rdx,rdi
+  0x00007fdfbec42f53:   movabs rbx,0x7fdfbd25b0a8           ;   {metadata(method data for {method} {0x00000008000728e8} 'toExternalForm' '()Ljava/lang/String;' in 'java/net/URL')}
+  0x00007fdfbec42f5d:   mov    edx,DWORD PTR [rdx+0x8]
+  0x00007fdfbec42f60:   movabs r10,0x800000000
+  0x00007fdfbec42f6a:   add    rdx,r10
+  0x00007fdfbec42f6d:   cmp    rdx,QWORD PTR [rbx+0x148]
+  0x00007fdfbec42f74:   jne    0x00007fdfbec42f83
+  0x00007fdfbec42f76:   add    QWORD PTR [rbx+0x150],0x1
+  0x00007fdfbec42f7e:   jmp    0x00007fdfbec43145
+  0x00007fdfbec42f83:   cmp    rdx,QWORD PTR [rbx+0x158]
+  0x00007fdfbec42f8a:   jne    0x00007fdfbec42f99
+  0x00007fdfbec42f8c:   add    QWORD PTR [rbx+0x160],0x1
+  0x00007fdfbec42f94:   jmp    0x00007fdfbec43145
+  0x00007fdfbec42f99:   cmp    rdx,QWORD PTR [rbx+0x168]
+  0x00007fdfbec42fa0:   jne    0x00007fdfbec42faf
+  0x00007fdfbec42fa2:   add    QWORD PTR [rbx+0x170],0x1
+  0x00007fdfbec42faa:   jmp    0x00007fdfbec43145
+  0x00007fdfbec42faf:   cmp    rdx,QWORD PTR [rbx+0x178]
+  0x00007fdfbec42fb6:   jne    0x00007fdfbec42fc5
+  0x00007fdfbec42fb8:   add    QWORD PTR [rbx+0x180],0x1
+  0x00007fdfbec42fc0:   jmp    0x00007fdfbec43145
+  0x00007fdfbec42fc5:   cmp    rdx,QWORD PTR [rbx+0x188]
+  0x00007fdfbec42fcc:   jne    0x00007fdfbec42fdb
+  0x00007fdfbec42fce:   add    QWORD PTR [rbx+0x190],0x1
+  0x00007fdfbec42fd6:   jmp    0x00007fdfbec43145
+  0x00007fdfbec42fdb:   cmp    rdx,QWORD PTR [rbx+0x198]
+  0x00007fdfbec42fe2:   jne    0x00007fdfbec42ff1
+  0x00007fdfbec42fe4:   add    QWORD PTR [rbx+0x1a0],0x1
+  0x00007fdfbec42fec:   jmp    0x00007fdfbec43145
+  0x00007fdfbec42ff1:   cmp    rdx,QWORD PTR [rbx+0x1a8]
+  0x00007fdfbec42ff8:   jne    0x00007fdfbec43007
+  0x00007fdfbec42ffa:   add    QWORD PTR [rbx+0x1b0],0x1
+  0x00007fdfbec43002:   jmp    0x00007fdfbec43145
+  0x00007fdfbec43007:   cmp    rdx,QWORD PTR [rbx+0x1b8]
+  0x00007fdfbec4300e:   jne    0x00007fdfbec4301d
+  0x00007fdfbec43010:   add    QWORD PTR [rbx+0x1c0],0x1
+  0x00007fdfbec43018:   jmp    0x00007fdfbec43145
+  0x00007fdfbec4301d:   cmp    QWORD PTR [rbx+0x148],0x0
+  0x00007fdfbec43028:   jne    0x00007fdfbec43041
+  0x00007fdfbec4302a:   mov    QWORD PTR [rbx+0x148],rdx
+  0x00007fdfbec43031:   mov    QWORD PTR [rbx+0x150],0x1
+  0x00007fdfbec4303c:   jmp    0x00007fdfbec43145
+  0x00007fdfbec43041:   cmp    QWORD PTR [rbx+0x158],0x0
+  0x00007fdfbec4304c:   jne    0x00007fdfbec43065
+  0x00007fdfbec4304e:   mov    QWORD PTR [rbx+0x158],rdx
+  0x00007fdfbec43055:   mov    QWORD PTR [rbx+0x160],0x1
+  0x00007fdfbec43060:   jmp    0x00007fdfbec43145
+  0x00007fdfbec43065:   cmp    QWORD PTR [rbx+0x168],0x0
+  0x00007fdfbec43070:   jne    0x00007fdfbec43089
+  0x00007fdfbec43072:   mov    QWORD PTR [rbx+0x168],rdx
+  0x00007fdfbec43079:   mov    QWORD PTR [rbx+0x170],0x1
+  0x00007fdfbec43084:   jmp    0x00007fdfbec43145
+  0x00007fdfbec43089:   cmp    QWORD PTR [rbx+0x178],0x0
+  0x00007fdfbec43094:   jne    0x00007fdfbec430ad
+  0x00007fdfbec43096:   mov    QWORD PTR [rbx+0x178],rdx
+  0x00007fdfbec4309d:   mov    QWORD PTR [rbx+0x180],0x1
+  0x00007fdfbec430a8:   jmp    0x00007fdfbec43145
+  0x00007fdfbec430ad:   cmp    QWORD PTR [rbx+0x188],0x0
+  0x00007fdfbec430b8:   jne    0x00007fdfbec430d1
+  0x00007fdfbec430ba:   mov    QWORD PTR [rbx+0x188],rdx
+  0x00007fdfbec430c1:   mov    QWORD PTR [rbx+0x190],0x1
+  0x00007fdfbec430cc:   jmp    0x00007fdfbec43145
+  0x00007fdfbec430d1:   cmp    QWORD PTR [rbx+0x198],0x0
+  0x00007fdfbec430dc:   jne    0x00007fdfbec430f5
+  0x00007fdfbec430de:   mov    QWORD PTR [rbx+0x198],rdx
+  0x00007fdfbec430e5:   mov    QWORD PTR [rbx+0x1a0],0x1
+  0x00007fdfbec430f0:   jmp    0x00007fdfbec43145
+  0x00007fdfbec430f5:   cmp    QWORD PTR [rbx+0x1a8],0x0
+  0x00007fdfbec43100:   jne    0x00007fdfbec43119
+  0x00007fdfbec43102:   mov    QWORD PTR [rbx+0x1a8],rdx
+  0x00007fdfbec43109:   mov    QWORD PTR [rbx+0x1b0],0x1
+  0x00007fdfbec43114:   jmp    0x00007fdfbec43145
+  0x00007fdfbec43119:   cmp    QWORD PTR [rbx+0x1b8],0x0
+  0x00007fdfbec43124:   jne    0x00007fdfbec4313d
+  0x00007fdfbec43126:   mov    QWORD PTR [rbx+0x1b8],rdx
+  0x00007fdfbec4312d:   mov    QWORD PTR [rbx+0x1c0],0x1
+  0x00007fdfbec43138:   jmp    0x00007fdfbec43145
+  0x00007fdfbec4313d:   add    QWORD PTR [rbx+0x138],0x1
+  0x00007fdfbec43145:   mov    rdx,rsi
+  0x00007fdfbec43148:   mov    rsi,rdi
+  0x00007fdfbec4314b:   nop    DWORD PTR [rax+0x0]
+  0x00007fdfbec4314f:   call   0x00007fdfbe9cbce0           ; ImmutableOopMap {[120]=Oop [136]=Oop [128]=Oop [152]=Oop }
+                                                            ;*invokevirtual toExternalForm {reexecute=0 rethrow=0 return_oop=0}
+                                                            ; - java.net.URL::toExternalForm@5 (line 1039)
+                                                            ; - java.net.URL::toString@1 (line 1025)
+                                                            ; - java.lang.ClassLoader::defineClassSourceLocation@22 (line 912)
+                                                            ; - java.lang.ClassLoader::defineClass@12 (line 1011)
+                                                            ;   {optimized virtual_call}
+  0x00007fdfbec43154:   mov    rbx,rax
+  0x00007fdfbec43157:   mov    rax,QWORD PTR [rsp+0x98]
+  0x00007fdfbec4315f:   mov    r9d,DWORD PTR [rsp+0x94]
+  0x00007fdfbec43167:   mov    r8d,DWORD PTR [rsp+0x90]
+  0x00007fdfbec4316f:   mov    rcx,QWORD PTR [rsp+0x88]
+  0x00007fdfbec43177:   mov    rdx,QWORD PTR [rsp+0x80]
+  0x00007fdfbec4317f:   mov    rsi,QWORD PTR [rsp+0x78]
+  0x00007fdfbec43184:   movabs rdi,0x7fdf84a84310           ;   {metadata(method data for {method} {0x0000000800010ff8} 'defineClass' '(Ljava/lang/String;[BIILjava/security/ProtectionDomain;)Ljava/lang/Class;' in 'java/lang/ClassLoader')}
+  0x00007fdfbec4318e:   add    QWORD PTR [rdi+0x268],0x1
+  0x00007fdfbec43196:   mov    r11,rsi
+  0x00007fdfbec43199:   mov    rsi,r11
+  0x00007fdfbec4319c:   mov    rdi,rax
+  0x00007fdfbec4319f:   mov    QWORD PTR [rsp],rbx
+  0x00007fdfbec431a3:   nop    DWORD PTR [rax+0x0]
+  0x00007fdfbec431a7:   call   0x00007fdfc5e5a440           ; ImmutableOopMap {[120]=Oop [152]=Oop }
+                                                            ;*invokestatic defineClass1 {reexecute=0 rethrow=0 return_oop=0}
+                                                            ; - java.lang.ClassLoader::defineClass@27 (line 1012)
+                                                            ;   {static_call}
+  0x00007fdfbec431ac:   mov    rsi,QWORD PTR [rsp+0x78]
+  0x00007fdfbec431b1:   movabs rdx,0x7fdf84a84310           ;   {metadata(method data for {method} {0x0000000800010ff8} 'defineClass' '(Ljava/lang/String;[BIILjava/security/ProtectionDomain;)Ljava/lang/Class;' in 'java/lang/ClassLoader')}
+  0x00007fdfbec431bb:   add    QWORD PTR [rdx+0x278],0x1
+  0x00007fdfbec431c3:   mov    rdx,rax
+  0x00007fdfbec431c6:   mov    rcx,QWORD PTR [rsp+0x98]
+  0x00007fdfbec431ce:   mov    rsi,QWORD PTR [rsp+0x78]
+  0x00007fdfbec431d3:   mov    QWORD PTR [rsp+0xa0],rax
+  0x00007fdfbec431db:   nop    DWORD PTR [rax+0x0]
+  0x00007fdfbec431df:   call   0x00007fdfbe9d1d20           ; ImmutableOopMap {[160]=Oop }
+                                                            ;*invokevirtual postDefineClass {reexecute=0 rethrow=0 return_oop=0}
+                                                            ; - java.lang.ClassLoader::defineClass@37 (line 1013)
+                                                            ;   {optimized virtual_call}
+  0x00007fdfbec431e4:   mov    rax,QWORD PTR [rsp+0xa0]
+  0x00007fdfbec431ec:   add    rsp,0xb0
+  0x00007fdfbec431f3:   pop    rbp
+  0x00007fdfbec431f4:   cmp    rsp,QWORD PTR [r15+0x340]    ;   {poll_return}
+  0x00007fdfbec431fb:   ja     0x00007fdfbec4329a
+  0x00007fdfbec43201:   ret    
+  0x00007fdfbec43202:   movabs r10,0x800010ff8              ;   {metadata({method} {0x0000000800010ff8} 'defineClass' '(Ljava/lang/String;[BIILjava/security/ProtectionDomain;)Ljava/lang/Class;' in 'java/lang/ClassLoader')}
+  0x00007fdfbec4320c:   mov    QWORD PTR [rsp+0x8],r10
+  0x00007fdfbec43211:   mov    QWORD PTR [rsp],0xffffffffffffffff
+  0x00007fdfbec43219:   call   0x00007fdfbe40f300           ; ImmutableOopMap {rsi=Oop [120]=Oop rdx=Oop rcx=Oop rdi=Oop }
+                                                            ;*synchronization entry
+                                                            ; - java.lang.ClassLoader::defineClass@-1 (line 1010)
+                                                            ;   {runtime_call counter_overflow Runtime1 stub}
+  0x00007fdfbec4321e:   jmp    0x00007fdfbec42d5c
+  0x00007fdfbec43223:   movabs r10,0x800011260              ;   {metadata({method} {0x0000000800011260} 'defineClassSourceLocation' '(Ljava/security/ProtectionDomain;)Ljava/lang/String;' in 'java/lang/ClassLoader')}
+  0x00007fdfbec4322d:   mov    QWORD PTR [rsp+0x8],r10
+  0x00007fdfbec43232:   mov    QWORD PTR [rsp],0xffffffffffffffff
+  0x00007fdfbec4323a:   call   0x00007fdfbe40f300           ; ImmutableOopMap {[120]=Oop [136]=Oop [128]=Oop rax=Oop [152]=Oop }
+                                                            ;*synchronization entry
+                                                            ; - java.lang.ClassLoader::defineClassSourceLocation@-1 (line 909)
+                                                            ; - java.lang.ClassLoader::defineClass@12 (line 1011)
+                                                            ;   {runtime_call counter_overflow Runtime1 stub}
+  0x00007fdfbec4323f:   jmp    0x00007fdfbec42df3
+  0x00007fdfbec43244:   call   0x00007fdfbe409620           ; ImmutableOopMap {[120]=Oop [136]=Oop [128]=Oop rax=Oop [152]=Oop }
+                                                            ;*invokevirtual getCodeSource {reexecute=0 rethrow=0 return_oop=0}
+                                                            ; - java.lang.ClassLoader::defineClassSourceLocation@1 (line 909)
+                                                            ; - java.lang.ClassLoader::defineClass@12 (line 1011)
+                                                            ;   {runtime_call throw_null_pointer_exception Runtime1 stub}
+  0x00007fdfbec43249:   call   0x00007fdfbe409620           ; ImmutableOopMap {[120]=Oop [136]=Oop [128]=Oop rax=Oop [152]=Oop rdx=Oop }
+                                                            ;*invokevirtual getLocation {reexecute=0 rethrow=0 return_oop=0}
+                                                            ; - java.lang.ClassLoader::defineClassSourceLocation@12 (line 911)
+                                                            ; - java.lang.ClassLoader::defineClass@12 (line 1011)
+                                                            ;   {runtime_call throw_null_pointer_exception Runtime1 stub}
+  0x00007fdfbec4324e:   call   0x00007fdfbe409620           ; ImmutableOopMap {[120]=Oop [136]=Oop [128]=Oop [152]=Oop rsi=Oop }
+                                                            ;*invokevirtual toString {reexecute=0 rethrow=0 return_oop=0}
+                                                            ; - java.lang.ClassLoader::defineClassSourceLocation@22 (line 912)
+                                                            ; - java.lang.ClassLoader::defineClass@12 (line 1011)
+                                                            ;   {runtime_call throw_null_pointer_exception Runtime1 stub}
+  0x00007fdfbec43253:   movabs r10,0x800072050              ;   {metadata({method} {0x0000000800072050} 'toString' '()Ljava/lang/String;' in 'java/net/URL')}
+  0x00007fdfbec4325d:   mov    QWORD PTR [rsp+0x8],r10
+  0x00007fdfbec43262:   mov    QWORD PTR [rsp],0xffffffffffffffff
+  0x00007fdfbec4326a:   call   0x00007fdfbe40f300           ; ImmutableOopMap {[120]=Oop [136]=Oop [128]=Oop [152]=Oop rsi=Oop }
+                                                            ;*synchronization entry
+                                                            ; - java.net.URL::toString@-1 (line 1025)
+                                                            ; - java.lang.ClassLoader::defineClassSourceLocation@22 (line 912)
+                                                            ; - java.lang.ClassLoader::defineClass@12 (line 1011)
+                                                            ;   {runtime_call counter_overflow Runtime1 stub}
+  0x00007fdfbec4326f:   jmp    0x00007fdfbec42f0d
+  0x00007fdfbec43274:   movabs r10,0x8000728e8              ;   {metadata({method} {0x00000008000728e8} 'toExternalForm' '()Ljava/lang/String;' in 'java/net/URL')}
+  0x00007fdfbec4327e:   mov    QWORD PTR [rsp+0x8],r10
+  0x00007fdfbec43283:   mov    QWORD PTR [rsp],0xffffffffffffffff
+  0x00007fdfbec4328b:   call   0x00007fdfbe40f300           ; ImmutableOopMap {[120]=Oop [136]=Oop [128]=Oop [152]=Oop rsi=Oop }
+                                                            ;*synchronization entry
+                                                            ; - java.net.URL::toExternalForm@-1 (line 1039)
+                                                            ; - java.net.URL::toString@1 (line 1025)
+                                                            ; - java.lang.ClassLoader::defineClassSourceLocation@22 (line 912)
+                                                            ; - java.lang.ClassLoader::defineClass@12 (line 1011)
+                                                            ;   {runtime_call counter_overflow Runtime1 stub}
+  0x00007fdfbec43290:   jmp    0x00007fdfbec42f4a
+  0x00007fdfbec43295:   call   0x00007fdfbe409620           ; ImmutableOopMap {[120]=Oop [136]=Oop [128]=Oop [152]=Oop rsi=Oop rdi=Oop }
+                                                            ;*invokevirtual toExternalForm {reexecute=0 rethrow=0 return_oop=0}
+                                                            ; - java.net.URL::toExternalForm@5 (line 1039)
+                                                            ; - java.net.URL::toString@1 (line 1025)
+                                                            ; - java.lang.ClassLoader::defineClassSourceLocation@22 (line 912)
+                                                            ; - java.lang.ClassLoader::defineClass@12 (line 1011)
+                                                            ;   {runtime_call throw_null_pointer_exception Runtime1 stub}
+  0x00007fdfbec4329a:   movabs r10,0x7fdfbec431f4           ;   {internal_word}
+  0x00007fdfbec432a4:   mov    QWORD PTR [r15+0x358],r10
+  0x00007fdfbec432ab:   jmp    0x00007fdfbe369e00           ;   {runtime_call SafepointBlob}
+  0x00007fdfbec432b0:   nop
+  0x00007fdfbec432b1:   nop
+  0x00007fdfbec432b2:   mov    rax,QWORD PTR [r15+0x3d8]
+  0x00007fdfbec432b9:   mov    QWORD PTR [r15+0x3d8],0x0
+  0x00007fdfbec432c4:   mov    QWORD PTR [r15+0x3e0],0x0
+  0x00007fdfbec432cf:   add    rsp,0xb0
+  0x00007fdfbec432d6:   pop    rbp
+  0x00007fdfbec432d7:   jmp    0x00007fdfbe408700           ;   {runtime_call unwind_exception Runtime1 stub}
+  0x00007fdfbec432dc:   hlt    
+  0x00007fdfbec432dd:   hlt    
+  0x00007fdfbec432de:   hlt    
+  0x00007fdfbec432df:   hlt    
+[Stub Code]
+  0x00007fdfbec432e0:   nop    DWORD PTR [rax+rax*1+0x0]    ;   {no_reloc}
+  0x00007fdfbec432e5:   movabs rbx,0x0                      ;   {static_stub}
+  0x00007fdfbec432ef:   jmp    0x00007fdfbec432ef           ;   {runtime_call}
+  0x00007fdfbec432f4:   nop
+  0x00007fdfbec432f5:   movabs rbx,0x0                      ;   {static_stub}
+  0x00007fdfbec432ff:   jmp    0x00007fdfbec432ff           ;   {runtime_call}
+  0x00007fdfbec43304:   nop
+  0x00007fdfbec43305:   movabs rbx,0x8000112b8              ;   {static_stub}
+  0x00007fdfbec4330f:   jmp    0x00007fdfbe35b31d           ;   {runtime_call I2C/C2I adapters}
+  0x00007fdfbec43314:   nop
+  0x00007fdfbec43315:   movabs rbx,0x0                      ;   {static_stub}
+  0x00007fdfbec4331f:   jmp    0x00007fdfbec4331f           ;   {runtime_call}
+[Exception Handler]
+  0x00007fdfbec43324:   call   0x00007fdfbe40b400           ;   {runtime_call handle_exception_from_callee Runtime1 stub}
+  0x00007fdfbec43329:   movabs rdi,0x7fdfd85a6e34           ;   {external_word}
+  0x00007fdfbec43333:   and    rsp,0xfffffffffffffff0
+  0x00007fdfbec43337:   call   0x00007fdfd81cee00           ;   {runtime_call MacroAssembler::debug64(char*, long, long*)}
+  0x00007fdfbec4333c:   hlt    
+[Deopt Handler Code]
+  0x00007fdfbec4333d:   movabs r10,0x7fdfbec4333d           ;   {section_word}
+  0x00007fdfbec43347:   push   r10
+  0x00007fdfbec43349:   jmp    0x00007fdfbe368d20           ;   {runtime_call DeoptimizationBlob}
+  0x00007fdfbec4334e:   hlt    
+  0x00007fdfbec4334f:   hlt    
+--------------------------------------------------------------------------------
+[/Disassembly]
+
+
+Compiled method (c1) 1978       3       java.security.SecureClassLoader::defineClass (16 bytes)
+ total in heap  [0x00007fdfbec71190,0x00007fdfbec71578] = 1000
+ relocation     [0x00007fdfbec712f0,0x00007fdfbec71338] = 72
+ main code      [0x00007fdfbec71340,0x00007fdfbec71480] = 320
+ stub code      [0x00007fdfbec71480,0x00007fdfbec714d0] = 80
+ metadata       [0x00007fdfbec714d0,0x00007fdfbec714d8] = 8
+ scopes data    [0x00007fdfbec714d8,0x00007fdfbec71520] = 72
+ scopes pcs     [0x00007fdfbec71520,0x00007fdfbec71570] = 80
+ dependencies   [0x00007fdfbec71570,0x00007fdfbec71578] = 8
+
+[Disassembly]
+--------------------------------------------------------------------------------
+[Constant Pool (empty)]
+
+--------------------------------------------------------------------------------
+
+[Entry Point]
+  # {method} {0x000000080043bfa8} 'defineClass' '(Ljava/lang/String;[BIILjava/security/CodeSource;)Ljava/lang/Class;' in 'java/security/SecureClassLoader'
+  # this:     rsi:rsi   = 'java/security/SecureClassLoader'
+  # parm0:    rdx:rdx   = 'java/lang/String'
+  # parm1:    rcx:rcx   = '[B'
+  # parm2:    r8        = int
+  # parm3:    r9        = int
+  # parm4:    rdi:rdi   = 'java/security/CodeSource'
+  #           [sp+0x80]  (sp of caller)
+  0x00007fdfbec71340:   mov    r10d,DWORD PTR [rsi+0x8]
+  0x00007fdfbec71344:   movabs r11,0x800000000
+  0x00007fdfbec7134e:   add    r10,r11
+  0x00007fdfbec71351:   cmp    r10,rax
+  0x00007fdfbec71354:   jne    0x00007fdfbe363480           ;   {runtime_call ic_miss_stub}
+  0x00007fdfbec7135a:   nop    WORD PTR [rax+rax*1+0x0]
+[Verified Entry Point]
+  0x00007fdfbec71360:   mov    DWORD PTR [rsp-0x14000],eax
+  0x00007fdfbec71367:   push   rbp
+  0x00007fdfbec71368:   sub    rsp,0x70
+  0x00007fdfbec7136c:   movabs rbx,0x7fdf84af5388           ;   {metadata(method data for {method} {0x000000080043bfa8} 'defineClass' '(Ljava/lang/String;[BIILjava/security/CodeSource;)Ljava/lang/Class;' in 'java/security/SecureClassLoader')}
+  0x00007fdfbec71376:   mov    eax,DWORD PTR [rbx+0xf4]
+  0x00007fdfbec7137c:   add    eax,0x2
+  0x00007fdfbec7137f:   mov    DWORD PTR [rbx+0xf4],eax
+  0x00007fdfbec71385:   and    eax,0x7fe
+  0x00007fdfbec7138b:   cmp    eax,0x0
+  0x00007fdfbec7138e:   je     0x00007fdfbec7141f
+  0x00007fdfbec71394:   mov    DWORD PTR [rsp+0x5c],r9d
+  0x00007fdfbec71399:   mov    DWORD PTR [rsp+0x58],r8d
+  0x00007fdfbec7139e:   mov    QWORD PTR [rsp+0x50],rcx
+  0x00007fdfbec713a3:   mov    QWORD PTR [rsp+0x48],rdx
+  0x00007fdfbec713a8:   mov    rbx,rsi
+  0x00007fdfbec713ab:   movabs rax,0x7fdf84af5388           ;   {metadata(method data for {method} {0x000000080043bfa8} 'defineClass' '(Ljava/lang/String;[BIILjava/security/CodeSource;)Ljava/lang/Class;' in 'java/security/SecureClassLoader')}
+  0x00007fdfbec713b5:   add    QWORD PTR [rax+0x138],0x1
+  0x00007fdfbec713bd:   mov    rdx,rdi
+  0x00007fdfbec713c0:   mov    rdi,rsi
+  0x00007fdfbec713c3:   mov    rsi,rdi
+  0x00007fdfbec713c6:   mov    QWORD PTR [rsp+0x40],rdi
+  0x00007fdfbec713cb:   nop    DWORD PTR [rax+0x0]
+  0x00007fdfbec713cf:   call   0x00007fdfbe9ce7a0           ; ImmutableOopMap {[64]=Oop [72]=Oop [80]=Oop }
+                                                            ;*invokevirtual getProtectionDomain {reexecute=0 rethrow=0 return_oop=0}
+                                                            ; - java.security.SecureClassLoader::defineClass@9 (line 150)
+                                                            ;   {optimized virtual_call}
+  0x00007fdfbec713d4:   mov    rsi,QWORD PTR [rsp+0x40]
+  0x00007fdfbec713d9:   movabs rdx,0x7fdf84af5388           ;   {metadata(method data for {method} {0x000000080043bfa8} 'defineClass' '(Ljava/lang/String;[BIILjava/security/CodeSource;)Ljava/lang/Class;' in 'java/security/SecureClassLoader')}
+  0x00007fdfbec713e3:   add    QWORD PTR [rdx+0x1d0],0x1
+  0x00007fdfbec713eb:   mov    rdx,QWORD PTR [rsp+0x48]
+  0x00007fdfbec713f0:   mov    rcx,QWORD PTR [rsp+0x50]
+  0x00007fdfbec713f5:   mov    r8d,DWORD PTR [rsp+0x58]
+  0x00007fdfbec713fa:   mov    r9d,DWORD PTR [rsp+0x5c]
+  0x00007fdfbec713ff:   mov    rdi,rax
+  0x00007fdfbec71402:   mov    rsi,QWORD PTR [rsp+0x40]
+  0x00007fdfbec71407:   call   0x00007fdfbec42d20           ; ImmutableOopMap {}
+                                                            ;*invokevirtual defineClass {reexecute=0 rethrow=0 return_oop=0}
+                                                            ; - java.security.SecureClassLoader::defineClass@12 (line 150)
+                                                            ;   {optimized virtual_call}
+  0x00007fdfbec7140c:   add    rsp,0x70
+  0x00007fdfbec71410:   pop    rbp
+  0x00007fdfbec71411:   cmp    rsp,QWORD PTR [r15+0x340]    ;   {poll_return}
+  0x00007fdfbec71418:   ja     0x00007fdfbec71440
+  0x00007fdfbec7141e:   ret    
+  0x00007fdfbec7141f:   movabs r10,0x80043bfa8              ;   {metadata({method} {0x000000080043bfa8} 'defineClass' '(Ljava/lang/String;[BIILjava/security/CodeSource;)Ljava/lang/Class;' in 'java/security/SecureClassLoader')}
+  0x00007fdfbec71429:   mov    QWORD PTR [rsp+0x8],r10
+  0x00007fdfbec7142e:   mov    QWORD PTR [rsp],0xffffffffffffffff
+  0x00007fdfbec71436:   call   0x00007fdfbe40f300           ; ImmutableOopMap {rsi=Oop rdx=Oop rcx=Oop rdi=Oop }
+                                                            ;*synchronization entry
+                                                            ; - java.security.SecureClassLoader::defineClass@-1 (line 150)
+                                                            ;   {runtime_call counter_overflow Runtime1 stub}
+  0x00007fdfbec7143b:   jmp    0x00007fdfbec71394
+  0x00007fdfbec71440:   movabs r10,0x7fdfbec71411           ;   {internal_word}
+  0x00007fdfbec7144a:   mov    QWORD PTR [r15+0x358],r10
+  0x00007fdfbec71451:   jmp    0x00007fdfbe369e00           ;   {runtime_call SafepointBlob}
+  0x00007fdfbec71456:   nop
+  0x00007fdfbec71457:   nop
+  0x00007fdfbec71458:   mov    rax,QWORD PTR [r15+0x3d8]
+  0x00007fdfbec7145f:   mov    QWORD PTR [r15+0x3d8],0x0
+  0x00007fdfbec7146a:   mov    QWORD PTR [r15+0x3e0],0x0
+  0x00007fdfbec71475:   add    rsp,0x70
+  0x00007fdfbec71479:   pop    rbp
+  0x00007fdfbec7147a:   jmp    0x00007fdfbe408700           ;   {runtime_call unwind_exception Runtime1 stub}
+  0x00007fdfbec7147f:   hlt    
+[Stub Code]
+  0x00007fdfbec71480:   nop    DWORD PTR [rax+rax*1+0x0]    ;   {no_reloc}
+  0x00007fdfbec71485:   movabs rbx,0x0                      ;   {static_stub}
+  0x00007fdfbec7148f:   jmp    0x00007fdfbec7148f           ;   {runtime_call}
+  0x00007fdfbec71494:   nop
+  0x00007fdfbec71495:   movabs rbx,0x0                      ;   {static_stub}
+  0x00007fdfbec7149f:   jmp    0x00007fdfbec7149f           ;   {runtime_call}
+[Exception Handler]
+  0x00007fdfbec714a4:   call   0x00007fdfbe40b400           ;   {runtime_call handle_exception_from_callee Runtime1 stub}
+  0x00007fdfbec714a9:   movabs rdi,0x7fdfd85a6e34           ;   {external_word}
+  0x00007fdfbec714b3:   and    rsp,0xfffffffffffffff0
+  0x00007fdfbec714b7:   call   0x00007fdfd81cee00           ;   {runtime_call MacroAssembler::debug64(char*, long, long*)}
+  0x00007fdfbec714bc:   hlt    
+[Deopt Handler Code]
+  0x00007fdfbec714bd:   movabs r10,0x7fdfbec714bd           ;   {section_word}
+  0x00007fdfbec714c7:   push   r10
+  0x00007fdfbec714c9:   jmp    0x00007fdfbe368d20           ;   {runtime_call DeoptimizationBlob}
+  0x00007fdfbec714ce:   hlt    
+  0x00007fdfbec714cf:   hlt    
+--------------------------------------------------------------------------------
+[/Disassembly]
+
+
+---------------  P R O C E S S  ---------------
+
+Threads class SMR info:
+_java_thread_list=0x000055d4ce2b5c40, length=13, elements={
+0x000055d4cdd74ab0, 0x000055d4cddb0570, 0x000055d4cddb19d0, 0x000055d4cddba9c0,
+0x000055d4cddbba50, 0x000055d4cddbcdb0, 0x000055d4cddbe6e0, 0x000055d4cddc0bb0,
+0x000055d4cddc2040, 0x000055d4cddec530, 0x000055d4cde33fb0, 0x000055d4ce138760,
+0x000055d4ce2b4c50
+}
+
+Java Threads: ( => current thread )
+=>0x000055d4cdd74ab0 JavaThread "main" [_thread_in_vm, id=3495726, stack(0x00007ffeea37d000,0x00007ffeea47d000)]
+  0x000055d4cddb0570 JavaThread "Reference Handler" daemon [_thread_blocked, id=3495728, stack(0x00007fdfbd83d000,0x00007fdfbd93e000)]
+  0x000055d4cddb19d0 JavaThread "Finalizer" daemon [_thread_blocked, id=3495729, stack(0x00007fdfbceff000,0x00007fdfbd000000)]
+  0x000055d4cddba9c0 JavaThread "Signal Dispatcher" daemon [_thread_blocked, id=3495730, stack(0x00007fdfbc441000,0x00007fdfbc542000)]
+  0x000055d4cddbba50 JavaThread "Service Thread" daemon [_thread_blocked, id=3495731, stack(0x00007fdfbc340000,0x00007fdfbc441000)]
+  0x000055d4cddbcdb0 JavaThread "Monitor Deflation Thread" daemon [_thread_blocked, id=3495732, stack(0x00007fdfbc23f000,0x00007fdfbc340000)]
+  0x000055d4cddbe6e0 JavaThread "JVMCI-native CompilerThread0" daemon [_thread_blocked, id=3495733, stack(0x00007fdfbc03e000,0x00007fdfbc23f000)]
+  0x000055d4cddc0bb0 JavaThread "C1 CompilerThread0" daemon [_thread_blocked, id=3495734, stack(0x00007fdf9fdff000,0x00007fdfa0000000)]
+  0x000055d4cddc2040 JavaThread "Sweeper thread" daemon [_thread_blocked, id=3495735, stack(0x00007fdf9fcfe000,0x00007fdf9fdff000)]
+  0x000055d4cddec530 JavaThread "Common-Cleaner" daemon [_thread_blocked, id=3495736, stack(0x00007fdf9fbfd000,0x00007fdf9fcfe000)]
+  0x000055d4cde33fb0 JavaThread "Notification Thread" daemon [_thread_blocked, id=3495737, stack(0x00007fdf9fafc000,0x00007fdf9fbfd000)]
+  0x000055d4ce138760 JavaThread "process reaper" daemon [_thread_blocked, id=3495752, stack(0x00007fdf9c66a000,0x00007fdf9c68c000)]
+  0x000055d4ce2b4c50 JavaThread "TruffleCompilerThread-17" daemon [_thread_blocked, id=3495759, stack(0x00007fdf838ff000,0x00007fdf83a00000)]
+
+Other Threads:
+  0x000055d4cddabcd0 VMThread "VM Thread" [stack: 0x00007fdfbd940000,0x00007fdfbda40000] [id=3495727]
+  0x000055d4cde35970 WatcherThread [stack: 0x00007fdf9f9fc000,0x00007fdf9fafc000] [id=3495738]
+
+Threads with active compile tasks:
+
+VM state: not at safepoint (normal execution)
+
+VM Mutex/Monitor currently owned by a thread:  ([mutex/lock_event])
+[0x000055d4cdd6ee90] Metaspace_lock - owner thread: 0x000055d4cdd74ab0
+
+Heap address: 0x00000000a0000000, size: 1536 MB, Compressed Oops mode: 32-bit
+
+CDS archive(s) mapped at: [0x0000000800000000-0x0000000800bc8000-0x0000000800bc8000), size 12353536, SharedBaseAddress: 0x0000000800000000, ArchiveRelocationMode: 0.
+Compressed class space mapped at: 0x0000000800c00000-0x0000000840c00000, reserved size: 1073741824
+Narrow klass base: 0x0000000800000000, Narrow klass shift: 0, Narrow klass range: 0x100000000
+
+GC Precious Log:
+ CPUs: 16 total, 1 available
+ Memory: 6144M
+ Large Page Support: Disabled
+ NUMA Support: Disabled
+ Compressed Oops: Enabled (32-bit)
+ Heap Min Capacity: 8M
+ Heap Initial Capacity: 96M
+ Heap Max Capacity: 1536M
+ Pre-touch: Disabled
+
+Heap:
+ def new generation   total 29568K, used 6096K [0x00000000a0000000, 0x00000000a2010000, 0x00000000c0000000)
+  eden space 26304K,  23% used [0x00000000a0000000, 0x00000000a05f4058, 0x00000000a19b0000)
+  from space 3264K,   0% used [0x00000000a1ce0000, 0x00000000a1ce0000, 0x00000000a2010000)
+  to   space 3264K,   0% used [0x00000000a19b0000, 0x00000000a19b0000, 0x00000000a1ce0000)
+ tenured generation   total 65536K, used 17684K [0x00000000c0000000, 0x00000000c4000000, 0x0000000100000000)
+   the space 65536K,  26% used [0x00000000c0000000, 0x00000000c11451f8, 0x00000000c1145200, 0x00000000c4000000)
+ Metaspace       used 37176K, committed 37376K, reserved 1081344K
+  class space    used 4942K, committed 5056K, reserved 1048576K
+
+Card table byte_map: [0x00007fdfbde34000,0x00007fdfbe135000] _byte_map_base: 0x00007fdfbd934000
+
+Polling page: 0x00007fdfd8ef1000
+
+Metaspace:
+
+Usage:
+  Non-class:     31.48 MB used.
+      Class:      4.83 MB used.
+       Both:     36.30 MB used.
+
+Virtual space:
+  Non-class space:       32.00 MB reserved,      31.56 MB ( 99%) committed,  4 nodes.
+      Class space:        1.00 GB reserved,       4.94 MB ( <1%) committed,  1 nodes.
+             Both:        1.03 GB reserved,      36.50 MB (  3%) committed. 
+
+Chunk freelists:
+   Non-Class:  0 bytes
+       Class:  3.03 MB
+        Both:  3.03 MB
+
+MaxMetaspaceSize: unlimited
+CompressedClassSpaceSize: 1.00 GB
+Initial GC threshold: 21.00 MB
+Current GC threshold: 58.38 MB
+CDS: on
+MetaspaceReclaimPolicy: balanced
+ - commit_granule_bytes: 65536.
+ - commit_granule_words: 8192.
+ - virtual_space_node_default_size: 1048576.
+ - enlarge_chunks_in_place: 1.
+ - new_chunks_are_fully_committed: 0.
+ - uncommit_free_chunks: 1.
+ - use_allocation_guard: 0.
+ - handle_deallocations: 1.
+
+
+Internal statistics:
+
+num_allocs_failed_limit: 6.
+num_arena_births: 188.
+num_arena_deaths: 0.
+num_vsnodes_births: 5.
+num_vsnodes_deaths: 0.
+num_space_committed: 584.
+num_space_uncommitted: 0.
+num_chunks_returned_to_freelist: 6.
+num_chunks_taken_from_freelist: 1325.
+num_chunk_merges: 6.
+num_chunk_splits: 1050.
+num_chunks_enlarged: 878.
+num_purges: 0.
+num_inconsistent_stats: 0.
+
+CodeHeap 'non-profiled nmethods': size=120036Kb used=807Kb max_used=807Kb free=119228Kb
+ bounds [0x00007fdfc5dde000, 0x00007fdfc604e000, 0x00007fdfcd317000]
+CodeHeap 'profiled nmethods': size=120032Kb used=5836Kb max_used=5836Kb free=114195Kb
+ bounds [0x00007fdfbe8a6000, 0x00007fdfbee66000, 0x00007fdfc5dde000]
+CodeHeap 'non-nmethods': size=5692Kb used=1306Kb max_used=1313Kb free=4385Kb
+ bounds [0x00007fdfbe317000, 0x00007fdfbe587000, 0x00007fdfbe8a6000]
+ total_blobs=3453 nmethods=2828 adapters=540
+ compilation: enabled
+              stopped_count=0, restarted_count=0
+ full_count=0
+
+JVMCI Events (20 events):
+Event: 3.434 Thread 0x000055d4cddbe6e0 compacted oop handles in JVMCI runtime 0 from 159 to 71
+Event: 3.534 Thread 0x000055d4cddbe6e0 compacted oop handles in JVMCI runtime 0 from 150 to 132
+Event: 3.534 Thread 0x000055d4cddbe6e0 compacted oop handles in JVMCI runtime 0 from 133 to 96
+Event: 3.543 Thread 0x000055d4cddbe6e0 compacted oop handles in JVMCI runtime 0 from 109 to 99
+Event: 3.546 Thread 0x000055d4cddbe6e0 compacted oop handles in JVMCI runtime 0 from 101 to 99
+Event: 3.546 Thread 0x000055d4cddbe6e0 compacted oop handles in JVMCI runtime 0 from 102 to 101
+Event: 3.625 Thread 0x000055d4cddbe6e0 compacted oop handles in JVMCI runtime 0 from 106 to 105
+Event: 3.626 Thread 0x000055d4cddbe6e0 compacted oop handles in JVMCI runtime 0 from 109 to 108
+Event: 3.661 Thread 0x000055d4cddbe6e0 compacted oop handles in JVMCI runtime 0 from 168 to 145
+Event: 3.661 Thread 0x000055d4cddbe6e0 compacted oop handles in JVMCI runtime 0 from 146 to 126
+Event: 3.720 Thread 0x000055d4cddbe6e0 compacted oop handles in JVMCI runtime 0 from 142 to 141
+Event: 3.733 Thread 0x000055d4cddbe6e0 compacted oop handles in JVMCI runtime 0 from 149 to 146
+Event: 3.749 Thread 0x000055d4cddbe6e0 compacted oop handles in JVMCI runtime 0 from 168 to 159
+Event: 3.753 Thread 0x000055d4cddbe6e0 compacted oop handles in JVMCI runtime 0 from 162 to 159
+Event: 3.765 Thread 0x000055d4cddbe6e0 compacted oop handles in JVMCI runtime 0 from 186 to 175
+Event: 3.817 Thread 0x000055d4cddbe6e0 compacted oop handles in JVMCI runtime 0 from 177 to 73
+Event: 3.845 Thread 0x000055d4cddbe6e0 compacted oop handles in JVMCI runtime 0 from 117 to 116
+Event: 3.854 Thread 0x000055d4cddbe6e0 compacted oop handles in JVMCI runtime 0 from 148 to 146
+Event: 4.017 Thread 0x000055d4cddbe6e0 compacted oop handles in JVMCI runtime 0 from 231 to 173
+Event: 4.018 Thread 0x000055d4cddbe6e0 compacted oop handles in JVMCI runtime 0 from 174 to 94
+
+Compilation events (20 events):
+Event: 3.844 Thread 0x000055d4cddc0bb0 2835       3       com.oracle.truffle.object.TriePropertyMap::getEntry (47 bytes)
+Event: 3.844 Thread 0x000055d4cddc0bb0 nmethod 2835 0x00007fdfbee53410 code [0x00007fdfbee535e0, 0x00007fdfbee53e70]
+Event: 3.845 Thread 0x000055d4cddbe6e0 nmethod 2832 0x00007fdfc5ea2610 code [0x00007fdfc5ea27a0, 0x00007fdfc5ea28d0]
+Event: 3.845 Thread 0x000055d4cddbe6e0 2833       4       com.oracle.truffle.object.ShapeImpl::queryTransitionImpl (100 bytes)
+Event: 3.853 Thread 0x000055d4cddc0bb0 2837       3       com.oracle.truffle.api.library.LibraryFactory::getUncached (55 bytes)
+Event: 3.854 Thread 0x000055d4cddc0bb0 nmethod 2837 0x00007fdfbee54010 code [0x00007fdfbee541e0, 0x00007fdfbee54680]
+Event: 3.854 Thread 0x000055d4cddbe6e0 nmethod 2833 0x00007fdfc5ea2a10 code [0x00007fdfc5ea2c00, 0x00007fdfc5ea3050]
+Event: 3.855 Thread 0x000055d4cddbe6e0 2836   !   4       java.net.URL::<init> (543 bytes)
+Event: 3.856 Thread 0x000055d4cddc0bb0 2838       3       com.oracle.graal.python.runtime.object.PythonObjectSlowPathFactory::executeGetShape (9 bytes)
+Event: 3.857 Thread 0x000055d4cddc0bb0 nmethod 2838 0x00007fdfbee54810 code [0x00007fdfbee54aa0, 0x00007fdfbee55c20]
+Event: 3.857 Thread 0x000055d4cddc0bb0 2839       3       com.oracle.graal.python.runtime.object.SlowPathGetInstanceShapeNode::execute (27 bytes)
+Event: 3.857 Thread 0x000055d4cddc0bb0 nmethod 2839 0x00007fdfbee56010 code [0x00007fdfbee562a0, 0x00007fdfbee573c0]
+Event: 3.979 Thread 0x000055d4cddc0bb0 2841       3       com.oracle.graal.python.runtime.object.PythonObjectFactory::createBuiltinMethod (10 bytes)
+Event: 3.979 Thread 0x000055d4cddc0bb0 nmethod 2841 0x00007fdfbee57790 code [0x00007fdfbee57940, 0x00007fdfbee57a80]
+Event: 3.979 Thread 0x000055d4cddc0bb0 2842       3       com.oracle.graal.python.runtime.object.PythonObjectFactory::createBuiltinMethod (23 bytes)
+Event: 3.979 Thread 0x000055d4cddc0bb0 nmethod 2842 0x00007fdfbee57b10 code [0x00007fdfbee57d00, 0x00007fdfbee58520]
+Event: 4.017 Thread 0x000055d4cddbe6e0 nmethod 2836 0x00007fdfc5ea3410 code [0x00007fdfc5ea35e0, 0x00007fdfc5ea3e50]
+Event: 4.018 Thread 0x000055d4cddbe6e0 2840       4       sun.net.util.URLUtil::urlNoFragString (114 bytes)
+Event: 4.030 Thread 0x000055d4cddc0bb0 2844   !   3       jdk.proxy4.$Proxy38::declaresExplicitSelf (32 bytes)
+Event: 4.030 Thread 0x000055d4cddc0bb0 nmethod 2844 0x00007fdfbee58710 code [0x00007fdfbee588e0, 0x00007fdfbee58fb0]
+
+GC Heap History (8 events):
+Event: 1.654 GC heap before
+{Heap before GC invocations=0 (full 0):
+ def new generation   total 29504K, used 26240K [0x00000000a0000000, 0x00000000a2000000, 0x00000000c0000000)
+  eden space 26240K, 100% used [0x00000000a0000000, 0x00000000a19a0000, 0x00000000a19a0000)
+  from space 3264K,   0% used [0x00000000a19a0000, 0x00000000a19a0000, 0x00000000a1cd0000)
+  to   space 3264K,   0% used [0x00000000a1cd0000, 0x00000000a1cd0000, 0x00000000a2000000)
+ tenured generation   total 65536K, used 0K [0x00000000c0000000, 0x00000000c4000000, 0x0000000100000000)
+   the space 65536K,   0% used [0x00000000c0000000, 0x00000000c0000000, 0x00000000c0000200, 0x00000000c4000000)
+ Metaspace       used 12889K, committed 13120K, reserved 1064960K
+  class space    used 1275K, committed 1344K, reserved 1048576K
+}
+Event: 1.726 GC heap after
+{Heap after GC invocations=1 (full 0):
+ def new generation   total 29504K, used 3264K [0x00000000a0000000, 0x00000000a2000000, 0x00000000c0000000)
+  eden space 26240K,   0% used [0x00000000a0000000, 0x00000000a0000000, 0x00000000a19a0000)
+  from space 3264K, 100% used [0x00000000a1cd0000, 0x00000000a2000000, 0x00000000a2000000)
+  to   space 3264K,   0% used [0x00000000a19a0000, 0x00000000a19a0000, 0x00000000a1cd0000)
+ tenured generation   total 65536K, used 5205K [0x00000000c0000000, 0x00000000c4000000, 0x0000000100000000)
+   the space 65536K,   7% used [0x00000000c0000000, 0x00000000c0515498, 0x00000000c0515600, 0x00000000c4000000)
+ Metaspace       used 12889K, committed 13120K, reserved 1064960K
+  class space    used 1275K, committed 1344K, reserved 1048576K
+}
+Event: 2.655 GC heap before
+{Heap before GC invocations=1 (full 0):
+ def new generation   total 29504K, used 24345K [0x00000000a0000000, 0x00000000a2000000, 0x00000000c0000000)
+  eden space 26240K,  80% used [0x00000000a0000000, 0x00000000a1496490, 0x00000000a19a0000)
+  from space 3264K, 100% used [0x00000000a1cd0000, 0x00000000a2000000, 0x00000000a2000000)
+  to   space 3264K,   0% used [0x00000000a19a0000, 0x00000000a19a0000, 0x00000000a1cd0000)
+ tenured generation   total 65536K, used 5205K [0x00000000c0000000, 0x00000000c4000000, 0x0000000100000000)
+   the space 65536K,   7% used [0x00000000c0000000, 0x00000000c0515498, 0x00000000c0515600, 0x00000000c4000000)
+ Metaspace       used 21271K, committed 21504K, reserved 1073152K
+  class space    used 2181K, committed 2304K, reserved 1048576K
+}
+Event: 2.728 GC heap after
+{Heap after GC invocations=2 (full 1):
+ def new generation   total 29568K, used 0K [0x00000000a0000000, 0x00000000a2010000, 0x00000000c0000000)
+  eden space 26304K,   0% used [0x00000000a0000000, 0x00000000a0000000, 0x00000000a19b0000)
+  from space 3264K,   0% used [0x00000000a19b0000, 0x00000000a19b0000, 0x00000000a1ce0000)
+  to   space 3264K,   0% used [0x00000000a1ce0000, 0x00000000a1ce0000, 0x00000000a2010000)
+ tenured generation   total 65536K, used 11991K [0x00000000c0000000, 0x00000000c4000000, 0x0000000100000000)
+   the space 65536K,  18% used [0x00000000c0000000, 0x00000000c0bb5c30, 0x00000000c0bb5e00, 0x00000000c4000000)
+ Metaspace       used 21271K, committed 21504K, reserved 1073152K
+  class space    used 2181K, committed 2304K, reserved 1048576K
+}
+Event: 3.375 GC heap before
+{Heap before GC invocations=2 (full 1):
+ def new generation   total 29568K, used 26304K [0x00000000a0000000, 0x00000000a2010000, 0x00000000c0000000)
+  eden space 26304K, 100% used [0x00000000a0000000, 0x00000000a19b0000, 0x00000000a19b0000)
+  from space 3264K,   0% used [0x00000000a19b0000, 0x00000000a19b0000, 0x00000000a1ce0000)
+  to   space 3264K,   0% used [0x00000000a1ce0000, 0x00000000a1ce0000, 0x00000000a2010000)
+ tenured generation   total 65536K, used 11991K [0x00000000c0000000, 0x00000000c4000000, 0x0000000100000000)
+   the space 65536K,  18% used [0x00000000c0000000, 0x00000000c0bb5c30, 0x00000000c0bb5e00, 0x00000000c4000000)
+ Metaspace       used 29246K, committed 29504K, reserved 1081344K
+  class space    used 3483K, committed 3584K, reserved 1048576K
+}
+Event: 3.419 GC heap after
+{Heap after GC invocations=3 (full 1):
+ def new generation   total 29568K, used 2760K [0x00000000a0000000, 0x00000000a2010000, 0x00000000c0000000)
+  eden space 26304K,   0% used [0x00000000a0000000, 0x00000000a0000000, 0x00000000a19b0000)
+  from space 3264K,  84% used [0x00000000a1ce0000, 0x00000000a1f920f8, 0x00000000a2010000)
+  to   space 3264K,   0% used [0x00000000a19b0000, 0x00000000a19b0000, 0x00000000a1ce0000)
+ tenured generation   total 65536K, used 11991K [0x00000000c0000000, 0x00000000c4000000, 0x0000000100000000)
+   the space 65536K,  18% used [0x00000000c0000000, 0x00000000c0bb5c30, 0x00000000c0bb5e00, 0x00000000c4000000)
+ Metaspace       used 29246K, committed 29504K, reserved 1081344K
+  class space    used 3483K, committed 3584K, reserved 1048576K
+}
+Event: 3.868 GC heap before
+{Heap before GC invocations=3 (full 1):
+ def new generation   total 29568K, used 25473K [0x00000000a0000000, 0x00000000a2010000, 0x00000000c0000000)
+  eden space 26304K,  86% used [0x00000000a0000000, 0x00000000a162e5f0, 0x00000000a19b0000)
+  from space 3264K,  84% used [0x00000000a1ce0000, 0x00000000a1f920f8, 0x00000000a2010000)
+  to   space 3264K,   0% used [0x00000000a19b0000, 0x00000000a19b0000, 0x00000000a1ce0000)
+ tenured generation   total 65536K, used 11991K [0x00000000c0000000, 0x00000000c4000000, 0x0000000100000000)
+   the space 65536K,  18% used [0x00000000c0000000, 0x00000000c0bb5c30, 0x00000000c0bb5e00, 0x00000000c4000000)
+ Metaspace       used 35653K, committed 35840K, reserved 1081344K
+  class space    used 4665K, committed 4736K, reserved 1048576K
+}
+Event: 3.951 GC heap after
+{Heap after GC invocations=4 (full 2):
+ def new generation   total 29568K, used 0K [0x00000000a0000000, 0x00000000a2010000, 0x00000000c0000000)
+  eden space 26304K,   0% used [0x00000000a0000000, 0x00000000a0000000, 0x00000000a19b0000)
+  from space 3264K,   0% used [0x00000000a1ce0000, 0x00000000a1ce0000, 0x00000000a2010000)
+  to   space 3264K,   0% used [0x00000000a19b0000, 0x00000000a19b0000, 0x00000000a1ce0000)
+ tenured generation   total 65536K, used 17684K [0x00000000c0000000, 0x00000000c4000000, 0x0000000100000000)
+   the space 65536K,  26% used [0x00000000c0000000, 0x00000000c11451f8, 0x00000000c1145200, 0x00000000c4000000)
+ Metaspace       used 35653K, committed 35840K, reserved 1081344K
+  class space    used 4665K, committed 4736K, reserved 1048576K
+}
+
+Dll operation events (11 events):
+Event: 0.007 Loaded shared library /data/stariq/conda/envs/controlnet/lib/jvm/graalvm-189e927686-java17-22.3.0/lib/libjava.so
+Event: 0.018 Loaded shared library /data/stariq/conda/envs/controlnet/lib/jvm/graalvm-189e927686-java17-22.3.0/lib/libjsvml.so
+Event: 0.078 Loaded shared library /data/stariq/conda/envs/controlnet/lib/jvm/graalvm-189e927686-java17-22.3.0/lib/libjvmcicompiler.so
+Event: 0.079 Loaded shared library /data/stariq/conda/envs/controlnet/lib/jvm/graalvm-189e927686-java17-22.3.0/lib/libnio.so
+Event: 0.117 Loaded shared library /data/stariq/conda/envs/controlnet/lib/jvm/graalvm-189e927686-java17-22.3.0/lib/libzip.so
+Event: 0.122 Loaded shared library /data/stariq/conda/envs/controlnet/lib/jvm/graalvm-189e927686-java17-22.3.0/lib/libjimage.so
+Event: 0.134 Loaded shared library /data/stariq/conda/envs/controlnet/lib/jvm/graalvm-189e927686-java17-22.3.0/lib/libmanagement.so
+Event: 0.141 Loaded shared library /data/stariq/conda/envs/controlnet/lib/jvm/graalvm-189e927686-java17-22.3.0/lib/libmanagement_ext.so
+Event: 0.150 Loaded shared library /data/stariq/conda/envs/controlnet/lib/jvm/graalvm-189e927686-java17-22.3.0/lib/libnet.so
+Event: 1.137 Loaded shared library /data/stariq/conda/envs/controlnet/lib/jvm/graalvm-189e927686-java17-22.3.0/lib/libverify.so
+Event: 1.141 Loaded shared library /tmp/libjansi-394878643645851992.so
+
+Deoptimization events (20 events):
+Event: 2.345 Thread 0x000055d4cdd74ab0 Uncommon trap: trap_request=0xffffffed fr.pc=0x00007fdfc5e1bfd4 relative=0x0000000000000054
+Event: 2.345 Thread 0x000055d4cdd74ab0 Uncommon trap: reason=null_assert_or_unreached0 action=reinterpret pc=0x00007fdfc5e1bfd4 method=java.lang.CharacterData.of(I)Ljava/lang/CharacterData; @ 0 jvmci
+Event: 2.345 Thread 0x000055d4cdd74ab0 DEOPT PACKING pc=0x00007fdfc5e1bfd4 sp=0x00007ffeea477bb0
+Event: 2.345 Thread 0x000055d4cdd74ab0 DEOPT UNPACKING pc=0x00007fdfbe369325 sp=0x00007ffeea477050 mode 3
+Event: 2.823 Thread 0x000055d4cdd74ab0 DEOPT PACKING pc=0x00007fdfbec652a8 sp=0x00007ffeea472e30
+Event: 2.823 Thread 0x000055d4cdd74ab0 DEOPT UNPACKING pc=0x00007fdfbe369325 sp=0x00007ffeea472368 mode 0
+Event: 2.837 Thread 0x000055d4cdd74ab0 DEOPT PACKING pc=0x00007fdfbec652a8 sp=0x00007ffeea477cf0
+Event: 2.837 Thread 0x000055d4cdd74ab0 DEOPT UNPACKING pc=0x00007fdfbe369325 sp=0x00007ffeea477228 mode 0
+Event: 3.151 Thread 0x000055d4cdd74ab0 Uncommon trap: trap_request=0xffffffcd fr.pc=0x00007fdfc5e8c675 relative=0x0000000000000355
+Event: 3.151 Thread 0x000055d4cdd74ab0 Uncommon trap: reason=intrinsic_or_type_checked_inlining action=reinterpret pc=0x00007fdfc5e8c675 method=com.oracle.truffle.object.TrieNode$BitmapNode.find(Ljava/lang/Object;II)Ljava/util/Map$Entry; @ 0 jvmci
+Event: 3.151 Thread 0x000055d4cdd74ab0 DEOPT PACKING pc=0x00007fdfc5e8c675 sp=0x00007ffeea4787d0
+Event: 3.151 Thread 0x000055d4cdd74ab0 DEOPT UNPACKING pc=0x00007fdfbe369325 sp=0x00007ffeea477c50 mode 3
+Event: 3.822 Thread 0x000055d4cdd74ab0 Uncommon trap: trap_request=0xffffffcd fr.pc=0x00007fdfc5ea2078 relative=0x0000000000000138
+Event: 3.822 Thread 0x000055d4cdd74ab0 Uncommon trap: reason=intrinsic_or_type_checked_inlining action=reinterpret pc=0x00007fdfc5ea2078 method=com.oracle.truffle.api.library.LibraryFactory.getUncached(Ljava/lang/Object;)Lcom/oracle/truffle/api/library/Library; @ 0 jvmci
+Event: 3.822 Thread 0x000055d4cdd74ab0 DEOPT PACKING pc=0x00007fdfc5ea2078 sp=0x00007ffeea478a40
+Event: 3.822 Thread 0x000055d4cdd74ab0 DEOPT UNPACKING pc=0x00007fdfbe369325 sp=0x00007ffeea477ed8 mode 3
+Event: 3.843 Thread 0x000055d4cdd74ab0 Uncommon trap: trap_request=0xffffffed fr.pc=0x00007fdfc5e8d5eb relative=0x00000000000004ab
+Event: 3.843 Thread 0x000055d4cdd74ab0 Uncommon trap: reason=null_assert_or_unreached0 action=reinterpret pc=0x00007fdfc5e8d5eb method=com.oracle.truffle.object.TriePropertyMap.hash(Ljava/lang/Object;)I @ 4 jvmci
+Event: 3.843 Thread 0x000055d4cdd74ab0 DEOPT PACKING pc=0x00007fdfc5e8d5eb sp=0x00007ffeea478a10
+Event: 3.843 Thread 0x000055d4cdd74ab0 DEOPT UNPACKING pc=0x00007fdfbe369325 sp=0x00007ffeea477e78 mode 3
+
+Classes unloaded (0 events):
+No events
+
+Classes redefined (0 events):
+No events
+
+Internal exceptions (20 events):
+Event: 1.148 Thread 0x000055d4cdd74ab0 Exception <a 'java/lang/NoSuchMethodError'{0x00000000a1331230}: 'java.lang.Object java.lang.invoke.DirectMethodHandle$Holder.invokeStaticInit(java.lang.Object, java.lang.Object, long, java.lang.Object)'> (0x00000000a1331230) 
+thrown [src/hotspot/share/interpreter/linkResolver.cpp, line 758]
+Event: 1.149 Thread 0x000055d4cdd74ab0 Exception <a 'java/lang/NoSuchMethodError'{0x00000000a1337830}: 'java.lang.Object java.lang.invoke.DirectMethodHandle$Holder.newInvokeSpecial(java.lang.Object, java.lang.Object, long)'> (0x00000000a1337830) 
+thrown [src/hotspot/share/interpreter/linkResolver.cpp, line 758]
+Event: 1.149 Thread 0x000055d4cdd74ab0 Exception <a 'java/lang/NoSuchMethodError'{0x00000000a133b3a0}: 'java.lang.Object java.lang.invoke.Invokers$Holder.linkToTargetMethod(java.lang.Object, long, java.lang.Object)'> (0x00000000a133b3a0) 
+thrown [src/hotspot/share/interpreter/linkResolver.cpp, line 758]
+Event: 1.151 Thread 0x000055d4cdd74ab0 Exception <a 'java/lang/NoSuchMethodError'{0x00000000a1342b08}: 'java.lang.Object java.lang.invoke.DirectMethodHandle$Holder.newInvokeSpecial(java.lang.Object, java.lang.Object, java.lang.Object, int)'> (0x00000000a1342b08) 
+thrown [src/hotspot/share/interpreter/linkResolver.cpp, line 758]
+Event: 1.152 Thread 0x000055d4cdd74ab0 Exception <a 'java/lang/NoSuchMethodError'{0x00000000a1346ee8}: 'java.lang.Object java.lang.invoke.DirectMethodHandle$Holder.invokeSpecial(java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, int)'> (0x00000000a1346ee8) 
+thrown [src/hotspot/share/interpreter/linkResolver.cpp, line 758]
+Event: 1.152 Thread 0x000055d4cdd74ab0 Exception <a 'java/lang/NoSuchMethodError'{0x00000000a134aab0}: 'java.lang.Object java.lang.invoke.Invokers$Holder.linkToTargetMethod(java.lang.Object, java.lang.Object, int, java.lang.Object)'> (0x00000000a134aab0) 
+thrown [src/hotspot/share/interpreter/linkResolver.cpp, line 758]
+Event: 1.454 Thread 0x000055d4cdd74ab0 Exception <a 'java/lang/NoSuchMethodError'{0x00000000a1774e78}: 'int java.lang.invoke.DirectMethodHandle$Holder.invokeInterface(java.lang.Object, java.lang.Object)'> (0x00000000a1774e78) 
+thrown [src/hotspot/share/interpreter/linkResolver.cpp, line 758]
+Event: 1.454 Thread 0x000055d4cdd74ab0 Exception <a 'java/lang/IncompatibleClassChangeError'{0x00000000a1778408}: Found class java.lang.Object, but interface was expected> (0x00000000a1778408) 
+thrown [src/hotspot/share/interpreter/linkResolver.cpp, line 826]
+Event: 1.537 Thread 0x000055d4cdd74ab0 Exception <a 'java/lang/NoSuchMethodError'{0x00000000a1803b40}: 'long java.lang.invoke.DirectMethodHandle$Holder.invokeStatic(java.lang.Object, java.lang.Object)'> (0x00000000a1803b40) 
+thrown [src/hotspot/share/interpreter/linkResolver.cpp, line 758]
+Event: 1.838 Thread 0x000055d4cdd74ab0 Exception <a 'java/lang/NoSuchMethodError'{0x00000000a01f0818}: 'int java.lang.invoke.DirectMethodHandle$Holder.invokeStatic(java.lang.Object)'> (0x00000000a01f0818) 
+thrown [src/hotspot/share/interpreter/linkResolver.cpp, line 758]
+Event: 1.840 Thread 0x000055d4cdd74ab0 Exception <a 'java/lang/NoSuchMethodError'{0x00000000a01ff880}: 'void java.lang.invoke.DirectMethodHandle$Holder.invokeStatic(java.lang.Object, int)'> (0x00000000a01ff880) 
+thrown [src/hotspot/share/interpreter/linkResolver.cpp, line 758]
+Event: 1.846 Thread 0x000055d4ce2b4c50 Exception <a 'java/lang/NoSuchMethodError'{0x00000000a0253270}: 'java.lang.Object java.lang.invoke.DirectMethodHandle$Holder.newInvokeSpecial(java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, int)'> (0x00000000a0253270) 
+thrown [src/hotspot/share/interpreter/linkResolver.cpp, line 758]
+Event: 1.846 Thread 0x000055d4ce2b4c50 Exception <a 'java/lang/NoSuchMethodError'{0x00000000a02575a8}: 'java.lang.Object java.lang.invoke.DirectMethodHandle$Holder.invokeSpecial(java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, int)'> (0x00000000a02575a8) 
+thrown [src/hotspot/share/interpreter/linkResolver.cpp, line 758]
+Event: 1.846 Thread 0x000055d4ce2b4c50 Exception <a 'java/lang/NoSuchMethodError'{0x00000000a025b290}: 'java.lang.Object java.lang.invoke.Invokers$Holder.linkToTargetMethod(java.lang.Object, java.lang.Object, java.lang.Object, int, java.lang.Object)'> (0x00000000a025b290) 
+thrown [src/hotspot/share/interpreter/linkResolver.cpp, line 758]
+Event: 1.918 Thread 0x000055d4cdd74ab0 Exception <a 'java/lang/NoSuchMethodError'{0x00000000a03086f0}: 'int java.lang.invoke.DirectMethodHandle$Holder.invokeStaticInit(java.lang.Object, java.lang.Object, java.lang.Object)'> (0x00000000a03086f0) 
+thrown [src/hotspot/share/interpreter/linkResolver.cpp, line 758]
+Event: 1.920 Thread 0x000055d4cdd74ab0 Exception <a 'java/lang/NoSuchMethodError'{0x00000000a0319508}: 'void java.lang.invoke.DirectMethodHandle$Holder.invokeSpecial(java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object)'> (0x00000000a0319508) 
+thrown [src/hotspot/share/interpreter/linkResolver.cpp, line 758]
+Event: 2.250 Thread 0x000055d4cdd74ab0 Implicit null exception at 0x00007fdfc5e16055 to 0x00007fdfc5e163f9
+Event: 2.250 Thread 0x000055d4cdd74ab0 Implicit null exception at 0x00007fdfc5e17bd5 to 0x00007fdfc5e17f79
+Event: 2.923 Thread 0x000055d4cdd74ab0 Exception <a 'sun/nio/fs/UnixException'{0x00000000a07036e0}> (0x00000000a07036e0) 
+thrown [src/hotspot/share/prims/jni.cpp, line 516]
+Event: 3.663 Thread 0x000055d4cdd74ab0 Exception <a 'java/lang/NoSuchMethodError'{0x00000000a0c95ea8}: 'java.lang.Object java.lang.invoke.DirectMethodHandle$Holder.invokeStatic(java.lang.Object, int, java.lang.Object)'> (0x00000000a0c95ea8) 
+thrown [src/hotspot/share/interpreter/linkResolver.cpp, line 758]
+
+VM Operations (20 events):
+Event: 1.921 Executing VM operation: HandshakeAllThreads
+Event: 1.921 Executing VM operation: HandshakeAllThreads done
+Event: 1.922 Executing VM operation: HandshakeAllThreads
+Event: 1.922 Executing VM operation: HandshakeAllThreads done
+Event: 2.257 Executing VM operation: HandshakeAllThreads
+Event: 2.257 Executing VM operation: HandshakeAllThreads done
+Event: 2.345 Executing VM operation: HandshakeAllThreads
+Event: 2.345 Executing VM operation: HandshakeAllThreads done
+Event: 2.453 Executing VM operation: HandshakeAllThreads
+Event: 2.453 Executing VM operation: HandshakeAllThreads done
+Event: 2.453 Executing VM operation: HandshakeAllThreads
+Event: 2.453 Executing VM operation: HandshakeAllThreads done
+Event: 2.521 Executing VM operation: HandshakeAllThreads
+Event: 2.521 Executing VM operation: HandshakeAllThreads done
+Event: 2.654 Executing VM operation: CollectForMetadataAllocation
+Event: 2.728 Executing VM operation: CollectForMetadataAllocation done
+Event: 3.374 Executing VM operation: GenCollectForAllocation
+Event: 3.419 Executing VM operation: GenCollectForAllocation done
+Event: 3.868 Executing VM operation: CollectForMetadataAllocation
+Event: 3.951 Executing VM operation: CollectForMetadataAllocation done
+
+Events (20 events):
+Event: 3.769 loading class java/time/zone/ZoneRulesProvider
+Event: 3.769 loading class java/time/zone/ZoneRulesProvider done
+Event: 3.769 loading class java/time/zone/ZoneRulesProvider$1
+Event: 3.769 loading class java/time/zone/ZoneRulesProvider$1 done
+Event: 3.769 loading class java/time/zone/TzdbZoneRulesProvider
+Event: 3.769 loading class java/time/zone/TzdbZoneRulesProvider done
+Event: 3.770 loading class java/time/zone/Ser
+Event: 3.770 loading class java/io/Externalizable
+Event: 3.770 loading class java/io/Externalizable done
+Event: 3.770 loading class java/time/zone/Ser done
+Event: 3.771 loading class java/time/Month
+Event: 3.771 loading class java/time/Month done
+Event: 3.771 loading class java/time/DayOfWeek
+Event: 3.771 loading class java/time/DayOfWeek done
+Event: 3.771 loading class java/time/zone/ZoneOffsetTransitionRule$TimeDefinition
+Event: 3.771 loading class java/time/zone/ZoneOffsetTransitionRule$TimeDefinition done
+Event: 3.771 loading class java/time/zone/ZoneOffsetTransition
+Event: 3.772 loading class java/time/zone/ZoneOffsetTransition done
+Event: 3.817 loading class sun/util/cldr/CLDRBaseLocaleDataMetaInfo$TZCanonicalIDMapHolder
+Event: 3.818 loading class sun/util/cldr/CLDRBaseLocaleDataMetaInfo$TZCanonicalIDMapHolder done
+
+
+Dynamic libraries:
+a0000000-a2010000 rw-p 00000000 00:00 0 
+a2010000-c0000000 ---p 00000000 00:00 0 
+c0000000-c4000000 rw-p 00000000 00:00 0 
+c4000000-100000000 ---p 00000000 00:00 0 
+800000000-800449000 rw-p 00001000 00:3f 3299173641540                    /data/stariq/conda/envs/controlnet/lib/jvm/graalvm-189e927686-java17-22.3.0/lib/server/classes.jsa
+800449000-800bc8000 r--p 0044a000 00:3f 3299173641540                    /data/stariq/conda/envs/controlnet/lib/jvm/graalvm-189e927686-java17-22.3.0/lib/server/classes.jsa
+800bc8000-800c00000 ---p 00000000 00:00 0 
+800c00000-800c40000 rw-p 00000000 00:00 0 
+800c40000-800cc0000 rw-p 00000000 00:00 0 
+800cc0000-800d00000 rw-p 00000000 00:00 0 
+800d00000-800d40000 rw-p 00000000 00:00 0 
+800d40000-800d70000 rw-p 00000000 00:00 0 
+800d70000-800d80000 ---p 00000000 00:00 0 
+800d80000-801100000 rw-p 00000000 00:00 0 
+801100000-840c00000 ---p 00000000 00:00 0 
+55d4cc256000-55d4cc259000 r--p 00000000 00:3f 3299173642431              /data/stariq/conda/envs/controlnet/lib/jvm/graalvm-189e927686-java17-22.3.0/languages/python/bin/python
+55d4cc259000-55d4cc25d000 r-xp 00003000 00:3f 3299173642431              /data/stariq/conda/envs/controlnet/lib/jvm/graalvm-189e927686-java17-22.3.0/languages/python/bin/python
+55d4cc25d000-55d4cc25f000 r--p 00007000 00:3f 3299173642431              /data/stariq/conda/envs/controlnet/lib/jvm/graalvm-189e927686-java17-22.3.0/languages/python/bin/python
+55d4cc25f000-55d4cc260000 r--p 00008000 00:3f 3299173642431              /data/stariq/conda/envs/controlnet/lib/jvm/graalvm-189e927686-java17-22.3.0/languages/python/bin/python
+55d4cc260000-55d4cc261000 rw-p 00009000 00:3f 3299173642431              /data/stariq/conda/envs/controlnet/lib/jvm/graalvm-189e927686-java17-22.3.0/languages/python/bin/python
+55d4cdd16000-55d4ce9aa000 rw-p 00000000 00:00 0                          [heap]
+7fdf78000000-7fdf78021000 rw-p 00000000 00:00 0 
+7fdf78021000-7fdf7c000000 ---p 00000000 00:00 0 
+7fdf7c000000-7fdf7c021000 rw-p 00000000 00:00 0 
+7fdf7c021000-7fdf80000000 ---p 00000000 00:00 0 
+7fdf80233000-7fdf80380000 r-xp 00000000 00:3f 3299173643094              /data/stariq/conda/envs/controlnet/lib/jvm/graalvm-189e927686-java17-22.3.0/lib/hsdis-amd64.so
+7fdf80380000-7fdf80580000 ---p 0014d000 00:3f 3299173643094              /data/stariq/conda/envs/controlnet/lib/jvm/graalvm-189e927686-java17-22.3.0/lib/hsdis-amd64.so
+7fdf80580000-7fdf80656000 rw-p 0014d000 00:3f 3299173643094              /data/stariq/conda/envs/controlnet/lib/jvm/graalvm-189e927686-java17-22.3.0/lib/hsdis-amd64.so
+7fdf80656000-7fdf8065a000 rw-p 00000000 00:00 0 
+7fdf8065a000-7fdf80668000 rw-p 0023d000 00:3f 3299173643094              /data/stariq/conda/envs/controlnet/lib/jvm/graalvm-189e927686-java17-22.3.0/lib/hsdis-amd64.so
+7fdf80668000-7fdf80b00000 rw-p 00000000 00:00 0 
+7fdf80c00000-7fdf81400000 rw-p 00000000 00:00 0 
+7fdf81400000-7fdf81500000 rw-p 00000000 00:00 0 
+7fdf81500000-7fdf81590000 rw-p 00000000 00:00 0 
+7fdf81590000-7fdf81600000 ---p 00000000 00:00 0 
+7fdf81600000-7fdf81c00000 rw-p 00000000 00:00 0 
+7fdf81d00000-7fdf81e00000 rw-p 00000000 00:00 0 
+7fdf81f00000-7fdf82000000 rw-p 00000000 00:00 0 
+7fdf82100000-7fdf82200000 rw-p 00000000 00:00 0 
+7fdf82300000-7fdf82400000 rw-p 00000000 00:00 0 
+7fdf82500000-7fdf82600000 rw-p 00000000 00:00 0 
+7fdf82700000-7fdf82800000 ---p 00000000 00:00 0 
+7fdf82800000-7fdf82daa000 r--p 01123000 00:3f 3299173644505              /data/stariq/conda/envs/controlnet/lib/jvm/graalvm-189e927686-java17-22.3.0/lib/libjvmcicompiler.so
+7fdf82daa000-7fdf82f00000 r--p 00000000 00:00 0 
+7fdf82f00000-7fdf82f2e000 rw-p 00000000 00:00 0 
+7fdf82f2e000-7fdf8345d000 rw-p 01851000 00:3f 3299173644505              /data/stariq/conda/envs/controlnet/lib/jvm/graalvm-189e927686-java17-22.3.0/lib/libjvmcicompiler.so
+7fdf8345d000-7fdf83844000 r--p 01d80000 00:3f 3299173644505              /data/stariq/conda/envs/controlnet/lib/jvm/graalvm-189e927686-java17-22.3.0/lib/libjvmcicompiler.so
+7fdf838ff000-7fdf83903000 ---p 00000000 00:00 0 
+7fdf83903000-7fdf83b00000 rw-p 00000000 00:00 0 
+7fdf83c00000-7fdf83d00000 rw-p 00000000 00:00 0 
+7fdf83e00000-7fdf83f00000 rw-p 00000000 00:00 0 
+7fdf84000000-7fdf84100000 rw-p 00000000 00:00 0 
+7fdf84200000-7fdf84300000 rw-p 00000000 00:00 0 
+7fdf84400000-7fdf84500000 rw-p 00000000 00:00 0 
+7fdf84600000-7fdf84700000 rw-p 00000000 00:00 0 
+7fdf84800000-7fdf84900000 rw-p 00000000 00:00 0 
+7fdf84900000-7fdf84a00000 rw-p 00000000 00:00 0 
+7fdf84a00000-7fdf84a80000 rw-p 00000000 00:00 0 
+7fdf84a80000-7fdf84b00000 rw-p 00000000 00:00 0 
+7fdf84b00000-7fdf85000000 rw-p 00000000 00:00 0 
+7fdf85000000-7fdf85100000 rw-p 00000000 00:00 0 
+7fdf85200000-7fdf85300000 rw-p 00000000 00:00 0 
+7fdf85400000-7fdf85500000 rw-p 00000000 00:00 0 
+7fdf855fe000-7fdf85600000 r-xp 00000000 08:01 15627                      /tmp/libjansi-394878643645851992.so
+7fdf85600000-7fdf857ff000 ---p 00002000 08:01 15627                      /tmp/libjansi-394878643645851992.so
+7fdf857ff000-7fdf85800000 rw-p 00001000 08:01 15627                      /tmp/libjansi-394878643645851992.so
+7fdf85800000-7fdf85900000 rw-p 00000000 00:00 0 
+7fdf85a00000-7fdf85b00000 rw-p 00000000 00:00 0 
+7fdf85c00000-7fdf85d00000 rw-p 00000000 00:00 0 
+7fdf85e00000-7fdf85f00000 rw-p 00000000 00:00 0 
+7fdf86000000-7fdf86100000 rw-p 00000000 00:00 0 
+7fdf86200000-7fdf86300000 rw-p 00000000 00:00 0 
+7fdf86400000-7fdf86500000 rw-p 00000000 00:00 0 
+7fdf86600000-7fdf86700000 rw-p 00000000 00:00 0 
+7fdf86800000-7fdf86900000 rw-p 00000000 00:00 0 
+7fdf86a00000-7fdf86b00000 rw-p 00000000 00:00 0 
+7fdf86c00000-7fdf86d00000 rw-p 00000000 00:00 0 
+7fdf86e00000-7fdf86f00000 rw-p 00000000 00:00 0 
+7fdf87000000-7fdf87100000 rw-p 00000000 00:00 0 
+7fdf87200000-7fdf87300000 rw-p 00000000 00:00 0 
+7fdf87400000-7fdf87500000 rw-p 00000000 00:00 0 
+7fdf87600000-7fdf87700000 rw-p 00000000 00:00 0 
+7fdf87800000-7fdf87900000 rw-p 00000000 00:00 0 
+7fdf87a00000-7fdf87b00000 rw-p 00000000 00:00 0 
+7fdf87c00000-7fdf87d00000 rw-p 00000000 00:00 0 
+7fdf87e00000-7fdf87f00000 rw-p 00000000 00:00 0 
+7fdf88000000-7fdf88021000 rw-p 00000000 00:00 0 
+7fdf88021000-7fdf8c000000 ---p 00000000 00:00 0 
+7fdf8c000000-7fdf8c021000 rw-p 00000000 00:00 0 
+7fdf8c021000-7fdf90000000 ---p 00000000 00:00 0 
+7fdf90000000-7fdf90021000 rw-p 00000000 00:00 0 
+7fdf90021000-7fdf94000000 ---p 00000000 00:00 0 
+7fdf94000000-7fdf94021000 rw-p 00000000 00:00 0 
+7fdf94021000-7fdf98000000 ---p 00000000 00:00 0 
+7fdf98000000-7fdf982ab000 rw-p 00000000 00:00 0 
+7fdf982ab000-7fdf9c000000 ---p 00000000 00:00 0 
+7fdf9c100000-7fdf9c200000 rw-p 00000000 00:00 0 
+7fdf9c300000-7fdf9c400000 rw-p 00000000 00:00 0 
+7fdf9c500000-7fdf9c600000 rw-p 00000000 00:00 0 
+7fdf9c66a000-7fdf9c66e000 ---p 00000000 00:00 0 
+7fdf9c66e000-7fdf9c68c000 rw-p 00000000 00:00 0 
+7fdf9c68c000-7fdf9c699000 r-xp 00000000 00:3f 3299173642221              /data/stariq/conda/envs/controlnet/lib/jvm/graalvm-189e927686-java17-22.3.0/lib/libverify.so
+7fdf9c699000-7fdf9c69b000 r--p 0000c000 00:3f 3299173642221              /data/stariq/conda/envs/controlnet/lib/jvm/graalvm-189e927686-java17-22.3.0/lib/libverify.so
+7fdf9c69b000-7fdf9c69c000 rw-p 0000e000 00:3f 3299173642221              /data/stariq/conda/envs/controlnet/lib/jvm/graalvm-189e927686-java17-22.3.0/lib/libverify.so
+7fdf9c69c000-7fdf9c69e000 rw-p 00010000 00:3f 3299173642221              /data/stariq/conda/envs/controlnet/lib/jvm/graalvm-189e927686-java17-22.3.0/lib/libverify.so
+7fdf9c69e000-7fdf9c6a4000 r-xp 00000000 00:3f 3299173643056              /data/stariq/conda/envs/controlnet/lib/jvm/graalvm-189e927686-java17-22.3.0/lib/libmanagement_ext.so
+7fdf9c6a4000-7fdf9c6a5000 r--p 00005000 00:3f 3299173643056              /data/stariq/conda/envs/controlnet/lib/jvm/graalvm-189e927686-java17-22.3.0/lib/libmanagement_ext.so
+7fdf9c6a5000-7fdf9c6a6000 rw-p 00006000 00:3f 3299173643056              /data/stariq/conda/envs/controlnet/lib/jvm/graalvm-189e927686-java17-22.3.0/lib/libmanagement_ext.so
+7fdf9c6a6000-7fdf9c6a9000 rw-p 00009000 00:3f 3299173643056              /data/stariq/conda/envs/controlnet/lib/jvm/graalvm-189e927686-java17-22.3.0/lib/libmanagement_ext.so
+7fdf9c6a9000-7fdf9c6ad000 r-xp 00000000 00:3f 3299173642084              /data/stariq/conda/envs/controlnet/lib/jvm/graalvm-189e927686-java17-22.3.0/lib/libmanagement.so
+7fdf9c6ad000-7fdf9c6ae000 r--p 00003000 00:3f 3299173642084              /data/stariq/conda/envs/controlnet/lib/jvm/graalvm-189e927686-java17-22.3.0/lib/libmanagement.so
+7fdf9c6ae000-7fdf9c6af000 rw-p 00004000 00:3f 3299173642084              /data/stariq/conda/envs/controlnet/lib/jvm/graalvm-189e927686-java17-22.3.0/lib/libmanagement.so
+7fdf9c6af000-7fdf9c6b2000 rw-p 00007000 00:3f 3299173642084              /data/stariq/conda/envs/controlnet/lib/jvm/graalvm-189e927686-java17-22.3.0/lib/libmanagement.so
+7fdf9c6b2000-7fdf9c6e3000 rw-p 00000000 00:00 0 
+7fdf9c6e3000-7fdf9c6f8000 r-xp 00000000 00:3f 3299173642618              /data/stariq/conda/envs/controlnet/lib/jvm/graalvm-189e927686-java17-22.3.0/lib/libnet.so
+7fdf9c6f8000-7fdf9c6f9000 ---p 00015000 00:3f 3299173642618              /data/stariq/conda/envs/controlnet/lib/jvm/graalvm-189e927686-java17-22.3.0/lib/libnet.so
+7fdf9c6f9000-7fdf9c6fa000 r--p 00015000 00:3f 3299173642618              /data/stariq/conda/envs/controlnet/lib/jvm/graalvm-189e927686-java17-22.3.0/lib/libnet.so
+7fdf9c6fa000-7fdf9c6fb000 rw-p 00016000 00:3f 3299173642618              /data/stariq/conda/envs/controlnet/lib/jvm/graalvm-189e927686-java17-22.3.0/lib/libnet.so
+7fdf9c6fb000-7fdf9c700000 rw-p 0001b000 00:3f 3299173642618              /data/stariq/conda/envs/controlnet/lib/jvm/graalvm-189e927686-java17-22.3.0/lib/libnet.so
+7fdf9c700000-7fdf9c800000 ---p 00000000 00:00 0 
+7fdf9c800000-7fdf9cdaa000 r--p 01123000 00:3f 3299173644505              /data/stariq/conda/envs/controlnet/lib/jvm/graalvm-189e927686-java17-22.3.0/lib/libjvmcicompiler.so
+7fdf9cdaa000-7fdf9cf00000 r--p 00000000 00:00 0 
+7fdf9cf00000-7fdf9cf2e000 rw-p 00000000 00:00 0 
+7fdf9cf2e000-7fdf9d45d000 rw-p 01851000 00:3f 3299173644505              /data/stariq/conda/envs/controlnet/lib/jvm/graalvm-189e927686-java17-22.3.0/lib/libjvmcicompiler.so
+7fdf9d45d000-7fdf9d844000 r--p 01d80000 00:3f 3299173644505              /data/stariq/conda/envs/controlnet/lib/jvm/graalvm-189e927686-java17-22.3.0/lib/libjvmcicompiler.so
+7fdf9d848000-7fdf9d84f000 r-xp 00000000 00:3f 3299173642783              /data/stariq/conda/envs/controlnet/lib/jvm/graalvm-189e927686-java17-22.3.0/lib/libzip.so
+7fdf9d84f000-7fdf9d850000 ---p 00007000 00:3f 3299173642783              /data/stariq/conda/envs/controlnet/lib/jvm/graalvm-189e927686-java17-22.3.0/lib/libzip.so
+7fdf9d850000-7fdf9d851000 r--p 00007000 00:3f 3299173642783              /data/stariq/conda/envs/controlnet/lib/jvm/graalvm-189e927686-java17-22.3.0/lib/libzip.so
+7fdf9d851000-7fdf9d852000 rw-p 00008000 00:3f 3299173642783              /data/stariq/conda/envs/controlnet/lib/jvm/graalvm-189e927686-java17-22.3.0/lib/libzip.so
+7fdf9d852000-7fdf9d855000 rw-p 0000b000 00:3f 3299173642783              /data/stariq/conda/envs/controlnet/lib/jvm/graalvm-189e927686-java17-22.3.0/lib/libzip.so
+7fdf9d855000-7fdf9d886000 rw-p 00000000 00:00 0 
+7fdf9d886000-7fdf9d9f6000 r--p 00000000 00:3f 3299173644505              /data/stariq/conda/envs/controlnet/lib/jvm/graalvm-189e927686-java17-22.3.0/lib/libjvmcicompiler.so
+7fdf9d9f6000-7fdf9e9a0000 r-xp 00170000 00:3f 3299173644505              /data/stariq/conda/envs/controlnet/lib/jvm/graalvm-189e927686-java17-22.3.0/lib/libjvmcicompiler.so
+7fdf9e9a0000-7fdf9f9f1000 r--p 0111a000 00:3f 3299173644505              /data/stariq/conda/envs/controlnet/lib/jvm/graalvm-189e927686-java17-22.3.0/lib/libjvmcicompiler.so
+7fdf9f9f1000-7fdf9f9f4000 rw-p 0216b000 00:3f 3299173644505              /data/stariq/conda/envs/controlnet/lib/jvm/graalvm-189e927686-java17-22.3.0/lib/libjvmcicompiler.so
+7fdf9f9f4000-7fdf9f9f5000 rw-p 00000000 00:00 0 
+7fdf9f9f5000-7fdf9f9fa000 rw-p 023c7000 00:3f 3299173644505              /data/stariq/conda/envs/controlnet/lib/jvm/graalvm-189e927686-java17-22.3.0/lib/libjvmcicompiler.so
+7fdf9f9fa000-7fdf9f9fb000 ---p 00000000 00:00 0 
+7fdf9f9fb000-7fdf9fafc000 rw-p 00000000 00:00 0 
+7fdf9fafc000-7fdf9fb00000 ---p 00000000 00:00 0 
+7fdf9fb00000-7fdf9fbfd000 rw-p 00000000 00:00 0 
+7fdf9fbfd000-7fdf9fc01000 ---p 00000000 00:00 0 
+7fdf9fc01000-7fdf9fcfe000 rw-p 00000000 00:00 0 
+7fdf9fcfe000-7fdf9fd02000 ---p 00000000 00:00 0 
+7fdf9fd02000-7fdf9fdff000 rw-p 00000000 00:00 0 
+7fdf9fdff000-7fdf9fe03000 ---p 00000000 00:00 0 
+7fdf9fe03000-7fdfa0000000 rw-p 00000000 00:00 0 
+7fdfa0000000-7fdfa0021000 rw-p 00000000 00:00 0 
+7fdfa0021000-7fdfa4000000 ---p 00000000 00:00 0 
+7fdfa4000000-7fdfa4057000 rw-p 00000000 00:00 0 
+7fdfa4057000-7fdfa8000000 ---p 00000000 00:00 0 
+7fdfa8000000-7fdfa8021000 rw-p 00000000 00:00 0 
+7fdfa8021000-7fdfac000000 ---p 00000000 00:00 0 
+7fdfac000000-7fdfac021000 rw-p 00000000 00:00 0 
+7fdfac021000-7fdfb0000000 ---p 00000000 00:00 0 
+7fdfb0000000-7fdfb0021000 rw-p 00000000 00:00 0 
+7fdfb0021000-7fdfb4000000 ---p 00000000 00:00 0 
+7fdfb4000000-7fdfb4021000 rw-p 00000000 00:00 0 
+7fdfb4021000-7fdfb8000000 ---p 00000000 00:00 0 
+7fdfb8000000-7fdfb8039000 rw-p 00000000 00:00 0 
+7fdfb8039000-7fdfbc000000 ---p 00000000 00:00 0 
+7fdfbc006000-7fdfbc019000 r-xp 00000000 00:3f 3299173644801              /data/stariq/conda/envs/controlnet/lib/jvm/graalvm-189e927686-java17-22.3.0/lib/libnio.so
+7fdfbc019000-7fdfbc01a000 r--p 00012000 00:3f 3299173644801              /data/stariq/conda/envs/controlnet/lib/jvm/graalvm-189e927686-java17-22.3.0/lib/libnio.so
+7fdfbc01a000-7fdfbc01b000 rw-p 00013000 00:3f 3299173644801              /data/stariq/conda/envs/controlnet/lib/jvm/graalvm-189e927686-java17-22.3.0/lib/libnio.so
+7fdfbc01b000-7fdfbc023000 rw-p 00019000 00:3f 3299173644801              /data/stariq/conda/envs/controlnet/lib/jvm/graalvm-189e927686-java17-22.3.0/lib/libnio.so
+7fdfbc023000-7fdfbc026000 r--p 00000000 00:3f 3299173589345              /data/stariq/conda/envs/controlnet/lib/libz.so.1.2.13
+7fdfbc026000-7fdfbc035000 r-xp 00003000 00:3f 3299173589345              /data/stariq/conda/envs/controlnet/lib/libz.so.1.2.13
+7fdfbc035000-7fdfbc03c000 r--p 00012000 00:3f 3299173589345              /data/stariq/conda/envs/controlnet/lib/libz.so.1.2.13
+7fdfbc03c000-7fdfbc03d000 r--p 00018000 00:3f 3299173589345              /data/stariq/conda/envs/controlnet/lib/libz.so.1.2.13
+7fdfbc03d000-7fdfbc03e000 rw-p 00019000 00:3f 3299173589345              /data/stariq/conda/envs/controlnet/lib/libz.so.1.2.13
+7fdfbc03e000-7fdfbc042000 ---p 00000000 00:00 0 
+7fdfbc042000-7fdfbc23f000 rw-p 00000000 00:00 0 
+7fdfbc23f000-7fdfbc243000 ---p 00000000 00:00 0 
+7fdfbc243000-7fdfbc340000 rw-p 00000000 00:00 0 
+7fdfbc340000-7fdfbc344000 ---p 00000000 00:00 0 
+7fdfbc344000-7fdfbc441000 rw-p 00000000 00:00 0 
+7fdfbc441000-7fdfbc445000 ---p 00000000 00:00 0 
+7fdfbc445000-7fdfbc542000 rw-p 00000000 00:00 0 
+7fdfbc542000-7fdfbc6b5000 r--p 00000000 08:01 3721                       /usr/lib/locale/C.UTF-8/LC_COLLATE
+7fdfbc6b5000-7fdfbceff000 r--p 00000000 08:01 3528                       /usr/lib/locale/locale-archive
+7fdfbceff000-7fdfbcf03000 ---p 00000000 00:00 0 
+7fdfbcf03000-7fdfbd400000 rw-p 00000000 00:00 0 
+7fdfbd400000-7fdfbd800000 rw-p 00000000 00:00 0 
+7fdfbd807000-7fdfbd808000 r--p 00000000 00:00 0 
+7fdfbd808000-7fdfbd83a000 r--p 00000000 08:01 3722                       /usr/lib/locale/C.UTF-8/LC_CTYPE
+7fdfbd83a000-7fdfbd83b000 r--p 00000000 08:01 3728                       /usr/lib/locale/C.UTF-8/LC_NUMERIC
+7fdfbd83b000-7fdfbd83c000 r--p 00000000 08:01 3731                       /usr/lib/locale/C.UTF-8/LC_TIME
+7fdfbd83c000-7fdfbd83d000 r--p 00000000 08:01 3726                       /usr/lib/locale/C.UTF-8/LC_MONETARY
+7fdfbd83d000-7fdfbd841000 ---p 00000000 00:00 0 
+7fdfbd841000-7fdfbd93e000 rw-p 00000000 00:00 0 
+7fdfbd93e000-7fdfbd93f000 ---p 00000000 00:00 0 
+7fdfbd93f000-7fdfbda40000 rw-p 00000000 00:00 0 
+7fdfbda40000-7fdfbdb0e000 r-xp 00000000 00:3f 3299173642348              /data/stariq/conda/envs/controlnet/lib/jvm/graalvm-189e927686-java17-22.3.0/lib/libjsvml.so
+7fdfbdb0e000-7fdfbdb0f000 r--p 000cd000 00:3f 3299173642348              /data/stariq/conda/envs/controlnet/lib/jvm/graalvm-189e927686-java17-22.3.0/lib/libjsvml.so
+7fdfbdb0f000-7fdfbdb10000 rw-p 000ce000 00:3f 3299173642348              /data/stariq/conda/envs/controlnet/lib/jvm/graalvm-189e927686-java17-22.3.0/lib/libjsvml.so
+7fdfbdb10000-7fdfbdb16000 rw-p 000d4000 00:3f 3299173642348              /data/stariq/conda/envs/controlnet/lib/jvm/graalvm-189e927686-java17-22.3.0/lib/libjsvml.so
+7fdfbdb16000-7fdfbdc54000 rw-p 00000000 00:00 0 
+7fdfbdc54000-7fdfbde34000 ---p 00000000 00:00 0 
+7fdfbde34000-7fdfbde45000 rw-p 00000000 00:00 0 
+7fdfbde45000-7fdfbdf34000 ---p 00000000 00:00 0 
+7fdfbdf34000-7fdfbdf54000 rw-p 00000000 00:00 0 
+7fdfbdf54000-7fdfbe134000 ---p 00000000 00:00 0 
+7fdfbe134000-7fdfbe13a000 rw-p 00000000 00:00 0 
+7fdfbe13a000-7fdfbe220000 ---p 00000000 00:00 0 
+7fdfbe220000-7fdfbe22c000 rw-p 00000000 00:00 0 
+7fdfbe22c000-7fdfbe30b000 ---p 00000000 00:00 0 
+7fdfbe30b000-7fdfbe310000 rw-p 00000000 00:00 0 
+7fdfbe310000-7fdfbe317000 ---p 00000000 00:00 0 
+7fdfbe317000-7fdfbe587000 rwxp 00000000 00:00 0 
+7fdfbe587000-7fdfbe8a6000 ---p 00000000 00:00 0 
+7fdfbe8a6000-7fdfbee66000 rwxp 00000000 00:00 0 
+7fdfbee66000-7fdfc5dde000 ---p 00000000 00:00 0 
+7fdfc5dde000-7fdfc604e000 rwxp 00000000 00:00 0 
+7fdfc604e000-7fdfcd317000 ---p 00000000 00:00 0 
+7fdfcd317000-7fdfcd33b000 r-xp 00000000 00:3f 3299173642504              /data/stariq/conda/envs/controlnet/lib/jvm/graalvm-189e927686-java17-22.3.0/lib/libjava.so
+7fdfcd33b000-7fdfcd33c000 ---p 00024000 00:3f 3299173642504              /data/stariq/conda/envs/controlnet/lib/jvm/graalvm-189e927686-java17-22.3.0/lib/libjava.so
+7fdfcd33c000-7fdfcd33d000 r--p 00024000 00:3f 3299173642504              /data/stariq/conda/envs/controlnet/lib/jvm/graalvm-189e927686-java17-22.3.0/lib/libjava.so
+7fdfcd33d000-7fdfcd33e000 rw-p 00025000 00:3f 3299173642504              /data/stariq/conda/envs/controlnet/lib/jvm/graalvm-189e927686-java17-22.3.0/lib/libjava.so
+7fdfcd33e000-7fdfcd33f000 rw-p 00000000 00:00 0 
+7fdfcd33f000-7fdfcd34a000 rw-p 0002f000 00:3f 3299173642504              /data/stariq/conda/envs/controlnet/lib/jvm/graalvm-189e927686-java17-22.3.0/lib/libjava.so
+7fdfcd34a000-7fdfcdb4f000 r--s 00000000 08:01 1549220                    /var/lib/sss/mc/passwd
+7fdfcdb4f000-7fdfcdb55000 r--p 00000000 08:01 16094                      /usr/lib/x86_64-linux-gnu/libnss_systemd.so.2
+7fdfcdb55000-7fdfcdb7b000 r-xp 00006000 08:01 16094                      /usr/lib/x86_64-linux-gnu/libnss_systemd.so.2
+7fdfcdb7b000-7fdfcdb87000 r--p 0002c000 08:01 16094                      /usr/lib/x86_64-linux-gnu/libnss_systemd.so.2
+7fdfcdb87000-7fdfcdb8a000 r--p 00037000 08:01 16094                      /usr/lib/x86_64-linux-gnu/libnss_systemd.so.2
+7fdfcdb8a000-7fdfcdb8b000 rw-p 0003a000 08:01 16094                      /usr/lib/x86_64-linux-gnu/libnss_systemd.so.2
+7fdfcdb8b000-7fdfcdb8e000 r--p 00000000 08:01 17313                      /usr/lib/x86_64-linux-gnu/libnss_files-2.31.so
+7fdfcdb8e000-7fdfcdb95000 r-xp 00003000 08:01 17313                      /usr/lib/x86_64-linux-gnu/libnss_files-2.31.so
+7fdfcdb95000-7fdfcdb97000 r--p 0000a000 08:01 17313                      /usr/lib/x86_64-linux-gnu/libnss_files-2.31.so
+7fdfcdb97000-7fdfcdb98000 r--p 0000b000 08:01 17313                      /usr/lib/x86_64-linux-gnu/libnss_files-2.31.so
+7fdfcdb98000-7fdfcdb99000 rw-p 0000c000 08:01 17313                      /usr/lib/x86_64-linux-gnu/libnss_files-2.31.so
+7fdfcdb99000-7fdfcdb9f000 rw-p 00000000 00:00 0 
+7fdfcdb9f000-7fdfcdba0000 r--p 00000000 08:01 3725                       /usr/lib/locale/C.UTF-8/LC_MESSAGES/SYS_LC_MESSAGES
+7fdfcdba0000-7fdfcdba1000 r--p 00000000 08:01 3729                       /usr/lib/locale/C.UTF-8/LC_PAPER
+7fdfcdba1000-7fdfcdba2000 r--p 00000000 08:01 3727                       /usr/lib/locale/C.UTF-8/LC_NAME
+7fdfcdba2000-7fdfcdba9000 r--s 00000000 08:01 28280                      /usr/lib/x86_64-linux-gnu/gconv/gconv-modules.cache
+7fdfcdba9000-7fdfcdbb1000 rw-s 00000000 08:01 262077                     /tmp/hsperfdata_stariq/3495726
+7fdfcdbb1000-7fdfd76ec000 r--s 00000000 00:3f 3299173643503              /data/stariq/conda/envs/controlnet/lib/jvm/graalvm-189e927686-java17-22.3.0/lib/modules
+7fdfd76ec000-7fdfd7707000 r-xp 00000000 00:3f 3299173642762              /data/stariq/conda/envs/controlnet/lib/jvm/graalvm-189e927686-java17-22.3.0/lib/libjimage.so
+7fdfd7707000-7fdfd7708000 ---p 0001b000 00:3f 3299173642762              /data/stariq/conda/envs/controlnet/lib/jvm/graalvm-189e927686-java17-22.3.0/lib/libjimage.so
+7fdfd7708000-7fdfd770a000 r--p 0001b000 00:3f 3299173642762              /data/stariq/conda/envs/controlnet/lib/jvm/graalvm-189e927686-java17-22.3.0/lib/libjimage.so
+7fdfd770a000-7fdfd770b000 rw-p 0001d000 00:3f 3299173642762              /data/stariq/conda/envs/controlnet/lib/jvm/graalvm-189e927686-java17-22.3.0/lib/libjimage.so
+7fdfd770b000-7fdfd770d000 rw-p 00024000 00:3f 3299173642762              /data/stariq/conda/envs/controlnet/lib/jvm/graalvm-189e927686-java17-22.3.0/lib/libjimage.so
+7fdfd770d000-7fdfd8820000 r-xp 00000000 00:3f 3299173643620              /data/stariq/conda/envs/controlnet/lib/jvm/graalvm-189e927686-java17-22.3.0/lib/server/libjvm.so
+7fdfd8820000-7fdfd8821000 ---p 01113000 00:3f 3299173643620              /data/stariq/conda/envs/controlnet/lib/jvm/graalvm-189e927686-java17-22.3.0/lib/server/libjvm.so
+7fdfd8821000-7fdfd88d6000 r--p 01113000 00:3f 3299173643620              /data/stariq/conda/envs/controlnet/lib/jvm/graalvm-189e927686-java17-22.3.0/lib/server/libjvm.so
+7fdfd88d6000-7fdfd890a000 rw-p 011c8000 00:3f 3299173643620              /data/stariq/conda/envs/controlnet/lib/jvm/graalvm-189e927686-java17-22.3.0/lib/server/libjvm.so
+7fdfd890a000-7fdfd8963000 rw-p 00000000 00:00 0 
+7fdfd8963000-7fdfd8969000 rw-p 01594000 00:3f 3299173643620              /data/stariq/conda/envs/controlnet/lib/jvm/graalvm-189e927686-java17-22.3.0/lib/server/libjvm.so
+7fdfd8969000-7fdfd896d000 rw-p 00000000 00:00 0 
+7fdfd896d000-7fdfd896f000 r--p 00000000 08:01 18953                      /usr/lib/x86_64-linux-gnu/librt-2.31.so
+7fdfd896f000-7fdfd8973000 r-xp 00002000 08:01 18953                      /usr/lib/x86_64-linux-gnu/librt-2.31.so
+7fdfd8973000-7fdfd8975000 r--p 00006000 08:01 18953                      /usr/lib/x86_64-linux-gnu/librt-2.31.so
+7fdfd8975000-7fdfd8976000 r--p 00007000 08:01 18953                      /usr/lib/x86_64-linux-gnu/librt-2.31.so
+7fdfd8976000-7fdfd8977000 rw-p 00008000 08:01 18953                      /usr/lib/x86_64-linux-gnu/librt-2.31.so
+7fdfd8977000-7fdfd8999000 r--p 00000000 08:01 17297                      /usr/lib/x86_64-linux-gnu/libc-2.31.so
+7fdfd8999000-7fdfd8b11000 r-xp 00022000 08:01 17297                      /usr/lib/x86_64-linux-gnu/libc-2.31.so
+7fdfd8b11000-7fdfd8b5f000 r--p 0019a000 08:01 17297                      /usr/lib/x86_64-linux-gnu/libc-2.31.so
+7fdfd8b5f000-7fdfd8b63000 r--p 001e7000 08:01 17297                      /usr/lib/x86_64-linux-gnu/libc-2.31.so
+7fdfd8b63000-7fdfd8b65000 rw-p 001eb000 08:01 17297                      /usr/lib/x86_64-linux-gnu/libc-2.31.so
+7fdfd8b65000-7fdfd8b6b000 rw-p 00000000 00:00 0 
+7fdfd8b6b000-7fdfd8b71000 r--p 00000000 08:01 18951                      /usr/lib/x86_64-linux-gnu/libpthread-2.31.so
+7fdfd8b71000-7fdfd8b82000 r-xp 00006000 08:01 18951                      /usr/lib/x86_64-linux-gnu/libpthread-2.31.so
+7fdfd8b82000-7fdfd8b88000 r--p 00017000 08:01 18951                      /usr/lib/x86_64-linux-gnu/libpthread-2.31.so
+7fdfd8b88000-7fdfd8b89000 r--p 0001c000 08:01 18951                      /usr/lib/x86_64-linux-gnu/libpthread-2.31.so
+7fdfd8b89000-7fdfd8b8a000 rw-p 0001d000 08:01 18951                      /usr/lib/x86_64-linux-gnu/libpthread-2.31.so
+7fdfd8b8a000-7fdfd8b8e000 rw-p 00000000 00:00 0 
+7fdfd8b8e000-7fdfd8b92000 r--p 00000000 00:3f 3299173591648              /data/stariq/conda/envs/controlnet/lib/libgcc_s.so.1
+7fdfd8b92000-7fdfd8ba4000 r-xp 00004000 00:3f 3299173591648              /data/stariq/conda/envs/controlnet/lib/libgcc_s.so.1
+7fdfd8ba4000-7fdfd8ba7000 r--p 00016000 00:3f 3299173591648              /data/stariq/conda/envs/controlnet/lib/libgcc_s.so.1
+7fdfd8ba7000-7fdfd8ba8000 r--p 00019000 00:3f 3299173591648              /data/stariq/conda/envs/controlnet/lib/libgcc_s.so.1
+7fdfd8ba8000-7fdfd8ba9000 rw-p 0001a000 00:3f 3299173591648              /data/stariq/conda/envs/controlnet/lib/libgcc_s.so.1
+7fdfd8ba9000-7fdfd8bb6000 r--p 00000000 08:01 17301                      /usr/lib/x86_64-linux-gnu/libm-2.31.so
+7fdfd8bb6000-7fdfd8c5d000 r-xp 0000d000 08:01 17301                      /usr/lib/x86_64-linux-gnu/libm-2.31.so
+7fdfd8c5d000-7fdfd8cf6000 r--p 000b4000 08:01 17301                      /usr/lib/x86_64-linux-gnu/libm-2.31.so
+7fdfd8cf6000-7fdfd8cf7000 r--p 0014c000 08:01 17301                      /usr/lib/x86_64-linux-gnu/libm-2.31.so
+7fdfd8cf7000-7fdfd8cf8000 rw-p 0014d000 08:01 17301                      /usr/lib/x86_64-linux-gnu/libm-2.31.so
+7fdfd8cf8000-7fdfd8da1000 r--p 00000000 00:3f 3299173602012              /data/stariq/conda/envs/controlnet/lib/libstdc++.so.6.0.32
+7fdfd8da1000-7fdfd8e41000 r-xp 000a9000 00:3f 3299173602012              /data/stariq/conda/envs/controlnet/lib/libstdc++.so.6.0.32
+7fdfd8e41000-7fdfd8ec8000 r--p 00149000 00:3f 3299173602012              /data/stariq/conda/envs/controlnet/lib/libstdc++.so.6.0.32
+7fdfd8ec8000-7fdfd8ed3000 r--p 001cf000 00:3f 3299173602012              /data/stariq/conda/envs/controlnet/lib/libstdc++.so.6.0.32
+7fdfd8ed3000-7fdfd8ed7000 rw-p 001da000 00:3f 3299173602012              /data/stariq/conda/envs/controlnet/lib/libstdc++.so.6.0.32
+7fdfd8ed7000-7fdfd8edb000 rw-p 00000000 00:00 0 
+7fdfd8edb000-7fdfd8edc000 r--p 00000000 08:01 17299                      /usr/lib/x86_64-linux-gnu/libdl-2.31.so
+7fdfd8edc000-7fdfd8ede000 r-xp 00001000 08:01 17299                      /usr/lib/x86_64-linux-gnu/libdl-2.31.so
+7fdfd8ede000-7fdfd8edf000 r--p 00003000 08:01 17299                      /usr/lib/x86_64-linux-gnu/libdl-2.31.so
+7fdfd8edf000-7fdfd8ee0000 r--p 00003000 08:01 17299                      /usr/lib/x86_64-linux-gnu/libdl-2.31.so
+7fdfd8ee0000-7fdfd8ee1000 rw-p 00004000 08:01 17299                      /usr/lib/x86_64-linux-gnu/libdl-2.31.so
+7fdfd8ee1000-7fdfd8ee2000 r--p 00000000 08:01 3720                       /usr/lib/locale/C.UTF-8/LC_ADDRESS
+7fdfd8ee2000-7fdfd8ee3000 r--p 00000000 08:01 3730                       /usr/lib/locale/C.UTF-8/LC_TELEPHONE
+7fdfd8ee3000-7fdfd8ee4000 r--p 00000000 08:01 3724                       /usr/lib/locale/C.UTF-8/LC_MEASUREMENT
+7fdfd8ee4000-7fdfd8ee5000 r--p 00000000 08:01 3723                       /usr/lib/locale/C.UTF-8/LC_IDENTIFICATION
+7fdfd8ee5000-7fdfd8ee7000 r--p 00000000 08:01 2550                       /usr/lib/x86_64-linux-gnu/libnss_sss.so.2
+7fdfd8ee7000-7fdfd8eed000 r-xp 00002000 08:01 2550                       /usr/lib/x86_64-linux-gnu/libnss_sss.so.2
+7fdfd8eed000-7fdfd8eef000 r--p 00008000 08:01 2550                       /usr/lib/x86_64-linux-gnu/libnss_sss.so.2
+7fdfd8eef000-7fdfd8ef0000 r--p 00009000 08:01 2550                       /usr/lib/x86_64-linux-gnu/libnss_sss.so.2
+7fdfd8ef0000-7fdfd8ef1000 rw-p 0000a000 08:01 2550                       /usr/lib/x86_64-linux-gnu/libnss_sss.so.2
+7fdfd8ef1000-7fdfd8ef2000 ---p 00000000 00:00 0 
+7fdfd8ef2000-7fdfd8ef3000 r--p 00000000 00:00 0 
+7fdfd8ef3000-7fdfd8ef5000 rw-p 00000000 00:00 0 
+7fdfd8ef5000-7fdfd8ef6000 r--p 00000000 08:01 16946                      /usr/lib/x86_64-linux-gnu/ld-2.31.so
+7fdfd8ef6000-7fdfd8f19000 r-xp 00001000 08:01 16946                      /usr/lib/x86_64-linux-gnu/ld-2.31.so
+7fdfd8f19000-7fdfd8f21000 r--p 00024000 08:01 16946                      /usr/lib/x86_64-linux-gnu/ld-2.31.so
+7fdfd8f21000-7fdfd8f22000 ---p 00000000 00:00 0 
+7fdfd8f22000-7fdfd8f23000 r--p 0002c000 08:01 16946                      /usr/lib/x86_64-linux-gnu/ld-2.31.so
+7fdfd8f23000-7fdfd8f24000 rw-p 0002d000 08:01 16946                      /usr/lib/x86_64-linux-gnu/ld-2.31.so
+7fdfd8f24000-7fdfd8f25000 rw-p 00000000 00:00 0 
+7ffeea37d000-7ffeea381000 ---p 00000000 00:00 0 
+7ffeea381000-7ffeea47d000 rw-p 00000000 00:00 0                          [stack]
+7ffeea4d3000-7ffeea4d7000 r--p 00000000 00:00 0                          [vvar]
+7ffeea4d7000-7ffeea4d9000 r-xp 00000000 00:00 0                          [vdso]
+ffffffffff600000-ffffffffff601000 --xp 00000000 00:00 0                  [vsyscall]
+
+
+VM Arguments:
+jvm_args: -XX:ThreadPriorityPolicy=1 -XX:+UnlockExperimentalVMOptions -XX:+EnableJVMCIProduct -XX:JVMCIThreadsPerNativeLibraryRuntime=1 -XX:-UnlockExperimentalVMOptions -Dorg.graalvm.launcher.class=com.oracle.graal.python.shell.GraalPythonMain -Dorg.graalvm.launcher.executablename=/home/stariq/data/conda/envs/controlnet/bin/python 
+java_command: <unknown>
+java_class_path (initial): /data/stariq/conda/envs/controlnet/lib/jvm/graalvm-189e927686-java17-22.3.0/languages/python/bin/../../../lib/graalvm/graalpython-launcher.jar:/data/stariq/conda/envs/controlnet/lib/jvm/graalvm-189e927686-java17-22.3.0/languages/python/bin/../../../lib/graalvm/launcher-common.jar
+Launcher Type: generic
+
+[Global flags]
+     intx CICompilerCount                          = 2                                         {product} {ergonomic}
+     bool EnableJVMCIProduct                       = true                                {JVMCI product} {jimage}
+   size_t InitialHeapSize                          = 100663296                                 {product} {ergonomic}
+     uint JVMCIThreadsPerNativeLibraryRuntime      = 1                                   {JVMCI product} {jimage}
+   size_t MaxHeapSize                              = 1610612736                                {product} {ergonomic}
+   size_t MaxNewSize                               = 536870912                                 {product} {ergonomic}
+   size_t MinHeapDeltaBytes                        = 196608                                    {product} {ergonomic}
+   size_t MinHeapSize                              = 8388608                                   {product} {ergonomic}
+   size_t NewSize                                  = 33554432                                  {product} {ergonomic}
+    uintx NonNMethodCodeHeapSize                   = 5826188                                {pd product} {ergonomic}
+    uintx NonProfiledCodeHeapSize                  = 122916026                              {pd product} {ergonomic}
+   size_t OldSize                                  = 67108864                                  {product} {ergonomic}
+    uintx ProfiledCodeHeapSize                     = 122916026                              {pd product} {ergonomic}
+    uintx ReservedCodeCacheSize                    = 251658240                              {pd product} {ergonomic}
+     bool SegmentedCodeCache                       = true                                      {product} {ergonomic}
+   size_t SoftMaxHeapSize                          = 1610612736                             {manageable} {ergonomic}
+     intx ThreadPriorityPolicy                     = 1                                         {product} {jimage}
+     bool UseCompressedClassPointers               = true                           {product lp64_product} {ergonomic}
+     bool UseCompressedOops                        = true                           {product lp64_product} {ergonomic}
+     bool UseSerialGC                              = true                                      {product} {ergonomic}
+
+Logging:
+Log output configuration:
+ #0: stdout all=warning uptime,level,tags
+ #1: stderr all=off uptime,level,tags
+
+Environment Variables:
+PATH=/home/stariq/data/conda/envs/controlnet/bin:/apps/opt/spack/linux-ubuntu20.04-x86_64/gcc-9.3.0/anaconda3-2023.09-0-uvmks3yqtoayhfpi54ldw7zqthaygdzb/condabin:/apps/opt/spack/linux-ubuntu20.04-x86_64/gcc-9.3.0/anaconda3-2023.09-0-uvmks3yqtoayhfpi54ldw7zqthaygdzb/bin:/home/stariq/.local/bin:/cluster/23-11-2-1/slurm-23-11-2-1/bin:/cluster/23-11-2-1/slurm-23-11-2-1/sbin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/var/cfengine/bin:/usr/local/go/bin
+LD_LIBRARY_PATH=/cluster/23-11-2-1/munge-0.5.15/lib:/cluster/23-11-2-1/slurm-23-11-2-1/lib:/cluster/23-11-2-1/pmix-5.0.1/lib:/cluster/23-11-2-1/libevent-2.1.12/lib
+SHELL=/usr/bin/bash
+LANG=C.UTF-8
+TERM=xterm
+TMPDIR=/sctmp/stariq
+
+Signal Handlers:
+   SIGSEGV: crash_handler in libjvm.so, mask=11100100010111111101111111111110, flags=SA_RESTART|SA_SIGINFO
+    SIGBUS: crash_handler in libjvm.so, mask=11100100010111111101111111111110, flags=SA_RESTART|SA_SIGINFO
+    SIGFPE: crash_handler in libjvm.so, mask=11100100010111111101111111111110, flags=SA_RESTART|SA_SIGINFO
+   SIGPIPE: IsolateEnterStub_IgnoreSIGPIPEStartupHook_noopSignalHandler_8f19bff2f35b5f630d83b364d6b2339320d4ec70_216e8361c6bc87a8f89f58cc10d3b2fd4415bf87 in libjvmcicompiler.so, mask=00000000000000000000000000000000, flags=SA_RESTART
+  *** Handler was modified!
+  *** Expected: javaSignalHandler in libjvm.so, mask=11100100110111111111111111111110, flags=SA_RESTART|SA_SIGINFO
+   SIGXFSZ: javaSignalHandler in libjvm.so, mask=11100100010111111101111111111110, flags=SA_RESTART|SA_SIGINFO
+    SIGILL: crash_handler in libjvm.so, mask=11100100010111111101111111111110, flags=SA_RESTART|SA_SIGINFO
+   SIGUSR2: SR_handler in libjvm.so, mask=00000000000000000000000000000000, flags=SA_RESTART|SA_SIGINFO
+    SIGHUP: UserHandler in libjvm.so, mask=11100100010111111101111111111110, flags=SA_RESTART|SA_SIGINFO
+    SIGINT: UserHandler in libjvm.so, mask=11100100010111111101111111111110, flags=SA_RESTART|SA_SIGINFO
+   SIGTERM: UserHandler in libjvm.so, mask=11100100010111111101111111111110, flags=SA_RESTART|SA_SIGINFO
+   SIGQUIT: UserHandler in libjvm.so, mask=11100100010111111101111111111110, flags=SA_RESTART|SA_SIGINFO
+  *** Handler was modified!
+  *** Expected: javaSignalHandler in libjvm.so, mask=11100100110111111111111111111110, flags=SA_RESTART|SA_SIGINFO
+   SIGTRAP: crash_handler in libjvm.so, mask=11100100010111111101111111111110, flags=SA_RESTART|SA_SIGINFO
+
+
+---------------  S Y S T E M  ---------------
+
+OS:
+DISTRIB_ID=Ubuntu
+DISTRIB_RELEASE=20.04
+DISTRIB_CODENAME=focal
+DISTRIB_DESCRIPTION="Ubuntu 20.04.6 LTS"
+uname: Linux 5.15.0-92-generic #102~20.04.1-Ubuntu SMP Mon Jan 15 13:09:14 UTC 2024 x86_64
+OS uptime: 39 days 18:15 hours
+libc: glibc 2.31 NPTL 2.31 
+rlimit (soft/hard): STACK 8192k/infinity , CORE 0k/infinity , NPROC 256/1024 , NOFILE 1048576/1048576 , AS 4194304k/6291456k , CPU 3600/3660 , DATA infinity/infinity , FSIZE infinity/infinity , MEMLOCK 65536k/65536k
+load average: 1.50 1.36 0.91
+
+/proc/meminfo:
+MemTotal:       64293456 kB
+MemFree:        28417824 kB
+MemAvailable:   56431244 kB
+Buffers:          399460 kB
+Cached:         26967276 kB
+SwapCached:            0 kB
+Active:          3050800 kB
+Inactive:       30667716 kB
+Active(anon):       3060 kB
+Inactive(anon):  6358632 kB
+Active(file):    3047740 kB
+Inactive(file): 24309084 kB
+Unevictable:       18480 kB
+Mlocked:           18480 kB
+SwapTotal:             0 kB
+SwapFree:              0 kB
+Dirty:           1949312 kB
+Writeback:             0 kB
+AnonPages:       6370492 kB
+Mapped:           794476 kB
+Shmem:              2096 kB
+KReclaimable:    1370220 kB
+Slab:            1699148 kB
+SReclaimable:    1370220 kB
+SUnreclaim:       328928 kB
+KernelStack:       16784 kB
+PageTables:       138100 kB
+NFS_Unstable:          0 kB
+Bounce:                0 kB
+WritebackTmp:          0 kB
+CommitLimit:    32146728 kB
+Committed_AS:   10237992 kB
+VmallocTotal:   34359738367 kB
+VmallocUsed:       56016 kB
+VmallocChunk:          0 kB
+Percpu:            43712 kB
+HardwareCorrupted:     0 kB
+AnonHugePages:         0 kB
+ShmemHugePages:        0 kB
+ShmemPmdMapped:        0 kB
+FileHugePages:         0 kB
+FilePmdMapped:         0 kB
+HugePages_Total:       0
+HugePages_Free:        0
+HugePages_Rsvd:        0
+HugePages_Surp:        0
+Hugepagesize:       2048 kB
+Hugetlb:               0 kB
+DirectMap4k:     3223420 kB
+DirectMap2M:    58118144 kB
+DirectMap1G:     4194304 kB
+
+/sys/kernel/mm/transparent_hugepage/enabled: always [madvise] never
+/sys/kernel/mm/transparent_hugepage/defrag (defrag/compaction efforts parameter): always defer defer+madvise [madvise] never
+
+Process Memory:
+Virtual Size: 4193900K (peak: 4193900K)
+Resident Set Size: 211800K (peak: 211800K) (anon: 166640K, file: 45160K, shmem: 0K)
+Swapped out: 0K
+C-Heap outstanding allocations: 23484K, retained: 1639K
+glibc malloc tunables: (default)
+
+/proc/sys/kernel/threads-max (system-wide limit on the number of threads): 500985
+/proc/sys/vm/max_map_count (maximum number of memory map areas a process may have): 65530
+/proc/sys/kernel/pid_max (system-wide limit on number of process identifiers): 4194304
+
+container (cgroup) information:
+container_type: cgroupv1
+cpu_cpuset_cpus: 0-15
+cpu_memory_nodes: 0
+active_processor_count: 1
+cpu_quota: 100000
+cpu_period: 100000
+cpu_shares: no shares
+memory_limit_in_bytes: 6291456 k
+memory_and_swap_limit_in_bytes: unlimited
+memory_soft_limit_in_bytes: unlimited
+memory_usage_in_bytes: 2149096 k
+memory_max_usage_in_bytes: 2149096 k
+maximum number of tasks: unlimited
+current number of tasks: 18
+
+KVM virtualization detected
+Steal ticks since vm start: 10
+Steal ticks percentage since vm start:  0.001
+
+CPU: total 16 (initial active 1) (1 cores per cpu, 1 threads per core) family 23 model 49 stepping 0 microcode 0x1000065, cx8, cmov, fxsr, mmx, 3dnowpref, sse, sse2, sse3, ssse3, sse4a, sse4.1, sse4.2, popcnt, lzcnt, tsc, avx, avx2, aes, clmul, bmi1, bmi2, adx, fma, vzeroupper, clflush, clflushopt, hv
+CPU Model and flags from /proc/cpuinfo:
+model name	: AMD EPYC 7702 64-Core Processor
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm rep_good nopl cpuid extd_apicid tsc_known_freq pni pclmulqdq ssse3 fma cx16 sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand hypervisor lahf_lm cmp_legacy svm cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw ssbd ibrs ibpb vmmcall fsgsbase tsc_adjust bmi1 avx2 smep bmi2 rdseed adx smap clflushopt clwb xsaveopt xsavec xgetbv1 arat npt nrip_save
+
+Online cpus: 0-15
+Offline cpus: 
+BIOS frequency limitation: <Not Available>
+Frequency switch latency (ns): <Not Available>
+Available cpu frequencies: <Not Available>
+Current governor: <Not Available>
+Core performance/turbo boost: <Not Available>
+
+Memory: 4k page, physical 6291456k(4142360k free), swap 0k(0k free)
+Page Sizes: 4k
+
+vm_info: OpenJDK 64-Bit Server VM (17.0.5+8-jvmci-22.3-b08) for linux-amd64 JRE (17.0.5+8-jvmci-22.3-b08), built on Oct 19 2022 09:01:27 by "buildslave" with gcc 10.3.0
+
+END.

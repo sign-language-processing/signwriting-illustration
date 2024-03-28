@@ -34,6 +34,7 @@ wget -O "$STABLE_DIFFUSION_PATH" https://huggingface.co/stabilityai/stable-diffu
 
 
 # TODO add illustration LORA model
+# wget https://civitai.com/api/download/models/124933 --content-disposition
 
 # Download ControlNet repository if not exists
 [ ! -d "ControlNet" ] && \

@@ -8,7 +8,7 @@ from PIL import Image, UnidentifiedImageError
 from tqdm import tqdm
 from signwriting_images import signwriting_to_sized_image
 
-SIZE = 512
+SIZE = 256
 
 TRAIN_DIR = Path(__file__).parent.parent / "train"
 TRAIN_A_DIR = TRAIN_DIR / "A"
@@ -21,7 +21,7 @@ os.makedirs(TRAIN_B_DIR, exist_ok=True)
 DATASETS_DIR = Path(__file__).parent.parent / "datasets"
 
 
-def signwriting_file_to_image(fsw_file: Path, output: Union[str, Path], size=512):
+def signwriting_file_to_image(fsw_file: Path, output: Union[str, Path], size=256):
     # Open signwriting image
     signwriting = Image.open(fsw_file)
     if signwriting.width > size or signwriting.height > size:
@@ -37,6 +37,7 @@ def signwriting_file_to_image(fsw_file: Path, output: Union[str, Path], size=512
 
     background.save(output)
 
+skipped_files = 0
 
 for dataset in DATASETS_DIR.iterdir():
     if not dataset.is_dir():
@@ -51,6 +52,11 @@ for dataset in DATASETS_DIR.iterdir():
         writings = json.load(f)
 
     for writing in tqdm(writings):
+        # skip 'fsw_file' entries from missing glossen directory
+        if "fsw_file" in writing:
+            skipped_files += 1
+            continue
+
         illustration_path = dataset / writing["file"]
         if not illustration_path.exists():
             raise Exception(f"Illustration {illustration_path} does not exist")
@@ -91,3 +97,5 @@ for dataset in DATASETS_DIR.iterdir():
                 signwriting_file_to_image(dataset / writing["fsw_file"], b_path, size=SIZE)
             else:
                 raise Exception("Neither fsw nor fsw_file in writing")
+
+print(f"Total files skipped from missing 'glossen' directory: {skipped_files}")
