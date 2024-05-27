@@ -2,6 +2,6 @@
 
 from diffusers import ControlNetModel
 
-model = ControlNetModel.from_pretrained("/scratch/amoryo/models/sd-controlnet-signwriting")
+model = ControlNetModel.from_pretrained("/scratch/stariq/models/sd-controlnet-signwriting")
 
-model.push_to_hub("sign/signwriting-illustration")
+model.push_to_hub("sarahahtee/signwriting-illustration")

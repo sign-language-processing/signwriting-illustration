@@ -1,30 +1,34 @@
 from pathlib import Path
 from typing import Union
 
-from PIL import Image
+from PIL import Image, UnidentifiedImageError
 from signwriting.visualizer.visualize import signwriting_to_image
 
+SIZE = 256
 
-def signwriting_to_sized_image(fsw: str, output: Union[str, Path], size=512):
-    output_im = signwriting_to_image(fsw)
+def signwriting_to_sized_image(fsw: str, output: Union[str, Path], size=256):
+    try:
+        output_im = signwriting_to_image(fsw)
 
-    initial_size = size // 2
-    if output_im.width > initial_size or output_im.height > initial_size:
-        raise Exception(f"{fsw} is too large (> {initial_size})")
+    except UnidentifiedImageError:
+        print(f"Error: {fsw} is not a valid FSW string")
+        return None
+    
+    # resize to fit 256x256
+    if output_im.width > size or output_im.height > size:
+        scale = size / max(output_im.width, output_im.height)
+        output_im = output_im.resize((int(output_im.width * scale), int(output_im.height * scale)), Image.NEAREST)
 
-    # Create a 512x512 RGB image with a white background
-    img = Image.new('RGB', (initial_size, initial_size), (255, 255, 255))
+    # Create a 256x256 RGB image with a white background
+    img = Image.new('RGB', (size, size), (255, 255, 255))
 
     # Calculate the position to paste the image so that it's centered
-    x_offset = (initial_size - output_im.width) // 2
-    y_offset = (initial_size - output_im.height) // 2
+    x_offset = (size - output_im.width) // 2
+    y_offset = (size - output_im.height) // 2
     offset = (x_offset, y_offset)
 
     # Paste the output_im image onto the white background
-    img.paste(output_im, offset, output_im)
-
-    # Upscale the image to 512x512
-    img = img.resize((size, size), Image.NEAREST)
+    img.paste(output_im, offset, output_im if output_im.mode == 'RGBA' else None)
 
     img.save(output)
     return img

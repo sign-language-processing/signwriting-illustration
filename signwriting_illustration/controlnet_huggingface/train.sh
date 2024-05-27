@@ -56,9 +56,9 @@ mkdir -p $OUTPUT_DIR
  --conditioning_image_column=control_image \
  --image_column=image \
  --caption_column=caption \
- --resolution=512 \
+ --resolution=256 \
  --learning_rate=1e-5 \
- --validation_image "./validation/0a4b3c71265bb3a726457837428dda78.png" "./validation/0a5922fe2c638e6776bd62f623145004.png" "./validation/1c9f1a53106f64c682cf5d009ee7156f.png" \
+ --validation_image "./validation/0a4b3c71265bb3a726457837428dda78.png" "./validation/0a5922fe2c638e6776bd62f623145004.png" "./validation/1f0b36cd4699a80afaa8acc766b7a951.png" \
  --validation_prompt "An illustration of a man with short hair" "An illustration of a woman with short hair" "An illustration of Barack Obama" \
  --train_batch_size=4 \
  --num_train_epochs=500 \

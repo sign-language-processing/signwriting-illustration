@@ -8,7 +8,7 @@ from PIL import Image, UnidentifiedImageError
 from tqdm import tqdm
 from signwriting_images import signwriting_to_sized_image
 
-SIZE = 512
+SIZE = 256
 
 TRAIN_DIR = Path(__file__).parent.parent / "train"
 TRAIN_A_DIR = TRAIN_DIR / "A"
@@ -21,13 +21,16 @@ os.makedirs(TRAIN_B_DIR, exist_ok=True)
 DATASETS_DIR = Path(__file__).parent.parent / "datasets"
 
 
-def signwriting_file_to_image(fsw_file: Path, output: Union[str, Path], size=512):
+def signwriting_file_to_image(fsw_file: Path, output: Union[str, Path], size=256):
     # Open signwriting image
     signwriting = Image.open(fsw_file)
     w, h = signwriting.size
     signwriting = signwriting.resize((w * 2, h * 2), Image.NEAREST)
+
     if signwriting.width > size or signwriting.height > size:
-        raise Exception(f"{fsw_file} is too large (> {size})")
+        # resize to fit 256x256
+        scale = size / max(signwriting.width, signwriting.height)
+        signwriting = signwriting.resize((int(signwriting.width * scale), int(signwriting.height * scale)), Image.NEAREST)
 
     # then paste it on a white background SIZExSIZE RGB image
     background = Image.new('RGB', (size, size), (255, 255, 255))
@@ -53,6 +56,11 @@ for dataset in DATASETS_DIR.iterdir():
         writings = json.load(f)
 
     for writing in tqdm(writings):
+        # skip 'fsw_file' entries from missing glossen directory
+        if "fsw_file" in writing:
+            skipped_files += 1
+            continue
+        
         illustration_path = dataset / writing["file"]
         if not illustration_path.exists():
             raise Exception(f"Illustration {illustration_path} does not exist")

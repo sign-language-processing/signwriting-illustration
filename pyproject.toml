@@ -8,6 +8,7 @@ authors = [
 readme = "README.md"
 dependencies = [
     "signwriting @ git+https://github.com/sign-language-processing/signwriting"
+    "signwriting_evaluation @ git+https://github.com/sign-language-processing/signwriting-evaluation"
 ]
 
 [project.optional-dependencies]

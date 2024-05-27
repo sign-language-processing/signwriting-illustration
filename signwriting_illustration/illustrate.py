@@ -5,7 +5,7 @@ from PIL import Image
 
 
 def get_pipeline(pipeline_cls):
-    controlnet = ControlNetModel.from_pretrained("sign/signwriting-illustration", torch_dtype=torch.float16)
+    controlnet = ControlNetModel.from_pretrained("sarahahtee/signwriting-illustration", torch_dtype=torch.float16)
     pipe = pipeline_cls.from_pretrained("runwayml/stable-diffusion-v1-5", controlnet=controlnet,
                                         safety_checker=None, torch_dtype=torch.float16)
 
@@ -34,7 +34,7 @@ def image_grid(imgs, rows, cols):
 
 
 if __name__ == "__main__":
-    PIPELINE = "normal"
+    PIPELINE = "img2img"
 
     if PIPELINE == "img2img":
         pipeline = get_pipeline(StableDiffusionControlNetImg2ImgPipeline)
@@ -42,14 +42,14 @@ if __name__ == "__main__":
         pipeline = get_pipeline(StableDiffusionControlNetPipeline)
 
     signwriting_images = [
-        Image.new('RGB', (512, 512), 'white'),
+        Image.new('RGB', (256, 256), 'white'),
         Image.open("controlnet_huggingface/validation/0a4b3c71265bb3a726457837428dda78.png"),
         Image.open("controlnet_huggingface/validation/0a5922fe2c638e6776bd62f623145004.png"),
-        Image.open("controlnet_huggingface/validation/1c9f1a53106f64c682cf5d009ee7156f.png"),
+        Image.open("controlnet_huggingface/validation/1f0b36cd4699a80afaa8acc766b7a951.png"),
     ]
 
     prompt = "An illustration of a man with short hair, with black arrows."
-    negative_prompt = "lowres, text, error, cropped, worst quality, low quality, jpeg artifacts, ugly, duplicate, morbid, mutilated, out of frame, extra fingers, mutated hands, poorly drawn hands, poorly drawn face, mutation, deformed, blurry, dehydrated, bad anatomy, bad proportions, extra limbs, cloned face, disfigured, gross proportions, malformed limbs, missing arms, missing legs, extra arms, extra legs, fused fingers, too many fingers, long neck, username, watermark, signature"
+    negative_prompt = ""
     seeds = 4
     batch = seeds * len(signwriting_images)
 
@@ -65,7 +65,7 @@ if __name__ == "__main__":
     guidance_scale = 7.5
 
     if PIPELINE == "img2img":
-        img2img_init = Image.new('RGB', (512, 512), 'white')
+        img2img_init = Image.new('RGB', (256, 256), 'white')
 
         output = pipeline(
             prompt=batch_prompts,

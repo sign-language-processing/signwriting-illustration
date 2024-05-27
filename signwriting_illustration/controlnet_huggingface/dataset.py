@@ -12,6 +12,7 @@ class SignWritingIllustrationDataset(datasets.GeneratorBasedBuilder):
 
         self.data = []
         self.train_path = train_path
+        self.skipped_images = 0
         with open(train_path / 'prompt.json', 'rt') as f:
             for line in f:
                 self.data.append(json.loads(line))
@@ -35,8 +36,12 @@ class SignWritingIllustrationDataset(datasets.GeneratorBasedBuilder):
 
     def _generate_examples(self, **unused_kwargs):
         for i, item in enumerate(self.data):
-            signwriting = Image.open(str(self.train_path / item['source']))
-            illustration = Image.open(str(self.train_path / item['target']))
+            try:
+                signwriting = Image.open(str(self.train_path / item['source']))
+                illustration = Image.open(str(self.train_path / item['target']))
+            except (FileNotFoundError):
+                self.skipped_images += 1
+                continue
 
             yield i, {
                 "control_image": signwriting,
@@ -44,6 +49,10 @@ class SignWritingIllustrationDataset(datasets.GeneratorBasedBuilder):
                 "caption": item['prompt']
             }
 
+
+
+    def get_skipped_images(self):
+        return self.skipped_images
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
@@ -59,3 +68,5 @@ if __name__ == "__main__":
     dataset = SignWritingIllustrationDataset(train_path)
     dataset.download_and_prepare(output_path)
     dataset.as_dataset().save_to_disk(output_path)
+
+    print(f"Skipped {dataset.get_skipped_images()} images")
