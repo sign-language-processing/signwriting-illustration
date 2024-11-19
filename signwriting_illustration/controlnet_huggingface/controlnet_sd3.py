@@ -56,11 +56,16 @@ class SD3ControlNetModel(ModelMixin, ConfigMixin, PeftAdapterMixin, FromOriginal
         out_channels: int = 16,
         pos_embed_max_size: int = 96,
         extra_conditioning_channels: int = 0,
+        dual_attention_layers=(),
+        qk_norm=None,
     ):
         super().__init__()
         default_out_channels = in_channels
         self.out_channels = out_channels if out_channels is not None else default_out_channels
         self.inner_dim = num_attention_heads * attention_head_dim
+        self.dual_attention_layers = dual_attention_layers
+        self.qk_norm = qk_norm
+
 
         self.pos_embed = PatchEmbed(
             height=sample_size,

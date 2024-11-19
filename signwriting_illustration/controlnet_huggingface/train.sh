@@ -19,9 +19,11 @@ module load cuda
 module load anaconda3
 source activate diffusers
 
+export WANDB_API_KEY=`cat wandb_key`
+
 # Install dependencies
 pip install diffusers transformers accelerate xformers wandb datasets argparse torchvision huggingface-hub
-huggingface-cli login --token $HUGGINGFACE_TOKEN
+huggingface-cli login --token `cat hf_token`
 
 # Convert to huggingface dataset
 HF_DATASET_DIR="/scratch/$(whoami)/signwriting-illustration"
@@ -50,7 +52,7 @@ OUTPUT_DIR="/scratch/$(whoami)/models/sd-controlnet-signwriting"
 mkdir -p $OUTPUT_DIR
 
 ! accelerate launch diffusers/examples/controlnet/train_controlnet.py \
- --pretrained_model_name_or_path="runwayml/stable-diffusion-v1-5" \
+ --pretrained_model_name_or_path="stabilityai/stable-diffusion-3-medium-diffusers" \
  --output_dir="$OUTPUT_DIR" \
  --train_data_dir="$HF_DATASET_DIR" \
  --conditioning_image_column=control_image \
@@ -62,9 +64,8 @@ mkdir -p $OUTPUT_DIR
  --validation_prompt "An illustration of a man with short hair" "An illustration of a woman with short hair" "An illustration of Barack Obama" \
  --train_batch_size=4 \
  --num_train_epochs=500 \
- --tracker_project_name="sd-controlnet-signwriting" \
- --hub_model_id="sign/signwriting-illustration" \
- --enable_xformers_memory_efficient_attention \
+ --tracker_project_name="sd3-controlnet-signwriting" \
+ --hub_model_id="sarahahtee/signwriting-illustration-sd3" \
  --checkpointing_steps=5000 \
  --validation_steps=1000 \
  --report_to wandb \
