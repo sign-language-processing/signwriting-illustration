@@ -64,6 +64,7 @@ if __name__ == "__main__":
     output_path = Path(args.output_path)
 
     output_path.mkdir(parents=True, exist_ok=True)
+    output_path = str(output_path) # datasets library expects a string
 
     dataset = SignWritingIllustrationDataset(train_path)
     dataset.download_and_prepare(output_path)
